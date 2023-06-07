@@ -1542,6 +1542,10 @@ BF2042_STAT_MAPS = {
         "mapName": "Flashpoint",
         "image": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/pyrite/images/Map_Art_BF2042_BOL-215cc9e7.jpg",
     },
+    "kin_reclaimed": {
+        "mapName": "Reclaimed",
+        "image": "http://eaassets-a.akamaihd.net/battlelog/battlebinary/pyrite/images/Map_Art_BF2042_SC-91339cd1.jpg",
+    }
 }
 BF2042_TO_GAME_MAPS = {
     "arica harbor": "MP_Harbor",
