@@ -1292,6 +1292,7 @@ BF2042_MAPS = {
     "MP_Drained": "Stranded",
     "MP_LightsOut": "Spearhead",
     "MP_Boulder": "Flashpoint",
+    "MP_Scarred": "Reclaimed"
 }
 BF2042_MAP_FACTIONS = {
     "MP_Discarded": ["FactionUS", "FactionRUS"],
@@ -1311,6 +1312,7 @@ BF2042_MAP_FACTIONS = {
     "MP_LightHouse": ["FactionRUS", "FactionUS"],
     "MP_LightsOut": ["FactionUS", "FactionRUS"],
     "MP_Boulder": ["FactionUS", "FactionRUS"],
+    "MP_Scarred": ["FactionUS", "FactionRUS"],
 }
 BF2042_MAP_PICTURES = {
     "MP_Harbor": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/kingston/60/b4/Map_Art_BFBC2_AH_L-60b49760.png",
@@ -1330,6 +1332,7 @@ BF2042_MAP_PICTURES = {
     "MP_Drained": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/kingston/d7/5f/Map_Art_BF2042_DRA_L-d75f98a0.png",
     "MP_LightsOut": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/pyrite/images/Map_Art_BF2042_LO-ce4a8588.jpg",
     "MP_Boulder": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/pyrite/images/Map_Art_BF2042_BOL-215cc9e7.jpg",
+    "MP_Scarred": "http://eaassets-a.akamaihd.net/battlelog/battlebinary/pyrite/images/Map_Art_BF2042_SC-91339cd1.jpg"
 }
 BF2042_MODES = {
     "ConquestSmall": "Conquest",
@@ -1443,8 +1446,8 @@ BF2042_STATS_PLATFORM_REVERSE = {
     "psn": 2,
 }
 BF2042_STAT_GAMEMODE = {
-    "bt": {"gamemodeName": "Breakthrough", "image": ""},
-    "btsmall": {"gamemodeName": "Breakthrough (Small)", "image": ""},
+    "bt": {"gamemodeName": "Breakthrough", "image": "https://portal.battlefield.com/4141963/assets/icons/Icon_Breakthrough.svg"},
+    "btsmall": {"gamemodeName": "Breakthrough (Small)", "image": "https://portal.battlefield.com/4141963/assets/icons/Icon_Breakthrough.svg"},
     "cq": {
         "gamemodeName": "Conquest",
         "image": "https://portal.battlefield.com/3396060/assets/icons/Icon_Conquest.svg",
@@ -1558,6 +1561,7 @@ BF2042_TO_GAME_MAPS = {
     "stranded": "MP_Drained",
     "spearhead": "MP_LightsOut",
     "flashpoint": "MP_Boulder",
+    "reclaimed": "MP_Scarred"
 }
 BF2042_VEHICLES = {
     "air_heli_nightbird": {
