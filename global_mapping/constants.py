@@ -1335,6 +1335,8 @@ BF2042_MAP_PICTURES = {
     "MP_Scarred": "http://eaassets-a.akamaihd.net/battlelog/battlebinary/pyrite/images/Map_Art_BF2042_SC-91339cd1.jpg"
 }
 BF2042_MODES = {
+    "Breakthrough": "Breakthrough",
+    "BreakthroughSmall": "Breakthrough (Small)",
     "ConquestSmall": "Conquest",
     "ModBuilderCustom": "Custom",
     "Rush": "Rush",
@@ -1430,6 +1432,8 @@ BF2042_SHORT_REGIONS = {
     "aws-syd": "oc",
 }
 BF2042_SMALLMODES = {
+    "Breakthrough": "OP",
+    "BreakthroughSmall": "SO",
     "ConquestSmall": "CQ",
     "ModBuilderCustom": "CM",
     "Rush": "RS",
