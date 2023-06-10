@@ -1531,6 +1531,65 @@ BF2042_STAT_GAMEMODE = {
         "image": "https://cdn.gametools.network/hazard-zone.jpg",
     },
 }
+BFV_STAT_MAPS = {
+    "arcticfjell": {
+        "mapName": "Fjell 652"
+    },
+    "arcticfjord": {
+        "mapName": "Narvik"
+    },
+    "arras": {
+        "mapName": "Arras"
+    },
+    "devastation": {
+        "mapName": "Devastation"
+    },
+    "escaut": {
+        "mapName": "Twisted Steel"
+    },
+    "foxhunt": {
+        "mapName": "Aerodrome"
+    },
+    "halfaya": {
+        "mapName": "Hamada"
+    },
+    "rotterdam": {
+        "mapName": "Rotterdam"
+    },
+    "hannut": {
+        "mapName": "Panzerstorm"
+    },
+    "crete": {
+        "mapName": "Mercury"
+    },
+    "kalamas": {
+        "mapName": "Marita"
+    },
+    "provence": {
+        "mapName": "Provence"
+    },
+    "sandandsea": {
+        "mapName": "Al Sudan"
+    },
+    "bunker": {
+        "mapName": "Operation Underground"
+    },
+    "iwojima": {
+        "mapName": "Iwo Jima"
+    },
+    "tropicislands": {
+        "mapName": "Pacific Storm"
+    },
+    "wakeisland": {
+        "mapName": "Wake Island"
+    },
+    "jungle": {
+        "mapName": "Solomon Islands"
+    },
+    "libya": {
+        "mapName": "Al Marj Encampment"
+    }
+}
 BF2042_STAT_MAPS = {
     "kin_renewal": {
         "mapName": "Renewal",
