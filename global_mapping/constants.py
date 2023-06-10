@@ -1533,61 +1533,84 @@ BF2042_STAT_GAMEMODE = {
 }
 BFV_STAT_MAPS = {
     "arcticfjell": {
-        "mapName": "Fjell 652"
+        "mapName": "Fjell 652",
+        "image": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/Casablanca/33/60/1080p_MP_ArcticFjell-df3c1290.jpg",
     },
     "arcticfjord": {
-        "mapName": "Narvik"
+        "mapName": "Narvik",
+        "image": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/Casablanca/123/94/1080p_MP_ArcticFjord-7ba29138.jpg",
     },
     "arras": {
-        "mapName": "Arras"
+        "mapName": "Arras",
+        "image": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/Casablanca/75/97/1080p_MP_Arras-4b610505.jpg",
     },
     "devastation": {
-        "mapName": "Devastation"
+        "mapName": "Devastation",
+        "image": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/Casablanca/98/61/1080p_MP_Devastation-623dea60.jpg",
     },
     "escaut": {
-        "mapName": "Twisted Steel"
+        "mapName": "Twisted Steel",
+        "image": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/Casablanca/105/100/1080p_MP_Escaut-9764d1fb.jpg",
     },
     "foxhunt": {
-        "mapName": "Aerodrome"
+        "mapName": "Aerodrome",
+        "image": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/Casablanca/118/45/1080p_MP_AfricanFox-8ad380a5.jpg",
     },
     "halfaya": {
-        "mapName": "Hamada"
+        "mapName": "Hamada",
+        "image": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/Casablanca/49/22/1080p_MP_AfricanHalfaya-31165f9b.jpg",
     },
     "rotterdam": {
-        "mapName": "Rotterdam"
+        "mapName": "Rotterdam",
+        "image": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/Casablanca/85/99/1080p_MP_Rotterdam-55632240.jpg",
     },
     "hannut": {
-        "mapName": "Panzerstorm"
+        "mapName": "Panzerstorm",
+        "image": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/Casablanca/21/66/1080p_MP_Hannut-ebbe7197.jpg",
     },
     "crete": {
-        "mapName": "Mercury"
+        "mapName": "Mercury",
+        "image": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/Casablanca/48/74/1080p_MP_Crete-304a202d.jpg",
     },
     "kalamas": {
-        "mapName": "Marita"
+        "mapName": "Marita",
+        "image": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/Casablanca/58/76/1080p_MP_Kalamas-c64c8451.jpg",
     },
     "provence": {
-        "mapName": "Provence"
+        "mapName": "Provence",
+        "image": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/Casablanca/87/80/1080p_MP_ProvenceXL-a950ad3e.jpg",
     },
     "sandandsea": {
-        "mapName": "Al Sudan"
+        "mapName": "Al Sudan",
+        "image": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/Casablanca/16/113/1080p_MP_SandAndSea-f071e6f7.jpg",
     },
     "bunker": {
-        "mapName": "Operation Underground"
+        "mapName": "Operation Underground",
+        "image": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/Casablanca/123/81/1080p_MP_Bunker-7b518876.jpg",
     },
     "iwojima": {
-        "mapName": "Iwo Jima"
+        "mapName": "Iwo Jima",
+        "image": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/Casablanca/118/8/1080p_MP_IwoJima-760850fc.jpg",
     },
     "tropicislands": {
-        "mapName": "Pacific Storm"
+        "mapName": "Pacific Storm",
+        "image": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/Casablanca/98/10/1080p_MP_TropicIslands-9e0a41c3.jpg",
     },
     "wakeisland": {
-        "mapName": "Wake Island"
+        "mapName": "Wake Island",
+        "image": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/Casablanca/50/56/1080p_MP_WakeIsland-3238b455.jpg",
     },
     "jungle": {
-        "mapName": "Solomon Islands"
+        "mapName": "Solomon Islands",
+        "image": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/Casablanca/113/66/1080p_MP_Jungle-714218ce.jpg",
     },
     "libya": {
-        "mapName": "Al Marj Encampment"
+        "mapName": "Al Marj Encampment",
+        "image": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/Casablanca/67/84/1080p_MP_Libya-bd54b090.jpg",
+    },
+    "norway": {
+        "mapName": "Lofoten Islands",
+        "image": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/Casablanca/125/109/1080p_MP_Norway-7d6d6300.jpg"
     }
 }
 BF2042_STAT_MAPS = {
