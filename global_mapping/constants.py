@@ -683,6 +683,28 @@ BF1_WEAPONS_STATS = {
     "c_wRSinWinT": {"weaponName": "Russian 1895 Trench"},
     "c_wMWelsh": {"weaponName": "Welsh Blade"},
 }
+BFV_CLASSES = {
+    "kit_assault": {
+      "className": "Assault",
+      "image": "https://cdn.gametools.network/classes/bf5/white/Assault.png",
+      "altImage": "https://cdn.gametools.network/classes/bf5/black/Assault.png",
+    },
+    "kit_medic": {
+      "className": "Medic",
+      "image": "https://cdn.gametools.network/classes/bf5/white/Medic.png",
+      "altImage": "https://cdn.gametools.network/classes/bf5/black/Medic.png",
+    },
+    "kit_recon": {
+      "className": "Recon",
+      "image": "https://cdn.gametools.network/classes/bf5/white/Recon.png",
+      "altImage": "https://cdn.gametools.network/classes/bf5/black/Recon.png",
+    },
+    "kit_support": {
+      "className": "Support",
+      "image": "https://cdn.gametools.network/classes/bf5/white/Support.png",
+      "altImage": "https://cdn.gametools.network/classes/bf5/black/Support.png",
+    }
+}
 BF2042_CLASSES = {
     "ass_alpha": {
         "className": "Assault",
