@@ -684,22 +684,22 @@ BF1_WEAPONS_STATS = {
     "c_wMWelsh": {"weaponName": "Welsh Blade"},
 }
 BFV_CLASSES = {
-    "kit_assault": {
+    "assault": {
       "className": "Assault",
       "image": "https://cdn.gametools.network/classes/bf5/white/Assault.png",
       "altImage": "https://cdn.gametools.network/classes/bf5/black/Assault.png",
     },
-    "kit_medic": {
+    "medic": {
       "className": "Medic",
       "image": "https://cdn.gametools.network/classes/bf5/white/Medic.png",
       "altImage": "https://cdn.gametools.network/classes/bf5/black/Medic.png",
     },
-    "kit_recon": {
+    "recon": {
       "className": "Recon",
       "image": "https://cdn.gametools.network/classes/bf5/white/Recon.png",
       "altImage": "https://cdn.gametools.network/classes/bf5/black/Recon.png",
     },
-    "kit_support": {
+    "support": {
       "className": "Support",
       "image": "https://cdn.gametools.network/classes/bf5/white/Support.png",
       "altImage": "https://cdn.gametools.network/classes/bf5/black/Support.png",
