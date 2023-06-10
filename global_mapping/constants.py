@@ -1471,6 +1471,29 @@ BF2042_STATS_PLATFORM_REVERSE = {
     "xbox": 1,
     "psn": 2,
 }
+BFV_STAT_GAMEMODE = {
+    "dom": {
+        "gamemodeName": "Domination"
+    }, 
+    "rush": {
+        "gamemodeName": "Rush"
+    },
+    "frontlines": {
+        "gamemodeName": "Frontlines"
+    },
+    "tdm": {
+        "gamemodeName": "Team Deathmatch"
+    },
+    "outp": {
+        "gamemodeName": "Outpost"
+    },
+    "bth": {
+        "gamemodeName": "Breakthrough"
+    },
+    "conq": {
+        "gamemodeName": "Conquest"
+    }
+}
 BF2042_STAT_GAMEMODE = {
     "bt": {"gamemodeName": "Breakthrough", "image": "https://portal.battlefield.com/4141963/assets/icons/Icon_Breakthrough.svg"},
     "btsmall": {"gamemodeName": "Breakthrough (Small)", "image": "https://portal.battlefield.com/4141963/assets/icons/Icon_Breakthrough.svg"},
