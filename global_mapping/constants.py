@@ -1494,6 +1494,15 @@ BFV_STAT_GAMEMODE = {
         "gamemodeName": "Conquest"
     }
 }
+BFV_STAT_GAMEMODE_EXTR = {
+    "dom": "gm_domination",
+    "rush": "gm_rush",
+    "frontlines": "gm_frontlines",
+    "tdm": "gm_tdm",
+    "outp": "gm_outpost",
+    "bth": "gm_breakthrough",
+    "conq": "gm_conquest",
+}
 BF2042_STAT_GAMEMODE = {
     "bt": {"gamemodeName": "Breakthrough", "image": "https://portal.battlefield.com/4141963/assets/icons/Icon_Breakthrough.svg"},
     "btsmall": {"gamemodeName": "Breakthrough (Small)", "image": "https://portal.battlefield.com/4141963/assets/icons/Icon_Breakthrough.svg"},
