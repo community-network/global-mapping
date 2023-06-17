@@ -1357,8 +1357,8 @@ BF2042_MAP_PICTURES = {
     "MP_Scarred": "http://eaassets-a.akamaihd.net/battlelog/battlebinary/pyrite/images/Map_Art_BF2042_SC-91339cd1.jpg"
 }
 BF2042_MODES = {
-    "Breakthrough": "Breakthrough",
-    "BreakthroughSmall": "Breakthrough (Small)",
+    "Breakthrough": "Breakthrough Large",
+    "BreakthroughSmall": "Breakthrough",
     "ConquestSmall": "Conquest",
     "ModBuilderCustom": "Custom",
     "Rush": "Rush",
@@ -1454,8 +1454,8 @@ BF2042_SHORT_REGIONS = {
     "aws-syd": "oc",
 }
 BF2042_SMALLMODES = {
-    "Breakthrough": "OP",
-    "BreakthroughSmall": "SO",
+    "Breakthrough": "BT",
+    "BreakthroughSmall": "BS",
     "ConquestSmall": "CQ",
     "ModBuilderCustom": "CM",
     "Rush": "RS",
@@ -1504,18 +1504,18 @@ BFV_STAT_GAMEMODE_EXTR = {
     "conq": "gm_conquest",
 }
 BF2042_STAT_GAMEMODE = {
-    "bt": {"gamemodeName": "Breakthrough", "image": "https://portal.battlefield.com/4141963/assets/icons/Icon_Breakthrough.svg"},
-    "btsmall": {"gamemodeName": "Breakthrough (Small)", "image": "https://portal.battlefield.com/4141963/assets/icons/Icon_Breakthrough.svg"},
+    "bt": {"gamemodeName": "Breakthrough Large", "image": "https://portal.battlefield.com/4141963/assets/icons/Icon_Breakthrough.svg"},
+    "btsmall": {"gamemodeName": "Breakthrough", "image": "https://portal.battlefield.com/4141963/assets/icons/Icon_Breakthrough.svg"},
     "cq": {
-        "gamemodeName": "Conquest",
+        "gamemodeName": "Conquest Large",
         "image": "https://portal.battlefield.com/3396060/assets/icons/Icon_Conquest.svg",
     },
     "cqsmall": {
-        "gamemodeName": "Conquest (Small)",
+        "gamemodeName": "Conquest",
         "image": "https://portal.battlefield.com/3396060/assets/icons/Icon_Conquest_Small.svg",
     },
     "modbuilder": {
-        "gamemodeName": "Modbuilder Custom",
+        "gamemodeName": "Custom",
         "image": "https://portal.battlefield.com/3396060/assets/icons/custom_wrench_hammer.svg",
     },
     "rush": {
@@ -1523,11 +1523,11 @@ BF2042_STAT_GAMEMODE = {
         "image": "https://portal.battlefield.com/3396060/assets/icons/Icon_Rush.svg",
     },
     "hz": {
-        "gamemodeName": "Hazard Zone",
+        "gamemodeName": "Hazard Zone Large",
         "image": "https://cdn.gametools.network/hazard-zone.jpg",
     },
     "hzsmall": {
-        "gamemodeName": "Hazard Zone (Small)",
+        "gamemodeName": "Hazard Zone",
         "image": "https://cdn.gametools.network/hazard-zone.jpg",
     },
 }
