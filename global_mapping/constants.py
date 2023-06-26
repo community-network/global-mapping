@@ -4921,6 +4921,7 @@ BATTLEBIT_MODES = {
     "TDM": "Teamdeathmatch",
     "GunGameFFA": "Gungame free-for-all",
     "INFCONQ": "Infantry Conquest",
+    "FFA": "Free-for-all",
 }
 BATTLEBIT_SMALLMODES = {
     "CONQ": "CQ",
