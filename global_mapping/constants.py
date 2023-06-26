@@ -4922,6 +4922,7 @@ BATTLEBIT_MODES = {
     "GunGameFFA": "Gungame free-for-all",
     "INFCONQ": "Infantry Conquest",
     "FFA": "Free-for-all",
+    "GunGameTeam": "Gungame team",
 }
 BATTLEBIT_SMALLMODES = {
     "CONQ": "CQ",
