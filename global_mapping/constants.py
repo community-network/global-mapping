@@ -4923,6 +4923,7 @@ BATTLEBIT_MODES = {
     "INFCONQ": "Infantry Conquest",
     "FFA": "Free-for-all",
     "GunGameTeam": "Gungame team",
+    "ELI": "Elimination",
 }
 BATTLEBIT_SMALLMODES = {
     "CONQ": "CQ",
@@ -4930,7 +4931,11 @@ BATTLEBIT_SMALLMODES = {
     "RUSH": "RS",
     "DOMI": "DM",
     "TDM": "TDM",
-    "GunGameFFA": "GM",
+    "INFCONQ": "IQ",
+    "GunGameFFA": "GGF",
+    "FFA": "FFA",
+    "GunGameTeam": "GGT",
+    "ELI": "ELI",
 }
 BATTLEBIT_REGIONS = {
     "Europe_Central": "Europe",
