@@ -1950,6 +1950,11 @@ BF2042_VEHICLES = {
         "vehicleName": "T28",
         "image": "https://cdn.gametools.network/vehicles/bf2042/T14Armata-8890e549.png",
     },
+    "sur_land_brawler": {
+        "type": "Land",
+        "vehicleName": "CAV-BRAWLER",
+        "image": "https://cdn.gametools.network/vehicles/bf2042/VEH_Icon_ArmoredCar_Patria-17d03f44.png",
+    },
     "sur_stat_kornet": {
         "type": "Stationary",
         "vehicleName": "9M133 Kornet",
@@ -2412,6 +2417,21 @@ BF2042_WEAPONS = {
         "type": "LMG",
         "weaponName": "RPK-74M",
         "image": "https://cdn.gametools.network/weapons/bf2042/weapon_default_RPK-74M-d52bf4cd.png",
+    },
+    "pri_ba_xceed": {
+        "type": "Bolt Action",
+        "weaponName": "XCE BAR",
+        "image": "https://cdn.gametools.network/weapons/bf2042/weapon_default_TTS_Xceed-b66895b3.png",
+    },
+    "pri_ar_g36c": {
+        "type": "Assault Rifles",
+        "weaponName": "GEW-46",
+        "image": "https://cdn.gametools.network/weapons/bf2042/gadget_default_G36C-9adbbaef.png",
+    },
+    "sa_eagle": {
+        "type": "Sidearm",
+        "weaponName": "BFP.50",
+        "image": "https://cdn.gametools.network/weapons/bf2042/gadget_default_DesertEagle-5bb177e7.png",
     },
     "melee": {"type": "", "weaponName": "Melee", "image": ""},
     "pri_ar_g3": {"type": "Assault Rifles", "weaponName": "G3", "image": ""},
