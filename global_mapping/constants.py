@@ -2438,6 +2438,16 @@ BF2042_WEAPONS = {
         "weaponName": "BFP.50",
         "image": "https://cdn.gametools.network/weapons/bf2042/gadget_default_DesertEagle-5bb177e7.png",
     },
+    "pri_misc_sg_12gauto": {
+        "type": "Shotguns",
+        "weaponName": "12G Automatic",
+        "image": "https://cdn.gametools.network/weapons/bf2042/weapon_default_BrowningA5-9ef7afe3.png",
+    },
+    "pri_pdw_sten": {
+        "type": "SMG-PDW",
+        "weaponName": "Sten",
+        "image": "https://cdn.gametools.network/weapons/bf2042/weapon_default_Sten-e97e81c6.png",
+    },
     "melee": {"type": "", "weaponName": "Melee", "image": ""},
     "pri_ar_g3": {"type": "Assault Rifles", "weaponName": "G3", "image": ""},
     "": {
