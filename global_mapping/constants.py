@@ -1295,6 +1295,21 @@ BF2042_GADGETS = {
         "gadgetName": "Mounted Vulcan",
         "image": "https://cdn.gametools.network/gadgets/bf2042/RL_Placed_Minigun-f9b2c5bf.png",
     },
+    "open_equip_rpgv2": {
+        "type": "Rocket Launcher",
+        "gadgetName": "RPG-7v2",
+        "image": "https://cdn.gametools.network/gadgets/bf2042/GAD_ICO_Launcher_RPG-30dde618.png",
+    },
+    "open_equip_stickygl": {
+        "type": "Grenade",
+        "gadgetName": "SPH Explosive Launcher",
+        "image": "https://cdn.gametools.network/gadgets/bf2042/GAD_ICO_Open_StickyGrenade-1e3ea066.png",
+    },
+    "open_throw_gren_bb": {
+        "type": "Grenade",
+        "gadgetName": "Spring Grenade",
+        "image": "https://cdn.gametools.network/gadgets/bf2042/GAD_ICO_Throwable_Impact-c22cff04.png",
+    },
     "": {
         "type": "Throwable",
         "gadgetName": "Stick Grenade",
