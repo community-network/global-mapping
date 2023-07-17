@@ -1290,6 +1290,11 @@ BF2042_GADGETS = {
         "gadgetName": "BF3 Grenade",
         "image": "",
     },
+    "char_staticminigun": {
+        "type": "Character",
+        "gadgetName": "Mounted Vulcan",
+        "image": "https://cdn.gametools.network/gadgets/bf2042/RL_Placed_Minigun-f9b2c5bf.png",
+    },
     "": {
         "type": "Throwable",
         "gadgetName": "Stick Grenade",
