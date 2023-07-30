@@ -837,6 +837,16 @@ BF2042_CLASSES = {
             "rus": "https://cdn.gametools.network/classes/bf2042/CharKilo_M-0e19f3d5.png",
         },
     },
+    "rec_oscar": {
+        "className": "Recon",
+        "characterName": "Blasco",
+        "statName": "Blasco (Recon)",
+        "image": "https://cdn.gametools.network/classes/bf2042/IconOscar-2214e1f3.svg",
+        "avatarImages": {
+            "us": "https://cdn.gametools.network/classes/bf2042/CharOscar_M-76506937.png",
+            "rus": "https://cdn.gametools.network/classes/bf2042/CharOscar_M-76506937.png",
+        },
+    },
     "rec_bf3": {
         "className": "Recon",
         "characterName": "BF3 Recon",
@@ -1309,6 +1319,26 @@ BF2042_GADGETS = {
         "type": "Grenade",
         "gadgetName": "Spring Grenade",
         "image": "https://cdn.gametools.network/gadgets/bf2042/GAD_ICO_Throwable_Impact-c22cff04.png",
+    },
+    "open_equip_eod": {
+        "type": "Equipment",
+        "gadgetName": "EOD Bot - BF3",
+        "image": "https://cdn.gametools.network/gadgets/bf2042/ALX__EODBot-38a9dbbe.png",
+    },
+    "uni_callin": {
+        "type": "Universal",
+        "gadgetName": "Call In Tablet",
+        "image": "",
+    },
+    "open_equip_intscan": {
+        "type": "Equipment",
+        "gadgetName": "Intel Scanner",
+        "image": "",
+    },
+    "open_equip_atmine": {
+        "type": "Equipment",
+        "gadgetName": "AT-Mine",
+        "image": "",
     },
     "": {
         "type": "Throwable",
