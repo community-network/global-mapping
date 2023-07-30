@@ -1990,6 +1990,16 @@ BF2042_VEHICLES = {
         "vehicleName": "Polaris RZR",
         "image": "",
     },
+    "air_plane_su25": {
+        "type": "Plane",
+        "vehicleName": "Su-25TM Frogfoot",
+        "image": "https://cdn.gametools.network/vehicles/bf2042/RUM__SU-25TM_Frogfoot-cba9e798.png",
+    },
+    "air_heli_mi24": {
+        "type": "Helicopter",
+        "vehicleName": "Mi-24 Hind",
+        "image": "https://cdn.gametools.network/vehicles/bf2042/RUM__Mi-24SuperHind-faf17714.png",
+    },
     "sur_world_tuktuk": {"type": "In-World", "vehicleName": "Tuk-Tuk", "image": ""},
     "sur_world_4x4": {"type": "In-World", "vehicleName": "4x4 Utility", "image": ""},
     "air_heli_uav1": {"type": "Helicopter", "vehicleName": "UAV-1", "image": ""},
