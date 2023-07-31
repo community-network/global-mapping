@@ -2040,6 +2040,11 @@ BF2042_VEHICLES = {
         "vehicleName": "Mi-24 Hind",
         "image": "https://cdn.gametools.network/vehicles/bf2042/RUM__Mi-24SuperHind-faf17714.png",
     },
+    "sur_land_bmd3": {
+        "type": "Land",
+        "type": "BMD-3",
+        "image": "https://cdn.gametools.network/vehicles/bf2042/RUM__BMD-3_Bakhcha-86f10fe1.png"
+    },
     "sur_world_tuktuk": {"type": "In-World", "vehicleName": "Tuk-Tuk", "image": ""},
     "sur_world_4x4": {"type": "In-World", "vehicleName": "4x4 Utility", "image": ""},
     "air_heli_uav1": {"type": "Helicopter", "vehicleName": "UAV-1", "image": ""},
