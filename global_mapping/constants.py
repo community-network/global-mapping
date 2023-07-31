@@ -1043,6 +1043,11 @@ BF2042_GADGETS = {
         "gadgetName": "EMP Grenade",
         "image": "https://cdn.gametools.network/gadgets/bf2042/EMPGrenade-f5f1265e.png",
     },
+    "open_throw_gren_at": {
+        "type": "Throwable",
+        "gadgetName": "Anti-Tank Grenade",
+        "image": "https://cdn.gametools.network/gadgets/bf2042/GAD_ICO_Throwable_AntiTank-9a518e3b.png"
+    },
     "char_amm_alx": {
         "type": "Ammo Box",
         "gadgetName": "Ammo Box BF3 (Portal)",
