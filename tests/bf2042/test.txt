@@ -1,0 +1,91 @@
+
+Weapons:
+
+Vehicles:
+sur_land_m1a2bf3 - 31
+sur_land_bmd3 - 110
+sur_land_m1a2all - 39
+air_heli_mi24 - 120
+sur_land_t90bf3 - 29
+sur_land_t90all - 50
+
+Gamemodes:
+sd - 50
+bttle - 1
+os - 29
+
+Character:
+rec_mica - 925
+sup_mica - 591
+eng_mica - 984
+rec_oscar - 2823
+ass_mica - 534
+
+Gadgets:
+char_constr - 13585
+open_throw_gren - 52450
+open_equip_spotdart - 125
+char - 185215
+uni_defib - 5695
+open_bc2_atmine - 70
+open_throw_gren_at - 315
+uni_callin - 16755
+open_equip_eod - 1545
+open_equip_atmine - 5
+open_equip_intscan - 595
+open_bf3_atmine - 105
+open - 226165
+char_smart - 37105
+open_throw - 68835
+char_suppbag - 24235
+open_equip - 157330
+open_throw_gren_mini - 390
+open_throw_gren_mica - 1250
+char_jammer - 1110
+uni - 22450
+open_throw_gren_msmo - 15
+open_equip_rl_mica - 11505
+
+Maps:
+
+Other items:
+HZrespawns_gm_all - 569
+HZrespawns_gm_hz - 569
+Kills_LongDist_Marksman_total - 2298
+Kills_Marksman_InRound_cb - 540
+Largest_Multi_Inround_cb - 4
+Largest_Multi_total - 7
+Marksman_Longest_Total_Fix - 128
+assist_disrupt_total - 801
+distrav_pc_total - 859547
+distrav_ws_total - 598538
+dmg_healed_inround_cb - 3554
+dmg_inround_cb - 8168
+eidos_destroy_inround_cb - 104
+eidos_destroy_total - 3632
+emp_disabled_gm_all - 71
+emp_disabled_gm_sd - 71
+emp_disabled_inround - 5
+emp_placed_inround - 5
+emp_planted_gm_all - 129
+emp_planted_gm_sd - 129
+intel_ext_inround_cb - 3
+intel_ext_squad_total - 659
+intel_ext_total - 292
+intel_pickup_gm_all - 802
+intel_pickup_gm_hz - 802
+intel_pickup_inround_cb - 3
+intel_pickup_squad_total - 2827
+intel_pickup_total - 1179
+kills_ar_lmg_cb - 55
+kills_ar_sg_cb - 34
+kills_scope_inround_cb - 23
+kills_tw_total - 1
+kills_ws_total - 32
+kills_wveh_inround_cb - 33
+obj_conttime_inround_cb - 680
+obj_conttime_total - 117500
+secobj_time_Total - 393970
+sect_def_inround_cb - 33
+squadleader_time_total - 24375
+veh_repairedhp_inround_cb - 719
