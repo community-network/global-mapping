@@ -1158,7 +1158,7 @@ SMALLMODES = {
     "ZoneControl": "SD",
     "AirAssault": "AA",
 }
-WEAPONS = [
+WEAPON_LIST = [
     "M1919A6",
     "Gewehr 43",
     "M1A1 Carbine",
