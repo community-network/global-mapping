@@ -1125,6 +1125,28 @@ FACTIONS = {
         "image": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/Casablanca/38/94/FactionJPNMono_Bitmap-da5effe8.png",
     },
 }
+INTERNAL_MAP_NAME = {
+    "fjell 652": "MP_ArcticFjell",
+    "narvik": "MP_ArcticFjord",
+    "arras": "MP_Arras",
+    "devastation": "MP_Devastation",
+    "twisted steel": "MP_Escaut",
+    "aerodrome": "MP_Foxhunt",
+    "hamada": "MP_Halfaya",
+    "rotterdam": "MP_Rotterdam",
+    "panzerstorm": "MP_Hannut",
+    "mercury": "MP_Crete",
+    "marita": "MP_Kalamas",
+    "provence": "MP_Provence",
+    "al sudan": "MP_SandAndSea",
+    "operation Underground": "MP_Bunker",
+    "iwo jima": "MP_IwoJima",
+    "pacific storm": "MP_TropicIslands",
+    "wake island": "MP_WakeIsland",
+    "solomon islands": "MP_Jungle",
+    "al marj encampment": "MP_Libya",
+    "lofoten islands": "MP_Norway",
+}
 MAP_FACTIONS = {
     "MP_ArcticFjell": ["BFFactionId_FactionUK", "BFFactionId_FactionGER"],
     "MP_ArcticFjord": ["BFFactionId_FactionUK", "BFFactionId_FactionGER"],
