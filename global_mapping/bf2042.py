@@ -339,12 +339,12 @@ GADGETS = {
     "open_throw_gren_at": {
         "type": "Throwable",
         "gadgetName": "Anti-Tank Grenade",
-        "image": "https://cdn.gametools.network/gadgets/bf2042/GAD_ICO_Throwable_AntiTank-9a518e3b.png"
+        "image": "https://cdn.gametools.network/gadgets/bf2042/GAD_ICO_Throwable_AntiTank-9a518e3b.png",
     },
     "open_throw_gren_mini": {
         "type": "Throwable",
         "gadgetName": "Mini Grenade",
-        "image": "https://cdn.gametools.network/gadgets/bf2042/GAD_ICO_Throwable_Mini-30504512.png"
+        "image": "https://cdn.gametools.network/gadgets/bf2042/GAD_ICO_Throwable_Mini-30504512.png",
     },
     "char_amm_alx": {
         "type": "Ammo Box",
@@ -952,6 +952,14 @@ TO_GAME_MAPS = {
     "flashpoint": "MP_Boulder",
     "reclaimed": "MP_Scarred",
 }
+TO_GAME_MODES = {
+    "breakthrough large": "Breakthrough",
+    "breakthrough": "BreakthroughSmall",
+    "conquest": "ConquestSmall",
+    "custom": "ModBuilderCustom",
+    "rush": "Rush",
+    "conquest large": "Conquest",
+}
 VEHICLES = {
     "air_heli_nightbird": {
         "type": "Helicopter",
@@ -1236,7 +1244,7 @@ VEHICLES = {
     "sur_land_bmd3": {
         "type": "Land",
         "type": "BMD-3",
-        "image": "https://cdn.gametools.network/vehicles/bf2042/RUM__BMD-3_Bakhcha-86f10fe1.png"
+        "image": "https://cdn.gametools.network/vehicles/bf2042/RUM__BMD-3_Bakhcha-86f10fe1.png",
     },
     "sur_world_tuktuk": {"type": "In-World", "vehicleName": "Tuk-Tuk", "image": ""},
     "sur_world_4x4": {"type": "In-World", "vehicleName": "4x4 Utility", "image": ""},
