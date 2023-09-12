@@ -669,6 +669,26 @@ MAPS = {
     "MP_Boulder": "Flashpoint",
     "MP_Scarred": "Reclaimed",
 }
+MAP_TRANSLATION_IDS = {
+    "MP_Harbor": "ID_LVL_MICA_HARBOR_NAME",
+    "MP_LightHouse": "ID_LVL_MICA_LIGHTHOUSE_NAME",
+    "MP_Frost": "ID_LVL_MICA_FROST_NAME",
+    "MP_Oasis": "ID_LVL_MICA_OASIS_NAME",
+    "MP_Rural": "ID_LVL_MICA_RURAL_NAME",
+    "MP_Port": "ID_LVL_MICA_PORT_NAME",
+    "MP_Orbital": "ID_LVL_ORBITAL_NAME",
+    "MP_Hourglass": "ID_LVL_HOURGLASS_NAME",
+    "MP_Kaleidoscope": "ID_LVL_KALEIDOSCOPE_NAME",
+    "MP_Irreversible": "ID_LVL_IRREVERSIBLE_NAME",
+    "MP_Discarded": "ID_LVL_DISCARDED_NAME",
+    "MP_LongHaul": "ID_LVL_LONGHAUL_NAME",
+    "MP_TheWall": "ID_LVL_THEWALL_NAME",
+    "MP_Ridge": "ID_LVL_RIDGE_NAME",
+    "MP_Drained": "ID_DRAINED_NAME",
+    "MP_LightsOut": "ID_LVL_LIGHTSOUT_NAME",
+    "MP_Boulder": "ID_BOULDER_NAME",
+    "MP_Scarred": "ID_LVL_SCARRED_NAME",
+}
 MAP_FACTIONS = {
     "MP_Discarded": ["FactionUS", "FactionRUS"],
     "MP_Kaleidoscope": ["FactionUS", "FactionRUS"],
