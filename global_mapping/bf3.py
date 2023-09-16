@@ -28,7 +28,7 @@ MAPS = {
     "XP5_002": "Nebandan Flats",
     "XP5_003": "Kiasar Railroad",
     "XP5_004": "Sabalan Pipeline",
-} 
+}
 RANK_NAME = {
     "BF3_ID_P_RANK00_NAME": "RECRUIT",
     "BF3_ID_P_RANK01_NAME": "PRIVATE FIRST CLASS",
@@ -176,7 +176,7 @@ RANK_NAME = {
     "BF3_ID_P_RANK97_NAME": "COLONEL SERVICE STAR 52",
     "BF3_ID_P_RANK98_NAME": "COLONEL SERVICE STAR 53",
     "BF3_ID_P_RANK99_NAME": "COLONEL SERVICE STAR 54",
-} 
+}
 WEAPONS = [
     "RPK",
     "FGM-148 JAVELIN",
@@ -267,12 +267,12 @@ WEAPONS = [
     "Mk153 SMAW",
 ]
 INTERNAL_MAP_NAME = {
-    "MP_001": "Grand Bazaar ",
+    "MP_001": "Grand Bazaar",
     "MP_003": "Tehran Highway",
     "MP_007": "Caspian Border",
-    "MP_011": "Seine Crossing ",
+    "MP_011": "Seine Crossing",
     "MP_012": "Operation Firestorm",
-    "MP_013": "Damavand Peak ",
+    "MP_013": "Damavand Peak",
     "MP_017": "Noshahr Canals",
     "MP_018": "Kharg Island",
     "MP_Subway": "Operation Métro",
