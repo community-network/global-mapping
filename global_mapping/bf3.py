@@ -1,5 +1,5 @@
 MAPS = {
-    "MP_001": "Grand Bazaar ",
+    "MP_001": "Grand Bazaar",
     "MP_003": "Tehran Highway",
     "MP_007": "Caspian Border",
     "MP_011": "Seine Crossing ",
