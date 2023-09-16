@@ -141,3 +141,10 @@ STATS_TEMPLATES = {
     "bfhweaponspopulatestats": "profile.bfhweaponsstats",
     "bfhvehiclespopulatestats": "profile.bfhvehiclesstats",
 }
+SLOTS = {
+    16: "Full",
+    1: "1-5",
+    2: "6-10",
+    4: "10+",
+    8: "Empty",
+}
