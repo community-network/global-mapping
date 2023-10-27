@@ -5,10 +5,13 @@ description = "A repo that contains all mapping required by GameTools"
 authors = ["p0lygun <solankivibhakar82@gmail.com>"]
 license = "MIT"
 readme = "README.md"
-packages = [{include = "global_mapping"}]
+packages = [{ include = "global_mapping" }]
 
 [tool.poetry.dependencies]
 python = "^3.10"
+
+[tool.poetry.dev-dependencies]
+requests = "^2.26.0"
 
 [build-system]
 requires = ["poetry-core"]

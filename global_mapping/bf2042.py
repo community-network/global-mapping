@@ -668,6 +668,7 @@ MAPS = {
     "MP_LightsOut": "Spearhead",
     "MP_Boulder": "Flashpoint",
     "MP_Scarred": "Reclaimed",
+    "MP_Salem": "Redacted",
 }
 MAP_TRANSLATION_IDS = {
     "MP_Harbor": "ID_LVL_MICA_HARBOR_NAME",
@@ -688,6 +689,7 @@ MAP_TRANSLATION_IDS = {
     "MP_LightsOut": "ID_LVL_LIGHTSOUT_NAME",
     "MP_Boulder": "ID_BOULDER_NAME",
     "MP_Scarred": "ID_LVL_SCARRED_NAME",
+    "MP_Salem": "ID_ARRIVAL_MAP_SALEM",
 }
 MAP_FACTIONS = {
     "MP_Discarded": ["FactionUS", "FactionRUS"],
@@ -708,6 +710,7 @@ MAP_FACTIONS = {
     "MP_LightsOut": ["FactionUS", "FactionRUS"],
     "MP_Boulder": ["FactionUS", "FactionRUS"],
     "MP_Scarred": ["FactionUS", "FactionRUS"],
+    "MP_Salem": ["FactionUS", "FactionRUS"],
 }
 MAP_PICTURES = {
     "MP_Harbor": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/kingston/60/b4/Map_Art_BFBC2_AH_L-60b49760.png",
@@ -728,6 +731,7 @@ MAP_PICTURES = {
     "MP_LightsOut": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/pyrite/images/Map_Art_BF2042_LO-ce4a8588.jpg",
     "MP_Boulder": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/pyrite/images/Map_Art_BF2042_BOL-215cc9e7.jpg",
     "MP_Scarred": "http://eaassets-a.akamaihd.net/battlelog/battlebinary/pyrite/images/Map_Art_BF2042_SC-91339cd1.jpg",
+    "MP_Salem": "http://eaassets-a.akamaihd.net/battlelog/battlebinary/pyrite/images/Map_Image_BF2042_SA-d546e7ce.png",
 }
 MODES = {
     "Breakthrough": "Breakthrough Large",
@@ -950,6 +954,10 @@ STAT_MAPS = {
     "kin_reclaimed": {
         "mapName": "Reclaimed",
         "image": "http://eaassets-a.akamaihd.net/battlelog/battlebinary/pyrite/images/Map_Art_BF2042_SC-91339cd1.jpg",
+    },
+    "kin_salem": {
+        "mapName": "Redacted",
+        "image": "http://eaassets-a.akamaihd.net/battlelog/battlebinary/pyrite/images/Map_Image_BF2042_SA-d546e7ce.png",
     },
 }
 TO_GAME_MAPS = {
@@ -1745,6 +1753,11 @@ WEAPONS = {
         "type": "Launcher",
         "weaponName": "Panzerschreck",
         "image": "https://cdn.gametools.network/weapons/bf2042/GRA__weapon_default_Panzerschrek-932d81bb.png",
+    },
+    "pri_ar_vhxd3": {
+        "type": "Assault Rifles",
+        "weaponName": "VHX D3",
+        "image": "https://cdn.gametools.network/weapons/bf2042/wep_itemReveal_VHSD2-bdd794b7.png",
     },
 }
 WEAPON_GROUPS = {
