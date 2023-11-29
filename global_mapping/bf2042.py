@@ -1271,7 +1271,7 @@ VEHICLES = {
     },
     "sur_land_bmd3": {
         "type": "Land",
-        "type": "BMD-3",
+        "vehicleName": "BMD-3",
         "image": "https://cdn.gametools.network/vehicles/bf2042/RUM__BMD-3_Bakhcha-86f10fe1.png",
     },
     "sur_world_tuktuk": {"type": "In-World", "vehicleName": "Tuk-Tuk", "image": ""},
@@ -1758,6 +1758,16 @@ WEAPONS = {
         "type": "Assault Rifles",
         "weaponName": "VHX D3",
         "image": "https://cdn.gametools.network/weapons/bf2042/wep_itemReveal_VHSD2-bdd794b7.png",
+    },
+    "pri_dmr_hk417": {
+        "type": "DMR",
+        "weaponName": "G428",
+        "image": "https://cdn.gametools.network/weapons/bf2042/wep_itemReveal_G28-54b643da.png",
+    },
+    "sa_laugo": {
+        "type": "Sidearm",
+        "weaponName": "L9CZ",
+        "image": "https://cdn.gametools.network/weapons/bf2042/LaugoAlien_RCE_Default-b729f65c.png",
     },
 }
 WEAPON_GROUPS = {
