@@ -1274,6 +1274,21 @@ VEHICLES = {
         "vehicleName": "BMD-3",
         "image": "https://cdn.gametools.network/vehicles/bf2042/RUM__BMD-3_Bakhcha-86f10fe1.png",
     },
+    "air_heli_pondhawk": {
+        "type": "Land",
+        "vehicleName": "YUV-2 Pondhawk",
+        "image": "https://cdn.gametools.network/vehicles/bf2042/VEH_Icon_Transport_Hoverbike-d6be6447.png",
+    },
+    "sur_stat_cram": {
+        "type": "Stationary",
+        "vehicleName": "Centurion C-RAM",
+        "image": "",
+    },
+    "sur_stat_tow": {
+        "type": "Stationary",
+        "vehicleName": "M220 TOW Launcher",
+        "image": "",
+    },
     "sur_world_tuktuk": {"type": "In-World", "vehicleName": "Tuk-Tuk", "image": ""},
     "sur_world_4x4": {"type": "In-World", "vehicleName": "4x4 Utility", "image": ""},
     "air_heli_uav1": {"type": "Helicopter", "vehicleName": "UAV-1", "image": ""},
