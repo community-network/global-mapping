@@ -150,4 +150,10 @@ SLOTS = {
     4: "10+",
     8: "Empty",
 }
-TO_BATTLELOG_PLATFORMS = {"pc": "cem_ea_id", "psn": "ps3", "xboxone": "xbox"}
+TO_BATTLELOG_PLATFORMS = {
+    "pc": "cem_ea_id",
+    "psn": "ps3",
+    "ps4": "ps3",
+    "xboxone": "xbox",
+    "xbox": "xbox",
+}
