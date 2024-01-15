@@ -1,4 +1,3 @@
-
 filters = {
     # Vehicle
     "roadkills_vh": "Vehicle - Roadkills",
@@ -15,6 +14,7 @@ filters = {
     "kw_vh": "Vehicle - Kills",
     "tp_vh": "Vehicle - Time played",  # seconds
     "vdw_vh": "Vehicle - Vehicles destroyed with",
+    "eor_vh": "Vehicle - idk",
     # Gamemode
     "kills_gm": "Gamemode - Kills",
     "assists_gm": "Gamemode - Assists",

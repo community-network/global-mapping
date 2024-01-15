@@ -7,8 +7,9 @@ from used import has_used
 # load player
 data = requests.get(
     f"https://api.gametools.network/bf2042/stats/",
-    params={"name": "Dedzigs", "raw": "true", "platform": "pc"},
+    params={"name": "Th3_Ozzy", "raw": "true", "platform": "pc"},
 ).json()
+# print(data)
 # map to a big dictrionary
 player = data.get("playerStats", [])[0]  # out of range == player not found
 current_player = player.get("player", {"personaId": 0})

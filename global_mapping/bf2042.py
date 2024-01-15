@@ -1301,6 +1301,7 @@ VEHICLES = {
         "image": "",
     },
     "sur_world_rhib_bf3": {"type": "RHIB", "vehicleName": "RHIB - BF3", "image": ""},
+    "sur_stat_40mmaa": {"type": "Stationary", "vehicleName": "40mm AA", "image": ""},
 }
 VEHICLE_GROUPS = {
     "air": {"groupName": "Air"},
