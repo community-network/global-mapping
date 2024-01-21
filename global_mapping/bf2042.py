@@ -713,25 +713,25 @@ MAP_FACTIONS = {
     "MP_Salem": ["FactionUS", "FactionRUS"],
 }
 MAP_PICTURES = {
-    "MP_Harbor": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/kingston/60/b4/Map_Art_BFBC2_AH_L-60b49760.png",
-    "MP_LightHouse": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/kingston/60/03/Map_Art_BFBC2_VP_L-600385e2.png",
-    "MP_Frost": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/kingston/25/59/Map_Art_BF1942_BB_L-2559980c.png",
-    "MP_Oasis": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/kingston/d7/d3/Map_Art_BF1942_EA_L-d7d3186f.png",
-    "MP_Rural": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/kingston/df/50/Map_Art_BF3_CB_L-df505a1f.png",
-    "MP_Port": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/kingston/41/a1/Map_Art_BF3_NC_L-41a1e94f.png",
-    "MP_Orbital": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/kingston/d1/5a/Map_Art_BF2042_ORB_L-d15a84f6.png",
-    "MP_Hourglass": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/kingston/95/35/Map_Art_BF2042_HG_L-9535453c.png",
-    "MP_Kaleidoscope": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/kingston/6b/a7/Map_Art_BF2042_KS_L-6ba702e0.png",
-    "MP_Irreversible": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/kingston/19/ee/Map_Art_BF2042_IRR_L-19eeef98.png",
-    "MP_Discarded": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/kingston/76/46/Map_Art_BF2042_DIS_L-764694ca.png",
-    "MP_LongHaul": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/kingston/22/b3/Map_Art_BF2042_LH_L-22b32735.png",
-    "MP_TheWall": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/kingston/ad/09/Map_Art_BF2042_TW_L-ad09f15f.png",
-    "MP_Ridge": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/kingston/66/e8/Map_Art_BF2042_RID_L-66e845a2.png",
-    "MP_Drained": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/kingston/d7/5f/Map_Art_BF2042_DRA_L-d75f98a0.png",
-    "MP_LightsOut": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/pyrite/images/Map_Art_BF2042_LO-ce4a8588.jpg",
-    "MP_Boulder": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/pyrite/images/Map_Art_BF2042_BOL-215cc9e7.jpg",
-    "MP_Scarred": "http://eaassets-a.akamaihd.net/battlelog/battlebinary/pyrite/images/Map_Art_BF2042_SC-91339cd1.jpg",
-    "MP_Salem": "http://eaassets-a.akamaihd.net/battlelog/battlebinary/pyrite/images/Map_Image_BF2042_SA-d546e7ce.png",
+    "MP_Harbor": "https://cdn.gametools.network/maps/bf2042/Map_Art_BFBC2_AH_L-60b49760.png",
+    "MP_LightHouse": "https://cdn.gametools.network/maps/bf2042/Map_Art_BFBC2_VP_L-600385e2.png",
+    "MP_Frost": "https://cdn.gametools.network/maps/bf2042/Map_Art_BF1942_BB_L-2559980c.png",
+    "MP_Oasis": "https://cdn.gametools.network/maps/bf2042/Map_Art_BF1942_EA_L-d7d3186f.png",
+    "MP_Rural": "https://cdn.gametools.network/maps/bf2042/Map_Art_BF3_CB_L-df505a1f.png",
+    "MP_Port": "https://cdn.gametools.network/maps/bf2042/Map_Art_BF3_NC_L-41a1e94f.png",
+    "MP_Orbital": "https://cdn.gametools.network/maps/bf2042/Map_Art_BF2042_ORB_L-d15a84f6.png",
+    "MP_Hourglass": "https://cdn.gametools.network/maps/bf2042/Map_Art_BF2042_HG_L-9535453c.png",
+    "MP_Kaleidoscope": "https://cdn.gametools.network/maps/bf2042/Map_Art_BF2042_KS_L-6ba702e0.png",
+    "MP_Irreversible": "https://cdn.gametools.network/maps/bf2042/Map_Art_BF2042_IRR_L-19eeef98.png",
+    "MP_Discarded": "https://cdn.gametools.network/maps/bf2042/Map_Art_BF2042_DIS_L-764694ca.png",
+    "MP_LongHaul": "https://cdn.gametools.network/maps/bf2042/Map_Art_BF2042_LH_L-22b32735.png",
+    "MP_TheWall": "https://cdn.gametools.network/maps/bf2042/Map_Art_BF2042_TW_L-ad09f15f.png",
+    "MP_Ridge": "https://cdn.gametools.network/maps/bf2042/Map_Art_BF2042_RID_L-66e845a2.png",
+    "MP_Drained": "https://cdn.gametools.network/maps/bf2042/Map_Art_BF2042_DRA_L-d75f98a0.png",
+    "MP_LightsOut": "https://cdn.gametools.network/maps/bf2042/Map_Art_BF2042_LO-ce4a8588.jpg",
+    "MP_Boulder": "https://cdn.gametools.network/maps/bf2042/Map_Art_BF2042_BOL-215cc9e7.jpg",
+    "MP_Scarred": "https://cdn.gametools.network/maps/bf2042/Map_Art_BF2042_SC-91339cd1.jpg",
+    "MP_Salem": "https://cdn.gametools.network/maps/bf2042/Map_Image_BF2042_SA-d546e7ce.png",
 }
 MODES = {
     "Breakthrough": "Breakthrough Large",
@@ -885,79 +885,79 @@ STAT_GAMEMODE = {
 STAT_MAPS = {
     "kin_renewal": {
         "mapName": "Renewal",
-        "image": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/kingston/ad/09/Map_Art_BF2042_TW_L-ad09f15f.png",
+        "image": "https://cdn.gametools.network/maps/bf2042/Map_Art_BF2042_TW_L-ad09f15f.png",
     },
     "kin_orbital": {
         "mapName": "Orbital",
-        "image": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/kingston/d1/5a/Map_Art_BF2042_ORB_L-d15a84f6.png",
+        "image": "https://cdn.gametools.network/maps/bf2042/Map_Art_BF2042_ORB_L-d15a84f6.png",
     },
     "kin_manifest": {
         "mapName": "Manifest",
-        "image": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/kingston/22/b3/Map_Art_BF2042_LH_L-22b32735.png",
+        "image": "https://cdn.gametools.network/maps/bf2042/Map_Art_BF2042_LH_L-22b32735.png",
     },
     "kin_discarded": {
         "mapName": "Discarded",
-        "image": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/kingston/76/46/Map_Art_BF2042_DIS_L-764694ca.png",
+        "image": "https://cdn.gametools.network/maps/bf2042/Map_Art_BF2042_DIS_L-764694ca.png",
     },
     "kin_kaleidescope": {
         "mapName": "Kaleidescope",
-        "image": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/kingston/6b/a7/Map_Art_BF2042_KS_L-6ba702e0.png",
+        "image": "https://cdn.gametools.network/maps/bf2042/Map_Art_BF2042_KS_L-6ba702e0.png",
     },
     "kin_breakaway": {
         "mapName": "Breakaway",
-        "image": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/kingston/19/ee/Map_Art_BF2042_IRR_L-19eeef98.png",
+        "image": "https://cdn.gametools.network/maps/bf2042/Map_Art_BF2042_IRR_L-19eeef98.png",
     },
     "kin_hourglass": {
         "mapName": "Hourglass",
-        "image": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/kingston/95/35/Map_Art_BF2042_HG_L-9535453c.png",
+        "image": "https://cdn.gametools.network/maps/bf2042/Map_Art_BF2042_HG_L-9535453c.png",
     },
     "kin_lightsout": {
         "mapName": "Spearhead",
-        "image": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/pyrite/images/Map_Art_BF2042_LO-ce4a8588.jpg",
+        "image": "https://cdn.gametools.network/maps/bf2042/Map_Art_BF2042_LO-ce4a8588.jpg",
     },
     "kin_exposure": {
         "mapName": "Exposure",
-        "image": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/kingston/66/e8/Map_Art_BF2042_RID_L-66e845a2.png",
+        "image": "https://cdn.gametools.network/maps/bf2042/Map_Art_BF2042_RID_L-66e845a2.png",
     },
     "kin_drained": {
         "mapName": "Stranded",
-        "image": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/kingston/d7/5f/Map_Art_BF2042_DRA_L-d75f98a0.png",
+        "image": "https://cdn.gametools.network/maps/bf2042/Map_Art_BF2042_DRA_L-d75f98a0.png",
     },
     "mica_noshahr": {
         "mapName": "Noshahr Canals",
-        "image": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/kingston/41/a1/Map_Art_BF3_NC_L-41a1e94f.png",
+        "image": "https://cdn.gametools.network/maps/bf2042/Map_Art_BF3_NC_L-41a1e94f.png",
     },
     "mica_caspian": {
         "mapName": "Caspian Border",
-        "image": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/kingston/df/50/Map_Art_BF3_CB_L-df505a1f.png",
+        "image": "https://cdn.gametools.network/maps/bf2042/Map_Art_BF3_CB_L-df505a1f.png",
     },
     "mica_valparaiso": {
         "mapName": "Valparaiso",
-        "image": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/kingston/60/03/Map_Art_BFBC2_VP_L-600385e2.png",
+        "image": "https://cdn.gametools.network/maps/bf2042/Map_Art_BFBC2_VP_L-600385e2.png",
     },
     "mica_aricaharbor": {
         "mapName": "Arica Harbor",
-        "image": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/kingston/60/b4/Map_Art_BFBC2_AH_L-60b49760.png",
+        "image": "https://cdn.gametools.network/maps/bf2042/Map_Art_BFBC2_AH_L-60b49760.png",
     },
     "mica_bulge": {
         "mapName": "Battle of the Bulge",
-        "image": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/kingston/25/59/Map_Art_BF1942_BB_L-2559980c.png",
+        "image": "https://cdn.gametools.network/maps/bf2042/Map_Art_BF1942_BB_L-2559980c.png",
     },
     "mica_elalamein": {
         "mapName": "El Alamein",
-        "image": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/kingston/d7/d3/Map_Art_BF1942_EA_L-d7d3186f.png",
+        "image": "https://cdn.gametools.network/maps/bf2042/Map_Art_BF1942_EA_L-d7d3186f.png",
     },
     "kin_flashpoint": {
         "mapName": "Flashpoint",
-        "image": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/pyrite/images/Map_Art_BF2042_BOL-215cc9e7.jpg",
+        "image": "https://cdn.gametools.network/maps/bf2042/Map_Art_BF2042_BOL-215cc9e7.jpg",
     },
     "kin_reclaimed": {
         "mapName": "Reclaimed",
-        "image": "http://eaassets-a.akamaihd.net/battlelog/battlebinary/pyrite/images/Map_Art_BF2042_SC-91339cd1.jpg",
+        "image": "https://cdn.gametools.network/maps/bf2042/Map_Art_BF2042_SC-91339cd1.jpg",
     },
     "kin_salem": {
         "mapName": "Redacted",
-        "image": "http://eaassets-a.akamaihd.net/battlelog/battlebinary/pyrite/images/Map_Image_BF2042_SA-d546e7ce.png",
+        "image": "https://cdn.gametools.network/maps/bf2042/Map_Image_BF2042_SA-d546e7ce.png",
     },
 }
 TO_GAME_MAPS = {

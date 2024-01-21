@@ -527,57 +527,57 @@ WEAPONS = [
 ]
 FACTIONS = {
     "BFFactionId_FactionAHU": {
-        "image": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/Tunguska/30/21/FactionsColorAustroHungarianEmpireLarge-e2ebe691.png",
+        "image": "https://cdn.gametools.network/factions/bf1/colored/BFFactionId_FactionAHU.png",
         "key": "AHU",
         "name": "Austro-Hungarian Empire",
     },
     "BFFactionId_FactionGER": {
-        "image": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/Tunguska/117/41/FactionsColorGermanEmpireLarge-8bd7e888.png",
+        "image": "https://cdn.gametools.network/factions/bf1/colored/BFFactionId_FactionGER.png",
         "key": "GER",
         "name": "German Empire",
     },
     "BFFactionId_FactionOTM": {
-        "image": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/Tunguska/69/73/FactionsColorOttomanEmpireLarge-45b70933.png",
+        "image": "https://cdn.gametools.network/factions/bf1/colored/BFFactionId_FactionOTM.png",
         "key": "OTM",
         "name": "Ottoman Empire",
     },
     "BFFactionId_FactionITA": {
-        "image": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/Tunguska/22/73/FactionsColorKingdomOfItalyLarge-eab7049b.png",
+        "image": "https://cdn.gametools.network/factions/bf1/colored/BFFactionId_FactionITA.png",
         "key": "ITA",
         "name": "Kingdom of Italy",
     },
     "BFFactionId_FactionUK": {
-        "image": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/Tunguska/103/37/FactionsColorUnitedKingdomLarge-672527a9.png",
+        "image": "https://cdn.gametools.network/factions/bf1/colored/BFFactionId_FactionUK.png",
         "key": "UK",
         "name": "United Kingdom",
     },
     "BFFactionId_FactionUSA": {
-        "image": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/Tunguska/10/110/FactionsColorUnitedStatesOfAmericaLarge-0a6e66a7.png",
+        "image": "https://cdn.gametools.network/factions/bf1/colored/BFFactionId_FactionUSA.png",
         "key": "USA",
         "name": "United States of America",
     },
     "BFFactionId_FactionFRA": {
-        "image": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/Tunguska/93/43/FactionsColorFranceLarge-a3d5b514.png",
+        "image": "https://cdn.gametools.network/factions/bf1/colored/BFFactionId_FactionFRA.png",
         "key": "FRA",
         "name": "France",
     },
     "BFFactionId_FactionRUS": {
-        "image": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/Tunguska/113/64/FactionsColorRussia-8f40526a.png",
+        "image": "https://cdn.gametools.network/factions/bf1/colored/BFFactionId_FactionRUS.png",
         "key": "RUS",
         "name": "Russian Empire",
     },
     "BFFactionId_FactionBOL": {
-        "image": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/Tunguska/63/106/FactionsLargeColorBolshevik-3f6ac72d.png",
+        "image": "https://cdn.gametools.network/factions/bf1/colored/BFFactionId_FactionBOL.png",
         "key": "BOL",
         "name": "Red Army",
     },
     "BFFactionId_FactionWA": {
-        "image": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/Tunguska/113/64/FactionsColorRussia-8f40526a.png",
+        "image": "https://cdn.gametools.network/factions/bf1/colored/BFFactionId_FactionWA.png",
         "key": "WA",
         "name": "White Army",
     },
     "BFFactionId_FactionUKM": {
-        "image": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/Tunguska/103/37/FactionsColorUnitedKingdomLarge-672527a9.png",
+        "image": "https://cdn.gametools.network/factions/bf1/colored/BFFactionId_FactionUKM.png",
         "key": "UK",
         "name": "Royal Marines",
     },
