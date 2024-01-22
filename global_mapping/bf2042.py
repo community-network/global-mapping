@@ -576,32 +576,10 @@ GADGETS = {
         "gadgetName": "Binoculars BF1942",
         "image": "https://cdn.gametools.network/gadgets/bf2042/GRA__Binoculars-33bc2957.png",
     },
-    "char_suppbag_crate": {"type": "Supply Bag", "gadgetName": "Crate", "image": ""},
-    "char_suppbag_pouch": {"type": "Supply Bag", "gadgetName": "Pouch", "image": ""},
     "open_equip_shrek": {
         "type": "Rocket Launcher",
         "gadgetName": "Panzerschreck",
-        "image": "",
-    },
-    "open_equip_spawnb": {
-        "type": "Equipment",
-        "gadgetName": "Insertion Beacon (Spawn)",
-        "image": "",
-    },
-    "open_throw_gren_1942": {
-        "type": "Grenade",
-        "gadgetName": "BF1942 Grenade",
-        "image": "",
-    },
-    "open_throw_gren_bc2": {
-        "type": "Grenade",
-        "gadgetName": "BC2 Grenade",
-        "image": "",
-    },
-    "open_throw_gren_bf3": {
-        "type": "Grenade",
-        "gadgetName": "BF3 Grenade",
-        "image": "",
+        "image": "https://cdn.gametools.network/weapons/bf2042/GRA__weapon_default_Panzerschrek-932d81bb.png",
     },
     "char_staticminigun": {
         "type": "Character",
@@ -627,6 +605,28 @@ GADGETS = {
         "type": "Equipment",
         "gadgetName": "EOD Bot - BF3",
         "image": "https://cdn.gametools.network/gadgets/bf2042/ALX__EODBot-38a9dbbe.png",
+    },
+    "char_suppbag_crate": {"type": "Supply Bag", "gadgetName": "Crate", "image": ""},
+    "char_suppbag_pouch": {"type": "Supply Bag", "gadgetName": "Pouch", "image": ""},
+    "open_equip_spawnb": {
+        "type": "Equipment",
+        "gadgetName": "Insertion Beacon (Spawn)",
+        "image": "",
+    },
+    "open_throw_gren_1942": {
+        "type": "Grenade",
+        "gadgetName": "BF1942 Grenade",
+        "image": "",
+    },
+    "open_throw_gren_bc2": {
+        "type": "Grenade",
+        "gadgetName": "BC2 Grenade",
+        "image": "",
+    },
+    "open_throw_gren_bf3": {
+        "type": "Grenade",
+        "gadgetName": "BF3 Grenade",
+        "image": "",
     },
     "uni_callin": {
         "type": "Universal",
@@ -1244,21 +1244,6 @@ VEHICLES = {
         "vehicleName": "CAV-BRAWLER",
         "image": "https://cdn.gametools.network/vehicles/bf2042/VEH_Icon_ArmoredCar_Patria-17d03f44.png",
     },
-    "sur_stat_kornet": {
-        "type": "Stationary",
-        "vehicleName": "9M133 Kornet",
-        "image": "",
-    },
-    "sur_world_quadbike": {
-        "type": "In-World",
-        "vehicleName": "Polaris Sportsman",
-        "image": "",
-    },
-    "sur_world_rzrbuggy": {
-        "type": "In-World",
-        "vehicleName": "Polaris RZR",
-        "image": "",
-    },
     "air_plane_su25": {
         "type": "Plane",
         "vehicleName": "Su-25TM Frogfoot",
@@ -1287,6 +1272,21 @@ VEHICLES = {
     "sur_stat_tow": {
         "type": "Stationary",
         "vehicleName": "M220 TOW Launcher",
+        "image": "",
+    },
+    "sur_stat_kornet": {
+        "type": "Stationary",
+        "vehicleName": "9M133 Kornet",
+        "image": "",
+    },
+    "sur_world_quadbike": {
+        "type": "In-World",
+        "vehicleName": "Polaris Sportsman",
+        "image": "",
+    },
+    "sur_world_rzrbuggy": {
+        "type": "In-World",
+        "vehicleName": "Polaris RZR",
         "image": "",
     },
     "sur_world_tuktuk": {"type": "In-World", "vehicleName": "Tuk-Tuk", "image": ""},
@@ -1763,12 +1763,15 @@ WEAPONS = {
         "weaponName": "Sten",
         "image": "https://cdn.gametools.network/weapons/bf2042/weapon_default_Sten-e97e81c6.png",
     },
-    "melee": {"type": "", "weaponName": "Melee", "image": ""},
-    "pri_ar_g3": {"type": "Assault Rifles", "weaponName": "G3", "image": ""},
-    "": {
-        "type": "Launcher",
-        "weaponName": "Panzerschreck",
-        "image": "https://cdn.gametools.network/weapons/bf2042/GRA__weapon_default_Panzerschrek-932d81bb.png",
+    "melee": {
+        "type": "Melee",
+        "weaponName": "Melee",
+        "image": "https://cdn.gametools.network/gadgets/bf2042/GAD_ICO_Throwable_Knife-69b21450.png",
+    },
+    "pri_ar_g3": {
+        "type": "Assault Rifles",
+        "weaponName": "G3",
+        "image": "https://cdn.gametools.network/weapons/bf2042/RUM__weapon_default_G3A3-d248f2d7.png",
     },
     "pri_ar_vhxd3": {
         "type": "Assault Rifles",

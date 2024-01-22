@@ -40,7 +40,6 @@ filters = {
     "hsw_wp": "Weapon - Headshots",
     "hfkw_wp": "Weapon - Hipfire kills",
     "mkw_wp": "Weapon - Multikills",
-    "dmg_wp": "Weapon - Damage",
     "sfw_wp": "Weapon - Shots fired",
     "shw_wp": "Weapon - Shots hit",
     "spawns_wp": "Weapon - Deployments",
