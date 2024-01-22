@@ -606,12 +606,30 @@ GADGETS = {
         "gadgetName": "EOD Bot - BF3",
         "image": "https://cdn.gametools.network/gadgets/bf2042/ALX__EODBot-38a9dbbe.png",
     },
-    "char_suppbag_crate": {"type": "Supply Bag", "gadgetName": "Crate", "image": ""},
-    "char_suppbag_pouch": {"type": "Supply Bag", "gadgetName": "Pouch", "image": ""},
+    "char_suppbag_crate": {
+        "type": "Supply Bag",
+        "gadgetName": "Crate",
+        "image": "https://cdn.gametools.network/gadgets/bf2042/SupplyBag-dfd654dc.png",
+    },
+    "char_suppbag_pouch": {
+        "type": "Supply Bag",
+        "gadgetName": "Pouch",
+        "image": "https://cdn.gametools.network/gadgets/bf2042/SupplyBag-dfd654dc.png",
+    },
     "open_equip_spawnb": {
         "type": "Equipment",
         "gadgetName": "Insertion Beacon (Spawn)",
-        "image": "",
+        "image": "https://cdn.gametools.network/gadgets/bf2042/GAD_ICO_Classes_SpawnBeacon-b6bd1f20.png",
+    },
+    "open_equip_atmine": {
+        "type": "Equipment",
+        "gadgetName": "AT-Mine",
+        "image": "https://cdn.gametools.network/gadgets/bf2042/GAD_ICO_Open_ATMine-8dda8182.png",
+    },
+    "open_equip_intscan": {
+        "type": "Equipment",
+        "gadgetName": "Intel Scanner",
+        "image": "https://cdn.gametools.network/gadgets/bf2042/ARSignalScanner-9c656704.png",
     },
     "open_throw_gren_1942": {
         "type": "Grenade",
@@ -631,16 +649,6 @@ GADGETS = {
     "uni_callin": {
         "type": "Universal",
         "gadgetName": "Call In Tablet",
-        "image": "",
-    },
-    "open_equip_intscan": {
-        "type": "Equipment",
-        "gadgetName": "Intel Scanner",
-        "image": "",
-    },
-    "open_equip_atmine": {
-        "type": "Equipment",
-        "gadgetName": "AT-Mine",
         "image": "",
     },
     "": {
