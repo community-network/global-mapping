@@ -7,7 +7,7 @@ from used import has_used
 # load player
 data = requests.get(
     f"https://api.gametools.network/bf2042/stats/",
-    params={"name": "Th3_Ozzy", "raw": "true", "platform": "pc"},
+    params={"name": "POPE_YNS14_AI", "raw": "true", "platform": "pc"},
 ).json()
 # print(data)
 # map to a big dictrionary

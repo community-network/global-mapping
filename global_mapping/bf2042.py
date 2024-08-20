@@ -995,6 +995,9 @@ TO_GAME_MAPS = {
     "spearhead": "MP_LightsOut",
     "flashpoint": "MP_Boulder",
     "reclaimed": "MP_Scarred",
+    "redacted": "MP_Salem",
+    "haven": "MP_Cassava",
+    "stadium": "MP_Stadium",
 }
 TO_GAME_MODES = {
     "breakthrough large": "Breakthrough",
