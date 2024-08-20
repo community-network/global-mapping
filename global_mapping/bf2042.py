@@ -678,6 +678,7 @@ MAPS = {
     "MP_Scarred": "Reclaimed",
     "MP_Salem": "Redacted",
     "MP_Cassava": "Haven",
+    "MP_Stadium": "Stadium",
 }
 MAP_TRANSLATION_IDS = {
     "MP_Harbor": "ID_LVL_MICA_HARBOR_NAME",
@@ -700,6 +701,7 @@ MAP_TRANSLATION_IDS = {
     "MP_Scarred": "ID_LVL_SCARRED_NAME",
     "MP_Salem": "ID_ARRIVAL_MAP_SALEM",
     "MP_Cassava": "ID_ARRIVAL_MAP_HAVEN",
+    "MP_Stadium": "ID_ARRIVAL_MAP_STADIUM",
 }
 MAP_FACTIONS = {
     "MP_Discarded": ["FactionUS", "FactionRUS"],
@@ -722,6 +724,7 @@ MAP_FACTIONS = {
     "MP_Scarred": ["FactionUS", "FactionRUS"],
     "MP_Salem": ["FactionUS", "FactionRUS"],
     "MP_Cassava": ["FactionUS", "FactionRUS"],
+    "MP_Stadium": ["FactionUS", "FactionRUS"],
 }
 MAP_PICTURES = {
     "MP_Harbor": "https://cdn.gametools.network/maps/bf2042/Map_Art_BFBC2_AH_L-60b49760.png",
@@ -744,6 +747,7 @@ MAP_PICTURES = {
     "MP_Scarred": "https://cdn.gametools.network/maps/bf2042/Map_Art_BF2042_SC-91339cd1.jpg",
     "MP_Salem": "https://cdn.gametools.network/maps/bf2042/Map_Image_BF2042_SA-d546e7ce.png",
     "MP_Cassava": "https://cdn.gametools.network/maps/bf2042/Map_Art_BF2042_CA-9320122e.jpg",
+    "MP_Stadium": "https://cdn.gametools.network/maps/bf2042/StadiumVista01_600-ee33c77a.jpg",
 }
 MODES = {
     "Breakthrough": "Breakthrough Large",
