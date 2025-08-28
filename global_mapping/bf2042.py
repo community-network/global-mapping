@@ -679,6 +679,7 @@ MAPS = {
     "MP_Salem": "Redacted",
     "MP_Cassava": "Haven",
     "MP_Stadium": "Stadium",
+    "MP_IwoJima": "Iwo Jima",
 }
 MAP_TRANSLATION_IDS = {
     "MP_Harbor": "ID_LVL_MICA_HARBOR_NAME",
@@ -702,6 +703,7 @@ MAP_TRANSLATION_IDS = {
     "MP_Salem": "ID_ARRIVAL_MAP_SALEM",
     "MP_Cassava": "ID_ARRIVAL_MAP_HAVEN",
     "MP_Stadium": "ID_ARRIVAL_MAP_STADIUM",
+    "MP_IwoJima": "ID_ARRIVAL_MAP_IWO_JIMA",
 }
 MAP_FACTIONS = {
     "MP_Discarded": ["FactionUS", "FactionRUS"],
@@ -725,6 +727,7 @@ MAP_FACTIONS = {
     "MP_Salem": ["FactionUS", "FactionRUS"],
     "MP_Cassava": ["FactionUS", "FactionRUS"],
     "MP_Stadium": ["FactionUS", "FactionRUS"],
+    "MP_IwoJima": ["FactionUS", "FactionRUS"],
 }
 MAP_PICTURES = {
     "MP_Harbor": "https://cdn.gametools.network/maps/bf2042/Map_Art_BFBC2_AH_L-60b49760.png",
@@ -748,6 +751,7 @@ MAP_PICTURES = {
     "MP_Salem": "https://cdn.gametools.network/maps/bf2042/Map_Image_BF2042_SA-d546e7ce.png",
     "MP_Cassava": "https://cdn.gametools.network/maps/bf2042/Map_Art_BF2042_CA-9320122e.jpg",
     "MP_Stadium": "https://cdn.gametools.network/maps/bf2042/StadiumVista01_600-ee33c77a.jpg",
+    "MP_IwoJima": "https://cdn.gametools.network/maps/bf2042/MP_IwoJima_LoadingScreen-600x240-426bef08.png",
 }
 MODES = {
     "Breakthrough": "Breakthrough Large",
@@ -998,6 +1002,7 @@ TO_GAME_MAPS = {
     "redacted": "MP_Salem",
     "haven": "MP_Cassava",
     "stadium": "MP_Stadium",
+    "iwo jima": "MP_IwoJima",
 }
 TO_GAME_MODES = {
     "breakthrough large": "Breakthrough",
