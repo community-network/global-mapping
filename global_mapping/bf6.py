@@ -135,6 +135,14 @@ SMALLMODES = {
     "Rush0": "RS",
     "Conquest0": "CL",
 }
+MODES = {
+    "Breakthrough0": "Breakthrough Large",
+    "BreakthroughSmall0": "Breakthrough",
+    "ConquestSmall0": "Conquest",
+    "ModBuilderCustom0": "Custom",
+    "Rush0": "Rush",
+    "Conquest0": "Conquest large",
+}
 TO_GAME_MODES = {
     "breakthrough large": "Breakthrough0",
     "breakthrough": "BreakthroughSmall0",
