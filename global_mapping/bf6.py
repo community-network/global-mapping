@@ -128,18 +128,18 @@ MAP_PICTURES = {
     "MP_Tungsten": "https://cdn.gametools.network/maps/bf6/T_UI_Tungsten_Large_OPT-935da06b.webp",
 }
 SMALLMODES = {
-    "Breakthrough": "BT",
-    "BreakthroughSmall": "BS",
-    "ConquestSmall": "CQ",
-    "ModBuilderCustom": "CM",
-    "Rush": "RS",
-    "Conquest": "CL",
+    "Breakthrough0": "BT",
+    "BreakthroughSmall0": "BS",
+    "ConquestSmall0": "CQ",
+    "ModBuilderCustom0": "CM",
+    "Rush0": "RS",
+    "Conquest0": "CL",
 }
 TO_GAME_MODES = {
-    "breakthrough large": "Breakthrough",
-    "breakthrough": "BreakthroughSmall",
-    "conquest": "ConquestSmall",
-    "custom": "ModBuilderCustom",
-    "rush": "Rush",
-    "conquest large": "Conquest",
+    "breakthrough large": "Breakthrough0",
+    "breakthrough": "BreakthroughSmall0",
+    "conquest": "ConquestSmall0",
+    "custom": "ModBuilderCustom0",
+    "rush": "Rush0",
+    "conquest large": "Conquest0",
 }
