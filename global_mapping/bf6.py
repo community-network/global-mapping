@@ -18,6 +18,16 @@ PLATFORM_REVERSE = {
     "common": 6,
     "steam": 7,
 }
+STATS_PLATFORM_REVERSE = {
+    "pc": 1,
+    "xboxone": 3,
+    "ps4": 2,
+    "xboxseries": 5,
+    "ps5": 4,
+    "xbox": 5,
+    "psn": 4,
+    "steam": 7,
+}
 REGIONS = {
     "aws-bah": "Asia",
     "aws-bom": "Asia",
