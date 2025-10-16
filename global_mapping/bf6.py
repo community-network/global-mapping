@@ -18,6 +18,16 @@ PLATFORM_REVERSE = {
     "common": 6,
     "steam": 7,
 }
+PLATFORM_FESL = {
+    0: "pc",
+    1: "pc",
+    2: "ps4",
+    3: "xboxone",
+    4: "ps4",
+    5: "xboxone",
+    6: "pc",
+    7: "pc",
+}
 STATS_PLATFORM_REVERSE = {
     "pc": 1,
     "xboxone": 3,
