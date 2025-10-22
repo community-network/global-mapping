@@ -8,6 +8,15 @@ PLATFORM = {
     6: "common",
     7: "steam",
 }
+STATS_PLATFORM = {
+    1: "pc",
+    3: "xboxone",
+    2: "ps4",
+    5: "xboxseries",
+    4: "ps5",
+    6: "common",
+    7: "steam",
+}
 PLATFORM_REVERSE = {
     "unknown": 0,
     "pc": 1,
