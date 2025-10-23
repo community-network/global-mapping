@@ -180,3 +180,41 @@ TO_GAME_MODES = {
     "rush": "Rush0",
     "conquest large": "Conquest0",
 }
+STAT_MAPS = {
+    "mpabbasid": {
+        "mapName": "Siege of Cairo",
+        "image": "https://cdn.gametools.network/maps/bf6/T_UI_Abbasid_Large_OPT-49a3761a.webp",
+    },
+    "mpaftermath": {
+        "mapName": "Empire State",
+        "image": "https://cdn.gametools.network/maps/bf6/T_UI_Aftermath_Large_OPT-bf883df1.webp",
+    },
+    "mpbattery": {
+        "mapName": "Iberian Offensive",
+        "image": "https://cdn.gametools.network/maps/bf6/T_UI_Battery_Large_OPT-034d4636.webp",
+    },
+    "mpcapstone": {
+        "mapName": "Liberation Peak",
+        "image": "https://cdn.gametools.network/maps/bf6/T_UI_Capstone_Large_OPT-2ccae694.webp",
+    },
+    "mpdumbo": {
+        "mapName": "Manhattan Bridge",
+        "image": "https://cdn.gametools.network/maps/bf6/T_UI_Dumbo_Large_OPT-20de031f.webp",
+    },
+    "mpfirestorm": {
+        "mapName": "Operation Firestorm",
+        "image": "https://cdn.gametools.network/maps/bf6/T_UI_Firestorm_Large_OPT-45d582ad.webp",
+    },
+    "mplimestone": {
+        "mapName": "Saints Quarter",
+        "image": "https://cdn.gametools.network/maps/bf6/T_UI_Limestone_Large_OPT-c9160897.webp",
+    },
+    "mpoutskirts": {
+        "mapName": "New Sobek City",
+        "image": "https://cdn.gametools.network/maps/bf6/T_UI_Outskirts_Large_OPT-bf08f756.webp",
+    },
+    "mptungsten": {
+        "mapName": "Mirak Valley",
+        "image": "https://cdn.gametools.network/maps/bf6/T_UI_Tungsten_Large_OPT-935da06b.webp",
+    },
+}
