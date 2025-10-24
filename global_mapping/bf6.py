@@ -218,3 +218,54 @@ STAT_MAPS = {
         "image": "https://cdn.gametools.network/maps/bf6/T_UI_Tungsten_Large_OPT-935da06b.webp",
     },
 }
+STAT_GAMEMODE = {
+    "MP_Escalation0": {"gamemodeName": "Escalation", "image": ""},
+    "MP_TeamDM0": {"gamemodeName": "Team deathmatch", "image": ""},
+    "Conquest0": {"gamemodeName": "Conquest", "image": ""},
+    "MP_KOTH0": {"gamemodeName": "King of the hill", "image": ""},
+    "MP_SquadDM0": {"gamemodeName": "Squad deathmatch", "image": ""},
+    "Breakthrough0": {"gamemodeName": "Breakthrough", "image": ""},
+    "Rush0": {"gamemodeName": "Rush", "image": ""},
+}
+VEHICLES = {
+    "air_panthera": {
+        "type": "Air Combat",
+        "vehicleName": "Panthera KHT",
+        "image": "https://cdn.gametools.network/vehicles/bf6/T_UI_MDV_Eurocopter_VSD0001-8003028d.webp",
+    },
+    "air_m77efalchio": {
+        "type": "Air Combat",
+        "vehicleName": "M77E Falchion",
+        "image": "https://cdn.gametools.network/vehicles/bf6/T_UI_MDV_AH64E_VSD0001-dd0a7df6.webp",
+    },
+    "sur_leoa4": {
+        "type": "Ground Combat",
+        "vehicleName": "Leo A4",
+        "image": "https://cdn.gametools.network/vehicles/bf6/T_UI_MDV_Leopard_VSD0001-f8da51ee.webp",
+    },
+    "sur_strf09a4": {
+        "type": "Ground Combat",
+        "vehicleName": "Strf 09 A4",
+        "image": "https://cdn.gametools.network/vehicles/bf6/T_UI_CV90_VSD0001-acd942b6.webp",
+    },
+    "sur_m1a2sepv3": {
+        "type": "Ground Combat",
+        "vehicleName": "M1A2 SEPv3",
+        "image": "https://cdn.gametools.network/vehicles/bf6/T_UI_MDV_Abrams_VSD0001-5412a78d.webp",
+    },
+    "sur_cheetah1a2": {
+        "type": "Ground Combat",
+        "vehicleName": "Cheetah 1A2",
+        "image": "https://cdn.gametools.network/vehicles/bf6/T_UI_MDV_Gepard_VSD0001-d796732f.webp",
+    },
+    "sur_glider96": {
+        "type": "Ground Combat",
+        "vehicleName": "Glider 96",
+        "image": "https://cdn.gametools.network/vehicles/bf6/T_UI_MDV_Flyer60_VSD0005-1569869f.webp",
+    },
+    "sur_bradley": {
+        "type": "Ground Combat",
+        "vehicleName": "M3A3 Bradley",
+        "image": "https://cdn.gametools.network/vehicles/bf6/T_UI_OB_VEH_Tank_Bradley_VSD0001_Dressing-66f252ca.webp",
+    },
+}
