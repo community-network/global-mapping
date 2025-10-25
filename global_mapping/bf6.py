@@ -269,3 +269,75 @@ VEHICLES = {
         "image": "https://cdn.gametools.network/vehicles/bf6/T_UI_OB_VEH_Tank_Bradley_VSD0001_Dressing-66f252ca.webp",
     },
 }
+WEAPONS = {
+    "mg_l110": {
+        "type": "Machine Guns",
+        "weaponName": "L110",
+        "image": "https://cdn.gametools.network/weapons/bf6/T_UI_Minimi_PKG_Factory_MED-0e29fce7.webp",
+    },
+    "smg_pw5a3": {
+        "type": "SMG-PDWs",
+        "weaponName": "PW5A3",
+        "image": "https://cdn.gametools.network/weapons/bf6/T_UI_MP5MLI_PKG_Factory_MED-2d1944b7.webp",
+    },
+    "ar_m433": {
+        "type": "Assault Rifles",
+        "weaponName": "M433",
+        "image": "https://cdn.gametools.network/weapons/bf6/T_UI_HK433_PKG_Factory_MED-b06f02f7.webp",
+    },
+    "mg_rpkm": {
+        "type": "Machine Guns",
+        "weaponName": "RPKM",
+        "image": "https://cdn.gametools.network/weapons/bf6/T_UI_RPKM_PKG_Factory_MED-755b785f.webp",
+    },
+    "sg_m87a1": {
+        "type": "Shotguns",
+        "weaponName": "M87A1",
+        "image": "https://cdn.gametools.network/weapons/bf6/T_UI_590A1_PKG_Factory_MED-4b387330.webp",
+    },
+    "pst_p18": {
+        "type": "Pistols",
+        "weaponName": "P18",
+        "image": "https://cdn.gametools.network/weapons/bf6/T_UI_M18_PKG_Factory_MED-88261bf8.webp",
+    },
+    "crb_x277": {
+        "type": "Carbines",
+        "weaponName": "M277",
+        "image": "https://cdn.gametools.network/weapons/bf6/T_UI_XM7_PKG_Factory_MED-26271094.webp",
+    },
+    "ar_b36a4": {
+        "type": "Assault Rifles",
+        "weaponName": "B36A4",
+        "image": "https://cdn.gametools.network/weapons/bf6/T_UI_G36_PKG_Factory_MED-fb5466ec.webp",
+    },
+    "ar_l85a3": {
+        "type": "Assault Rifles",
+        "weaponName": "L85A3",
+        "image": "https://cdn.gametools.network/weapons/bf6/T_UI_L85A3_PKG_Factory_MED-9bd0deaa.webp",
+    },
+    "snp_m2010": {
+        "type": "Rifles",
+        "weaponName": "M2010 ESR",
+        "image": "https://cdn.gametools.network/weapons/bf6/T_UI_M2010ESR_PKG_Factory_MED-f94fdae6.webp",
+    },
+    "sg_m1014": {
+        "type": "Shotguns",
+        "weaponName": "M1014",
+        "image": "https://cdn.gametools.network/weapons/bf6/T_UI_M1014_PKG_Factory_MED-e011854a.webp",
+    },
+    "crb_ak205": {
+        "type": "Carbines",
+        "weaponName": "AK-205",
+        "image": "https://cdn.gametools.network/weapons/bf6/T_UI_AK205_PKG_Factory_MED-6d376081.webp",
+    },
+    "dmr_svk86": {
+        "type": "DMRs",
+        "weaponName": "SVK-8.6",
+        "image": "https://cdn.gametools.network/weapons/bf6/T_UI_SVCh_PKG_Factory_MED-bb06d385.webp",
+    },
+    "smg_sgx": {
+        "type": "SMG-PDWs",
+        "weaponName": "SGX",
+        "image": "https://cdn.gametools.network/weapons/bf6/T_UI_MPX_PKG_Factory_MED-e822f017.webp",
+    },
+}
