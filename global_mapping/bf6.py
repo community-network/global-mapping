@@ -227,6 +227,28 @@ STAT_GAMEMODE = {
     "Breakthrough0": {"gamemodeName": "Breakthrough", "image": ""},
     "Rush0": {"gamemodeName": "Rush", "image": ""},
 }
+CLASSES = {
+    "assault": {
+        "className": "Assault",
+        "image": "https://cdn.gametools.network/classes/bf6/white/Assault.svg",
+        "altImage": "https://cdn.gametools.network/classes/bf6/black/Assault.svg",
+    },
+    "engineer": {
+        "className": "Engineer",
+        "image": "https://cdn.gametools.network/classes/bf6/white/Engineer.svg",
+        "altImage": "https://cdn.gametools.network/classes/bf6/black/Engineer.svg",
+    },
+    "support": {
+        "className": "Support",
+        "image": "https://cdn.gametools.network/classes/bf6/white/Support.svg",
+        "altImage": "https://cdn.gametools.network/classes/bf6/black/Support.svg",
+    },
+    "recon": {
+        "className": "Recon",
+        "image": "https://cdn.gametools.network/classes/bf6/white/Recon.svg",
+        "altImage": "https://cdn.gametools.network/classes/bf6/black/Recon.svg",
+    },
+}
 VEHICLES = {
     "air_panthera": {
         "type": "Air Combat",
