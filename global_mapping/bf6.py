@@ -290,6 +290,30 @@ VEHICLES = {
         "vehicleName": "M3A3 Bradley",
         "image": "https://cdn.gametools.network/vehicles/bf6/T_UI_OB_VEH_Tank_Bradley_VSD0001_Dressing-66f252ca.webp",
     },
+    "air_su57": {
+        "type": "Air Combat",
+        "vehicleName": "Su-57",
+        "image": "https://cdn.gametools.network/vehicles/bf6/T_UI_MDV_SU57_VSD0001-1b5aa5ee.webp",
+    },
+    "air_f61v": {
+        "type": "Air Combat",
+        "vehicleName": "F-61V",
+        "image": "https://cdn.gametools.network/vehicles/bf6/T_UI_MDV_F16_VSD0001-5f951ec9.webp",
+    },
+    "air_f39e": {
+        "type": "Air Combat",
+        "vehicleName": "F-39E",
+        "image": "https://cdn.gametools.network/vehicles/bf6/T_UI_MDV_JAS39_VSD0001-9313d717.webp",
+    },
+    "air_m77efalchion": {
+        "type": "Air Combat",
+        "vehicleName": "M77E Falchion",
+        "image": "https://cdn.gametools.network/vehicles/bf6/T_UI_MDV_AH64E_VSD0001-dd0a7df6.webp",
+    },
+}
+VEHICLE_GROUPS = {
+    "air": {"groupName": "Air Combat"},
+    "sur": {"groupName": "Ground Combat"},
 }
 WEAPONS = {
     "mg_l110": {
@@ -362,4 +386,93 @@ WEAPONS = {
         "weaponName": "SGX",
         "image": "https://cdn.gametools.network/weapons/bf6/T_UI_MPX_PKG_Factory_MED-e822f017.webp",
     },
+    "dmr_lmr27": {
+        "type": "DMRs",
+        "weaponName": "LMR27",
+        "image": "https://cdn.gametools.network/weapons/bf6/T_UI_ARADMR_PKG_Factory_MED-dfe224de.webp",
+    },
+    "crb_qbz192": {
+        "type": "Carbines",
+        "weaponName": "QBZ-192",
+        "image": "https://cdn.gametools.network/weapons/bf6/T_UI_QBZ192_PKG_Factory_MED-dc0a546b.webp",
+    },
+    "crb_m417a2": {
+        "type": "Carbines",
+        "weaponName": "M417 A2",
+        "image": "https://cdn.gametools.network/weapons/bf6/T_UI_HK417A2_PKG_Factory_MED-494ffe6e.webp",
+    },
+    "mg_drsiar": {
+        "type": "Machine Guns",
+        "weaponName": "DRS-IAR",
+        "image": "https://cdn.gametools.network/weapons/bf6/T_UI_M27IAR_PKG_Factory_MED-ae6675cd.webp",
+    },
+    "ar_kord6p67": {
+        "type": "Assault Rifles",
+        "weaponName": "KORD 6P67",
+        "image": "https://cdn.gametools.network/weapons/bf6/T_UI_6P67_PKG_Factory_MED-827b9414.webp",
+    },
+    "smg_usg90": {
+        "type": "SMG-PDWs",
+        "weaponName": "USG-90",
+        "image": "https://cdn.gametools.network/weapons/bf6/T_UI_P90_PKG_Factory_MED-2ab1db64.webp",
+    },
+    "crb_m4a1": {
+        "type": "Carbines",
+        "weaponName": "M4A1",
+        "image": "https://cdn.gametools.network/weapons/bf6/T_UI_M4A1_PKG_Factory_MED-34529a82.webp",
+    },
+    "mg_kts100mk8": {
+        "type": "Machine Guns",
+        "weaponName": "KTS100 MK8",
+        "image": "https://cdn.gametools.network/weapons/bf6/T_UI_Ultimax_PKG_Factory_MED-a8ebb482.webp",
+    },
+    "pst_m45a1": {
+        "type": "Pistols",
+        "weaponName": "M45A1",
+        "image": "https://cdn.gametools.network/weapons/bf6/T_UI_M45A1_PKG_Factory_MED-8c41691b.webp",
+    },
+    "smg_kv9": {
+        "type": "SMG-PDWs",
+        "weaponName": "KV9",
+        "image": "https://cdn.gametools.network/weapons/bf6/T_UI_Vector_PKG_Factory_MED-b5631ed7.webp",
+    },
+    "ar_sor556mk2": {
+        "type": "Assault Rifles",
+        "weaponName": "SOR-556 Mk2",
+        "image": "https://cdn.gametools.network/weapons/bf6/T_UI_SCARL_PKG_Factory_MED-b44467bb.webp",
+    },
+    "smg_pw7a2": {
+        "type": "SMG-PDWs",
+        "weaponName": "PW7A2",
+        "image": "https://cdn.gametools.network/weapons/bf6/T_UI_MP7A2_PKG_Factory_MED-406bc965.webp",
+    },
+    "mg_m123k": {
+        "type": "Machine Guns",
+        "weaponName": "M123K",
+        "image": "https://cdn.gametools.network/weapons/bf6/T_UI_MG4K_PKG_Factory_MED-cc064690.webp",
+    },
+    "pst_m44": {
+        "type": "Pistols",
+        "weaponName": "M44",
+        "image": "https://cdn.gametools.network/weapons/bf6/T_UI_RagingHunter_PKG_Factory_MED-f9773307.webp",
+    },
+    "mg_xm250": {
+        "type": "Machine Guns",
+        "weaponName": "M250",
+        "image": "https://cdn.gametools.network/weapons/bf6/T_UI_M250_PKG_Factory_MED-6e230a71.webp",
+    },
+    "smg_umg40": {
+        "type": "SMG-PDWs",
+        "weaponName": "UMG-40",
+        "image": "https://cdn.gametools.network/weapons/bf6/T_UI_UMP40_PKG_Factory_MED-22afa646.webp",
+    },
+}
+WEAPON_GROUPS = {
+    "snp": {"groupName": "Rifles"},
+    "crb": {"groupName": "Carbines"},
+    "mg": {"groupName": "Machine Guns"},
+    "sg": {"groupName": "Shotguns"},
+    "ar": {"groupName": "Assault Rifles"},
+    "smg": {"groupName": "SMG-PDWs"},
+    "dmr": {"groupName": "DMRs"},
 }
