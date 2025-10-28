@@ -466,6 +466,36 @@ WEAPONS = {
         "weaponName": "UMG-40",
         "image": "https://cdn.gametools.network/weapons/bf6/T_UI_UMP40_PKG_Factory_MED-22afa646.webp",
     },
+    "ar_tr7": {
+        "type": "Assault Rifles",
+        "weaponName": "TR-7",
+        "image": "https://cdn.gametools.network/weapons/bf6/T_UI_Tavor7_PKG_Factory_MED-e682f267.webp",
+    },
+    "smg_sl9": {
+        "type": "SMG-PDWs",
+        "weaponName": "SL9",
+        "image": "https://cdn.gametools.network/weapons/bf6/T_UI_APDW_PKG_Factory_MED-c4d1b829.webp",
+    },
+    "mg_m240l": {
+        "type": "Machine Guns",
+        "weaponName": "M240L",
+        "image": "https://cdn.gametools.network/weapons/bf6/T_UI_M240L_PKG_Factory_MED-1fa18e0c.webp",
+    },
+    "smg_scw10": {
+        "type": "SMG-PDWs",
+        "weaponName": "SCW-10",
+        "image": "https://cdn.gametools.network/weapons/bf6/T_UI_APC10_PKG_Factory_MED-716a97fb.webp",
+    },
+    "ar_nvo228e": {
+        "type": "Assault Rifles",
+        "weaponName": "NVO-228E",
+        "image": "https://cdn.gametools.network/weapons/bf6/T_UI_ACE32_PKG_Factory_MED-39a97220.webp",
+    },
+    "mg_m60": {
+        "type": "Machine Guns",
+        "weaponName": "M/60",
+        "image": "https://cdn.gametools.network/weapons/bf6/T_UI_M60E6_PKG_Factory_MED-e600bb28.webp",
+    },
 }
 WEAPON_GROUPS = {
     "snp": {"groupName": "Rifles"},
