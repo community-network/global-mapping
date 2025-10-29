@@ -554,3 +554,10 @@ WEAPON_GROUPS = {
     "smg": {"groupName": "SMG-PDWs"},
     "dmr": {"groupName": "DMRs"},
 }
+GADGETS = {
+    "callin_airstrike": {
+        "type": "Strike Packages",
+        "gadgetName": "Air Strike",
+        "image": "https://cdn.gametools.network/gadgets/bf6/T_UI_CALLINS_Airstrike_Thumb-638b4ee1.png",
+    }
+}
