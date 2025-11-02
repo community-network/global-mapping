@@ -303,6 +303,11 @@ VEHICLES = {
         "image": "https://cdn.gametools.network/vehicles/bf6/T_UI_MDV_AH64E_VSD0001-dd0a7df6.webp",
         "altImage": "https://cdn.gametools.network/vehicles/bf6/white/T_UI_MDV_AH64E_VSD0001-dd0a7df6.webp",
     },
+    "sur_vector": {
+        "type": "Ground Transport",
+        "vehicleName": "VECTOR",
+        "image": "https://cdn.gametools.network/vehicles/bf6/T_UI_MDV_Vector_VSD0002-241efa80.webp",
+    },
 }
 VEHICLE_GROUPS = {
     "air": {"groupName": "Air Combat"},
