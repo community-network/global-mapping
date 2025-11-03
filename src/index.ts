@@ -1,0 +1,16 @@
+export * as battlebit from "./generated_ts/battlebit";
+export * as battlelog from "./generated_ts/battlelog";
+export * as bf1 from "./generated_ts/bf1";
+export * as bf1942 from "./generated_ts/bf1942";
+export * as bf2 from "./generated_ts/bf2";
+export * as bf2042 from "./generated_ts/bf2042";
+export * as bf2142 from "./generated_ts/bf2142";
+export * as bf3 from "./generated_ts/bf3";
+export * as bf4 from "./generated_ts/bf4";
+export * as bf5 from "./generated_ts/bf5";
+export * as bf6 from "./generated_ts/bf6";
+export * as bfbc2 from "./generated_ts/bfbc2";
+export * as bfh from "./generated_ts/bfh";
+export * as bfvietnam from "./generated_ts/bfvietnam";
+export * as marne from "./generated_ts/marne";
+export * as other from "./generated_ts/other";
