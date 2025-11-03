@@ -103,6 +103,8 @@ MAPS = {
     "MP_Limestone": "Saints Quarter",
     "MP_Outskirts": "New Sobek City",
     "MP_Tungsten": "Mirak Valley",
+    "MP_Granite_ClubHouse_Portal": "Club House",
+    "MP_Granite_TechCampus_Portal": "Tech Center",
 }
 TO_GAME_MAPS = {
     "siege of cairo": "MP_Abbasid",
@@ -114,6 +116,8 @@ TO_GAME_MAPS = {
     "saints quarter": "MP_Limestone",
     "new sobek city": "MP_Outskirts",
     "mirak valley": "MP_Tungsten",
+    "club house": "MP_Granite_ClubHouse_Portal",
+    "tech center": "MP_Granite_TechCampus_Portal",
 }
 MAP_TRANSLATION_IDS = {
     "MP_Abbasid": "ID_MP_LVL_ABBASID_NAME",
@@ -125,6 +129,8 @@ MAP_TRANSLATION_IDS = {
     "MP_Limestone": "ID_MP_LVL_LIMESTONE_NAME",
     "MP_Outskirts": "ID_MP_LVL_OUTSKIRTS_NAME",
     "MP_Tungsten": "ID_MP_LVL_TUNGSTEN_NAME",
+    "MP_Granite_ClubHouse_Portal": "ID_ARRIVAL_MAP_GRANITE_CLUB_HOUSE",
+    "MP_Granite_TechCampus_Portal": "ID_ARRIVAL_MAP_GRANITE_TECH_CENTER",
 }
 MAP_PICTURES = {
     "MP_Abbasid": "https://cdn.gametools.network/maps/bf6/T_UI_Abbasid_Large_OPT-49a3761a.webp",
@@ -136,6 +142,8 @@ MAP_PICTURES = {
     "MP_Limestone": "https://cdn.gametools.network/maps/bf6/T_UI_Limestone_Large_OPT-c9160897.webp",
     "MP_Outskirts": "https://cdn.gametools.network/maps/bf6/T_UI_Outskirts_Large_OPT-bf08f756.webp",
     "MP_Tungsten": "https://cdn.gametools.network/maps/bf6/T_UI_Tungsten_Large_OPT-935da06b.webp",
+    "MP_Granite_ClubHouse_Portal": "https://cdn.gametools.network/maps/bf6/T_UI_Granite_Portal_05_Thumb_SML-74ea7be7.webp",
+    "MP_Granite_TechCampus_Portal": "https://cdn.gametools.network/maps/bf6/T_UI_Granite_Portal_06_Thumb_SML-80099ba6.webp",
 }
 SMALLMODES = {
     "Breakthrough0": "BT",
