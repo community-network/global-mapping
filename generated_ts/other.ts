@@ -1,0 +1,15 @@
+export const all_bf_games = ['bf2', 'bf3', 'bf4', 'bfh', 'bf1', 'bf5'];
+export const cookie = {'sid': '', 'remid': ''};
+export const frontend_game_fullname = {'tunguska': 'Battlefield 1', 'casablanca': 'Battlefield V', 'kingston': 'Battlefield 2042', 'bf4': 'Battlefield 4', 'bf3': 'Battlefield 3', 'bfh': 'Battlefield Hardline', 'bf2': 'Battlefield 2', 'bfbc2': 'Battlefield Bad Company 2'};
+export const frontend_game_translation = {'tunguska': 'bf1', 'casablanca': 'bfv', 'kingston': 'bf2042', 'bf4': 'bf4', 'bfh': 'bfh', 'bf3': 'bf3', 'bf2': 'bf2', 'bfbc2': 'bfbc2'};
+export const gamemodes = {'TugOfWar': 'Frontlines', 'Domination': 'Domination', 'Breakthrough': 'Shock Operations', 'Rush': 'Rush', 'BreakthroughLarge': 'Operations', 'Conquest': 'Conquest', 'Possession': 'War pigeons', 'TeamDeathMatch': 'Team Deathmatch', 'AirAssault': 'Air assault', 'ZoneControl': 'Rush', 'Airborne': 'Airborne', 'FinalStand': 'Grand Operations', 'Outpost': 'Outpost', 'RushLarge': 'Rush large', 'Frontlines': 'Frontlines', 'FrontlinesMedium': 'Frontlines Medium', 'SquadConquest': 'Squad Conquest', 'Conquestlarge': 'Conquest large'};
+export const joinme_games = ['tunguska', 'bf1'];
+export const old_games = ['bf2hub', 'bfbc2'];
+export const platoon_roles = {'role9': 'General', 'role6': 'Colonel', 'role3': 'Lieutenant', 'role0': 'Private'};
+export const smallmodes = {'Conquest': 'CQ', 'Domination': 'DM', 'TugOfWar': 'FL', 'Rush': 'RS', 'BreakthroughLarge': 'OP', 'Breakthrough': 'SO', 'Possession': 'WP', 'TeamDeathMatch': 'TM', 'ZoneControl': 'SD', 'AirAssault': 'AA'};
+export const sparta_common_all_stats_methods = ['Progression.getWeaponsByPersonaId', 'Progression.getVehiclesByPersonaId', 'Platoons.getActivePlatoon', 'Platoons.getPlatoons', 'Progression.getFilteredCodexByPersonaId', 'Progression.getDogtagsByPersonaId', 'Progression.getMedalsByPersonaId'];
+export const sparta_games = ['tunguska', 'casablanca'];
+export const sparta_platforms = {'cem_ea_id': 'pc', 'ps3': 'psn', 'xbox': 'xbox'};
+export const sparta_regions = ['Afr', 'AU', 'OC', 'AC', 'SAm', 'EU', 'NAm', 'Asia'];
+export const sparta_titles = ['pc', 'xbox', 'psn'];
+export const teamnames = ['team 2', 'team 1'];

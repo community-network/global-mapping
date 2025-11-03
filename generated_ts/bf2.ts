@@ -1,0 +1,6 @@
+export const kits = ['Anti-Tank', 'Assault', 'Engineer', 'Medic', 'Spec-Ops', 'Support', 'Sniper'];
+export const maps = ['Dalian Plant', 'Daqing Oilfields', 'Dragon Valley', 'Fushe Pass', 'Greatwall', 'Gulf Of Oman', 'Highway Tampa', 'Kubra Dam', 'Mashtuur City', 'Midnight Sun', 'Operation Blue Pearl', 'Operation Clean Sweep', 'Operation Harvest', 'Operation Road Rage', 'Operation Smoke Screen', 'Road To Jalalabad', 'Sharqi Peninsula', 'Songhua Stalemate', 'Strike At Karkand', 'Taraba Quarry', 'Wake Island 2007', 'Zatar Wetlands'];
+export const mode = {'gpm_cq': 'Conquest', 'gpm_coop': 'Co-op'};
+export const smallmode = {'gpm_cq': 'CQ', 'gpm_coop': 'COOP'};
+export const vehicles = ['Armor', 'Jet', 'Helicopter', 'Transport', 'Anti-Air', 'Ground-Def.'];
+export const weapons = ['Assault-Rifle', 'Grenade-Launcher', 'Carbine', 'Light Machine Gun', 'Sniper Rifle', 'Pistol', 'Anti-Tank', 'Sub-Machine Gun', 'Shotgun', 'Knife', 'Defibrillator', 'Explosives', 'Grenade'];
