@@ -582,3 +582,4 @@ GADGETS = {
         "image": "https://cdn.gametools.network/gadgets/bf6/T_UI_CALLINS_Airstrike_Thumb-638b4ee1.png",
     }
 }
+test = {}
