@@ -581,6 +581,21 @@ WEAPONS = {
         "weaponName": "18.5KS-K",
         "image": "https://cdn.gametools.network/weapons/bf6/T_UI_185KSK_PKG_Factory_MED-432c353f.webp",
     },
+    "pst_es57": {
+        "type": "Pistols",
+        "weaponName": "ES 5.7",
+        "image": "https://cdn.gametools.network/weapons/bf6/T_UI_M18_PKG_Factory_MED-88261bf8.webp",  # incorrect image!
+    },
+    "dmr_m39emr": {
+        "type": "DMRs",
+        "weaponName": "M39 EMR",
+        "image": "https://cdn.gametools.network/weapons/bf6/T_UI_SVCh_PKG_Factory_MED-bb06d385.webp",  # incorrect image!
+    },
+    "snp_sv98": {
+        "type": "Rifles",
+        "weaponName": "SV-98",
+        "image": "https://cdn.gametools.network/weapons/bf6/T_UI_M2010ESR_PKG_Factory_MED-f94fdae6.webp",  # incorrect image!
+    },
 }
 WEAPON_GROUPS = {
     "snp": {"groupName": "Rifles"},
