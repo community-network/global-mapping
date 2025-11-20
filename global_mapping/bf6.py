@@ -550,36 +550,43 @@ WEAPONS = {
         "type": "Rifles",
         "weaponName": "PSR",
         "image": "https://cdn.gametools.network/weapons/bf6/T_UI_MRAD_PKG_Factory_MED-5035ce99.webp",
+        "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_MRAD_PKG_Factory_MED-5035ce99.webp",
     },
     "dmr_svdm": {
         "type": "DMRs",
         "weaponName": "SVDM",
         "image": "https://cdn.gametools.network/weapons/bf6/T_UI_SVDM_PKG_Factory_MED-b6c9aa50.webp",
+        "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_SVDM_PKG_Factory_MED-b6c9aa50.webp",
     },
     "ar_ak4d": {
         "type": "Assault Rifles",
         "weaponName": "AK4D",
         "image": "https://cdn.gametools.network/weapons/bf6/T_UI_G3A4_PKG_Factory_MED-0575cf00.webp",
+        "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_G3A4_PKG_Factory_MED-0575cf00.webp",
     },
     "crb_sor300sc": {
         "type": "Carbines",
         "weaponName": "SOR-300SC",
         "image": "https://cdn.gametools.network/weapons/bf6/T_UI_SCARSC_PKG_Factory_MED-7a6a50ff.webp",
+        "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_SCARSC_PKG_Factory_MED-7a6a50ff.webp",
     },
     "crb_sg553r": {
         "type": "Carbines",
         "weaponName": "SG 553R",
         "image": "https://cdn.gametools.network/weapons/bf6/T_UI_SIG553R_PKG_Factory_MED-afc2dfa8.webp",
+        "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_SIG553R_PKG_Factory_MED-afc2dfa8.webp",
     },
     "crb_grtbc": {
         "type": "Carbines",
         "weaponName": "GRT-BC",
         "image": "https://cdn.gametools.network/weapons/bf6/T_UI_MSBSGROTB_PKG_Factory_MED-25acf006.webp",
+        "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_MSBSGROTB_PKG_Factory_MED-25acf006.webp",
     },
     "sg_185ksk": {
         "type": "Shotguns",
         "weaponName": "18.5KS-K",
         "image": "https://cdn.gametools.network/weapons/bf6/T_UI_185KSK_PKG_Factory_MED-432c353f.webp",
+        "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_MSBSGROTB_PKG_Factory_MED-25acf006.webp",
     },
     "pst_es57": {
         "type": "Pistols",
