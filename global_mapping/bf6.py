@@ -206,6 +206,14 @@ STAT_MAPS = {
         "mapName": "Mirak Valley",
         "image": "https://cdn.gametools.network/maps/bf6/T_UI_Tungsten_Large_OPT-935da06b.webp",
     },
+    "mpbadlands": {
+        "mapName": "Blackwell Fields",
+        "image": "https://cdn.gametools.network/maps/bf6/Battlefield_6_Blackwell_Fields.webp",
+    },
+    "ftpgranite": {
+        "mapName": "REDSEC",
+        "image": "https://cdn.gametools.network/maps/bf6/Battlefield_6_Redsec.webp",
+    },
 }
 STAT_GAMEMODE = {
     "MP_Escalation0": {"gamemodeName": "Escalation", "image": ""},
