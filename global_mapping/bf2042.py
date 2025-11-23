@@ -760,15 +760,6 @@ MODES = {
     "ModBuilderCustom": "Custom",
     "Rush": "Rush",
     "Conquest": "Conquest large",
-    "GraniteDuo0": "Redsec Duos",
-    "GraniteSquad0": "Redsec Quads",
-    "GraniteGauntlet0": "Redsec Gauntlet",
-}
-
-REDSEC_MODES = {
-    "GraniteDuo0": "Duos",
-    "GraniteSquad0": "Quads",
-    "GraniteGauntlet0": "Gauntlet",
 }
 
 PLATFORM = {
@@ -867,9 +858,6 @@ SMALLMODES = {
     "ModBuilderCustom": "CM",
     "Rush": "RS",
     "Conquest": "CL",
-    "GraniteDuo0": "RD",
-    "GraniteSquad0": "RQ",
-    "GraniteGauntlet0": "RG",
 }
 STATS_PLATFORM = {0: "pc", 1: "xboxone", 2: "ps4"}
 STATS_PLATFORM_REVERSE = {
@@ -1024,9 +1012,6 @@ TO_GAME_MODES = {
     "custom": "ModBuilderCustom",
     "rush": "Rush",
     "conquest large": "Conquest",
-    "redsec duos": "GraniteDuo0",
-    "redsec quads": "GraniteSquad0",
-    "redsec gauntlet": "GraniteGauntlet0",
 }
 VEHICLES = {
     "air_heli_nightbird": {

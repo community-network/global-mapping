@@ -152,6 +152,9 @@ SMALLMODES = {
     "ModBuilderCustom0": "CM",
     "Rush0": "RS",
     "Conquest0": "CL",
+    "GraniteDuo0": "RD",
+    "GraniteSquad0": "RQ",
+    "GraniteGauntlet0": "RG",
 }
 MODES = {
     "Breakthrough0": "Breakthrough Large",
@@ -160,6 +163,14 @@ MODES = {
     "ModBuilderCustom0": "Custom",
     "Rush0": "Rush",
     "Conquest0": "Conquest large",
+    "GraniteDuo0": "Redsec Duos",
+    "GraniteSquad0": "Redsec Quads",
+    "GraniteGauntlet0": "Redsec Gauntlet",
+}
+REDSEC_MODES = {
+    "GraniteDuo0": "Duos",
+    "GraniteSquad0": "Quads",
+    "GraniteGauntlet0": "Gauntlet",
 }
 TO_GAME_MODES = {
     "breakthrough large": "Breakthrough0",
@@ -168,6 +179,9 @@ TO_GAME_MODES = {
     "custom": "ModBuilderCustom0",
     "rush": "Rush0",
     "conquest large": "Conquest0",
+    "redsec duos": "GraniteDuo0",
+    "redsec quads": "GraniteSquad0",
+    "redsec gauntlet": "GraniteGauntlet0",
 }
 STAT_MAPS = {
     "mpabbasid": {
