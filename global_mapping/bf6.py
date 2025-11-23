@@ -1,3 +1,4 @@
+SEASONS = {"Season1": "Season 1"}
 PLATFORM = {
     0: "unknown",
     1: "pc",
