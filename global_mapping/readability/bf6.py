@@ -169,14 +169,18 @@ async def get_stats(
 
         current_result["hasResults"] = result_count > 0
         tasks = []
+        filtered_modes = {
+            k: v for k, v in BF6.MODES.items() if k not in BF6.REDSEC_MODES.keys()
+        }
         tasks.append(get_weapons(global_stats, BF6.WEAPONS, format_values))
         tasks.append(get_vehicles(global_stats, BF6.VEHICLES))
         tasks.append(get_weapons(global_stats, BF6.WEAPON_GROUPS, format_values))
         tasks.append(get_vehicles(global_stats, BF6.VEHICLE_GROUPS))
         tasks.append(get_classes(global_stats))
         tasks.append(get_maps(global_stats, format_values))
+        tasks.append(get_seasons(all_fields, filtered_modes))
         tasks.append(get_gadgets(global_stats))
-        tasks.append(get_redsec(all_fields))
+        tasks.append(get_seasons(all_fields, BF6.REDSEC_MODES))
 
         if multiple:
             platform_id = current_player.get("platformId", 0)
@@ -194,6 +198,7 @@ async def get_stats(
             current_result["vehicleGroups"],
             current_result["classes"],
             current_result["maps"],
+            current_result["seasons"],
             current_result["gadgets"],
             current_result["redsec"],
         ) = await asyncio.gather(*tasks)
@@ -590,11 +595,11 @@ async def players(player_list):
     return player_list
 
 
-async def get_redsec(all_fields: list[dict[str, Any]]):
+async def get_seasons(all_fields: list[dict[str, Any]], MODES: dict):
     seasons = []
     for season_id, season in BF6.SEASONS.items():
         modes = []
-        for internal_mode_name, mode_name in BF6.REDSEC_MODES.items():
+        for internal_mode_name, mode_name in MODES.items():
             index: dict[str, int] = {}
             for item in all_fields:
                 fields = item.get("fields", [])
@@ -669,7 +674,7 @@ async def get_redsec(all_fields: list[dict[str, Any]]):
                     "score": score,
                     "secondsPlayed": time_played,
                     "timePlayed": str(datetime.timedelta(seconds=time_played)),
-                    "extrActions": extractions,
+                    "extractions": extractions,
                 }
             )
 
