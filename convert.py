@@ -5,7 +5,11 @@ modules = []
 
 for module in map(
     __import__,
-    [f"global_mapping.{file.replace('.py', '')}" for file in files if "_" not in file],
+    [
+        f"global_mapping.{file.replace('.py', '')}"
+        for file in files
+        if "_" not in file and ".py" in file
+    ],
 ):
     modules = [(v, getattr(module, v)) for v in dir(module) if v[:2] != "__"]
 
