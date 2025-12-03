@@ -14,4 +14,3 @@ export * as bfh from "./generated_ts/bfh";
 export * as bfvietnam from "./generated_ts/bfvietnam";
 export * as marne from "./generated_ts/marne";
 export * as other from "./generated_ts/other";
-export * as readability from "./generated_ts/readability";
