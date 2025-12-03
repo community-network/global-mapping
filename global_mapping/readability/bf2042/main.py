@@ -12,17 +12,9 @@ from global_mapping.readability.bf2042.saved_items.progresstion_types import (
     getProgressionType,
 )
 from global_mapping.readability.exceptions import NotFoundException
+from global_mapping.readability.shared import format_percentage_value
 
 logger = logging.getLogger("api")
-
-
-def format_percentage_value(
-    value: int | float, format_value: bool = True
-) -> str | int | float:
-    if format_value:
-        return f"{value}%"
-    else:
-        return value
 
 
 async def settingTranslation(settings_translation: dict, settings: list[dict]):
