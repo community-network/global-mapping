@@ -97,52 +97,72 @@ SHORT_REGIONS = {
 MAPS = {
     "MP_Abbasid": "Siege of Cairo",
     "MP_Aftermath": "Empire State",
+    "MP_Badlands": "Blackwell Fields",
     "MP_Battery": "Iberian Offensive",
     "MP_Capstone": "Liberation Peak",
     "MP_Dumbo": "Manhattan Bridge",
+    "MP_Eastwood": "Eastwood",
     "MP_FireStorm": "Operation Firestorm",
     "MP_Limestone": "Saints Quarter",
     "MP_Outskirts": "New Sobek City",
     "MP_Tungsten": "Mirak Valley",
+    "MP_Portal_Sand": "Empire State",
+    "MP_Granite": "Fort Lyndon",
+    "MP_Granite_MainStreet_Portal": "Gulf of Lyndon",
+    # "MP_Granite_MilitaryRnD_Portal": "",
+    "MP_Granite_Marina_Portal": "Eastwood",
     "MP_Granite_ClubHouse_Portal": "Club House",
     "MP_Granite_TechCampus_Portal": "Tech Center",
 }
 TO_GAME_MAPS = {
     "siege of cairo": "MP_Abbasid",
     "empire state": "MP_Aftermath",
+    "blackwell fields": "MP_Badlands",
     "iberian offensive": "MP_Battery",
     "liberation peak": "MP_Capstone",
     "manhattan bridge": "MP_Dumbo",
+    "eastwood": "MP_Eastwood",
     "operation firestorm": "MP_FireStorm",
     "saints quarter": "MP_Limestone",
     "new sobek city": "MP_Outskirts",
     "mirak valley": "MP_Tungsten",
+    # "empire state": "MP_Portal_Sand",
+    "gulf of lyndon": "MP_Granite_MainStreet_Portal",
     "club house": "MP_Granite_ClubHouse_Portal",
     "tech center": "MP_Granite_TechCampus_Portal",
 }
 MAP_TRANSLATION_IDS = {
     "MP_Abbasid": "ID_MP_LVL_ABBASID_NAME",
     "MP_Aftermath": "ID_MP_LVL_AFTERMATH_NAME",
+    "MP_Badlands": "ID_MP_LVL_BADLANDS_NAME",
     "MP_Battery": "ID_MP_LVL_BATTERY_NAME",
-    "MP_Capstone": "ID_ARRIVAL_MAP_CAPSTONE",
+    "MP_Capstone": "ID_MP_LVL_CAPSTONE_NAME",
     "MP_Dumbo": "ID_MP_LVL_DUMBO_NAME",
+    "MP_Eastwood": "ID_MP_LVL_EASTWOOD_NAME",
     "MP_FireStorm": "ID_MP_LVL_FIRESTORM_NAME",
     "MP_Limestone": "ID_MP_LVL_LIMESTONE_NAME",
     "MP_Outskirts": "ID_MP_LVL_OUTSKIRTS_NAME",
     "MP_Tungsten": "ID_MP_LVL_TUNGSTEN_NAME",
+    "MP_Portal_Sand": "ID_MP_LVL_AFTERMATH_NAME",
+    # "MP_Granite_MainStreet_Portal": "Gulf of Lyndon", ????
+    "MP_Granite_Marina_Portal": "ID_MP_LVL_EASTWOOD_NAME",
     "MP_Granite_ClubHouse_Portal": "ID_ARRIVAL_MAP_GRANITE_CLUB_HOUSE",
     "MP_Granite_TechCampus_Portal": "ID_ARRIVAL_MAP_GRANITE_TECH_CENTER",
 }
 MAP_PICTURES = {
     "MP_Abbasid": "https://cdn.gametools.network/maps/bf6/T_UI_Abbasid_Large_OPT-49a3761a.webp",
     "MP_Aftermath": "https://cdn.gametools.network/maps/bf6/T_UI_Aftermath_Large_OPT-bf883df1.webp",
+    "MP_Badlands": "https://cdn.gametools.network/maps/bf6/T_UI_Badlands_Large_OPT-6885eb83.webp",
     "MP_Battery": "https://cdn.gametools.network/maps/bf6/T_UI_Battery_Large_OPT-034d4636.webp",
     "MP_Capstone": "https://cdn.gametools.network/maps/bf6/T_UI_Capstone_Large_OPT-2ccae694.webp",
+    "MP_Eastwood": "https://cdn.gametools.network/maps/bf6/T_UI_Eastwood_Large_OPT-3bfa6a6f.webp",
     "MP_Dumbo": "https://cdn.gametools.network/maps/bf6/T_UI_Dumbo_Large_OPT-20de031f.webp",
     "MP_FireStorm": "https://cdn.gametools.network/maps/bf6/T_UI_Firestorm_Large_OPT-45d582ad.webp",
     "MP_Limestone": "https://cdn.gametools.network/maps/bf6/T_UI_Limestone_Large_OPT-c9160897.webp",
     "MP_Outskirts": "https://cdn.gametools.network/maps/bf6/T_UI_Outskirts_Large_OPT-bf08f756.webp",
     "MP_Tungsten": "https://cdn.gametools.network/maps/bf6/T_UI_Tungsten_Large_OPT-935da06b.webp",
+    "MP_Portal_Sand": "https://cdn.gametools.network/maps/bf6/T_UI_Aftermath_Large_OPT-bf883df1.webp",
+    "MP_Granite_Marina_Portal": "https://cdn.gametools.network/maps/bf6/T_UI_Eastwood_Large_OPT-3bfa6a6f.webp",
     "MP_Granite_ClubHouse_Portal": "https://cdn.gametools.network/maps/bf6/T_UI_Granite_Portal_05_Thumb_SML-74ea7be7.webp",
     "MP_Granite_TechCampus_Portal": "https://cdn.gametools.network/maps/bf6/T_UI_Granite_Portal_06_Thumb_SML-80099ba6.webp",
 }
@@ -228,6 +248,10 @@ STAT_MAPS = {
     "ftpgranite": {
         "mapName": "REDSEC",
         "image": "https://cdn.gametools.network/maps/bf6/Battlefield_6_Redsec.webp",
+    },
+    "mpeastwood": {
+        "mapName": "Eastwood",
+        "image": "https://cdn.gametools.network/maps/bf6/T_UI_Eastwood_Large_OPT-3bfa6a6f.webp",
     },
 }
 STAT_GAMEMODE = {
@@ -338,6 +362,11 @@ VEHICLES = {
         "type": "Ground Transport",
         "vehicleName": "VECTOR",
         "image": "https://cdn.gametools.network/vehicles/bf6/T_UI_MDV_Vector_VSD0002-241efa80.webp",
+    },
+    "sur_travmark2": {
+        "type": "Ground Transport",
+        "vehicleName": "Traverser Mark 2",
+        "image": "https://cdn.gametools.network/vehicles/bf6/T_UI_Marauder_VSD0001_Icon_25667539-c29e2338.png",
     },
 }
 VEHICLE_GROUPS = {
@@ -606,17 +635,37 @@ WEAPONS = {
     "pst_es57": {
         "type": "Pistols",
         "weaponName": "ES 5.7",
-        "image": "https://cdn.gametools.network/weapons/bf6/T_UI_M18_PKG_Factory_MED-88261bf8.webp",  # incorrect image!
+        "image": "https://cdn.gametools.network/weapons/bf6/T_UI_FiveSeven_PKG_Factory_MED-c540cde7.webp",
     },
     "dmr_m39emr": {
         "type": "DMRs",
         "weaponName": "M39 EMR",
-        "image": "https://cdn.gametools.network/weapons/bf6/T_UI_SVCh_PKG_Factory_MED-bb06d385.webp",  # incorrect image!
+        "image": "https://cdn.gametools.network/weapons/bf6/T_UI_M39EMR_PKG_Factory_MED-e17b5963.webp",
     },
     "snp_sv98": {
         "type": "Rifles",
         "weaponName": "SV-98",
-        "image": "https://cdn.gametools.network/weapons/bf6/T_UI_M2010ESR_PKG_Factory_MED-f94fdae6.webp",  # incorrect image!
+        "image": "https://cdn.gametools.network/weapons/bf6/T_UI_SV98M_PKG_Factory_MED-c38f085a.webp",
+    },
+    "pst_m357trait": {
+        "type": "Pistols",
+        "weaponName": "M357 Trait",
+        "image": "https://cdn.gametools.network/weapons/bf6/T_UI_TRR8_PKG_Factory_MED-815434c3.webp",
+    },
+    "pst_ggh22": {
+        "type": "Pistols",
+        "weaponName": "GGH-22",
+        "image": "https://cdn.gametools.network/weapons/bf6/T_UI_G22_PKG_Factory_MED-0faaf1e3.webp",
+    },
+    "snp_miniscout": {
+        "type": "Rifles",
+        "weaponName": "Mini Scout",
+        "image": "https://cdn.gametools.network/weapons/bf6/T_UI_MiniFix_PKG_Factory_MED-c8bab5ff.webp",
+    },
+    "sg_db12": {
+        "type": "Shotguns",
+        "weaponName": "DB-12",
+        "image": "https://cdn.gametools.network/weapons/bf6/T_UI_DP12_PKG_Factory_MED-0335554d.webp",
     },
 }
 WEAPON_GROUPS = {
