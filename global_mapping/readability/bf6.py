@@ -165,7 +165,7 @@ async def get_stats(
                 for item in category.get("catFields", []):
                     fields: list[dict[str, str]] = item.get("fields", [])
                     if any(field.get("value", "") == "global" for field in fields):
-                        global_stats[item["name"]] = item["value"]
+                        global_stats[item.get("name")] = item.get("value")
 
         current_result["hasResults"] = result_count > 0
         tasks = []
