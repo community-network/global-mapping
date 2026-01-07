@@ -682,5 +682,20 @@ GADGETS = {
         "type": "Strike Packages",
         "gadgetName": "Air Strike",
         "image": "https://cdn.gametools.network/gadgets/bf6/T_UI_CALLINS_Airstrike_Thumb-638b4ee1.png",
-    }
+    },
+    "mpaps": {
+        "type": "Deployable Gadgets",
+        "gadgetName": "MP-APS",
+        "image": "https://cdn.gametools.network/gadgets/bf6/T_UI_MPAPS_Icon-b735994d.png",
+    },
+    "gpdis": {
+        "type": "Deployable Gadgets",
+        "gadgetName": "GPDIS",
+        "image": "https://cdn.gametools.network/gadgets/bf6/T_UI_EIDOS_Icon-2273a3ee.png",
+    },
+    "c4": {
+        "type": "Explosives",
+        "gadgetName": "C-4 Explosives",
+        "image": "https://cdn.gametools.network/gadgets/bf6/T_UI_C4_Icon-330d6ee2.png",
+    },
 }
