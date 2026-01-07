@@ -144,6 +144,7 @@ MAP_TRANSLATION_IDS = {
     "MP_Outskirts": "ID_MP_LVL_OUTSKIRTS_NAME",
     "MP_Tungsten": "ID_MP_LVL_TUNGSTEN_NAME",
     "MP_Portal_Sand": "ID_MP_LVL_AFTERMATH_NAME",
+    "MP_Granite": "ID_ARRIVAL_MAP_GRANITE",
     # "MP_Granite_MainStreet_Portal": "Gulf of Lyndon", ????
     "MP_Granite_Marina_Portal": "ID_MP_LVL_EASTWOOD_NAME",
     "MP_Granite_ClubHouse_Portal": "ID_ARRIVAL_MAP_GRANITE_CLUB_HOUSE",
@@ -162,6 +163,7 @@ MAP_PICTURES = {
     "MP_Outskirts": "https://cdn.gametools.network/maps/bf6/T_UI_Outskirts_Large_OPT-bf08f756.webp",
     "MP_Tungsten": "https://cdn.gametools.network/maps/bf6/T_UI_Tungsten_Large_OPT-935da06b.webp",
     "MP_Portal_Sand": "https://cdn.gametools.network/maps/bf6/T_UI_Aftermath_Large_OPT-bf883df1.webp",
+    "MP_Granite": "https://cdn.gametools.network/maps/bf6/Fort_Lyndon_BF6_REDSEC.webp",
     "MP_Granite_Marina_Portal": "https://cdn.gametools.network/maps/bf6/T_UI_Eastwood_Large_OPT-3bfa6a6f.webp",
     "MP_Granite_ClubHouse_Portal": "https://cdn.gametools.network/maps/bf6/T_UI_Granite_Portal_05_Thumb_SML-74ea7be7.webp",
     "MP_Granite_TechCampus_Portal": "https://cdn.gametools.network/maps/bf6/T_UI_Granite_Portal_06_Thumb_SML-80099ba6.webp",
