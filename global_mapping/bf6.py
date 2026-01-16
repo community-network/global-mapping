@@ -638,36 +638,43 @@ WEAPONS = {
         "type": "Pistols",
         "weaponName": "ES 5.7",
         "image": "https://cdn.gametools.network/weapons/bf6/T_UI_FiveSeven_PKG_Factory_MED-c540cde7.webp",
+        "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_FiveSeven_PKG_Factory_MED-c540cde7.webp",
     },
     "dmr_m39emr": {
         "type": "DMRs",
         "weaponName": "M39 EMR",
         "image": "https://cdn.gametools.network/weapons/bf6/T_UI_M39EMR_PKG_Factory_MED-e17b5963.webp",
+        "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_M39EMR_PKG_Factory_MED-e17b5963.webp",
     },
     "snp_sv98": {
         "type": "Rifles",
         "weaponName": "SV-98",
         "image": "https://cdn.gametools.network/weapons/bf6/T_UI_SV98M_PKG_Factory_MED-c38f085a.webp",
+        "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_SV98M_PKG_Factory_MED-c38f085a.webp",
     },
     "pst_m357trait": {
         "type": "Pistols",
         "weaponName": "M357 Trait",
         "image": "https://cdn.gametools.network/weapons/bf6/T_UI_TRR8_PKG_Factory_MED-815434c3.webp",
+        "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_TRR8_PKG_Factory_MED-815434c3.webp",
     },
     "pst_ggh22": {
         "type": "Pistols",
         "weaponName": "GGH-22",
         "image": "https://cdn.gametools.network/weapons/bf6/T_UI_G22_PKG_Factory_MED-0faaf1e3.webp",
+        "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_G22_PKG_Factory_MED-0faaf1e3.webp",
     },
     "snp_miniscout": {
         "type": "Rifles",
         "weaponName": "Mini Scout",
         "image": "https://cdn.gametools.network/weapons/bf6/T_UI_MiniFix_PKG_Factory_MED-c8bab5ff.webp",
+        "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_MiniFix_PKG_Factory_MED-c8bab5ff.webp",
     },
     "sg_db12": {
         "type": "Shotguns",
         "weaponName": "DB-12",
         "image": "https://cdn.gametools.network/weapons/bf6/T_UI_DP12_PKG_Factory_MED-0335554d.webp",
+        "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_DP12_PKG_Factory_MED-0335554d.webp",
     },
 }
 WEAPON_GROUPS = {
