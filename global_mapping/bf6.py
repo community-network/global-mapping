@@ -364,11 +364,13 @@ VEHICLES = {
         "type": "Ground Transport",
         "vehicleName": "VECTOR",
         "image": "https://cdn.gametools.network/vehicles/bf6/T_UI_MDV_Vector_VSD0002-241efa80.webp",
+        "altImage": "https://cdn.gametools.network/vehicles/bf6/white/T_UI_MDV_Vector_VSD0002-241efa80.webp",
     },
     "sur_travmark2": {
         "type": "Ground Transport",
         "vehicleName": "Traverser Mark 2",
         "image": "https://cdn.gametools.network/vehicles/bf6/T_UI_Marauder_VSD0001_Icon_25667539-c29e2338.png",
+        "altImage": "https://cdn.gametools.network/vehicles/bf6/white/T_UI_Marauder_VSD0001_Icon_25667539-c29e2338.png",
     },
 }
 VEHICLE_GROUPS = {
