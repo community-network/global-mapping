@@ -762,4 +762,54 @@ GADGETS = {
         "gadgetName": "Repair Tool",
         "image": "",
     },
+    "gren_inc": {
+        "type": "Grenade",
+        "gadgetName": "Incendiary Grenade",
+        "image": "",
+    },
+    "ladder": {
+        "type": "",
+        "gadgetName": "Assault Ladder",
+        "image": "",
+    },
+    "sup_bag": {
+        "type": "",
+        "gadgetName": "Supply Bag",
+        "image": "",
+    },
+    "deplocover": {
+        "type": "",
+        "gadgetName": "Deployable Cover",
+        "image": "",
+    },
+    "gren_stun": {
+        "type": "",
+        "gadgetName": "Stun Grenade",
+        "image": "",
+    },
+    "gren_smoke": {
+        "type": "",
+        "gadgetName": "Smoke Grenade",
+        "image": "",
+    },
+    "gren_flash": {
+        "type": "",
+        "gadgetName": "Flash Grenade",
+        "image": "",
+    },
+    "recondrone": {
+        "type": "",
+        "gadgetName": "Recon Drone",
+        "image": "",
+    },
+    "laserdes": {
+        "type": "",
+        "gadgetName": "Laser Designator",
+        "image": "",
+    },
+    "tugs": {
+        "type": "",
+        "gadgetName": "Motion Sensor",
+        "image": "",
+    },
 }
