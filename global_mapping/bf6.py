@@ -372,35 +372,23 @@ VEHICLES = {
         "image": "https://cdn.gametools.network/vehicles/bf6/T_UI_Marauder_VSD0001_Icon_25667539-c29e2338.png",
         "altImage": "https://cdn.gametools.network/vehicles/bf6/white/T_UI_Marauder_VSD0001_Icon_25667539-c29e2338.png",
     },
-    "air_uh06": {
-        "type": "Air Transport",
-        "vehicleName": "UH-06",
-        "image": "https://cdn.gametools.network/vehicles/bf6/T_UI_Marauder_VSD0001_Icon_25667539-c29e2338.png",  # wrong image
-    },
-    "air_mh47": {
-        "type": "Air Transport",
-        "vehicleName": "MH47 Chinook",
-        "image": "https://cdn.gametools.network/vehicles/bf6/T_UI_Marauder_VSD0001_Icon_25667539-c29e2338.png",  # wrong image
-    },
-    "air_f97kes": {
-        "type": "Air Combat",
-        "vehicleName": "F-97 Kestrel",
-        "image": "https://cdn.gametools.network/vehicles/bf6/T_UI_Marauder_VSD0001_Icon_25667539-c29e2338.png",  # wrong image
-    },
+    "air_uh06": {"type": "Air Transport", "vehicleName": "UH-06", "image": ""},
+    "air_mh47": {"type": "Air Transport", "vehicleName": "MH47 Chinook", "image": ""},
+    "air_f97kes": {"type": "Air Combat", "vehicleName": "F-97 Kestrel", "image": ""},
     "sur_rhib": {
         "type": "Ground Transport",
         "vehicleName": "7.7m NSW RBHIB",
-        "image": "https://cdn.gametools.network/vehicles/bf6/T_UI_Marauder_VSD0001_Icon_25667539-c29e2338.png",  # wrong image
+        "image": "",
     },
     "sur_ptv": {
         "type": "Ground Transport",
         "vehicleName": "Turfpro PTV Royal",
-        "image": "https://cdn.gametools.network/vehicles/bf6/T_UI_Marauder_VSD0001_Icon_25667539-c29e2338.png",  # wrong image
+        "image": "",
     },
     "sur_quadbike": {
         "type": "Ground Transport",
         "vehicleName": "Rugged MV740",
-        "image": "https://cdn.gametools.network/vehicles/bf6/T_UI_Marauder_VSD0001_Icon_25667539-c29e2338.png",  # wrong image
+        "image": "",
     },
 }
 VEHICLE_GROUPS = {
@@ -738,5 +726,40 @@ GADGETS = {
         "type": "Explosives",
         "gadgetName": "C-4 Explosives",
         "image": "https://cdn.gametools.network/gadgets/bf6/T_UI_C4_Icon-330d6ee2.png",
+    },
+    "gl_he": {
+        "type": "Grenade Launchers",
+        "gadgetName": "M320A1 HE",
+        "image": "https://cdn.gametools.network/gadgets/bf6/T_UI_M320_HE_Icon-83b61ed0.png",
+    },
+    "rl_ungui": {
+        "type": "Launchers",
+        "gadgetName": "RPG-7V2",
+        "image": "https://cdn.gametools.network/gadgets/bf6/T_UI_RPG7v2_Icon-ce5453fd.png",
+    },
+    "rl_aimgui": {
+        "type": "Launchers",
+        "gadgetName": "M136 AT",
+        "image": "https://cdn.gametools.network/gadgets/bf6/T_UI_AT4_Icon-beadb575.png",
+    },
+    "gren_frag": {
+        "type": "Grenade",
+        "gadgetName": "Frag Grenade",
+        "image": "",
+    },
+    "mine_press": {
+        "type": "Explosives",
+        "gadgetName": "M15",
+        "image": "https://cdn.gametools.network/gadgets/bf6/T_UI_AT_Mine_Icon-2288ec8e.png",
+    },
+    "gl_tb": {
+        "type": "Grenade Launchers",
+        "gadgetName": "M320A1 THRM",
+        "image": "https://cdn.gametools.network/gadgets/bf6/T_UI_M320_Thermobaric_Icon-3f13c762.png",
+    },
+    "repair": {
+        "type": "",
+        "gadgetName": "Repair Tool",
+        "image": "",
     },
 }
