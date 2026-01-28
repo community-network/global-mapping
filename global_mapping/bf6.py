@@ -378,8 +378,8 @@ VEHICLES = {
         "image": "https://cdn.gametools.network/vehicles/bf6/T_UI_Marauder_VSD0001_Icon_25667539-c29e2338.png",  # wrong image
     },
     "air_mh47": {
-        "type": "Air Combat",
-        "vehicleName": "MH47",
+        "type": "Air Transport",
+        "vehicleName": "MH47 Chinook",
         "image": "https://cdn.gametools.network/vehicles/bf6/T_UI_Marauder_VSD0001_Icon_25667539-c29e2338.png",  # wrong image
     },
     "air_f97kes": {
