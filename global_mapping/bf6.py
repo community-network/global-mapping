@@ -372,6 +372,36 @@ VEHICLES = {
         "image": "https://cdn.gametools.network/vehicles/bf6/T_UI_Marauder_VSD0001_Icon_25667539-c29e2338.png",
         "altImage": "https://cdn.gametools.network/vehicles/bf6/white/T_UI_Marauder_VSD0001_Icon_25667539-c29e2338.png",
     },
+    "air_uh06": {
+        "type": "Air Transport",
+        "vehicleName": "UH-06",
+        "image": "https://cdn.gametools.network/vehicles/bf6/T_UI_Marauder_VSD0001_Icon_25667539-c29e2338.png",  # wrong image
+    },
+    "air_mh47": {
+        "type": "Air Combat",
+        "vehicleName": "MH47",
+        "image": "https://cdn.gametools.network/vehicles/bf6/T_UI_Marauder_VSD0001_Icon_25667539-c29e2338.png",  # wrong image
+    },
+    "air_f97kes": {
+        "type": "Air Combat",
+        "vehicleName": "F-97 Kestrel",
+        "image": "https://cdn.gametools.network/vehicles/bf6/T_UI_Marauder_VSD0001_Icon_25667539-c29e2338.png",  # wrong image
+    },
+    "sur_rhib": {
+        "type": "Ground Transport",
+        "vehicleName": "7.7m NSW RBHIB",
+        "image": "https://cdn.gametools.network/vehicles/bf6/T_UI_Marauder_VSD0001_Icon_25667539-c29e2338.png",  # wrong image
+    },
+    "sur_ptv": {
+        "type": "Ground Transport",
+        "vehicleName": "Turfpro PTV Royal",
+        "image": "https://cdn.gametools.network/vehicles/bf6/T_UI_Marauder_VSD0001_Icon_25667539-c29e2338.png",  # wrong image
+    },
+    "sur_quadbike": {
+        "type": "Ground Transport",
+        "vehicleName": "Rugged MV740",
+        "image": "https://cdn.gametools.network/vehicles/bf6/T_UI_Marauder_VSD0001_Icon_25667539-c29e2338.png",  # wrong image
+    },
 }
 VEHICLE_GROUPS = {
     "air": {"groupName": "Air Combat"},
