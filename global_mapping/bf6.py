@@ -892,4 +892,23 @@ GADGETS = {
         "gadgetName": "QLINK 6",
         "image": "",
     },
+    "decoy": {
+        "type": "",
+        "gadgetName": "Sniper Decoy",
+        "image": "",
+    },
+    "gl_smoke": {
+        "type": "",
+        "gadgetName": "M320A1 SMK",
+        "image": "",
+    },
+}
+
+GADGET_GROUPS = {
+    "gl": {"groupName": "Grenade Launchers"},
+    "mine": {"groupName": "Mines"},
+    "grenades": {"groupName": "Grenades"},
+    # "rl": {"groupName": ""},
+    # "il": {"groupName": ""},
+    "callins": {"groupName": "Call-ins"},
 }

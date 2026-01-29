@@ -179,7 +179,8 @@ async def get_stats(
         tasks.append(get_classes(global_stats))
         tasks.append(get_maps(global_stats, format_values))
         tasks.append(get_seasons(all_fields, filtered_modes))
-        tasks.append(get_gadgets(global_stats))
+        tasks.append(get_gadgets(global_stats, BF6.GADGETS))
+        tasks.append(get_gadgets(global_stats, BF6.GADGET_GROUPS))
         tasks.append(get_seasons(all_fields, BF6.REDSEC_MODES))
 
         if multiple:
@@ -200,6 +201,7 @@ async def get_stats(
             current_result["maps"],
             current_result["seasons"],
             current_result["gadgets"],
+            current_result["gadgetGroups"],
             current_result["redsec"],
         ) = await asyncio.gather(*tasks)
 
@@ -348,9 +350,9 @@ async def get_classes(stats_dict: dict):
     return kits
 
 
-async def get_gadgets(stats_dict: dict):
+async def get_gadgets(stats_dict: dict, constant: dict):
     gadgets = []
-    for _id, extra in BF6.GADGETS.items():
+    for _id, extra in constant.items():
         damage = stats_dict.get(f"dmg_gad_{_id}", 0)
         kills = stats_dict.get(f"kw_gad_{_id}", 0)
         seconds = stats_dict.get(f"tp_gad_{_id}", 0)
