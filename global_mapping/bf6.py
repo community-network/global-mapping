@@ -812,4 +812,84 @@ GADGETS = {
         "gadgetName": "Motion Sensor",
         "image": "",
     },
+    "rl_longra": {
+        "type": "",
+        "gadgetName": "MAS 148",
+        "image": "",
+    },
+    "mine_ap": {
+        "type": "",
+        "gadgetName": "M18A1",
+        "image": "",
+    },
+    "adren": {
+        "type": "",
+        "gadgetName": "Adrenaline Injector",
+        "image": "",
+    },
+    "mine_tws": {
+        "type": "",
+        "gadgetName": "M4A1 Slam",
+        "image": "",
+    },
+    "eodbot": {
+        "type": "",
+        "gadgetName": "EOD Bot",
+        "image": "",
+    },
+    "gl_breach": {
+        "type": "",
+        "gadgetName": "X95 BRE",
+        "image": "",
+    },
+    "mine_mosen": {
+        "type": "",
+        "gadgetName": "PTKM-1R",
+        "image": "",
+    },
+    "gren_mfrag": {
+        "type": "",
+        "gadgetName": "Mini Grenade",
+        "image": "",
+    },
+    "rl_surtoair": {
+        "type": "",
+        "gadgetName": "SLM-93A SPIRE",
+        "image": "",
+    },
+    "il_airburst": {
+        "type": "",
+        "gadgetName": "SICH G1 WP",
+        "image": "",
+    },
+    "vehsupcra": {
+        "type": "",
+        "gadgetName": "Supply Crate",
+        "image": "",
+    },
+    "tknife": {
+        "type": "",
+        "gadgetName": "Throwing Knife",
+        "image": "",
+    },
+    "msensor": {
+        "type": "",
+        "gadgetName": "Proximity Detector",
+        "image": "",
+    },
+    "deployable": {
+        "type": "",
+        "gadgetName": "Deployable Cover",
+        "image": "",
+    },
+    "deploymortar": {
+        "type": "",
+        "gadgetName": "LWCMS",
+        "image": "",
+    },
+    "deploybeacon": {
+        "type": "",
+        "gadgetName": "QLINK 6",
+        "image": "",
+    },
 }

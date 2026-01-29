@@ -372,7 +372,10 @@ async def get_gadgets(stats_dict: dict):
                 "kills": kills,
                 "assistsDamage": stats_dict.get(f"assdmg_gad_{_id}", 0),
                 "assists": stats_dict.get(f"assists_gad_{_id}", 0),
+                "spotAssists": stats_dict.get(f"sptass_gad_{_id}", 0),
+                "spots": stats_dict.get(f"spot_gad_{_id}", 0),
                 "spawns": stats_dict.get(f"spawns3_gad_{_id}", 0),
+                # "spawns": stats_dict.get(f"spawns2_gad_{_id}", 0), ????
                 "damage": damage,
                 "uses": stats_dict.get(f"uses_gad_{_id}", 0),
                 "multiKills": stats_dict.get(f"mkw_gad_{_id}", 0),
