@@ -813,14 +813,14 @@ GADGETS = {
         "image": "",
     },
     "rl_longra": {
-        "type": "",
-        "gadgetName": "MAS 148",
-        "image": "",
+        "type": "Launchers",
+        "gadgetName": "MAS 148 Glaive",
+        "image": "https://cdn.gametools.network/gadgets/bf6/T_UI_Javelin_Icon-a0ce2091.png",
     },
     "mine_ap": {
-        "type": "",
+        "type": "Explosives",
         "gadgetName": "M18A1",
-        "image": "",
+        "image": "https://cdn.gametools.network/gadgets/bf6/T_UI_Claymore_Icon-5c7f1590.png",
     },
     "adren": {
         "type": "",
@@ -828,9 +828,9 @@ GADGETS = {
         "image": "",
     },
     "mine_tws": {
-        "type": "",
+        "type": "Explosives",
         "gadgetName": "M4A1 Slam",
-        "image": "",
+        "image": "https://cdn.gametools.network/gadgets/bf6/T_UI_M4_SLAM_Icon-541f624c.png",
     },
     "eodbot": {
         "type": "",
@@ -838,14 +838,14 @@ GADGETS = {
         "image": "",
     },
     "gl_breach": {
-        "type": "",
+        "type": "Grenade Launchers",
         "gadgetName": "X95 BRE",
-        "image": "",
+        "image": "https://cdn.gametools.network/gadgets/bf6/T_UI_Drill_Launcher_Icon-1e1481d9.png",
     },
     "mine_mosen": {
-        "type": "",
+        "type": "Explosives",
         "gadgetName": "PTKM-1R",
-        "image": "",
+        "image": "https://cdn.gametools.network/gadgets/bf6/T_UI_PTKM_1R_Icon-ceb07fc0.png",
     },
     "gren_mfrag": {
         "type": "",
@@ -853,14 +853,14 @@ GADGETS = {
         "image": "",
     },
     "rl_surtoair": {
-        "type": "",
-        "gadgetName": "SLM-93A SPIRE",
-        "image": "",
+        "type": "Launchers",
+        "gadgetName": "SLM-93A",
+        "image": "https://cdn.gametools.network/gadgets/bf6/T_UI_Stinger_Icon-d4590623.png",
     },
     "il_airburst": {
-        "type": "",
+        "type": "Grenade Launchers",
         "gadgetName": "SICH G1 WP",
-        "image": "",
+        "image": "https://cdn.gametools.network/gadgets/bf6/T_UI_Airburst_Incendiary_Launcher_Icon-da8af82a.png",
     },
     "vehsupcra": {
         "type": "",
@@ -883,14 +883,14 @@ GADGETS = {
         "image": "",
     },
     "deploymortar": {
-        "type": "",
+        "type": "Class Gadgets",
         "gadgetName": "LWCMS",
-        "image": "",
+        "image": "https://cdn.gametools.network/gadgets/bf6/T_UI_Deployable_Mortar_Icon-97b13652.png",
     },
     "deploybeacon": {
-        "type": "",
+        "type": "Deployable Gadgets",
         "gadgetName": "QLINK 6",
-        "image": "",
+        "image": "https://cdn.gametools.network/gadgets/bf6/T_UI_Spawn_Beacon_Icon-b6e67f1c.png",
     },
     "decoy": {
         "type": "",
@@ -898,15 +898,15 @@ GADGETS = {
         "image": "",
     },
     "gl_smoke": {
-        "type": "",
+        "type": "Grenade Launchers",
         "gadgetName": "M320A1 SMK",
-        "image": "",
+        "image": "https://cdn.gametools.network/gadgets/bf6/T_UI_M320_Smoke_Icon-dfa762d9.png",
     },
 }
 
 GADGET_GROUPS = {
     "gl": {"groupName": "Grenade Launchers"},
-    "mine": {"groupName": "Mines"},
+    "mine": {"groupName": "Explosives"},
     "grenades": {"groupName": "Grenades"},
     # "rl": {"groupName": ""},
     # "il": {"groupName": ""},
