@@ -902,6 +902,36 @@ GADGETS = {
         "gadgetName": "M320A1 SMK",
         "image": "https://cdn.gametools.network/gadgets/bf6/T_UI_M320_Smoke_Icon-dfa762d9.png",
     },
+    "callin_wpdrop": {
+        "type": "Strike Packages",
+        "gadgetName": "Weapon Drop",
+        "image": "https://cdn.gametools.network/gadgets/bf6/U_Gadget_WeaponDrop_Granite-2c6c3b16.webp",
+    },
+    "callin_uav": {
+        "type": "Strike Packages",
+        "gadgetName": "UAV Overwatch",
+        "image": "https://cdn.gametools.network/gadgets/bf6/T_UI_CALLINS_Uav_Thumb-fdf9a78e.png",
+    },
+    "callin_resupply": {
+        "type": "Strike Packages",
+        "gadgetName": "",
+        "image": "",
+    },
+    "callin_antiveh": {
+        "type": "Strike Packages",
+        "gadgetName": "Anti-Vehicle Drop",
+        "image": "https://cdn.gametools.network/gadgets/bf6/T_UI_CALLINS_SupAnti_Thumb-84fc98fc.png",
+    },
+    "callin_smoke": {
+        "type": "Strike Packages",
+        "gadgetName": "Smoke Screen",
+        "image": "https://cdn.gametools.network/gadgets/bf6/T_UI_CALLINS_Smoke_Thumb-5d515d26.png",
+    },
+    "callin_artstrike": {
+        "type": "Strike Packages",
+        "gadgetName": "Artillery Strike",
+        "image": "https://cdn.gametools.network/gadgets/bf6/T_UI_CALLINS_Artillery_Thumb-126cad71.png",
+    },
 }
 
 GADGET_GROUPS = {
