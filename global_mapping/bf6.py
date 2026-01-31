@@ -256,6 +256,16 @@ STAT_MAPS = {
         "image": "https://cdn.gametools.network/maps/bf6/T_UI_Eastwood_Large_OPT-3bfa6a6f.webp",
     },
 }
+STAT_GAMEMODE_SMALL = {
+    "esc": {"gamemodeName": "Escalation", "image": ""},
+    "official": {"gamemodeName": "Official", "image": ""},
+    "tdm": {"gamemodeName": "Team deathmatch", "image": ""},
+    "cq": {"gamemodeName": "Conquest", "image": ""},
+    "granite": {"gamemodeName": "Redsec Squad", "image": ""},
+    "graniteDuo": {"gamemodeName": "Redsec Duo", "image": ""},
+    "modbuilder0": {"gamemodeName": "Portal", "image": ""},
+    "rush": {"gamemodeName": "Rush", "image": ""},
+}
 STAT_GAMEMODE = {
     "MP_Escalation0": {"gamemodeName": "Escalation", "image": ""},
     "MP_TeamDM0": {"gamemodeName": "Team deathmatch", "image": ""},

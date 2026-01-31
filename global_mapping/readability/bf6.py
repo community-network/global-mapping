@@ -178,6 +178,7 @@ async def get_stats(
         tasks.append(get_vehicles(global_stats, BF6.VEHICLE_GROUPS))
         tasks.append(get_classes(global_stats))
         tasks.append(get_maps(global_stats, format_values))
+        tasks.append(get_gamemodes(global_stats, format_values))
         tasks.append(get_seasons(all_fields, filtered_modes))
         tasks.append(get_gadgets(global_stats, BF6.GADGETS))
         tasks.append(get_gadgets(global_stats, BF6.GADGET_GROUPS))
@@ -199,6 +200,7 @@ async def get_stats(
             current_result["vehicleGroups"],
             current_result["classes"],
             current_result["maps"],
+            current_result["gameModes"],
             current_result["seasons"],
             current_result["gadgets"],
             current_result["gadgetGroups"],
@@ -412,6 +414,73 @@ async def get_maps(stats_dict: dict, format_values: bool = False):
             }
         )
     return maps
+
+
+async def get_gamemodes(stats_dict: dict, format_values: bool = False):
+    gamemodes = []
+    for _id, extra in BF6.STAT_GAMEMODE_SMALL.items():
+        wins = stats_dict.get(f"wins_gm_{_id}", 0)
+        losses = stats_dict.get(f"losses_gm_{_id}", 0)
+        damage = stats_dict.get(f"dmg_gm_{_id}", 0)
+        kills = stats_dict.get(f"kills_gm_{_id}", 0)
+        deaths = stats_dict.get(f"deaths_gm_{_id}", 0)
+        seconds = stats_dict.get(f"tp_gm_{_id}", 0)
+        headshots = stats_dict.get(f"hsw_gm_{_id}", 0)
+
+        try:
+            win_percent = round(wins / (wins + losses) * 100, 2)
+        except ZeroDivisionError:
+            win_percent = 0.0
+
+        try:
+            kills_per_minute = round(kills / (seconds / 60), 2)
+        except (ZeroDivisionError, KeyError):
+            kills_per_minute = 0.0
+
+        try:
+            damage_per_minute = round(damage / (seconds / 60), 2)
+        except (ZeroDivisionError, KeyError):
+            damage_per_minute = 0.0
+
+        try:
+            kill_death = round(kills / deaths, 2)
+        except ZeroDivisionError:
+            kill_death = 0.0
+
+        try:
+            headshot_percentage = round(headshots / kills * 100, 2)
+        except ZeroDivisionError:
+            headshot_percentage = 0.0
+
+        gamemodes.append(
+            {
+                **extra,
+                "id": _id,
+                "kills": kills,
+                "deaths": deaths,
+                "wins": wins,
+                "losses": losses,
+                "killDeath": kill_death,
+                "winPercent": format_percentage_value(win_percent, format_values),
+                "killAssists": stats_dict.get(f"assists_gm_{_id}", 0),
+                "matches": stats_dict.get(f"matches_gm_{_id}", 0),
+                "repairs": stats_dict.get(f"repair_gm_{_id}", 0),
+                "revives": stats_dict.get(f"revives_gm_{_id}", 0),
+                "spots": stats_dict.get(f"spot_gm_{_id}", 0),
+                "objectiveTime": stats_dict.get(f"obj_time_gm_{_id}", 0),
+                "objectivesCaptured": stats_dict.get(f"obj_captured_gm_{_id}", 0),
+                "objectivesDefended": stats_dict.get(f"obj_defended_gm_{_id}", 0),
+                "scoreIn": stats_dict.get(f"scorein_gm_{_id}", 0),
+                "headshotKills": headshots,
+                "headshots": format_percentage_value(
+                    headshot_percentage, format_values
+                ),
+                "kpm": kills_per_minute,
+                "dpm": damage_per_minute,
+                "secondsPlayed": seconds,
+            }
+        )
+    return gamemodes
 
 
 async def get_main_stats(stats_dict: dict, format_values: bool = True):
