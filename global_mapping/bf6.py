@@ -257,15 +257,28 @@ STAT_MAPS = {
         "image": "https://cdn.gametools.network/maps/bf6/T_UI_Eastwood_Large_OPT-3bfa6a6f.webp",
     },
 }
+
 STAT_GAMEMODE_SMALL = {
     "esc": {"gamemodeName": "Escalation", "image": ""},
     "official": {"gamemodeName": "Official", "image": ""},
     "tdm": {"gamemodeName": "Team deathmatch", "image": ""},
+    "sdm": {"gamemodeName": "Squad deathmatch", "image": ""},
+    "dom": {"gamemodeName": "Domination", "image": ""},
+    "koth": {"gamemodeName": "King of the Hill", "image": ""},
     "cq": {"gamemodeName": "Conquest", "image": ""},
-    "granite": {"gamemodeName": "Redsec Squad", "image": ""},
     "graniteDuo": {"gamemodeName": "Redsec Duo", "image": ""},
+    "brsquad": {"gamemodeName": "Redsec Squad", "image": ""},
     "modbuilder0": {"gamemodeName": "Portal", "image": ""},
     "rush": {"gamemodeName": "Rush", "image": ""},
+    "bt": {"gamemodeName": "Breakthrough", "image": ""},
+    "gntgauntlet": {"gamemodeName": "Gauntlet", "image": ""},
+}
+STAT_GAMEMODE_SMALL_CATEGORY = {
+    "all": {"gamemodeName": "All", "image": ""},
+    "mp": {"gamemodeName": "Multiplayer", "image": ""},
+    "granite": {"gamemodeName": "Redsec", "image": ""},
+    "granitebr": {"gamemodeName": "Battle Royale", "image": ""},
+    "modbuilder": {"gamemodeName": "Portal", "image": ""},
 }
 STAT_GAMEMODE = {
     "MP_Escalation0": {"gamemodeName": "Escalation", "image": ""},

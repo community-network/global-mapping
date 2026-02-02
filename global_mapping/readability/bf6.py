@@ -178,7 +178,12 @@ async def get_stats(
         tasks.append(get_vehicles(global_stats, BF6.VEHICLE_GROUPS))
         tasks.append(get_classes(global_stats))
         tasks.append(get_maps(global_stats, format_values))
-        tasks.append(get_gamemodes(global_stats, format_values))
+        tasks.append(
+            get_gamemodes(global_stats, BF6.STAT_GAMEMODE_SMALL, format_values)
+        )
+        tasks.append(
+            get_gamemodes(global_stats, BF6.STAT_GAMEMODE_SMALL_CATEGORY, format_values)
+        )
         tasks.append(get_seasons(all_fields, filtered_modes))
         tasks.append(get_gadgets(global_stats, BF6.GADGETS))
         tasks.append(get_gadgets(global_stats, BF6.GADGET_GROUPS))
@@ -201,6 +206,7 @@ async def get_stats(
             current_result["classes"],
             current_result["maps"],
             current_result["gameModes"],
+            current_result["gameModeGroups"],
             current_result["seasons"],
             current_result["gadgets"],
             current_result["gadgetGroups"],
@@ -416,9 +422,9 @@ async def get_maps(stats_dict: dict, format_values: bool = False):
     return maps
 
 
-async def get_gamemodes(stats_dict: dict, format_values: bool = False):
+async def get_gamemodes(stats_dict: dict, constant: dict, format_values: bool = False):
     gamemodes = []
-    for _id, extra in BF6.STAT_GAMEMODE_SMALL.items():
+    for _id, extra in constant.items():
         wins = stats_dict.get(f"wins_gm_{_id}", 0)
         losses = stats_dict.get(f"losses_gm_{_id}", 0)
         damage = stats_dict.get(f"dmg_gm_{_id}", 0)
