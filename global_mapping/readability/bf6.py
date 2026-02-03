@@ -188,48 +188,92 @@ async def fill_fields(
 
 
 async def get_stats(
-    data: dict, category_name: str, format_values: bool = True, multiple: bool = False
+    data: dict, category_name: str, format_values: bool = True, seperation: bool = False
 ):
     result = []
     for player in data.get("playerStats", []):
-        current_result = {}
         current_player = player.get("player", {"personaId": 0})
-        global_stats = {}
-        gamemode_stats = {key: {} for key in BF6.STAT_GAMEMODE.keys()}
-        result_count = 0
-        # NEW: We're going to save all the catFields here for Redsec.
-        all_fields: list[dict[str, Any]] = []
+        valid_modes = set(BF6.STAT_GAMEMODE.keys())
+        valid_seasons = set(BF6.SEASONS.keys())
 
+        global_stats: dict[str, Any] = {}
+
+        gamemode_stats: dict[str, dict[str, Any]] = {mode: {} for mode in valid_modes}
+        season_stats: dict[str, dict[str, dict[str, Any]]] = {
+            season: {mode: {} for mode in valid_modes} for season in valid_seasons
+        }
+
+        result_count = 0
+        all_fields: list[dict[str, Any]] = []
         for category in player.get("categories", []):
-            all_fields.extend(category.get("catFields") or [])
-            if category_name == category.get("catName", ""):
-                result_count += len(category.get("catFields", []))
-                for item in category.get("catFields", []):
-                    fields: list[dict[str, str]] = item.get("fields", [])
-                    field_dict = {
-                        field.get("name", ""): field.get("value", "")
-                        for field in fields
-                    }
-                    if (
-                        "GameMode" in field_dict.keys()
-                        and "Season" not in field_dict.keys()
-                        and field_dict["GameMode"] in gamemode_stats.keys()
-                    ):
-                        gamemode_stats[field_dict["GameMode"]][item.get("name")] = (
-                            item.get("value")
-                        )
-                    if "global" in field_dict.keys():
-                        global_stats[item.get("name")] = item.get("value")
+            cat_fields = category.get("catFields") or []
+            all_fields.extend(cat_fields)
+
+            if category.get("catName", "") != category_name:
+                continue
+
+            result_count += len(cat_fields)
+
+            for item in cat_fields:
+                fields = item.get("fields", [])
+                if not fields:
+                    continue
+
+                game_mode = None
+                season = None
+                is_global = False
+
+                for f in fields:
+                    fname = f.get("name")
+                    if fname == "GameMode":
+                        game_mode = f.get("value")
+                    elif fname == "Season":
+                        season = f.get("value")
+                    elif fname == "global":
+                        is_global = True
+                    if game_mode is not None and season is not None and is_global:
+                        break
+
+                item_name = item.get("name")
+                item_value = item.get("value")
+
+                if (
+                    game_mode is not None
+                    and season is None
+                    and game_mode in valid_modes
+                ):
+                    gamemode_stats[game_mode][item_name] = item_value
+
+                if (
+                    season is not None
+                    and game_mode is not None
+                    and season in valid_seasons
+                    and game_mode in valid_modes
+                ):
+                    season_stats[season][game_mode][item_name] = item_value
+
+                if is_global:
+                    global_stats[item_name] = item_value
 
         current_result = await fill_fields(global_stats, format_values)
-        current_result["perGamemode"] = {}
-        for gamemode, stats in gamemode_stats.items():
-            res = await fill_fields(stats, format_values)
-            current_result["perGamemode"][gamemode] = {
-                **BF6.STAT_GAMEMODE[gamemode],
-                **res,
-            }
+        if seperation:
+            current_result["perGamemode"] = {}
+            for gamemode, stats in gamemode_stats.items():
+                res = await fill_fields(stats, format_values)
+                current_result["perGamemode"][gamemode] = {
+                    **BF6.STAT_GAMEMODE[gamemode],
+                    **res,
+                }
 
+            current_result["perSeason"] = {}
+            for season, gamemode in season_stats.items():
+                current_result["perSeason"][season] = {}
+                for gamemode, stats in gamemode.items():
+                    res = await fill_fields(stats, format_values)
+                    current_result["perSeason"][season][gamemode] = {
+                        **BF6.STAT_GAMEMODE[gamemode],
+                        **res,
+                    }
         current_result["hasResults"] = result_count > 0
 
         tasks = []
