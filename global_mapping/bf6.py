@@ -259,20 +259,46 @@ STAT_MAPS = {
 }
 
 STAT_GAMEMODE_SMALL = {
-    "esc": {"gamemodeName": "Escalation", "image": "", "altImage": ""},
-    "official": {"gamemodeName": "Official", "image": "", "altImage": ""},
-    "tdm": {"gamemodeName": "Team deathmatch", "image": "", "altImage": ""},
-    "sdm": {"gamemodeName": "Squad deathmatch", "image": "", "altImage": ""},
-    "dom": {"gamemodeName": "Domination", "image": "", "altImage": ""},
-    "koth": {"gamemodeName": "King of the Hill", "image": "", "altImage": ""},
+    "esc": {
+        "gamemodeName": "Escalation",
+        "image": "https://cdn.gametools.network/modes/bf6/escalation.svg",
+        "altImage": "",
+    },
+    "tdm": {
+        "gamemodeName": "Team deathmatch",
+        "image": "https://cdn.gametools.network/modes/bf6/team_deathmatch.svg",
+        "altImage": "",
+    },
+    "sdm": {
+        "gamemodeName": "Squad deathmatch",
+        "image": "https://cdn.gametools.network/modes/bf6/squad_deathmatch.svg",
+        "altImage": "",
+    },
+    "dom": {
+        "gamemodeName": "Domination",
+        "image": "https://cdn.gametools.network/modes/bf6/domination.svg",
+        "altImage": "",
+    },
+    "koth": {
+        "gamemodeName": "King of the Hill",
+        "image": "https://cdn.gametools.network/modes/bf6/king_of_the_hill.svg",
+        "altImage": "",
+    },
     "cq": {
         "gamemodeName": "Conquest",
         "image": "https://cdn.gametools.network/modes/bf6/conquest.svg",
         "altImage": "https://cdn.gametools.network/modes/bf6/conquest-framed.svg",
     },
-    "graniteDuo": {"gamemodeName": "Redsec Duo", "image": "", "altImage": ""},
-    "brsquad": {"gamemodeName": "Redsec Squad", "image": "", "altImage": ""},
-    "modbuilder0": {"gamemodeName": "Portal", "image": "", "altImage": ""},
+    "graniteDuo": {
+        "gamemodeName": "Redsec Duo",
+        "image": "https://cdn.gametools.network/modes/bf6/battle_royale.svg",
+        "altImage": "https://cdn.gametools.network/modes/bf6/battle_royale-framed.svg",
+    },
+    "brsquad": {
+        "gamemodeName": "Redsec Squad",
+        "image": "https://cdn.gametools.network/modes/bf6/battle_royale.svg",
+        "altImage": "https://cdn.gametools.network/modes/bf6/battle_royale-framed.svg",
+    },
     "rush": {
         "gamemodeName": "Rush",
         "image": "https://cdn.gametools.network/modes/bf6/rush.svg",
@@ -288,36 +314,70 @@ STAT_GAMEMODE_SMALL = {
         "image": "https://cdn.gametools.network/modes/bf6/gauntlet.svg",
         "altImage": "https://cdn.gametools.network/modes/bf6/gauntlet-framed.svg",
     },
+    "official": {"gamemodeName": "Official", "image": "", "altImage": ""},
+    "modbuilder0": {"gamemodeName": "Portal", "image": "", "altImage": ""},
 }
 STAT_GAMEMODE_SMALL_CATEGORY = {
     "all": {"gamemodeName": "All", "image": "", "altImage": ""},
     "mp": {"gamemodeName": "Multiplayer", "image": "", "altImage": ""},
-    "granite": {"gamemodeName": "Redsec", "image": "", "altImage": ""},
+    "modbuilder": {"gamemodeName": "Portal", "image": "", "altImage": ""},
+    "granite": {
+        "gamemodeName": "Redsec",
+        "image": "https://cdn.gametools.network/modes/bf6/battle_royale.svg",
+        "altImage": "https://cdn.gametools.network/modes/bf6/battle_royale-framed.svg",
+    },
     "granitebr": {
         "gamemodeName": "Battle Royale",
         "image": "https://cdn.gametools.network/modes/bf6/battle_royale.svg",
         "altImage": "https://cdn.gametools.network/modes/bf6/battle_royale-framed.svg",
     },
-    "modbuilder": {"gamemodeName": "Portal", "image": "", "altImage": ""},
 }
 STAT_GAMEMODE = {
-    "MP_Escalation0": {"gamemodeName": "Escalation", "image": "", "altImage": ""},
-    "MP_TeamDM0": {"gamemodeName": "Team deathmatch", "image": "", "altImage": ""},
+    "MP_Escalation0": {
+        "gamemodeName": "Escalation",
+        "image": "https://cdn.gametools.network/modes/bf6/escalation.svg",
+        "altImage": "",
+    },
+    "MP_TeamDM0": {
+        "gamemodeName": "Team deathmatch",
+        "image": "https://cdn.gametools.network/modes/bf6/team_deathmatch.svg",
+        "altImage": "",
+    },
     "GraniteGauntlet0": {
         "gamemodeName": "Gauntlet",
         "image": "https://cdn.gametools.network/modes/bf6/gauntlet.svg",
         "altImage": "https://cdn.gametools.network/modes/bf6/gauntlet-framed.svg",
     },
-    "GraniteSquad0": {"gamemodeName": "Redsec Squad", "image": "", "altImage": ""},
-    "MP_KOTH0": {"gamemodeName": "King of the Hill", "image": "", "altImage": ""},
-    "GraniteDuo0": {"gamemodeName": "Redsec Duo", "image": "", "altImage": ""},
-    "MP_Domination0": {"gamemodeName": "Domination", "image": "", "altImage": ""},
+    "GraniteSquad0": {
+        "gamemodeName": "Redsec Squad",
+        "image": "https://cdn.gametools.network/modes/bf6/battle_royale.svg",
+        "altImage": "https://cdn.gametools.network/modes/bf6/battle_royale-framed.svg",
+    },
+    "MP_KOTH0": {
+        "gamemodeName": "King of the Hill",
+        "image": "https://cdn.gametools.network/modes/bf6/king_of_the_hill.svg",
+        "altImage": "",
+    },
+    "GraniteDuo0": {
+        "gamemodeName": "Redsec Duo",
+        "image": "https://cdn.gametools.network/modes/bf6/battle_royale.svg",
+        "altImage": "https://cdn.gametools.network/modes/bf6/battle_royale-framed.svg",
+    },
+    "MP_Domination0": {
+        "gamemodeName": "Domination",
+        "image": "https://cdn.gametools.network/modes/bf6/domination.svg",
+        "altImage": "",
+    },
     "Conquest0": {
         "gamemodeName": "Conquest",
         "image": "https://cdn.gametools.network/modes/bf6/conquest.svg",
         "altImage": "https://cdn.gametools.network/modes/bf6/conquest-framed.svg",
     },
-    "MP_SquadDM0": {"gamemodeName": "Squad deathmatch", "image": "", "altImage": ""},
+    "MP_SquadDM0": {
+        "gamemodeName": "Squad deathmatch",
+        "image": "https://cdn.gametools.network/modes/bf6/squad_deathmatch.svg",
+        "altImage": "",
+    },
     "Breakthrough0": {
         "gamemodeName": "Breakthrough",
         "image": "https://cdn.gametools.network/modes/bf6/breakthrough.svg",
