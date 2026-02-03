@@ -283,11 +283,16 @@ STAT_GAMEMODE_SMALL_CATEGORY = {
 STAT_GAMEMODE = {
     "MP_Escalation0": {"gamemodeName": "Escalation", "image": ""},
     "MP_TeamDM0": {"gamemodeName": "Team deathmatch", "image": ""},
+    "GraniteGauntlet0": {"gamemodeName": "Gauntlet", "image": ""},
+    "GraniteSquad0": {"gamemodeName": "Redsec Squad", "image": ""},
+    "MP_KOTH0": {"gamemodeName": "King of the Hill", "image": ""},
+    "GraniteDuo0": {"gamemodeName": "Redsec Duo", "image": ""},
+    "MP_Domination0": {"gamemodeName": "Domination", "image": ""},
     "Conquest0": {"gamemodeName": "Conquest", "image": ""},
-    "MP_KOTH0": {"gamemodeName": "King of the hill", "image": ""},
     "MP_SquadDM0": {"gamemodeName": "Squad deathmatch", "image": ""},
     "Breakthrough0": {"gamemodeName": "Breakthrough", "image": ""},
     "Rush0": {"gamemodeName": "Rush", "image": ""},
+    "ModBuilderCustom0": {"gamemodeName": "Portal", "image": ""},
 }
 CLASSES = {
     "assault": {
