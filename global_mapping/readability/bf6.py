@@ -146,6 +146,47 @@ async def detailedServer(server, lang: str):
     return server
 
 
+async def fill_fields(
+    stats: dict,
+    format_values: bool = True,
+):
+    current_result = await get_main_stats(stats, format_values)
+    tasks = []
+    tasks.append(get_weapons(stats, BF6.WEAPONS, format_values))
+    tasks.append(get_vehicles(stats, BF6.VEHICLES))
+    tasks.append(get_weapons(stats, BF6.WEAPON_GROUPS, format_values))
+    tasks.append(get_vehicles(stats, BF6.VEHICLE_GROUPS))
+    tasks.append(get_classes(stats))
+    tasks.append(get_maps(stats, format_values))
+    tasks.append(get_gamemodes(stats, BF6.STAT_GAMEMODE_SMALL, format_values))
+    tasks.append(get_gamemodes(stats, BF6.STAT_GAMEMODE_SMALL_CATEGORY, format_values))
+    tasks.append(get_gadgets(stats, BF6.GADGETS))
+    tasks.append(get_gadgets(stats, BF6.GADGET_GROUPS))
+
+    (
+        current_result["weapons"],
+        current_result["vehicles"],
+        current_result["weaponGroups"],
+        current_result["vehicleGroups"],
+        current_result["classes"],
+        current_result["maps"],
+        current_result["gameModes"],
+        current_result["gameModeGroups"],
+        current_result["gadgets"],
+        current_result["gadgetGroups"],
+    ) = await asyncio.gather(*tasks)
+
+    kit_best_kills = 0
+    best_kit = 0
+    for kit in current_result["classes"]:
+        if kit["kills"] > kit_best_kills:
+            kit_best_kills = kit["kills"]
+            best_kit = kit["className"]
+    current_result["bestClass"] = best_kit
+
+    return current_result
+
+
 async def get_stats(
     data: dict, category_name: str, format_values: bool = True, multiple: bool = False
 ):
@@ -154,6 +195,7 @@ async def get_stats(
         current_result = {}
         current_player = player.get("player", {"personaId": 0})
         global_stats = {}
+        gamemode_stats = {key: {} for key in BF6.STAT_GAMEMODE.keys()}
         result_count = 0
         # NEW: We're going to save all the catFields here for Redsec.
         all_fields: list[dict[str, Any]] = []
@@ -164,64 +206,51 @@ async def get_stats(
                 result_count += len(category.get("catFields", []))
                 for item in category.get("catFields", []):
                     fields: list[dict[str, str]] = item.get("fields", [])
-                    if any(field.get("value", "") == "global" for field in fields):
+                    field_dict = {
+                        field.get("name", ""): field.get("value", "")
+                        for field in fields
+                    }
+                    if (
+                        "GameMode" in field_dict.keys()
+                        and "Season" not in field_dict.keys()
+                        and field_dict["GameMode"] in gamemode_stats.keys()
+                    ):
+                        gamemode_stats[field_dict["GameMode"]][item.get("name")] = (
+                            item.get("value")
+                        )
+                    if "global" in field_dict.keys():
                         global_stats[item.get("name")] = item.get("value")
 
+        current_result = await fill_fields(global_stats, format_values)
+        current_result["perGamemode"] = {}
+        for gamemode, stats in gamemode_stats.items():
+            res = await fill_fields(stats, format_values)
+            current_result["perGamemode"][gamemode] = {
+                **BF6.STAT_GAMEMODE[gamemode],
+                **res,
+            }
+
         current_result["hasResults"] = result_count > 0
+
         tasks = []
         filtered_modes = {
             k: v for k, v in BF6.MODES.items() if k not in BF6.REDSEC_MODES.keys()
         }
-        tasks.append(get_weapons(global_stats, BF6.WEAPONS, format_values))
-        tasks.append(get_vehicles(global_stats, BF6.VEHICLES))
-        tasks.append(get_weapons(global_stats, BF6.WEAPON_GROUPS, format_values))
-        tasks.append(get_vehicles(global_stats, BF6.VEHICLE_GROUPS))
-        tasks.append(get_classes(global_stats))
-        tasks.append(get_maps(global_stats, format_values))
-        tasks.append(
-            get_gamemodes(global_stats, BF6.STAT_GAMEMODE_SMALL, format_values)
-        )
-        tasks.append(
-            get_gamemodes(global_stats, BF6.STAT_GAMEMODE_SMALL_CATEGORY, format_values)
-        )
         tasks.append(get_seasons(all_fields, filtered_modes))
-        tasks.append(get_gadgets(global_stats, BF6.GADGETS))
-        tasks.append(get_gadgets(global_stats, BF6.GADGET_GROUPS))
         tasks.append(get_seasons(all_fields, BF6.REDSEC_MODES))
 
-        if multiple:
-            platform_id = current_player.get("platformId", 0)
-            current_result["id"] = current_player.get("personaId", 0)
-            current_result["userId"] = current_player.get("nucleusId", 0)
-            current_result["platform"] = BF6.STATS_PLATFORM.get(
-                current_player.get("platformId", 0), "pc"
-            )
-            current_result["platformId"] = 0 if platform_id is None else platform_id
+        platform_id = current_player.get("platformId", 0)
+        current_result["id"] = current_player.get("personaId", 0)
+        current_result["userId"] = current_player.get("nucleusId", 0)
+        current_result["platform"] = BF6.STATS_PLATFORM.get(
+            current_player.get("platformId", 0), "pc"
+        )
+        current_result["platformId"] = 0 if platform_id is None else platform_id
 
         (
-            current_result["weapons"],
-            current_result["vehicles"],
-            current_result["weaponGroups"],
-            current_result["vehicleGroups"],
-            current_result["classes"],
-            current_result["maps"],
-            current_result["gameModes"],
-            current_result["gameModeGroups"],
             current_result["seasons"],
-            current_result["gadgets"],
-            current_result["gadgetGroups"],
             current_result["redsec"],
         ) = await asyncio.gather(*tasks)
-
-        kit_best_kills = 0
-        best_kit = 0
-        for kit in current_result["classes"]:
-            if kit["kills"] > kit_best_kills:
-                kit_best_kills = kit["kills"]
-                best_kit = kit["className"]
-        current_result["bestClass"] = best_kit
-
-        current_result.update(await get_main_stats(global_stats, format_values))
 
         result.append(current_result)
     if len(result) < 1:
