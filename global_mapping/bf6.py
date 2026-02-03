@@ -314,13 +314,21 @@ STAT_GAMEMODE_SMALL = {
         "image": "https://cdn.gametools.network/modes/bf6/gauntlet.svg",
         "altImage": "https://cdn.gametools.network/modes/bf6/gauntlet-framed.svg",
     },
+    "modbuilder0": {
+        "gamemodeName": "Portal",
+        "image": "https://cdn.gametools.network/modes/bf6/wrench-hammer.svg",
+        "altImage": "",
+    },
     "official": {"gamemodeName": "Official", "image": "", "altImage": ""},
-    "modbuilder0": {"gamemodeName": "Portal", "image": "", "altImage": ""},
 }
 STAT_GAMEMODE_SMALL_CATEGORY = {
     "all": {"gamemodeName": "All", "image": "", "altImage": ""},
     "mp": {"gamemodeName": "Multiplayer", "image": "", "altImage": ""},
-    "modbuilder": {"gamemodeName": "Portal", "image": "", "altImage": ""},
+    "modbuilder": {
+        "gamemodeName": "Portal",
+        "image": "https://cdn.gametools.network/modes/bf6/wrench-hammer.svg",
+        "altImage": "",
+    },
     "granite": {
         "gamemodeName": "Redsec",
         "image": "https://cdn.gametools.network/modes/bf6/battle_royale.svg",
@@ -388,7 +396,11 @@ STAT_GAMEMODE = {
         "image": "https://cdn.gametools.network/modes/bf6/rush.svg",
         "altImage": "https://cdn.gametools.network/modes/bf6/rush-framed.svg",
     },
-    "ModBuilderCustom0": {"gamemodeName": "Portal", "image": "", "altImage": ""},
+    "ModBuilderCustom0": {
+        "gamemodeName": "Portal",
+        "image": "https://cdn.gametools.network/modes/bf6/wrench-hammer.svg",
+        "altImage": "",
+    },
 }
 CLASSES = {
     "assault": {
