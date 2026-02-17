@@ -172,6 +172,7 @@ MAP_PICTURES = {
     "MP_Granite": "https://cdn.gametools.network/maps/bf6/Fort_Lyndon_BF6_REDSEC.webp",
     "MP_Granite_MainStreet_Portal": "https://cdn.gametools.network/maps/bf6/T_UI_Granite_Portal_01_Thumb_SML-c1924a54.jpg",
     "MP_Granite_Marina_Portal": "https://cdn.gametools.network/maps/bf6/T_UI_Granite_Portal_02_Thumb_SML-bacdb856.jpg",
+    "MP_Granite_MilitaryRnD_Portal": "https://cdn.gametools.network/maps/bf6/T_UI_Granite_Portal_03_Thumb_SML-074dbb4f.jpg",
     "MP_Granite_ClubHouse_Portal": "https://cdn.gametools.network/maps/bf6/T_UI_Granite_Portal_05_Thumb_SML-74ea7be7.webp",
     "MP_Granite_TechCampus_Portal": "https://cdn.gametools.network/maps/bf6/T_UI_Granite_Portal_06_Thumb_SML-80099ba6.webp",
 }
