@@ -8,7 +8,7 @@ from global_mapping.readability.exceptions import NotFoundException
 from global_mapping.readability.shared import format_percentage_value
 
 logger = logging.getLogger("api")
-DEFAULT_SEASON = "Season1"
+DEFAULT_SEASON = "Season2"
 
 
 async def serverList(servers):

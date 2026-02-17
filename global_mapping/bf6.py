@@ -1,4 +1,4 @@
-SEASONS = {"Season1": "Season 1"}
+SEASONS = {"Season1": "Season 1", "Season2": "Season 2"}
 PLATFORM = {
     0: "unknown",
     1: "pc",
