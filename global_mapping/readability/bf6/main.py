@@ -6,9 +6,61 @@ import logging
 from global_mapping import bf6 as BF6
 from global_mapping.readability.exceptions import NotFoundException
 from global_mapping.readability.shared import format_percentage_value
+from global_mapping.bf6.languages.settingValues.main import (
+    selectLanguage as settingsLanguage,
+)
 
 logger = logging.getLogger("api")
 DEFAULT_SEASON = "Season2"
+
+
+async def extra_map_info(maps):
+    for current_map in maps:
+        internal_map_name = current_map.get("levelName", "")
+        try:
+            current_map["mapname"] = BF6.MAPS[internal_map_name]
+            current_map["image"] = BF6.MAP_PICTURES[internal_map_name]
+        except KeyError:
+            logger.warning(f"new map, bf6: {internal_map_name}")
+            current_map["mapname"] = internal_map_name
+            current_map["image"] = ""
+        try:
+            current_map["mode"] = BF6.MODES[current_map["levelLocation"]]
+        except KeyError:
+            logger.warning(f"new mode, bf6: {current_map.get('levelName', '')}")
+            current_map["mode"] = current_map.get("levelName", "")
+
+
+async def tag_translation(settings_translation: dict, tags: list[dict]):
+    for tag in tags:
+        for translation in tag.get("translation", {}).get("translations", []):
+            translation["localizedText"] = settings_translation.get(
+                translation.get("translationId", ""), ""
+            )
+
+
+async def shared_playground(current_playground, lang: str):
+    settings_translation = await settingsLanguage(lang)
+    for result in current_playground.get("result", []):
+        for inner_result in result.get("result", []):
+            play_element_design = inner_result.get("playElementDesign", None)
+            if play_element_design is not None:
+                await extra_map_info(
+                    play_element_design.get("mapRotation", {}).get("maps", [])
+                )
+
+                await tag_translation(
+                    settings_translation, play_element_design.get("tags", [])
+                )
+
+    return current_playground
+
+
+async def playground(current_playground):
+    play_element_design = current_playground.get("playElementDesign", None)
+    if play_element_design is not None:
+        await extra_map_info(play_element_design.get("mapRotation", {}).get("maps", []))
+    return current_playground
 
 
 async def serverList(servers):
