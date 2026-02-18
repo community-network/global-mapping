@@ -151,6 +151,7 @@ MAP_TRANSLATION_IDS = {
     "MP_Granite": "ID_ARRIVAL_MAP_GRANITE",
     "MP_Granite_MainStreet_Portal": "ID_ARRIVAL_MAP_GRANITE_DOWNTOWN",
     "MP_Granite_MilitaryRnD_Portal": "ID_ARRIVAL_MAP_GRANITE_MILITARY_RND_N",
+    "": "ID_ARRIVAL_MAP_GRANITE_MILITARY_STORAGE_N",  # TODO ???
     "MP_Granite_Marina_Portal": "ID_ARRIVAL_MAP_GRANITE_MARINA",
     "MP_Granite_ClubHouse_Portal": "ID_ARRIVAL_MAP_GRANITE_CLUB_HOUSE",
     "MP_Granite_TechCampus_Portal": "ID_ARRIVAL_MAP_GRANITE_TECH_CENTER",
@@ -173,6 +174,7 @@ MAP_PICTURES = {
     "MP_Granite_MainStreet_Portal": "https://cdn.gametools.network/maps/bf6/T_UI_Granite_Portal_01_Thumb_SML-c1924a54.jpg",
     "MP_Granite_Marina_Portal": "https://cdn.gametools.network/maps/bf6/T_UI_Granite_Portal_02_Thumb_SML-bacdb856.jpg",
     "MP_Granite_MilitaryRnD_Portal": "https://cdn.gametools.network/maps/bf6/T_UI_Granite_Portal_03_Thumb_SML-074dbb4f.jpg",
+    "": "https://cdn.gametools.network/maps/bf6/T_UI_Granite_Portal_04_Thumb_SML-e8d5744b.jpg",  # TODO ???
     "MP_Granite_ClubHouse_Portal": "https://cdn.gametools.network/maps/bf6/T_UI_Granite_Portal_05_Thumb_SML-74ea7be7.webp",
     "MP_Granite_TechCampus_Portal": "https://cdn.gametools.network/maps/bf6/T_UI_Granite_Portal_06_Thumb_SML-80099ba6.webp",
 }
@@ -262,6 +264,10 @@ STAT_MAPS = {
     "mpeastwood": {
         "mapName": "Eastwood",
         "image": "https://cdn.gametools.network/maps/bf6/T_UI_Eastwood_Large_OPT-3bfa6a6f.webp",
+    },
+    "mpcontaminated": {
+        "mapName": "Contaminated",
+        "image": "https://cdn.gametools.network/maps/bf6/T_UI_Contaminated_Large_OPT-da1d04ef.webp",
     },
 }
 
@@ -532,7 +538,12 @@ VEHICLES = {
     "sur_quadbike": {
         "type": "Ground Transport",
         "vehicleName": "Rugged MV740",
-        "image": "",
+        "image": "https://cdn.gametools.network/vehicles/bf6/U_VEH_Car_QuadBike-f25eae5e.webp",
+    },
+    "air_ah6litbird": {
+        "type": "Air Combat",
+        "vehicleName": "AH-6 Little Bird",
+        "image": "",  # wrong image
     },
 }
 VEHICLE_GROUPS = {
