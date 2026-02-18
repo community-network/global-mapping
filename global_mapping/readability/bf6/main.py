@@ -6,7 +6,7 @@ import logging
 from global_mapping import bf6 as BF6
 from global_mapping.readability.exceptions import NotFoundException
 from global_mapping.readability.shared import format_percentage_value
-from global_mapping.bf6.languages.settingValues.main import (
+from global_mapping.readability.bf6.languages.settingValues.main import (
     selectLanguage as settingsLanguage,
 )
 
