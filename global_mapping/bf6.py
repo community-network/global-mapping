@@ -1130,3 +1130,442 @@ GADGET_GROUPS = {
     "il": {"groupName": "Grenade Launchers"},
     "callins": {"groupName": "Call-ins"},
 }
+
+LEVEL_IMAGES = {
+    1: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_001_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_001_lg.png",
+    },
+    2: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_002_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_002_lg.png",
+    },
+    3: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_003_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_003_lg.png",
+    },
+    4: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_004_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_004_lg.png",
+    },
+    5: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_005_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_005_lg.png",
+    },
+    6: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_006_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_006_lg.png",
+    },
+    7: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_007_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_007_lg.png",
+    },
+    8: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_008_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_008_lg.png",
+    },
+    9: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_009_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_009_lg.png",
+    },
+    10: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_010_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_010_lg.png",
+    },
+    11: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_011_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_011_lg.png",
+    },
+    12: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_012_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_012_lg.png",
+    },
+    13: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_013_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_013_lg.png",
+    },
+    14: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_014_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_014_lg.png",
+    },
+    15: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_015_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_015_lg.png",
+    },
+    16: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_016_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_016_lg.png",
+    },
+    17: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_017_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_017_lg.png",
+    },
+    18: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_018_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_018_lg.png",
+    },
+    19: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_019_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_019_lg.png",
+    },
+    20: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_020_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_020_lg.png",
+    },
+    21: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_021_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_021_lg.png",
+    },
+    22: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_022_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_022_lg.png",
+    },
+    23: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_023_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_023_lg.png",
+    },
+    24: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_024_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_024_lg.png",
+    },
+    25: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_025_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_025_lg.png",
+    },
+    26: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_026_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_026_lg.png",
+    },
+    27: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_027_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_027_lg.png",
+    },
+    28: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_028_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_028_lg.png",
+    },
+    29: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_029_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_029_lg.png",
+    },
+    30: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_030_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_030_lg.png",
+    },
+    31: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_031_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_031_lg.png",
+    },
+    32: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_032_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_032_lg.png",
+    },
+    33: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_033_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_033_lg.png",
+    },
+    34: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_034_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_034_lg.png",
+    },
+    35: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_035_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_035_lg.png",
+    },
+    36: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_036_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_036_lg.png",
+    },
+    37: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_037_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_037_lg.png",
+    },
+    38: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_038_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_038_lg.png",
+    },
+    39: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_039_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_039_lg.png",
+    },
+    40: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_040_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_040_lg.png",
+    },
+    41: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_041_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_041_lg.png",
+    },
+    42: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_042_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_042_lg.png",
+    },
+    43: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_043_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_043_lg.png",
+    },
+    44: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_044_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_044_lg.png",
+    },
+    45: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_045_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_045_lg.png",
+    },
+    46: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_046_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_046_lg.png",
+    },
+    47: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_047_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_047_lg.png",
+    },
+    48: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_048_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_048_lg.png",
+    },
+    49: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_049_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_049_lg.png",
+    },
+    50: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_050_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_050_lg.png",
+    },
+    55: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_055_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_055_lg.png",
+    },
+    60: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_060_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_060_lg.png",
+    },
+    65: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_065_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_065_lg.png",
+    },
+    70: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_070_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_070_lg.png",
+    },
+    75: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_075_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_075_lg.png",
+    },
+    80: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_080_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_080_lg.png",
+    },
+    85: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_085_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_085_lg.png",
+    },
+    90: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_090_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_090_lg.png",
+    },
+    95: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_095_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_095_lg.png",
+    },
+    100: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_100_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_100_lg.png",
+    },
+    110: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_110_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_110_lg.png",
+    },
+    120: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_120_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_120_lg.png",
+    },
+    130: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_130_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_130_lg.png",
+    },
+    140: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_140_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_140_lg.png",
+    },
+    150: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_150_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_150_lg.png",
+    },
+    160: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_160_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_160_lg.png",
+    },
+    170: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_170_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_170_lg.png",
+    },
+    180: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_180_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_180_lg.png",
+    },
+    190: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_190_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_190_lg.png",
+    },
+    200: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_200_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_200_lg.png",
+    },
+    210: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_210_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_210_lg.png",
+    },
+    220: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_220_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_220_lg.png",
+    },
+    230: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_230_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_230_lg.png",
+    },
+    240: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_240_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_240_lg.png",
+    },
+    250: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_250_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_250_lg.png",
+    },
+    260: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_260_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_260_lg.png",
+    },
+    270: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_270_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_270_lg.png",
+    },
+    280: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_280_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_280_lg.png",
+    },
+    290: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_290_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_290_lg.png",
+    },
+    300: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_300_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_300_lg.png",
+    },
+    310: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_310_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_310_lg.png",
+    },
+    320: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_320_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_320_lg.png",
+    },
+    330: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_330_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_330_lg.png",
+    },
+    340: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_340_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_340_lg.png",
+    },
+    350: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_350_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_350_lg.png",
+    },
+    360: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_360_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_360_lg.png",
+    },
+    370: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_370_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_370_lg.png",
+    },
+    380: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_380_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_380_lg.png",
+    },
+    390: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_390_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_390_lg.png",
+    },
+    400: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_400_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_400_lg.png",
+    },
+    410: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_410_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_410_lg.png",
+    },
+    420: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_420_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_420_lg.png",
+    },
+    430: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_430_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_430_lg.png",
+    },
+    440: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_440_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_440_lg.png",
+    },
+    450: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_450_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_450_lg.png",
+    },
+    460: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_460_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_460_lg.png",
+    },
+    470: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_470_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_470_lg.png",
+    },
+    480: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_480_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_480_lg.png",
+    },
+    490: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_490_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_490_lg.png",
+    },
+    500: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_500_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_500_lg.png",
+    },
+    1000: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_1000_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_1000_lg.png",
+    },
+    1500: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_1500_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_1500_lg.png",
+    },
+    2000: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_2000_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_2000_lg.png",
+    },
+    2500: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_2500_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_2500_lg.png",
+    },
+    3000: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_3000_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_3000_lg.png",
+    },
+    3500: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_3500_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_3500_lg.png",
+    },
+    4000: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_4000_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_4000_lg.png",
+    },
+    4500: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_4500_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_4500_lg.png",
+    },
+    5000: {
+        "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_5000_sm.png",
+        "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_5000_lg.png",
+    },
+}
