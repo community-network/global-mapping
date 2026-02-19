@@ -1095,7 +1095,7 @@ GADGET_GROUPS = {
     "gl": {"groupName": "Grenade Launchers"},
     "mine": {"groupName": "Explosives"},
     "grenades": {"groupName": "Grenades"},
-    # "rl": {"groupName": ""},
-    # "il": {"groupName": ""},
+    "rl": {"groupName": "Launchers"},
+    "il": {"groupName": "Grenade Launchers"},
     "callins": {"groupName": "Call-ins"},
 }
