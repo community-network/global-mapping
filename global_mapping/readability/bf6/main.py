@@ -14,6 +14,17 @@ logger = logging.getLogger("api")
 DEFAULT_SEASON = "Season2"
 
 
+async def player_profile(data):
+    for profile in data.get("playerProfiles"):
+        found_rank = None
+        player_card = profile.get("playerCard", {})
+        rank = player_card.get("rank", 0)
+        while found_rank is None or rank == 0 or rank is None:
+            found_rank = BF6.RANK_IMAGES.get(rank, None)
+            rank -= 1
+        player_card["rankImage"] = found_rank
+
+
 async def extra_map_info(maps):
     for current_map in maps:
         internal_map_name = current_map.get("levelName", "")

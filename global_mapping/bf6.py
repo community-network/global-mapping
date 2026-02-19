@@ -1131,7 +1131,7 @@ GADGET_GROUPS = {
     "callins": {"groupName": "Call-ins"},
 }
 
-LEVEL_IMAGES = {
+RANK_IMAGES = {
     1: {
         "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_001_sm.png",
         "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_001_lg.png",
