@@ -334,6 +334,11 @@ STAT_GAMEMODE_SMALL = {
         "image": "https://cdn.gametools.network/modes/bf6/wrench-hammer.svg",
         "altImage": "",
     },
+    "strike": {
+        "gamemodeName": "Strikepoint",
+        "image": "https://cdn.gametools.network/modes/bf6/strikepoint.svg",
+        "altImage": "",
+    },
     "official": {"gamemodeName": "Official", "image": "", "altImage": ""},
 }
 STAT_GAMEMODE_SMALL_CATEGORY = {
@@ -852,6 +857,22 @@ WEAPONS = {
         "weaponName": "DB-12",
         "image": "https://cdn.gametools.network/weapons/bf6/T_UI_DP12_PKG_Factory_MED-0335554d.webp",
         "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_DP12_PKG_Factory_MED-0335554d.webp",
+    },
+    "ar_vhsk2": {
+        "type": "Assault Rifles",
+        "weaponName": "VCR-2",
+        "image": "https://cdn.gametools.network/weapons/bf6/T_UI_HK433_PKG_Factory_MED-39181b6c.webp",
+        "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_HK433_PKG_Factory_MED-39181b6c.webp",
+    },
+    "dmr_msbsgrotc": {
+        "type": "DMRs",
+        "weaponName": "GRT-CPS",
+        "image": "",
+    },
+    "mg_mg525btk": {
+        "type": "Machine Guns",
+        "weaponName": "M121 A2",
+        "image": "",
     },
 }
 WEAPON_GROUPS = {
