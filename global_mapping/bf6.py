@@ -112,6 +112,7 @@ MAPS = {
     "MP_Granite_MainStreet_Portal": "Downtown",
     "MP_Granite_MilitaryRnD_Portal": "Area 22B",
     "MP_Granite_Marina_Portal": "Marina",
+    "MP_Granite_MilitaryStorage_Portal": "Redline Storage",
     "MP_Granite_ClubHouse_Portal": "Club House",
     "MP_Granite_TechCampus_Portal": "Tech Center",
 }
@@ -131,6 +132,7 @@ TO_GAME_MAPS = {
     "portal sandbox": "MP_Portal_Sand",
     "area 22b": "MP_Granite_MilitaryRnD_Portal",
     "downtown": "MP_Granite_MainStreet_Portal",
+    "redline storage": "MP_Granite_MilitaryStorage_Portal",
     "club house": "MP_Granite_ClubHouse_Portal",
     "tech center": "MP_Granite_TechCampus_Portal",
 }
@@ -151,7 +153,7 @@ MAP_TRANSLATION_IDS = {
     "MP_Granite": "ID_ARRIVAL_MAP_GRANITE",
     "MP_Granite_MainStreet_Portal": "ID_ARRIVAL_MAP_GRANITE_DOWNTOWN",
     "MP_Granite_MilitaryRnD_Portal": "ID_ARRIVAL_MAP_GRANITE_MILITARY_RND_N",
-    "": "ID_ARRIVAL_MAP_GRANITE_MILITARY_STORAGE_N",  # TODO ???
+    "MP_Granite_MilitaryStorage_Portal": "ID_ARRIVAL_MAP_GRANITE_MILITARY_STORAGE_N",
     "MP_Granite_Marina_Portal": "ID_ARRIVAL_MAP_GRANITE_MARINA",
     "MP_Granite_ClubHouse_Portal": "ID_ARRIVAL_MAP_GRANITE_CLUB_HOUSE",
     "MP_Granite_TechCampus_Portal": "ID_ARRIVAL_MAP_GRANITE_TECH_CENTER",
@@ -174,7 +176,7 @@ MAP_PICTURES = {
     "MP_Granite_MainStreet_Portal": "https://cdn.gametools.network/maps/bf6/T_UI_Granite_Portal_01_Thumb_SML-c1924a54.jpg",
     "MP_Granite_Marina_Portal": "https://cdn.gametools.network/maps/bf6/T_UI_Granite_Portal_02_Thumb_SML-bacdb856.jpg",
     "MP_Granite_MilitaryRnD_Portal": "https://cdn.gametools.network/maps/bf6/T_UI_Granite_Portal_03_Thumb_SML-074dbb4f.jpg",
-    "": "https://cdn.gametools.network/maps/bf6/T_UI_Granite_Portal_04_Thumb_SML-e8d5744b.jpg",  # TODO ???
+    "MP_Granite_MilitaryStorage_Portal": "https://cdn.gametools.network/maps/bf6/T_UI_Granite_Portal_04_Thumb_SML-e8d5744b.jpg",
     "MP_Granite_ClubHouse_Portal": "https://cdn.gametools.network/maps/bf6/T_UI_Granite_Portal_05_Thumb_SML-74ea7be7.webp",
     "MP_Granite_TechCampus_Portal": "https://cdn.gametools.network/maps/bf6/T_UI_Granite_Portal_06_Thumb_SML-80099ba6.webp",
 }
