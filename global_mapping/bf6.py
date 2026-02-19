@@ -1110,6 +1110,16 @@ GADGETS = {
         "gadgetName": "Artillery Strike",
         "image": "https://cdn.gametools.network/gadgets/bf6/T_UI_CALLINS_Artillery_Thumb-126cad71.png",
     },
+    "rl_igla": {
+        "type": "Class Gadgets",
+        "gadgetName": "9K38 Igla",
+        "image": "",
+    },
+    "gasmask": {
+        "type": "",
+        "gadgetName": "Gas mask",
+        "image": "",
+    },
 }
 
 GADGET_GROUPS = {
