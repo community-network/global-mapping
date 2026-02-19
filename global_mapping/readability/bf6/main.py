@@ -23,6 +23,7 @@ async def player_profile(data):
             found_rank = BF6.RANK_IMAGES.get(rank, None)
             rank -= 1
         player_card["rankImage"] = found_rank
+    return data
 
 
 async def extra_map_info(maps):
