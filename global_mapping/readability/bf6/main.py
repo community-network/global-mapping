@@ -15,7 +15,7 @@ DEFAULT_SEASON = "Season2"
 
 
 async def player_profile(data):
-    for profile in data.get("playerProfiles"):
+    for profile in data.get("playerProfiles", []):
         found_rank = None
         player_card = profile.get("playerCard", {})
         rank = player_card.get("rank", 0)
