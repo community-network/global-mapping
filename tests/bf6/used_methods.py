@@ -78,7 +78,7 @@ normal = [
     "Kills_Total",
     "deaths_total",
     "tp_gm_all",
-    "dmg_total",
+    "Dmg_Dealt_Total",
     "human_kills_total",
     "kills_Headshots_Total",
     "played_match_total",
