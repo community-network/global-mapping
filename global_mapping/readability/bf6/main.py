@@ -69,6 +69,17 @@ async def shared_playground(current_playground, lang: str):
 
 
 async def playground(current_playground):
+    play_element = current_playground.get("playElement", None)
+    if play_element is not None:
+        play_element["thumbnailUrl"]["value"] = (
+            play_element["thumbnailUrl"]
+            .get("value", "")
+            .replace(
+                "[BB_PREFIX]",
+                "https://eaassets-a.akamaihd.net/battlelog/battlebinary",
+            )
+        )
+
     play_element_design = current_playground.get("playElementDesign", None)
     if play_element_design is not None:
         await extra_map_info(play_element_design.get("mapRotation", {}).get("maps", []))
