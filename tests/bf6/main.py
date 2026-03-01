@@ -88,7 +88,7 @@ async def test_stats(data: dict, category_name: str):
 
 
 async def main():
-    raw_stats = find_player("LackSpuds")
+    raw_stats = find_player("FuryIsOurs")
     with open("temp/raw_stats.json", "w", encoding="utf-8") as f:
         json.dump(raw_stats, f, ensure_ascii=False, indent=4)
     data = await get_stats(raw_stats, "glacier_mp", False, True)

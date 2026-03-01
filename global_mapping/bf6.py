@@ -219,6 +219,9 @@ TO_GAME_MODES = {
     "redsec gauntlet": "GraniteGauntlet0",
 }
 STAT_MAPS = {
+    "mp": {
+        "mapName": "All",
+    },
     "mpabbasid": {
         "mapName": "Siege of Cairo",
         "image": "https://cdn.gametools.network/maps/bf6/T_UI_Abbasid_Large_OPT-49a3761a.webp",
@@ -340,6 +343,7 @@ STAT_GAMEMODE_SMALL = {
         "altImage": "",
     },
     "official": {"gamemodeName": "Official", "image": "", "altImage": ""},
+    "sabotage": {"gamemodeName": "Sabotage", "image": "", "altImage": ""},
 }
 STAT_GAMEMODE_SMALL_CATEGORY = {
     "all": {"gamemodeName": "All", "image": "", "altImage": ""},
@@ -876,6 +880,7 @@ WEAPONS = {
     },
 }
 WEAPON_GROUPS = {
+    "temp": {"groupName": "All"},
     "snp": {"groupName": "Rifles"},
     "crb": {"groupName": "Carbines"},
     "mg": {"groupName": "Machine Guns"},
@@ -883,6 +888,7 @@ WEAPON_GROUPS = {
     "ar": {"groupName": "Assault Rifles"},
     "smg": {"groupName": "SMG-PDWs"},
     "dmr": {"groupName": "DMRs"},
+    "pst_temp": {"groupName": "Pistols"},
 }
 GADGETS = {
     "callin_airstrike": {
@@ -1120,9 +1126,25 @@ GADGETS = {
         "gadgetName": "Gas mask",
         "image": "",
     },
+    "gren_av": {
+        "type": "Throwables",
+        "gadgetName": "SCG-24",
+        "image": "https://cdn.gametools.network/gadgets/bf6/T_UI_AntiTank_Grenade_Icon-82f8def3.png",
+    },
+    "ubsg_incen": {
+        "type": "Misc. Equipment",
+        "gadgetName": "SS26",
+        "image": "https://cdn.gametools.network/gadgets/bf6/T_UI_M26_Mass_Dragonsbreath_Icon-f7daa1ac.png",
+    },
+    "callin_mobresp": {
+        "type": "",
+        "gadgetName": "Mobile respawn",
+        "image": "",
+    },
 }
 
 GADGET_GROUPS = {
+    "temp": {"groupName": "All"},
     "gl": {"groupName": "Grenade Launchers"},
     "mine": {"groupName": "Explosives"},
     "grenades": {"groupName": "Grenades"},

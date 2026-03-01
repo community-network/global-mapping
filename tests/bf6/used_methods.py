@@ -39,6 +39,8 @@ starts_with = [
     "assdmg_gad_",
     "sptass_gad_",
     "spot_gad_",
+    "repair_gad_",
+    "edw_gad_",
     # classes
     "kw_kit_",
     "deaths_kit_",
@@ -68,6 +70,13 @@ starts_with = [
     "obj_defended_gm_",
     "scorein_gm_",
     "hsw_gm_",
+    "vehd_gm_",
+    "obj_disarmed_",
+    "resp_gm_",
+    "sectordef_gm_",
+    "intel_pickup_gm_",
+    "obj_armed_gm_",
+    "obj_destroyed_gm_",
 ]
 
 normal = [
@@ -152,4 +161,12 @@ normal = [
     "xp_all",
     "xp_performance",
     "xp_accolades",
+    "killconfirmed_total",
+    "killconfirmed_y_total",
+    "killconfirmed_last",
+    "placement_last",
+    "Dmg_Dealt_human_Total",
+    "Dmg_Dealt_W_Veh_Total",
+    "Dmg_Dealt_Explosive_Total",
+    "Kills_Parachute_Total",
 ]
