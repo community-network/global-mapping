@@ -737,6 +737,7 @@ async def get_main_stats(stats_dict: dict, format_values: bool = True):
         "saviorKills": stats_dict.get("savior_kills_total", 0),
         "shotsFired": shots_fired,
         "shotsHit": shots_hit,
+        "humanShotsHit": stats_dict.get("shots_hit_human_total", 0),
         "killAssists": stats_dict.get("assists_gm_all", 0),
         "vehiclesDestroyed": stats_dict.get("Destroyed_Veh_Total", 0),
         "enemiesSpotted": stats_dict.get("Spotted_Enemies_Total", 0),
@@ -902,6 +903,8 @@ async def get_seasons(all_fields: list[dict[str, Any]], MODES: dict):
             score = first(["score_total"])
             time_played = first(["tp_level"])  # seconds
             extractions = first(["extract_extracted_total"])
+            revivals = first(["Revives_Teammates_Total"])
+            placement_last = first(["placement_last"])
 
             kd = round(kills / deaths, 2) if deaths else None
             # winrate = round((wins / played) * 100, 2) if played else None
@@ -914,6 +917,8 @@ async def get_seasons(all_fields: list[dict[str, Any]], MODES: dict):
                     "wins": wins,
                     "losses": losses,
                     "kills": kills,
+                    "rivivals": revivals,
+                    "lastPlacement": placement_last,
                     "deaths": deaths,
                     "killDeath": kd,
                     "score": score,

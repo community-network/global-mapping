@@ -169,4 +169,5 @@ normal = [
     "Dmg_Dealt_W_Veh_Total",
     "Dmg_Dealt_Explosive_Total",
     "Kills_Parachute_Total",
+    "shots_hit_human_total",
 ]
