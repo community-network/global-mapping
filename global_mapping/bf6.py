@@ -189,6 +189,7 @@ SMALLMODES = {
     "Conquest0": "CL",
     "GraniteDuo0": "RD",
     "GraniteSquad0": "RQ",
+    "GraniteSolo0": "BRS",
     "GraniteGauntlet0": "RG",
 }
 MODES = {
@@ -200,11 +201,13 @@ MODES = {
     "Conquest0": "Conquest large",
     "GraniteDuo0": "Redsec Duos",
     "GraniteSquad0": "Redsec Quads",
+    "GraniteSolo0": "Redsec Solo",
     "GraniteGauntlet0": "Redsec Gauntlet",
 }
 REDSEC_MODES = {
     "GraniteDuo0": "Duos",
     "GraniteSquad0": "Quads",
+    "GraniteSolo0": "Solo",
     "GraniteGauntlet0": "Gauntlet",
 }
 TO_GAME_MODES = {
@@ -216,6 +219,7 @@ TO_GAME_MODES = {
     "conquest large": "Conquest0",
     "redsec duos": "GraniteDuo0",
     "redsec quads": "GraniteSquad0",
+    "redsec solo": "GraniteSolo0",
     "redsec gauntlet": "GraniteGauntlet0",
 }
 STAT_MAPS = {
@@ -382,6 +386,11 @@ STAT_GAMEMODE = {
     },
     "GraniteSquad0": {
         "gamemodeName": "Redsec Squad",
+        "image": "https://cdn.gametools.network/modes/bf6/battle_royale.svg",
+        "altImage": "https://cdn.gametools.network/modes/bf6/battle_royale-framed.svg",
+    },
+    "GraniteSolo0": {
+        "gamemodeName": "Redsec Solo",
         "image": "https://cdn.gametools.network/modes/bf6/battle_royale.svg",
         "altImage": "https://cdn.gametools.network/modes/bf6/battle_royale-framed.svg",
     },
