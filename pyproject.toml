@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "gametools-global-mapping"
-version = "0.1.58"
+version = "0.1.59"
 description = "A repo that contains all mapping required by GameTools"
 authors = ["p0lygun <solankivibhakar82@gmail.com>"]
 license = "MIT"
