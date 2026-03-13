@@ -316,6 +316,11 @@ STAT_GAMEMODE_SMALL = {
         "image": "https://cdn.gametools.network/modes/bf6/battle_royale.svg",
         "altImage": "https://cdn.gametools.network/modes/bf6/battle_royale-framed.svg",
     },
+    "graniteSolo": {
+        "gamemodeName": "Redsec Solo",
+        "image": "https://cdn.gametools.network/modes/bf6/battle_royale.svg",
+        "altImage": "https://cdn.gametools.network/modes/bf6/battle_royale-framed.svg",
+    },
     "brsquad": {
         "gamemodeName": "Redsec Squad",
         "image": "https://cdn.gametools.network/modes/bf6/battle_royale.svg",
