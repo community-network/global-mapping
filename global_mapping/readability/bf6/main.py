@@ -237,6 +237,8 @@ async def fill_fields(
     tasks.append(get_gamemodes(stats, BF6.STAT_GAMEMODE_SMALL_CATEGORY, format_values))
     tasks.append(get_gadgets(stats, BF6.GADGETS))
     tasks.append(get_gadgets(stats, BF6.GADGET_GROUPS))
+    tasks.append(get_melee(stats, BF6.MELEE))
+    tasks.append(get_melee(stats, BF6.MELEE_GROUPS))
 
     (
         current_result["weapons"],
@@ -249,6 +251,8 @@ async def fill_fields(
         current_result["gameModeGroups"],
         current_result["gadgets"],
         current_result["gadgetGroups"],
+        current_result["melee"],
+        current_result["meleeGroups"],
     ) = await asyncio.gather(*tasks)
 
     kit_best_kills = 0
@@ -378,6 +382,39 @@ async def get_stats(
         return {"data": result}
     return result[0]
 
+
+
+async def get_melee(stats_dict: dict, constant: dict):
+    melee = []
+    for _id, extra in constant.items():
+        kills = stats_dict.get(f"kw_melee_{_id}", 0)
+        damage = stats_dict.get(f"dmg_melee_{_id}", 0)
+        idk = stats_dict.get(f"tkdw_melee_{_id}", 0)
+        seconds = stats_dict.get(f"tp_melee_{_id}", 0)
+
+        try:
+            kills_per_minute = round(kills / (seconds / 60), 2)
+        except (ZeroDivisionError, KeyError):
+            kills_per_minute = 0.0
+
+        try:
+            damage_per_minute = round(damage / (seconds / 60), 2)
+        except (ZeroDivisionError, KeyError):
+            damage_per_minute = 0.0
+
+        melee.append(
+            {
+                **extra,
+                "id": _id,
+                "kills": kills,
+                "damage": damage,
+                "uses": stats_dict.get(f"uses_melee_{_id}", 0),
+                "killsPerMinute": kills_per_minute,
+                "damagePerMinute": damage_per_minute,
+                "timeEquipped": seconds,
+            }
+        )
+    return melee
 
 async def get_weapons(stats_dict: dict, constant: dict, format_values: bool = True):
     weapons = []

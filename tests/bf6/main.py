@@ -20,6 +20,7 @@ def find_player(player_name: str):
 def check_unmapped(globalstats: dict[str, str]):
     results = {
         "weapons": {},
+        "melee": {},
         "maps": {},
         "gameModes": {},
         "classes": {},
@@ -33,6 +34,10 @@ def check_unmapped(globalstats: dict[str, str]):
             itertools.chain(bf6.WEAPONS, bf6.WEAPON_GROUPS)
         ):
             results["weapons"][key] = globalstats[key]
+        if "tp_melee_" in key and key.replace("tp_melee_", "") not in list(
+            itertools.chain(bf6.MELEE, bf6.MELEE_GROUPS)
+        ):
+            results["melee"][key] = globalstats[key]
         if "tp_gm_" in key and key.replace("tp_gm_", "") not in list(
             itertools.chain(bf6.STAT_GAMEMODE_SMALL, bf6.STAT_GAMEMODE_SMALL_CATEGORY)
         ):

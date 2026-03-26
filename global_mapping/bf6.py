@@ -584,6 +584,22 @@ VEHICLE_GROUPS = {
     "air": {"groupName": "Air Combat"},
     "sur": {"groupName": "Ground Combat"},
 }
+MELEE_GROUPS = {
+    "light": {"groupName": "Melee Light"},
+    "heavy": {"groupName": "Melee Heavy"}
+}
+MELEE = {
+    "light_combatknife": {
+        "type": "Melee Light",
+        "meleeName": "Combat Knife",
+        "image": "",  # wrong image
+    },
+    "heavy_sledge": {
+        "type": "Melee Heavy",
+        "meleeName": "Sledgehammer",
+        "image": "",  # wrong image
+    }
+}
 WEAPONS = {
     "mg_l110": {
         "type": "Machine Guns",
@@ -1174,6 +1190,16 @@ GADGETS = {
         "gadgetName": "Mobile respawn",
         "image": "",
     },
+    "sup_pouch": {
+        "type": "",
+        "gadgetName": "Supply Pouch",
+        "image": "",
+    },
+    "defib": {
+        "type": "",
+        "gadgetName": "Defibrillator",
+        "image": "",
+    }
 }
 
 GADGET_GROUPS = {

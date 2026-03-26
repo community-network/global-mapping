@@ -12,6 +12,12 @@ starts_with = [
     "mkw_wp_",
     "adskw_wp_",
     "spawns_wp_",
+    # melee
+    "kw_melee_",
+    "uses_melee_",
+    "dmg_melee_",
+    "tp_melee_",
+    "tkdw_melee_",
     # vehicles
     "kw_veh_",
     "tp_veh_",
