@@ -578,6 +578,11 @@ VEHICLES = {
         "type": "Ground Transport",
         "vehicleName": "TM/O 450",
         "image": "",  # wrong image
+    },
+    "sur_moto_db02": {
+        "type": "Ground Transport",
+        "vehicleName": "M1030-M1",
+        "image": "",
     }
 }
 VEHICLE_GROUPS = {
@@ -592,6 +597,11 @@ MELEE = {
     "light_combatknife": {
         "type": "Melee Light",
         "meleeName": "Combat Knife",
+        "image": "",  # wrong image
+    },
+    "light_gekoknife": {
+        "type": "Melee Light",
+        "meleeName": "Hunting Knife",
         "image": "",  # wrong image
     },
     "heavy_sledge": {
@@ -1198,6 +1208,16 @@ GADGETS = {
     "defib": {
         "type": "",
         "gadgetName": "Defibrillator",
+        "image": "",
+    },
+    "tdart": {
+        "type": "",
+        "gadgetName": "Tracer Dart",
+        "image": "",
+    },
+    "lancet": {
+        "type": "",
+        "gadgetName": "HTI-Mk2",
         "image": "",
     }
 }
