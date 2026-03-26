@@ -278,6 +278,10 @@ STAT_MAPS = {
         "mapName": "Contaminated",
         "image": "https://cdn.gametools.network/maps/bf6/T_UI_Contaminated_Large_OPT-da1d04ef.webp",
     },
+    "mpsubsurface": {
+        "mapName": "Hagental Base",
+        "image": "",
+    }
 }
 
 STAT_GAMEMODE_SMALL = {
@@ -570,6 +574,11 @@ VEHICLES = {
         "vehicleName": "AH-6 Little Bird",
         "image": "",  # wrong image
     },
+    "sur_moto_db01": {
+        "type": "Ground Transport",
+        "vehicleName": "TM/O 450",
+        "image": "",  # wrong image
+    }
 }
 VEHICLE_GROUPS = {
     "air": {"groupName": "Air Combat"},
@@ -892,6 +901,16 @@ WEAPONS = {
         "weaponName": "M121 A2",
         "image": "",
     },
+    "pst_vz61": {
+        "type": "Pistols",
+        "weaponName": "VZ.61",
+        "image": "",
+    },
+    "smg_cz3a1": {
+        "type": "SMG-PDWs",
+        "weaponName": "CZ3A1",
+        "image": "",
+    }
 }
 WEAPON_GROUPS = {
     "temp": {"groupName": "All"},
