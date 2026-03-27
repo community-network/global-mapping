@@ -389,7 +389,6 @@ async def get_melee(stats_dict: dict, constant: dict):
     for _id, extra in constant.items():
         kills = stats_dict.get(f"kw_melee_{_id}", 0)
         damage = stats_dict.get(f"dmg_melee_{_id}", 0)
-        idk = stats_dict.get(f"tkdw_melee_{_id}", 0)
         seconds = stats_dict.get(f"tp_melee_{_id}", 0)
 
         try:
@@ -408,6 +407,7 @@ async def get_melee(stats_dict: dict, constant: dict):
                 "id": _id,
                 "kills": kills,
                 "damage": damage,
+                "takedowns": stats_dict.get(f"tkdw_melee_{_id}", 0),
                 "uses": stats_dict.get(f"uses_melee_{_id}", 0),
                 "killsPerMinute": kills_per_minute,
                 "damagePerMinute": damage_per_minute,
