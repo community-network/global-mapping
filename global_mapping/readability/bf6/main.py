@@ -387,9 +387,9 @@ async def get_stats(
 async def get_melee(stats_dict: dict, constant: dict):
     melee = []
     for _id, extra in constant.items():
-        kills = stats_dict.get(f"kw_melee_{_id}", 0)
-        damage = stats_dict.get(f"dmg_melee_{_id}", 0)
-        seconds = stats_dict.get(f"tp_melee_{_id}", 0)
+        kills = stats_dict.get(f"kw_{_id}", 0)
+        damage = stats_dict.get(f"dmg_{_id}", 0)
+        seconds = stats_dict.get(f"tp_{_id}", 0)
 
         try:
             kills_per_minute = round(kills / (seconds / 60), 2)
@@ -407,8 +407,8 @@ async def get_melee(stats_dict: dict, constant: dict):
                 "id": _id,
                 "kills": kills,
                 "damage": damage,
-                "takedowns": stats_dict.get(f"tkdw_melee_{_id}", 0),
-                "uses": stats_dict.get(f"uses_melee_{_id}", 0),
+                "takedowns": stats_dict.get(f"tkdw_{_id}", 0),
+                "uses": stats_dict.get(f"uses_{_id}", 0),
                 "killsPerMinute": kills_per_minute,
                 "damagePerMinute": damage_per_minute,
                 "timeEquipped": seconds,
@@ -419,12 +419,12 @@ async def get_melee(stats_dict: dict, constant: dict):
 async def get_weapons(stats_dict: dict, constant: dict, format_values: bool = True):
     weapons = []
     for _id, extra in constant.items():
-        kills = stats_dict.get(f"kw_wp_{_id}", 0)
-        damage = stats_dict.get(f"dmg_wp_{_id}", 0)
-        headshots = stats_dict.get(f"hsw_wp_{_id}", 0)
-        shots_hit = stats_dict.get(f"shw_wp_{_id}", 0)
-        shots_fired = stats_dict.get(f"sfw_wp_{_id}", 0)
-        seconds = stats_dict.get(f"tp_wp_{_id}", 0)
+        kills = stats_dict.get(f"kw_{_id}", 0)
+        damage = stats_dict.get(f"dmg_{_id}", 0)
+        headshots = stats_dict.get(f"hsw_{_id}", 0)
+        shots_hit = stats_dict.get(f"shw_{_id}", 0)
+        shots_fired = stats_dict.get(f"sfw_{_id}", 0)
+        seconds = stats_dict.get(f"tp_{_id}", 0)
 
         try:
             accuracy = round((shots_hit / shots_fired) * 100, 2)
@@ -457,11 +457,11 @@ async def get_weapons(stats_dict: dict, constant: dict, format_values: bool = Tr
                 "id": _id,
                 "kills": kills,
                 "damage": damage,
-                "assistsDamage": stats_dict.get(f"assdmg_wp_{_id}", 0),
-                "bodyKills": stats_dict.get(f"bkw_wp_{_id}", 0),
+                "assistsDamage": stats_dict.get(f"assdmg_{_id}", 0),
+                "bodyKills": stats_dict.get(f"bkw_{_id}", 0),
                 "headshotKills": headshots,
-                "hipfireKills": stats_dict.get(f"hfkw_wp_{_id}", 0),
-                "multiKills": stats_dict.get(f"mkw_wp_{_id}", 0),
+                "hipfireKills": stats_dict.get(f"hfkw_{_id}", 0),
+                "multiKills": stats_dict.get(f"mkw_{_id}", 0),
                 "accuracy": format_percentage_value(accuracy, format_values),
                 "killsPerMinute": kills_per_minute,
                 "damagePerMinute": damage_per_minute,
@@ -471,8 +471,8 @@ async def get_weapons(stats_dict: dict, constant: dict, format_values: bool = Tr
                 "hitVKills": hits_per_kill,
                 "shotsHit": shots_hit,
                 "shotsFired": shots_fired,
-                "scopedKills": stats_dict.get(f"adskw_wp_{_id}", 0),
-                "spawns": stats_dict.get(f"spawns_wp_{_id}", 0),
+                "scopedKills": stats_dict.get(f"adskw_{_id}", 0),
+                "spawns": stats_dict.get(f"spawns_{_id}", 0),
                 "timeEquipped": seconds,
             }
         )
@@ -482,8 +482,8 @@ async def get_weapons(stats_dict: dict, constant: dict, format_values: bool = Tr
 async def get_vehicles(stats_dict: dict, constant: dict):
     vehicles = []
     for _id, extra in constant.items():
-        kills = stats_dict.get(f"kw_veh_{_id}", 0)
-        seconds = stats_dict.get(f"tp_veh_{_id}", 0)
+        kills = stats_dict.get(f"kw_{_id}", 0)
+        seconds = stats_dict.get(f"tp_{_id}", 0)
         try:
             kills_per_minute = round(kills / (seconds / 60), 2)
         except ZeroDivisionError:
@@ -494,17 +494,17 @@ async def get_vehicles(stats_dict: dict, constant: dict):
                 "id": _id,
                 "kills": kills,
                 "killsPerMinute": kills_per_minute,
-                "damage": stats_dict.get(f"dmg_veh_{_id}", 0),
-                "spawns": stats_dict.get(f"spawns_veh_{_id}", 0),
-                "roadKills": stats_dict.get(f"roadkills_veh_{_id}", 0),
-                "passengerAssists": stats_dict.get(f"assists_p_veh_{_id}", 0),
-                "multiKills": stats_dict.get(f"mkw_veh_{_id}", 0),
-                "distanceTraveled": stats_dict.get(f"disttrv_veh_{_id}", 0),
-                "driverAssists": stats_dict.get(f"assists_d_veh_{_id}", 0),
-                "vehiclesDestroyedWith": stats_dict.get(f"vdw_veh_{_id}", 0),
-                "assists": stats_dict.get(f"assists_veh_{_id}", 0),
-                "damageTo": stats_dict.get(f"dmgTo_veh_{_id}", 0),
-                "destroyed": stats_dict.get(f"vd_veh_{_id}", 0),
+                "damage": stats_dict.get(f"dmg_{_id}", 0),
+                "spawns": stats_dict.get(f"spawns_{_id}", 0),
+                "roadKills": stats_dict.get(f"roadkills_{_id}", 0),
+                "passengerAssists": stats_dict.get(f"assists_p_{_id}", 0),
+                "multiKills": stats_dict.get(f"mkw_{_id}", 0),
+                "distanceTraveled": stats_dict.get(f"disttrv_{_id}", 0),
+                "driverAssists": stats_dict.get(f"assists_d_{_id}", 0),
+                "vehiclesDestroyedWith": stats_dict.get(f"vdw_{_id}", 0),
+                "assists": stats_dict.get(f"assists_{_id}", 0),
+                "damageTo": stats_dict.get(f"dmgTo_{_id}", 0),
+                "destroyed": stats_dict.get(f"vd_{_id}", 0),
                 # "idk": stats_dict.get(f"eor_vh_{_id}"),
                 "timeIn": seconds,
             }
@@ -515,9 +515,9 @@ async def get_vehicles(stats_dict: dict, constant: dict):
 async def get_classes(stats_dict: dict):
     kits = []
     for kit_id, extra in BF6.CLASSES.items():
-        kills = stats_dict.get(f"kw_kit_{kit_id}", 0)
-        deaths = stats_dict.get(f"deaths_kit_{kit_id}", 0)
-        seconds = stats_dict.get(f"tp_kit_{kit_id}", 0)
+        kills = stats_dict.get(f"kw_{kit_id}", 0)
+        deaths = stats_dict.get(f"deaths_{kit_id}", 0)
+        seconds = stats_dict.get(f"tp_{kit_id}", 0)
         try:
             kill_death = round(kills / deaths, 2)
         except ZeroDivisionError:
@@ -534,9 +534,9 @@ async def get_classes(stats_dict: dict):
                 "deaths": deaths,
                 "kpm": kills_per_minute,
                 "killDeath": kill_death,
-                "spawns": stats_dict.get(f"spawns_kit_{kit_id}", 0),
-                "score": stats_dict.get(f"scoreas_kit_{kit_id}", 0),
-                "assists": stats_dict.get(f"assists_kit_{kit_id}", 0),
+                "spawns": stats_dict.get(f"spawns_{kit_id}", 0),
+                "score": stats_dict.get(f"scoreas_{kit_id}", 0),
+                "assists": stats_dict.get(f"assists_{kit_id}", 0),
                 "secondsPlayed": seconds,
             }
         )
@@ -546,9 +546,9 @@ async def get_classes(stats_dict: dict):
 async def get_gadgets(stats_dict: dict, constant: dict):
     gadgets = []
     for _id, extra in constant.items():
-        damage = stats_dict.get(f"dmg_gad_{_id}", 0)
-        kills = stats_dict.get(f"kw_gad_{_id}", 0)
-        seconds = stats_dict.get(f"tp_gad_{_id}", 0)
+        damage = stats_dict.get(f"dmg_{_id}", 0)
+        kills = stats_dict.get(f"kw_{_id}", 0)
+        seconds = stats_dict.get(f"tp_{_id}", 0)
 
         try:
             kills_per_minute = round(kills / (seconds / 60), 2)
@@ -565,18 +565,18 @@ async def get_gadgets(stats_dict: dict, constant: dict):
                 **extra,
                 "id": _id,
                 "kills": kills,
-                "assistsDamage": stats_dict.get(f"assdmg_gad_{_id}", 0),
-                "assists": stats_dict.get(f"assists_gad_{_id}", 0),
-                "explosiveDamageWith": stats_dict.get(f"edw_gad_{_id}", 0),
-                "spotAssists": stats_dict.get(f"sptass_gad_{_id}", 0),
-                "spots": stats_dict.get(f"spot_gad_{_id}", 0),
-                "spawns": stats_dict.get(f"spawns3_gad_{_id}", 0),
-                # "spawns": stats_dict.get(f"spawns2_gad_{_id}", 0), ????
+                "assistsDamage": stats_dict.get(f"assdmg_{_id}", 0),
+                "assists": stats_dict.get(f"assists_{_id}", 0),
+                "explosiveDamageWith": stats_dict.get(f"edw_{_id}", 0),
+                "spotAssists": stats_dict.get(f"sptass_{_id}", 0),
+                "spots": stats_dict.get(f"spot_{_id}", 0),
+                "spawns": stats_dict.get(f"spawns3_{_id}", 0),
+                # "spawns": stats_dict.get(f"spawns2_{_id}", 0), ????
                 "damage": damage,
-                "repairs": stats_dict.get(f"repair_gad_{_id}", 0),
-                "uses": stats_dict.get(f"uses_gad_{_id}", 0),
-                "multiKills": stats_dict.get(f"mkw_gad_{_id}", 0),
-                "vehiclesDestroyedWith": stats_dict.get(f"vehd_gad_{_id}", 0),
+                "repairs": stats_dict.get(f"repair_{_id}", 0),
+                "uses": stats_dict.get(f"uses_{_id}", 0),
+                "multiKills": stats_dict.get(f"mkw_{_id}", 0),
+                "vehiclesDestroyedWith": stats_dict.get(f"vehd_{_id}", 0),
                 "kpm": kills_per_minute,
                 "dpm": damage_per_minute,
                 "secondsPlayed": seconds,
@@ -588,8 +588,8 @@ async def get_gadgets(stats_dict: dict, constant: dict):
 async def get_maps(stats_dict: dict, format_values: bool = False):
     maps = []
     for _id, extra in BF6.STAT_MAPS.items():
-        wins = stats_dict.get(f"wins_lvl{_id}", 0)
-        losses = stats_dict.get(f"losses_lvl{_id}", 0)
+        wins = stats_dict.get(f"wins_{_id}", 0)
+        losses = stats_dict.get(f"losses_{_id}", 0)
         try:
             win_percent = round(wins / (wins + losses) * 100, 2)
         except ZeroDivisionError:
@@ -601,9 +601,9 @@ async def get_maps(stats_dict: dict, format_values: bool = False):
                 "id": _id,
                 "wins": wins,
                 "losses": losses,
-                "matches": stats_dict.get(f"matches_lvl{_id}", 0),
+                "matches": stats_dict.get(f"matches_{_id}", 0),
                 "winPercent": format_percentage_value(win_percent, format_values),
-                "secondsPlayed": stats_dict.get(f"tp_lvl{_id}", 0),
+                "secondsPlayed": stats_dict.get(f"tp_{_id}", 0),
             }
         )
     return maps
@@ -612,13 +612,13 @@ async def get_maps(stats_dict: dict, format_values: bool = False):
 async def get_gamemodes(stats_dict: dict, constant: dict, format_values: bool = False):
     gamemodes = []
     for _id, extra in constant.items():
-        wins = stats_dict.get(f"wins_gm_{_id}", 0)
-        losses = stats_dict.get(f"losses_gm_{_id}", 0)
-        damage = stats_dict.get(f"dmg_gm_{_id}", 0)
-        kills = stats_dict.get(f"kills_gm_{_id}", 0)
-        deaths = stats_dict.get(f"deaths_gm_{_id}", 0)
-        seconds = stats_dict.get(f"tp_gm_{_id}", 0)
-        headshots = stats_dict.get(f"hsw_gm_{_id}", 0)
+        wins = stats_dict.get(f"wins_{_id}", 0)
+        losses = stats_dict.get(f"losses_{_id}", 0)
+        damage = stats_dict.get(f"dmg_{_id}", 0)
+        kills = stats_dict.get(f"kills_{_id}", 0)
+        deaths = stats_dict.get(f"deaths_{_id}", 0)
+        seconds = stats_dict.get(f"tp_{_id}", 0)
+        headshots = stats_dict.get(f"hsw_{_id}", 0)
 
         try:
             win_percent = round(wins / (wins + losses) * 100, 2)
@@ -655,22 +655,22 @@ async def get_gamemodes(stats_dict: dict, constant: dict, format_values: bool = 
                 "losses": losses,
                 "killDeath": kill_death,
                 "winPercent": format_percentage_value(win_percent, format_values),
-                "killAssists": stats_dict.get(f"assists_gm_{_id}", 0),
-                "matches": stats_dict.get(f"matches_gm_{_id}", 0),
-                "repairs": stats_dict.get(f"repair_gm_{_id}", 0),
-                "revives": stats_dict.get(f"revives_gm_{_id}", 0),
-                "spots": stats_dict.get(f"spot_gm_{_id}", 0),
-                "respawns": stats_dict.get(f"resp_gm_{_id}", 0),
-                "objectiveTime": stats_dict.get(f"obj_time_gm_{_id}", 0),
-                "objectivesCaptured": stats_dict.get(f"obj_captured_gm_{_id}", 0),
-                "objectivesDefended": stats_dict.get(f"obj_defended_gm_{_id}", 0),
-                "objectivesDestroyed": stats_dict.get(f"obj_destroyed_gm_{_id}", 0),
-                "objectivesArmed": stats_dict.get(f"obj_armed_gm_{_id}", 0),
+                "killAssists": stats_dict.get(f"assists_{_id}", 0),
+                "matches": stats_dict.get(f"matches_{_id}", 0),
+                "repairs": stats_dict.get(f"repair_{_id}", 0),
+                "revives": stats_dict.get(f"revives_{_id}", 0),
+                "spots": stats_dict.get(f"spot_{_id}", 0),
+                "respawns": stats_dict.get(f"resp_{_id}", 0),
+                "objectiveTime": stats_dict.get(f"obj_time_{_id}", 0),
+                "objectivesCaptured": stats_dict.get(f"obj_captured_{_id}", 0),
+                "objectivesDefended": stats_dict.get(f"obj_defended_{_id}", 0),
+                "objectivesDestroyed": stats_dict.get(f"obj_destroyed_{_id}", 0),
+                "objectivesArmed": stats_dict.get(f"obj_armed_{_id}", 0),
                 "objectivesDisarmed": stats_dict.get(f"obj_disarmed_{_id}", 0),
-                "vehiclesDestroyedWith": stats_dict.get(f"vehd_gm_{_id}", 0),
-                "sectorsDefended": stats_dict.get(f"sectordef_gm_{_id}", 0),
-                "intelPickups": stats_dict.get(f"intel_pickup_gm_{_id}", 0),
-                "scoreIn": stats_dict.get(f"scorein_gm_{_id}", 0),
+                "vehiclesDestroyedWith": stats_dict.get(f"vehd_{_id}", 0),
+                "sectorsDefended": stats_dict.get(f"sectordef_{_id}", 0),
+                "intelPickups": stats_dict.get(f"intel_pickup_{_id}", 0),
+                "scoreIn": stats_dict.get(f"scorein_{_id}", 0),
                 "headshotKills": headshots,
                 "headshots": format_percentage_value(
                     headshot_percentage, format_values

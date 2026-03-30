@@ -223,155 +223,150 @@ TO_GAME_MODES = {
     "redsec gauntlet": "GraniteGauntlet0",
 }
 STAT_MAPS = {
-    "mp": {
-        "mapName": "All",
-    },
-    "mpabbasid": {
+    "lvlmp": {"mapName": "All"},
+    "lvlmpabbasid": {
         "mapName": "Siege of Cairo",
         "image": "https://cdn.gametools.network/maps/bf6/T_UI_Abbasid_Large_OPT-49a3761a.webp",
     },
-    "mpaftermath": {
+    "lvlmpaftermath": {
         "mapName": "Empire State",
         "image": "https://cdn.gametools.network/maps/bf6/T_UI_Aftermath_Large_OPT-bf883df1.webp",
     },
-    "mpbattery": {
+    "lvlmpbattery": {
         "mapName": "Iberian Offensive",
         "image": "https://cdn.gametools.network/maps/bf6/T_UI_Battery_Large_OPT-034d4636.webp",
     },
-    "mpcapstone": {
+    "lvlmpcapstone": {
         "mapName": "Liberation Peak",
         "image": "https://cdn.gametools.network/maps/bf6/T_UI_Capstone_Large_OPT-2ccae694.webp",
     },
-    "mpdumbo": {
+    "lvlmpdumbo": {
         "mapName": "Manhattan Bridge",
         "image": "https://cdn.gametools.network/maps/bf6/T_UI_Dumbo_Large_OPT-20de031f.webp",
     },
-    "mpfirestorm": {
+    "lvlmpfirestorm": {
         "mapName": "Operation Firestorm",
         "image": "https://cdn.gametools.network/maps/bf6/T_UI_Firestorm_Large_OPT-45d582ad.webp",
     },
-    "mplimestone": {
+    "lvlmplimestone": {
         "mapName": "Saints Quarter",
         "image": "https://cdn.gametools.network/maps/bf6/T_UI_Limestone_Large_OPT-c9160897.webp",
     },
-    "mpoutskirts": {
+    "lvlmpoutskirts": {
         "mapName": "New Sobek City",
         "image": "https://cdn.gametools.network/maps/bf6/T_UI_Outskirts_Large_OPT-bf08f756.webp",
     },
-    "mptungsten": {
+    "lvlmptungsten": {
         "mapName": "Mirak Valley",
         "image": "https://cdn.gametools.network/maps/bf6/T_UI_Tungsten_Large_OPT-935da06b.webp",
     },
-    "mpbadlands": {
+    "lvlmpbadlands": {
         "mapName": "Blackwell Fields",
         "image": "https://cdn.gametools.network/maps/bf6/Battlefield_6_Blackwell_Fields.webp",
     },
-    "ftpgranite": {
+    "lvlftpgranite": {
         "mapName": "REDSEC",
         "image": "https://cdn.gametools.network/maps/bf6/Battlefield_6_Redsec.webp",
     },
-    "mpeastwood": {
+    "lvlmpeastwood": {
         "mapName": "Eastwood",
         "image": "https://cdn.gametools.network/maps/bf6/T_UI_Eastwood_Large_OPT-3bfa6a6f.webp",
     },
-    "mpcontaminated": {
+    "lvlmpcontaminated": {
         "mapName": "Contaminated",
         "image": "https://cdn.gametools.network/maps/bf6/T_UI_Contaminated_Large_OPT-da1d04ef.webp",
     },
-    "mpsubsurface": {
-        "mapName": "Hagental Base",
-        "image": "",
-    }
+    "lvlmpsubsurface": {"mapName": "Hagental Base", "image": ""},
 }
 
 STAT_GAMEMODE_SMALL = {
-    "esc": {
+    "gm_esc": {
         "gamemodeName": "Escalation",
         "image": "https://cdn.gametools.network/modes/bf6/escalation.svg",
         "altImage": "",
     },
-    "tdm": {
+    "gm_tdm": {
         "gamemodeName": "Team deathmatch",
         "image": "https://cdn.gametools.network/modes/bf6/team_deathmatch.svg",
         "altImage": "",
     },
-    "sdm": {
+    "gm_sdm": {
         "gamemodeName": "Squad deathmatch",
         "image": "https://cdn.gametools.network/modes/bf6/squad_deathmatch.svg",
         "altImage": "",
     },
-    "dom": {
+    "gm_dom": {
         "gamemodeName": "Domination",
         "image": "https://cdn.gametools.network/modes/bf6/domination.svg",
         "altImage": "",
     },
-    "koth": {
+    "gm_koth": {
         "gamemodeName": "King of the Hill",
         "image": "https://cdn.gametools.network/modes/bf6/king_of_the_hill.svg",
         "altImage": "",
     },
-    "cq": {
+    "gm_cq": {
         "gamemodeName": "Conquest",
         "image": "https://cdn.gametools.network/modes/bf6/conquest.svg",
         "altImage": "https://cdn.gametools.network/modes/bf6/conquest-framed.svg",
     },
-    "graniteDuo": {
+    "gm_graniteDuo": {
         "gamemodeName": "Redsec Duo",
         "image": "https://cdn.gametools.network/modes/bf6/battle_royale.svg",
         "altImage": "https://cdn.gametools.network/modes/bf6/battle_royale-framed.svg",
     },
-    "graniteSolo": {
+    "gm_graniteSolo": {
         "gamemodeName": "Redsec Solo",
         "image": "https://cdn.gametools.network/modes/bf6/battle_royale.svg",
         "altImage": "https://cdn.gametools.network/modes/bf6/battle_royale-framed.svg",
     },
-    "brsquad": {
+    "gm_brsquad": {
         "gamemodeName": "Redsec Squad",
         "image": "https://cdn.gametools.network/modes/bf6/battle_royale.svg",
         "altImage": "https://cdn.gametools.network/modes/bf6/battle_royale-framed.svg",
     },
-    "rush": {
+    "gm_rush": {
         "gamemodeName": "Rush",
         "image": "https://cdn.gametools.network/modes/bf6/rush.svg",
         "altImage": "https://cdn.gametools.network/modes/bf6/rush-framed.svg",
     },
-    "bt": {
+    "gm_bt": {
         "gamemodeName": "Breakthrough",
         "image": "https://cdn.gametools.network/modes/bf6/breakthrough.svg",
         "altImage": "https://cdn.gametools.network/modes/bf6/breakthrough-framed.svg",
     },
-    "gntgauntlet": {
+    "gm_gntgauntlet": {
         "gamemodeName": "Gauntlet",
         "image": "https://cdn.gametools.network/modes/bf6/gauntlet.svg",
         "altImage": "https://cdn.gametools.network/modes/bf6/gauntlet-framed.svg",
     },
-    "modbuilder0": {
+    "gm_modbuilder0": {
         "gamemodeName": "Portal",
         "image": "https://cdn.gametools.network/modes/bf6/wrench-hammer.svg",
         "altImage": "",
     },
-    "strike": {
+    "gm_strike": {
         "gamemodeName": "Strikepoint",
         "image": "https://cdn.gametools.network/modes/bf6/strikepoint.svg",
         "altImage": "",
     },
-    "official": {"gamemodeName": "Official", "image": "", "altImage": ""},
-    "sabotage": {"gamemodeName": "Sabotage", "image": "", "altImage": ""},
+    "gm_official": {"gamemodeName": "Official", "image": "", "altImage": ""},
+    "gm_sabotage": {"gamemodeName": "Sabotage", "image": "", "altImage": ""},
 }
 STAT_GAMEMODE_SMALL_CATEGORY = {
-    "all": {"gamemodeName": "All", "image": "", "altImage": ""},
-    "mp": {"gamemodeName": "Multiplayer", "image": "", "altImage": ""},
-    "modbuilder": {
+    "gm_all": {"gamemodeName": "All", "image": "", "altImage": ""},
+    "gm_mp": {"gamemodeName": "Multiplayer", "image": "", "altImage": ""},
+    "gm_modbuilder": {
         "gamemodeName": "Portal",
         "image": "https://cdn.gametools.network/modes/bf6/wrench-hammer.svg",
         "altImage": "",
     },
-    "granite": {
+    "gm_granite": {
         "gamemodeName": "Redsec",
         "image": "https://cdn.gametools.network/modes/bf6/battle_royale.svg",
         "altImage": "https://cdn.gametools.network/modes/bf6/battle_royale-framed.svg",
     },
-    "granitebr": {
+    "gm_granitebr": {
         "gamemodeName": "Battle Royale",
         "image": "https://cdn.gametools.network/modes/bf6/battle_royale.svg",
         "altImage": "https://cdn.gametools.network/modes/bf6/battle_royale-framed.svg",
@@ -445,791 +440,682 @@ STAT_GAMEMODE = {
     },
 }
 CLASSES = {
-    "assault": {
+    "kit": {
+        "className": "All",
+        "image": "",
+        "altImage": "",
+    },
+    "kit_assault": {
         "className": "Assault",
         "image": "https://cdn.gametools.network/classes/bf6/white/Assault.svg",
         "altImage": "https://cdn.gametools.network/classes/bf6/black/Assault.svg",
     },
-    "engineer": {
+    "kit_engineer": {
         "className": "Engineer",
         "image": "https://cdn.gametools.network/classes/bf6/white/Engineer.svg",
         "altImage": "https://cdn.gametools.network/classes/bf6/black/Engineer.svg",
     },
-    "support": {
+    "kit_support": {
         "className": "Support",
         "image": "https://cdn.gametools.network/classes/bf6/white/Support.svg",
         "altImage": "https://cdn.gametools.network/classes/bf6/black/Support.svg",
     },
-    "recon": {
+    "kit_recon": {
         "className": "Recon",
         "image": "https://cdn.gametools.network/classes/bf6/white/Recon.svg",
         "altImage": "https://cdn.gametools.network/classes/bf6/black/Recon.svg",
     },
 }
 VEHICLES = {
-    "air_panthera": {
+    "veh_air_panthera": {
         "type": "Air Combat",
         "vehicleName": "Panthera KHT",
         "image": "https://cdn.gametools.network/vehicles/bf6/T_UI_MDV_Eurocopter_VSD0001-8003028d.webp",
         "altImage": "https://cdn.gametools.network/vehicles/bf6/white/T_UI_MDV_Eurocopter_VSD0001-8003028d.webp",
     },
-    "air_m77efalchio": {
+    "veh_air_m77efalchio": {
         "type": "Air Combat",
         "vehicleName": "M77E Falchion",
         "image": "https://cdn.gametools.network/vehicles/bf6/T_UI_MDV_AH64E_VSD0001-dd0a7df6.webp",
         "altImage": "https://cdn.gametools.network/vehicles/bf6/white/T_UI_MDV_AH64E_VSD0001-dd0a7df6.webp",
     },
-    "sur_leoa4": {
+    "veh_sur_leoa4": {
         "type": "Ground Combat",
         "vehicleName": "Leo A4",
         "image": "https://cdn.gametools.network/vehicles/bf6/T_UI_MDV_Leopard_VSD0001-f8da51ee.webp",
         "altImage": "https://cdn.gametools.network/vehicles/bf6/white/T_UI_MDV_Leopard_VSD0001-f8da51ee.webp",
     },
-    "sur_strf09a4": {
+    "veh_sur_strf09a4": {
         "type": "Ground Combat",
         "vehicleName": "Strf 09 A4",
         "image": "https://cdn.gametools.network/vehicles/bf6/T_UI_CV90_VSD0001-acd942b6.webp",
         "altImage": "https://cdn.gametools.network/vehicles/bf6/white/T_UI_CV90_VSD0001-acd942b6.webp",
     },
-    "sur_m1a2sepv3": {
+    "veh_sur_m1a2sepv3": {
         "type": "Ground Combat",
         "vehicleName": "M1A2 SEPv3",
         "image": "https://cdn.gametools.network/vehicles/bf6/T_UI_MDV_Abrams_VSD0001-5412a78d.webp",
         "altImage": "https://cdn.gametools.network/vehicles/bf6/white/T_UI_MDV_Abrams_VSD0001-5412a78d.webp",
     },
-    "sur_cheetah1a2": {
+    "veh_sur_cheetah1a2": {
         "type": "Ground Combat",
         "vehicleName": "Cheetah 1A2",
         "image": "https://cdn.gametools.network/vehicles/bf6/T_UI_MDV_Gepard_VSD0001-d796732f.webp",
         "altImage": "https://cdn.gametools.network/vehicles/bf6/white/T_UI_MDV_Gepard_VSD0001-d796732f.webp",
     },
-    "sur_glider96": {
+    "veh_sur_glider96": {
         "type": "Ground Combat",
         "vehicleName": "Glider 96",
         "image": "https://cdn.gametools.network/vehicles/bf6/T_UI_MDV_Flyer60_VSD0005-1569869f.webp",
         "altImage": "https://cdn.gametools.network/vehicles/bf6/white/T_UI_MDV_Flyer60_VSD0005-1569869f.webp",
     },
-    "sur_bradley": {
+    "veh_sur_bradley": {
         "type": "Ground Combat",
         "vehicleName": "M3A3 Bradley",
         "image": "https://cdn.gametools.network/vehicles/bf6/T_UI_OB_VEH_Tank_Bradley_VSD0001_Dressing-66f252ca.webp",
         "altImage": "https://cdn.gametools.network/vehicles/bf6/white/T_UI_OB_VEH_Tank_Bradley_VSD0001_Dressing-66f252ca.webp",
     },
-    "air_su57": {
+    "veh_air_su57": {
         "type": "Air Combat",
         "vehicleName": "Su-57",
         "image": "https://cdn.gametools.network/vehicles/bf6/T_UI_MDV_SU57_VSD0001-1b5aa5ee.webp",
         "altImage": "https://cdn.gametools.network/vehicles/bf6/white/T_UI_MDV_SU57_VSD0001-1b5aa5ee.webp",
     },
-    "air_f61v": {
+    "veh_air_f61v": {
         "type": "Air Combat",
         "vehicleName": "F-61V",
         "image": "https://cdn.gametools.network/vehicles/bf6/T_UI_MDV_F16_VSD0001-5f951ec9.webp",
         "altImage": "https://cdn.gametools.network/vehicles/bf6/white/T_UI_MDV_F16_VSD0001-5f951ec9.webp",
     },
-    "air_f39e": {
+    "veh_air_f39e": {
         "type": "Air Combat",
         "vehicleName": "F-39E",
         "image": "https://cdn.gametools.network/vehicles/bf6/T_UI_MDV_JAS39_VSD0001-9313d717.webp",
         "altImage": "https://cdn.gametools.network/vehicles/bf6/white/T_UI_MDV_JAS39_VSD0001-9313d717.webp",
     },
-    "air_m77efalchion": {
+    "veh_air_m77efalchion": {
         "type": "Air Combat",
         "vehicleName": "M77E Falchion",
         "image": "https://cdn.gametools.network/vehicles/bf6/T_UI_MDV_AH64E_VSD0001-dd0a7df6.webp",
         "altImage": "https://cdn.gametools.network/vehicles/bf6/white/T_UI_MDV_AH64E_VSD0001-dd0a7df6.webp",
     },
-    "sur_vector": {
+    "veh_sur_vector": {
         "type": "Ground Transport",
         "vehicleName": "VECTOR",
         "image": "https://cdn.gametools.network/vehicles/bf6/T_UI_MDV_Vector_VSD0002-241efa80.webp",
         "altImage": "https://cdn.gametools.network/vehicles/bf6/white/T_UI_MDV_Vector_VSD0002-241efa80.webp",
     },
-    "sur_travmark2": {
+    "veh_sur_travmark2": {
         "type": "Ground Transport",
         "vehicleName": "Traverser Mark 2",
         "image": "https://cdn.gametools.network/vehicles/bf6/T_UI_Marauder_VSD0001_Icon_25667539-c29e2338.png",
         "altImage": "https://cdn.gametools.network/vehicles/bf6/white/T_UI_Marauder_VSD0001_Icon_25667539-c29e2338.png",
     },
-    "air_uh06": {"type": "Air Transport", "vehicleName": "UH-06", "image": ""},
-    "air_mh47": {"type": "Air Transport", "vehicleName": "MH47 Chinook", "image": ""},
-    "air_f97kes": {"type": "Air Combat", "vehicleName": "F-97 Kestrel", "image": ""},
-    "sur_rhib": {
+    "veh_air_uh06": {"type": "Air Transport", "vehicleName": "UH-06", "image": ""},
+    "veh_air_mh47": {
+        "type": "Air Transport",
+        "vehicleName": "MH47 Chinook",
+        "image": "",
+    },
+    "veh_air_f97kes": {
+        "type": "Air Combat",
+        "vehicleName": "F-97 Kestrel",
+        "image": "",
+    },
+    "veh_sur_rhib": {
         "type": "Ground Transport",
         "vehicleName": "7.7m NSW RBHIB",
         "image": "",
     },
-    "sur_ptv": {
+    "veh_sur_ptv": {
         "type": "Ground Transport",
         "vehicleName": "Turfpro PTV Royal",
         "image": "",
     },
-    "sur_quadbike": {
+    "veh_sur_quadbike": {
         "type": "Ground Transport",
         "vehicleName": "Rugged MV740",
         "image": "https://cdn.gametools.network/vehicles/bf6/U_VEH_Car_QuadBike-f25eae5e.webp",
     },
-    "air_ah6litbird": {
+    "veh_air_ah6litbird": {
         "type": "Air Combat",
         "vehicleName": "AH-6 Little Bird",
-        "image": "",  # wrong image
+        "image": "",
     },
-    "sur_moto_db01": {
+    "veh_sur_moto_db01": {
         "type": "Ground Transport",
         "vehicleName": "TM/O 450",
-        "image": "",  # wrong image
+        "image": "",
     },
-    "sur_moto_db02": {
+    "veh_sur_moto_db02": {
         "type": "Ground Transport",
         "vehicleName": "M1030-M1",
         "image": "",
-    }
+    },
 }
 VEHICLE_GROUPS = {
-    "air": {"groupName": "Air Combat"},
-    "sur": {"groupName": "Ground Combat"},
+    "veh": {"groupName": "All"},
+    "veh_air": {"groupName": "Air Combat"},
+    "veh_sur": {"groupName": "Ground Combat"},
 }
 MELEE_GROUPS = {
-    "light": {"groupName": "Melee Light"},
-    "heavy": {"groupName": "Melee Heavy"}
+    "melee": {"groupName": "All"},
+    "melee_light": {"groupName": "Melee Light"},
+    "melee_heavy": {"groupName": "Melee Heavy"},
 }
 MELEE = {
-    "light_combatknife": {
+    "melee_light_combatknife": {
         "type": "Melee Light",
         "meleeName": "Combat Knife",
         "image": "",  # wrong image
     },
-    "light_gekoknife": {
+    "melee_light_gekoknife": {
         "type": "Melee Light",
         "meleeName": "Hunting Knife",
         "image": "",  # wrong image
     },
-    "heavy_sledge": {
+    "melee_heavy_sledge": {
         "type": "Melee Heavy",
         "meleeName": "Sledgehammer",
         "image": "",  # wrong image
-    }
+    },
 }
 WEAPONS = {
-    "mg_l110": {
+    "wp_mg_l110": {
         "type": "Machine Guns",
         "weaponName": "L110",
         "image": "https://cdn.gametools.network/weapons/bf6/T_UI_Minimi_PKG_Factory_MED-0e29fce7.webp",
         "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_Minimi_PKG_Factory_MED-0e29fce7.webp",
     },
-    "smg_pw5a3": {
+    "wp_smg_pw5a3": {
         "type": "SMG-PDWs",
         "weaponName": "PW5A3",
         "image": "https://cdn.gametools.network/weapons/bf6/T_UI_MP5MLI_PKG_Factory_MED-2d1944b7.webp",
         "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_MP5MLI_PKG_Factory_MED-2d1944b7.webp",
     },
-    "ar_m433": {
+    "wp_ar_m433": {
         "type": "Assault Rifles",
         "weaponName": "M433",
         "image": "https://cdn.gametools.network/weapons/bf6/T_UI_HK433_PKG_Factory_MED-b06f02f7.webp",
         "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_HK433_PKG_Factory_MED-b06f02f7.webp",
     },
-    "mg_rpkm": {
+    "wp_mg_rpkm": {
         "type": "Machine Guns",
         "weaponName": "RPKM",
         "image": "https://cdn.gametools.network/weapons/bf6/T_UI_RPKM_PKG_Factory_MED-755b785f.webp",
         "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_RPKM_PKG_Factory_MED-755b785f.webp",
     },
-    "sg_m87a1": {
+    "wp_sg_m87a1": {
         "type": "Shotguns",
         "weaponName": "M87A1",
         "image": "https://cdn.gametools.network/weapons/bf6/T_UI_590A1_PKG_Factory_MED-4b387330.webp",
         "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_590A1_PKG_Factory_MED-4b387330.webp",
     },
-    "pst_p18": {
+    "wp_pst_p18": {
         "type": "Pistols",
         "weaponName": "P18",
         "image": "https://cdn.gametools.network/weapons/bf6/T_UI_M18_PKG_Factory_MED-88261bf8.webp",
         "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_M18_PKG_Factory_MED-88261bf8.webp",
     },
-    "crb_x277": {
+    "wp_crb_x277": {
         "type": "Carbines",
         "weaponName": "M277",
         "image": "https://cdn.gametools.network/weapons/bf6/T_UI_XM7_PKG_Factory_MED-26271094.webp",
         "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_XM7_PKG_Factory_MED-26271094.webp",
     },
-    "ar_b36a4": {
+    "wp_ar_b36a4": {
         "type": "Assault Rifles",
         "weaponName": "B36A4",
         "image": "https://cdn.gametools.network/weapons/bf6/T_UI_G36_PKG_Factory_MED-fb5466ec.webp",
         "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_G36_PKG_Factory_MED-fb5466ec.webp",
     },
-    "ar_l85a3": {
+    "wp_ar_l85a3": {
         "type": "Assault Rifles",
         "weaponName": "L85A3",
         "image": "https://cdn.gametools.network/weapons/bf6/T_UI_L85A3_PKG_Factory_MED-9bd0deaa.webp",
         "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_L85A3_PKG_Factory_MED-9bd0deaa.webp",
     },
-    "snp_m2010": {
+    "wp_snp_m2010": {
         "type": "Rifles",
         "weaponName": "M2010 ESR",
         "image": "https://cdn.gametools.network/weapons/bf6/T_UI_M2010ESR_PKG_Factory_MED-f94fdae6.webp",
         "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_M2010ESR_PKG_Factory_MED-f94fdae6.webp",
     },
-    "sg_m1014": {
+    "wp_sg_m1014": {
         "type": "Shotguns",
         "weaponName": "M1014",
         "image": "https://cdn.gametools.network/weapons/bf6/T_UI_M1014_PKG_Factory_MED-e011854a.webp",
         "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_M1014_PKG_Factory_MED-e011854a.webp",
     },
-    "crb_ak205": {
+    "wp_crb_ak205": {
         "type": "Carbines",
         "weaponName": "AK-205",
         "image": "https://cdn.gametools.network/weapons/bf6/T_UI_AK205_PKG_Factory_MED-6d376081.webp",
         "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_AK205_PKG_Factory_MED-6d376081.webp",
     },
-    "dmr_svk86": {
+    "wp_dmr_svk86": {
         "type": "DMRs",
         "weaponName": "SVK-8.6",
         "image": "https://cdn.gametools.network/weapons/bf6/T_UI_SVCh_PKG_Factory_MED-bb06d385.webp",
         "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_SVCh_PKG_Factory_MED-bb06d385.webp",
     },
-    "smg_sgx": {
+    "wp_smg_sgx": {
         "type": "SMG-PDWs",
         "weaponName": "SGX",
         "image": "https://cdn.gametools.network/weapons/bf6/T_UI_MPX_PKG_Factory_MED-e822f017.webp",
         "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_MPX_PKG_Factory_MED-e822f017.webp",
     },
-    "dmr_lmr27": {
+    "wp_dmr_lmr27": {
         "type": "DMRs",
         "weaponName": "LMR27",
         "image": "https://cdn.gametools.network/weapons/bf6/T_UI_ARADMR_PKG_Factory_MED-dfe224de.webp",
         "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_ARADMR_PKG_Factory_MED-dfe224de.webp",
     },
-    "crb_qbz192": {
+    "wp_crb_qbz192": {
         "type": "Carbines",
         "weaponName": "QBZ-192",
         "image": "https://cdn.gametools.network/weapons/bf6/T_UI_QBZ192_PKG_Factory_MED-dc0a546b.webp",
         "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_QBZ192_PKG_Factory_MED-dc0a546b.webp",
     },
-    "crb_m417a2": {
+    "wp_crb_m417a2": {
         "type": "Carbines",
         "weaponName": "M417 A2",
         "image": "https://cdn.gametools.network/weapons/bf6/T_UI_HK417A2_PKG_Factory_MED-494ffe6e.webp",
         "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_HK417A2_PKG_Factory_MED-494ffe6e.webp",
     },
-    "mg_drsiar": {
+    "wp_mg_drsiar": {
         "type": "Machine Guns",
         "weaponName": "DRS-IAR",
         "image": "https://cdn.gametools.network/weapons/bf6/T_UI_M27IAR_PKG_Factory_MED-ae6675cd.webp",
         "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_M27IAR_PKG_Factory_MED-ae6675cd.webp",
     },
-    "ar_kord6p67": {
+    "wp_ar_kord6p67": {
         "type": "Assault Rifles",
         "weaponName": "KORD 6P67",
         "image": "https://cdn.gametools.network/weapons/bf6/T_UI_6P67_PKG_Factory_MED-827b9414.webp",
         "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_6P67_PKG_Factory_MED-827b9414.webp",
     },
-    "smg_usg90": {
+    "wp_smg_usg90": {
         "type": "SMG-PDWs",
         "weaponName": "USG-90",
         "image": "https://cdn.gametools.network/weapons/bf6/T_UI_P90_PKG_Factory_MED-2ab1db64.webp",
         "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_P90_PKG_Factory_MED-2ab1db64.webp",
     },
-    "crb_m4a1": {
+    "wp_crb_m4a1": {
         "type": "Carbines",
         "weaponName": "M4A1",
         "image": "https://cdn.gametools.network/weapons/bf6/T_UI_M4A1_PKG_Factory_MED-34529a82.webp",
         "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_M4A1_PKG_Factory_MED-34529a82.webp",
     },
-    "mg_kts100mk8": {
+    "wp_mg_kts100mk8": {
         "type": "Machine Guns",
         "weaponName": "KTS100 MK8",
         "image": "https://cdn.gametools.network/weapons/bf6/T_UI_Ultimax_PKG_Factory_MED-a8ebb482.webp",
         "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_Ultimax_PKG_Factory_MED-a8ebb482.webp",
     },
-    "pst_m45a1": {
+    "wp_pst_m45a1": {
         "type": "Pistols",
         "weaponName": "M45A1",
         "image": "https://cdn.gametools.network/weapons/bf6/T_UI_M45A1_PKG_Factory_MED-8c41691b.webp",
         "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_M45A1_PKG_Factory_MED-8c41691b.webp",
     },
-    "smg_kv9": {
+    "wp_smg_kv9": {
         "type": "SMG-PDWs",
         "weaponName": "KV9",
         "image": "https://cdn.gametools.network/weapons/bf6/T_UI_Vector_PKG_Factory_MED-b5631ed7.webp",
         "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_Vector_PKG_Factory_MED-b5631ed7.webp",
     },
-    "ar_sor556mk2": {
+    "wp_ar_sor556mk2": {
         "type": "Assault Rifles",
         "weaponName": "SOR-556 Mk2",
         "image": "https://cdn.gametools.network/weapons/bf6/T_UI_SCARL_PKG_Factory_MED-b44467bb.webp",
         "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_SCARL_PKG_Factory_MED-b44467bb.webp",
     },
-    "smg_pw7a2": {
+    "wp_smg_pw7a2": {
         "type": "SMG-PDWs",
         "weaponName": "PW7A2",
         "image": "https://cdn.gametools.network/weapons/bf6/T_UI_MP7A2_PKG_Factory_MED-406bc965.webp",
         "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_MP7A2_PKG_Factory_MED-406bc965.webp",
     },
-    "mg_m123k": {
+    "wp_mg_m123k": {
         "type": "Machine Guns",
         "weaponName": "M123K",
         "image": "https://cdn.gametools.network/weapons/bf6/T_UI_MG4K_PKG_Factory_MED-cc064690.webp",
         "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_MG4K_PKG_Factory_MED-cc064690.webp",
     },
-    "pst_m44": {
+    "wp_pst_m44": {
         "type": "Pistols",
         "weaponName": "M44",
         "image": "https://cdn.gametools.network/weapons/bf6/T_UI_RagingHunter_PKG_Factory_MED-f9773307.webp",
         "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_RagingHunter_PKG_Factory_MED-f9773307.webp",
     },
-    "mg_xm250": {
+    "wp_mg_xm250": {
         "type": "Machine Guns",
         "weaponName": "M250",
         "image": "https://cdn.gametools.network/weapons/bf6/T_UI_M250_PKG_Factory_MED-6e230a71.webp",
         "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_M250_PKG_Factory_MED-6e230a71.webp",
     },
-    "smg_umg40": {
+    "wp_smg_umg40": {
         "type": "SMG-PDWs",
         "weaponName": "UMG-40",
         "image": "https://cdn.gametools.network/weapons/bf6/T_UI_UMP40_PKG_Factory_MED-22afa646.webp",
         "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_UMP40_PKG_Factory_MED-22afa646.webp",
     },
-    "ar_tr7": {
+    "wp_ar_tr7": {
         "type": "Assault Rifles",
         "weaponName": "TR-7",
         "image": "https://cdn.gametools.network/weapons/bf6/T_UI_Tavor7_PKG_Factory_MED-e682f267.webp",
         "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_Tavor7_PKG_Factory_MED-e682f267.webp",
     },
-    "smg_sl9": {
+    "wp_smg_sl9": {
         "type": "SMG-PDWs",
         "weaponName": "SL9",
         "image": "https://cdn.gametools.network/weapons/bf6/T_UI_APDW_PKG_Factory_MED-c4d1b829.webp",
         "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_APDW_PKG_Factory_MED-c4d1b829.webp",
     },
-    "mg_m240l": {
+    "wp_mg_m240l": {
         "type": "Machine Guns",
         "weaponName": "M240L",
         "image": "https://cdn.gametools.network/weapons/bf6/T_UI_M240L_PKG_Factory_MED-1fa18e0c.webp",
         "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_M240L_PKG_Factory_MED-1fa18e0c.webp",
     },
-    "smg_scw10": {
+    "wp_smg_scw10": {
         "type": "SMG-PDWs",
         "weaponName": "SCW-10",
         "image": "https://cdn.gametools.network/weapons/bf6/T_UI_APC10_PKG_Factory_MED-716a97fb.webp",
         "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_APC10_PKG_Factory_MED-716a97fb.webp",
     },
-    "ar_nvo228e": {
+    "wp_ar_nvo228e": {
         "type": "Assault Rifles",
         "weaponName": "NVO-228E",
         "image": "https://cdn.gametools.network/weapons/bf6/T_UI_ACE32_PKG_Factory_MED-39a97220.webp",
         "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_ACE32_PKG_Factory_MED-39a97220.webp",
     },
-    "mg_m60": {
+    "wp_mg_m60": {
         "type": "Machine Guns",
         "weaponName": "M/60",
         "image": "https://cdn.gametools.network/weapons/bf6/T_UI_M60E6_PKG_Factory_MED-e600bb28.webp",
         "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_M60E6_PKG_Factory_MED-e600bb28.webp",
     },
-    "snp_psr": {
+    "wp_snp_psr": {
         "type": "Rifles",
         "weaponName": "PSR",
         "image": "https://cdn.gametools.network/weapons/bf6/T_UI_MRAD_PKG_Factory_MED-5035ce99.webp",
         "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_MRAD_PKG_Factory_MED-5035ce99.webp",
     },
-    "dmr_svdm": {
+    "wp_dmr_svdm": {
         "type": "DMRs",
         "weaponName": "SVDM",
         "image": "https://cdn.gametools.network/weapons/bf6/T_UI_SVDM_PKG_Factory_MED-b6c9aa50.webp",
         "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_SVDM_PKG_Factory_MED-b6c9aa50.webp",
     },
-    "ar_ak4d": {
+    "wp_ar_ak4d": {
         "type": "Assault Rifles",
         "weaponName": "AK4D",
         "image": "https://cdn.gametools.network/weapons/bf6/T_UI_G3A4_PKG_Factory_MED-0575cf00.webp",
         "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_G3A4_PKG_Factory_MED-0575cf00.webp",
     },
-    "crb_sor300sc": {
+    "wp_crb_sor300sc": {
         "type": "Carbines",
         "weaponName": "SOR-300SC",
         "image": "https://cdn.gametools.network/weapons/bf6/T_UI_SCARSC_PKG_Factory_MED-7a6a50ff.webp",
         "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_SCARSC_PKG_Factory_MED-7a6a50ff.webp",
     },
-    "crb_sg553r": {
+    "wp_crb_sg553r": {
         "type": "Carbines",
         "weaponName": "SG 553R",
         "image": "https://cdn.gametools.network/weapons/bf6/T_UI_SIG553R_PKG_Factory_MED-afc2dfa8.webp",
         "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_SIG553R_PKG_Factory_MED-afc2dfa8.webp",
     },
-    "crb_grtbc": {
+    "wp_crb_grtbc": {
         "type": "Carbines",
         "weaponName": "GRT-BC",
         "image": "https://cdn.gametools.network/weapons/bf6/T_UI_MSBSGROTB_PKG_Factory_MED-25acf006.webp",
         "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_MSBSGROTB_PKG_Factory_MED-25acf006.webp",
     },
-    "sg_185ksk": {
+    "wp_sg_185ksk": {
         "type": "Shotguns",
         "weaponName": "18.5KS-K",
         "image": "https://cdn.gametools.network/weapons/bf6/T_UI_185KSK_PKG_Factory_MED-432c353f.webp",
         "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_MSBSGROTB_PKG_Factory_MED-25acf006.webp",
     },
-    "pst_es57": {
+    "wp_pst_es57": {
         "type": "Pistols",
         "weaponName": "ES 5.7",
         "image": "https://cdn.gametools.network/weapons/bf6/T_UI_FiveSeven_PKG_Factory_MED-c540cde7.webp",
         "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_FiveSeven_PKG_Factory_MED-c540cde7.webp",
     },
-    "dmr_m39emr": {
+    "wp_dmr_m39emr": {
         "type": "DMRs",
         "weaponName": "M39 EMR",
         "image": "https://cdn.gametools.network/weapons/bf6/T_UI_M39EMR_PKG_Factory_MED-e17b5963.webp",
         "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_M39EMR_PKG_Factory_MED-e17b5963.webp",
     },
-    "snp_sv98": {
+    "wp_snp_sv98": {
         "type": "Rifles",
         "weaponName": "SV-98",
         "image": "https://cdn.gametools.network/weapons/bf6/T_UI_SV98M_PKG_Factory_MED-c38f085a.webp",
         "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_SV98M_PKG_Factory_MED-c38f085a.webp",
     },
-    "pst_m357trait": {
+    "wp_pst_m357trait": {
         "type": "Pistols",
         "weaponName": "M357 Trait",
         "image": "https://cdn.gametools.network/weapons/bf6/T_UI_TRR8_PKG_Factory_MED-815434c3.webp",
         "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_TRR8_PKG_Factory_MED-815434c3.webp",
     },
-    "pst_ggh22": {
+    "wp_pst_ggh22": {
         "type": "Pistols",
         "weaponName": "GGH-22",
         "image": "https://cdn.gametools.network/weapons/bf6/T_UI_G22_PKG_Factory_MED-0faaf1e3.webp",
         "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_G22_PKG_Factory_MED-0faaf1e3.webp",
     },
-    "snp_miniscout": {
+    "wp_snp_miniscout": {
         "type": "Rifles",
         "weaponName": "Mini Scout",
         "image": "https://cdn.gametools.network/weapons/bf6/T_UI_MiniFix_PKG_Factory_MED-c8bab5ff.webp",
         "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_MiniFix_PKG_Factory_MED-c8bab5ff.webp",
     },
-    "sg_db12": {
+    "wp_sg_db12": {
         "type": "Shotguns",
         "weaponName": "DB-12",
         "image": "https://cdn.gametools.network/weapons/bf6/T_UI_DP12_PKG_Factory_MED-0335554d.webp",
         "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_DP12_PKG_Factory_MED-0335554d.webp",
     },
-    "ar_vhsk2": {
+    "wp_ar_vhsk2": {
         "type": "Assault Rifles",
         "weaponName": "VCR-2",
         "image": "https://cdn.gametools.network/weapons/bf6/T_UI_HK433_PKG_Factory_MED-39181b6c.webp",
         "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_HK433_PKG_Factory_MED-39181b6c.webp",
     },
-    "dmr_msbsgrotc": {
-        "type": "DMRs",
-        "weaponName": "GRT-CPS",
-        "image": "",
-    },
-    "mg_mg525btk": {
-        "type": "Machine Guns",
-        "weaponName": "M121 A2",
-        "image": "",
-    },
-    "pst_vz61": {
-        "type": "Pistols",
-        "weaponName": "VZ.61",
-        "image": "",
-    },
-    "smg_cz3a1": {
-        "type": "SMG-PDWs",
-        "weaponName": "CZ3A1",
-        "image": "",
-    }
+    "wp_dmr_msbsgrotc": {"type": "DMRs", "weaponName": "GRT-CPS", "image": ""},
+    "wp_mg_mg525btk": {"type": "Machine Guns", "weaponName": "M121 A2", "image": ""},
+    "wp_pst_vz61": {"type": "Pistols", "weaponName": "VZ.61", "image": ""},
+    "wp_smg_cz3a1": {"type": "SMG-PDWs", "weaponName": "CZ3A1", "image": ""},
 }
 WEAPON_GROUPS = {
-    "temp": {"groupName": "All"},
-    "snp": {"groupName": "Rifles"},
-    "crb": {"groupName": "Carbines"},
-    "mg": {"groupName": "Machine Guns"},
-    "sg": {"groupName": "Shotguns"},
-    "ar": {"groupName": "Assault Rifles"},
-    "smg": {"groupName": "SMG-PDWs"},
-    "dmr": {"groupName": "DMRs"},
-    "pst_temp": {"groupName": "Pistols"},
+    "wp_temp": {"groupName": "All"},
+    "wp_snp": {"groupName": "Rifles"},
+    "wp_crb": {"groupName": "Carbines"},
+    "wp_mg": {"groupName": "Machine Guns"},
+    "wp_sg": {"groupName": "Shotguns"},
+    "wp_ar": {"groupName": "Assault Rifles"},
+    "wp_smg": {"groupName": "SMG-PDWs"},
+    "wp_dmr": {"groupName": "DMRs"},
+    "wp_pst_temp": {"groupName": "Pistols"},
 }
 GADGETS = {
-    "callin_airstrike": {
+    "gad_callin_airstrike": {
         "type": "Strike Packages",
         "gadgetName": "Air Strike",
         "image": "https://cdn.gametools.network/gadgets/bf6/T_UI_CALLINS_Airstrike_Thumb-638b4ee1.png",
     },
-    "mpaps": {
+    "gad_mpaps": {
         "type": "Deployable Gadgets",
         "gadgetName": "MP-APS",
         "image": "https://cdn.gametools.network/gadgets/bf6/T_UI_MPAPS_Icon-b735994d.png",
     },
-    "gpdis": {
+    "gad_gpdis": {
         "type": "Deployable Gadgets",
         "gadgetName": "GPDIS",
         "image": "https://cdn.gametools.network/gadgets/bf6/T_UI_EIDOS_Icon-2273a3ee.png",
     },
-    "c4": {
+    "gad_c4": {
         "type": "Explosives",
         "gadgetName": "C-4 Explosives",
         "image": "https://cdn.gametools.network/gadgets/bf6/T_UI_C4_Icon-330d6ee2.png",
     },
-    "gl_he": {
+    "gad_gl_he": {
         "type": "Grenade Launchers",
         "gadgetName": "M320A1 HE",
         "image": "https://cdn.gametools.network/gadgets/bf6/T_UI_M320_HE_Icon-83b61ed0.png",
     },
-    "rl_ungui": {
+    "gad_rl_ungui": {
         "type": "Launchers",
         "gadgetName": "RPG-7V2",
         "image": "https://cdn.gametools.network/gadgets/bf6/T_UI_RPG7v2_Icon-ce5453fd.png",
     },
-    "rl_aimgui": {
+    "gad_rl_aimgui": {
         "type": "Launchers",
         "gadgetName": "M136 AT",
         "image": "https://cdn.gametools.network/gadgets/bf6/T_UI_AT4_Icon-beadb575.png",
     },
-    "gren_frag": {
-        "type": "Grenade",
-        "gadgetName": "Frag Grenade",
-        "image": "",
-    },
-    "mine_press": {
+    "gad_gren_frag": {"type": "Grenade", "gadgetName": "Frag Grenade", "image": ""},
+    "gad_mine_press": {
         "type": "Explosives",
         "gadgetName": "M15",
         "image": "https://cdn.gametools.network/gadgets/bf6/T_UI_AT_Mine_Icon-2288ec8e.png",
     },
-    "gl_tb": {
+    "gad_gl_tb": {
         "type": "Grenade Launchers",
         "gadgetName": "M320A1 THRM",
         "image": "https://cdn.gametools.network/gadgets/bf6/T_UI_M320_Thermobaric_Icon-3f13c762.png",
     },
-    "repair": {
-        "type": "",
-        "gadgetName": "Repair Tool",
-        "image": "",
-    },
-    "gren_inc": {
+    "gad_repair": {"type": "", "gadgetName": "Repair Tool", "image": ""},
+    "gad_gren_inc": {
         "type": "Grenade",
         "gadgetName": "Incendiary Grenade",
         "image": "",
     },
-    "ladder": {
-        "type": "",
-        "gadgetName": "Assault Ladder",
-        "image": "",
-    },
-    "sup_bag": {
-        "type": "",
-        "gadgetName": "Supply Bag",
-        "image": "",
-    },
-    "deplocover": {
-        "type": "",
-        "gadgetName": "Deployable Cover",
-        "image": "",
-    },
-    "gren_stun": {
-        "type": "",
-        "gadgetName": "Stun Grenade",
-        "image": "",
-    },
-    "gren_smoke": {
-        "type": "",
-        "gadgetName": "Smoke Grenade",
-        "image": "",
-    },
-    "gren_flash": {
-        "type": "",
-        "gadgetName": "Flash Grenade",
-        "image": "",
-    },
-    "recondrone": {
-        "type": "",
-        "gadgetName": "Recon Drone",
-        "image": "",
-    },
-    "laserdes": {
-        "type": "",
-        "gadgetName": "Laser Designator",
-        "image": "",
-    },
-    "tugs": {
-        "type": "",
-        "gadgetName": "Motion Sensor",
-        "image": "",
-    },
-    "rl_longra": {
+    "gad_ladder": {"type": "", "gadgetName": "Assault Ladder", "image": ""},
+    "gad_sup_bag": {"type": "", "gadgetName": "Supply Bag", "image": ""},
+    "gad_deplocover": {"type": "", "gadgetName": "Deployable Cover", "image": ""},
+    "gad_gren_stun": {"type": "", "gadgetName": "Stun Grenade", "image": ""},
+    "gad_gren_smoke": {"type": "", "gadgetName": "Smoke Grenade", "image": ""},
+    "gad_gren_flash": {"type": "", "gadgetName": "Flash Grenade", "image": ""},
+    "gad_recondrone": {"type": "", "gadgetName": "Recon Drone", "image": ""},
+    "gad_laserdes": {"type": "", "gadgetName": "Laser Designator", "image": ""},
+    "gad_tugs": {"type": "", "gadgetName": "Motion Sensor", "image": ""},
+    "gad_rl_longra": {
         "type": "Launchers",
         "gadgetName": "MAS 148 Glaive",
         "image": "https://cdn.gametools.network/gadgets/bf6/T_UI_Javelin_Icon-a0ce2091.png",
     },
-    "mine_ap": {
+    "gad_mine_ap": {
         "type": "Explosives",
         "gadgetName": "M18A1",
         "image": "https://cdn.gametools.network/gadgets/bf6/T_UI_Claymore_Icon-5c7f1590.png",
     },
-    "adren": {
-        "type": "",
-        "gadgetName": "Adrenaline Injector",
-        "image": "",
-    },
-    "mine_tws": {
+    "gad_adren": {"type": "", "gadgetName": "Adrenaline Injector", "image": ""},
+    "gad_mine_tws": {
         "type": "Explosives",
         "gadgetName": "M4A1 Slam",
         "image": "https://cdn.gametools.network/gadgets/bf6/T_UI_M4_SLAM_Icon-541f624c.png",
     },
-    "eodbot": {
-        "type": "",
-        "gadgetName": "EOD Bot",
-        "image": "",
-    },
-    "gl_breach": {
+    "gad_eodbot": {"type": "", "gadgetName": "EOD Bot", "image": ""},
+    "gad_gl_breach": {
         "type": "Grenade Launchers",
         "gadgetName": "X95 BRE",
         "image": "https://cdn.gametools.network/gadgets/bf6/T_UI_Drill_Launcher_Icon-1e1481d9.png",
     },
-    "mine_mosen": {
+    "gad_mine_mosen": {
         "type": "Explosives",
         "gadgetName": "PTKM-1R",
         "image": "https://cdn.gametools.network/gadgets/bf6/T_UI_PTKM_1R_Icon-ceb07fc0.png",
     },
-    "gren_mfrag": {
-        "type": "",
-        "gadgetName": "Mini Grenade",
-        "image": "",
-    },
-    "rl_surtoair": {
+    "gad_gren_mfrag": {"type": "", "gadgetName": "Mini Grenade", "image": ""},
+    "gad_rl_surtoair": {
         "type": "Launchers",
         "gadgetName": "SLM-93A",
         "image": "https://cdn.gametools.network/gadgets/bf6/T_UI_Stinger_Icon-d4590623.png",
     },
-    "il_airburst": {
+    "gad_il_airburst": {
         "type": "Grenade Launchers",
         "gadgetName": "SICH G1 WP",
         "image": "https://cdn.gametools.network/gadgets/bf6/T_UI_Airburst_Incendiary_Launcher_Icon-da8af82a.png",
     },
-    "vehsupcra": {
-        "type": "",
-        "gadgetName": "Supply Crate",
-        "image": "",
-    },
-    "tknife": {
-        "type": "",
-        "gadgetName": "Throwing Knife",
-        "image": "",
-    },
-    "msensor": {
-        "type": "",
-        "gadgetName": "Proximity Detector",
-        "image": "",
-    },
-    "deployable": {
-        "type": "",
-        "gadgetName": "Deployable Cover",
-        "image": "",
-    },
-    "deploymortar": {
+    "gad_vehsupcra": {"type": "", "gadgetName": "Supply Crate", "image": ""},
+    "gad_tknife": {"type": "", "gadgetName": "Throwing Knife", "image": ""},
+    "gad_msensor": {"type": "", "gadgetName": "Proximity Detector", "image": ""},
+    "gad_deployable": {"type": "", "gadgetName": "Deployable Cover", "image": ""},
+    "gad_deploymortar": {
         "type": "Class Gadgets",
         "gadgetName": "LWCMS",
         "image": "https://cdn.gametools.network/gadgets/bf6/T_UI_Deployable_Mortar_Icon-97b13652.png",
     },
-    "deploybeacon": {
+    "gad_deploybeacon": {
         "type": "Deployable Gadgets",
         "gadgetName": "QLINK 6",
         "image": "https://cdn.gametools.network/gadgets/bf6/T_UI_Spawn_Beacon_Icon-b6e67f1c.png",
     },
-    "decoy": {
-        "type": "",
-        "gadgetName": "Sniper Decoy",
-        "image": "",
-    },
-    "gl_smoke": {
+    "gad_decoy": {"type": "", "gadgetName": "Sniper Decoy", "image": ""},
+    "gad_gl_smoke": {
         "type": "Grenade Launchers",
         "gadgetName": "M320A1 SMK",
         "image": "https://cdn.gametools.network/gadgets/bf6/T_UI_M320_Smoke_Icon-dfa762d9.png",
     },
-    "callin_wpdrop": {
+    "gad_callin_wpdrop": {
         "type": "Strike Packages",
         "gadgetName": "Weapon Drop",
         "image": "https://cdn.gametools.network/gadgets/bf6/U_Gadget_WeaponDrop_Granite-2c6c3b16.webp",
     },
-    "callin_uav": {
+    "gad_callin_uav": {
         "type": "Strike Packages",
         "gadgetName": "UAV Overwatch",
         "image": "https://cdn.gametools.network/gadgets/bf6/T_UI_CALLINS_Uav_Thumb-fdf9a78e.png",
     },
-    "callin_resupply": {
-        "type": "Strike Packages",
-        "gadgetName": "",
-        "image": "",
-    },
-    "callin_antiveh": {
+    "gad_callin_resupply": {"type": "Strike Packages", "gadgetName": "", "image": ""},
+    "gad_callin_antiveh": {
         "type": "Strike Packages",
         "gadgetName": "Anti-Vehicle Drop",
         "image": "https://cdn.gametools.network/gadgets/bf6/T_UI_CALLINS_SupAnti_Thumb-84fc98fc.png",
     },
-    "callin_smoke": {
+    "gad_callin_smoke": {
         "type": "Strike Packages",
         "gadgetName": "Smoke Screen",
         "image": "https://cdn.gametools.network/gadgets/bf6/T_UI_CALLINS_Smoke_Thumb-5d515d26.png",
     },
-    "callin_artstrike": {
+    "gad_callin_artstrike": {
         "type": "Strike Packages",
         "gadgetName": "Artillery Strike",
         "image": "https://cdn.gametools.network/gadgets/bf6/T_UI_CALLINS_Artillery_Thumb-126cad71.png",
     },
-    "rl_igla": {
-        "type": "Class Gadgets",
-        "gadgetName": "9K38 Igla",
-        "image": "",
-    },
-    "gasmask": {
-        "type": "",
-        "gadgetName": "Gas mask",
-        "image": "",
-    },
-    "gren_av": {
+    "gad_rl_igla": {"type": "Class Gadgets", "gadgetName": "9K38 Igla", "image": ""},
+    "gad_gasmask": {"type": "", "gadgetName": "Gas mask", "image": ""},
+    "gad_gren_av": {
         "type": "Throwables",
         "gadgetName": "SCG-24",
         "image": "https://cdn.gametools.network/gadgets/bf6/T_UI_AntiTank_Grenade_Icon-82f8def3.png",
     },
-    "ubsg_incen": {
+    "gad_ubsg_incen": {
         "type": "Misc. Equipment",
         "gadgetName": "SS26",
         "image": "https://cdn.gametools.network/gadgets/bf6/T_UI_M26_Mass_Dragonsbreath_Icon-f7daa1ac.png",
     },
-    "callin_mobresp": {
-        "type": "",
-        "gadgetName": "Mobile respawn",
-        "image": "",
-    },
-    "sup_pouch": {
-        "type": "",
-        "gadgetName": "Supply Pouch",
-        "image": "",
-    },
-    "defib": {
-        "type": "",
-        "gadgetName": "Defibrillator",
-        "image": "",
-    },
-    "tdart": {
-        "type": "",
-        "gadgetName": "Tracer Dart",
-        "image": "",
-    },
-    "lancet": {
-        "type": "",
-        "gadgetName": "HTI-Mk2",
-        "image": "",
-    }
+    "gad_callin_mobresp": {"type": "", "gadgetName": "Mobile respawn", "image": ""},
+    "gad_sup_pouch": {"type": "", "gadgetName": "Supply Pouch", "image": ""},
+    "gad_defib": {"type": "", "gadgetName": "Defibrillator", "image": ""},
+    "gad_tdart": {"type": "", "gadgetName": "Tracer Dart", "image": ""},
+    "gad_lancet": {"type": "", "gadgetName": "HTI-Mk2", "image": ""},
 }
 
 GADGET_GROUPS = {
-    "temp": {"groupName": "All"},
-    "gl": {"groupName": "Grenade Launchers"},
-    "mine": {"groupName": "Explosives"},
-    "grenades": {"groupName": "Grenades"},
-    "rl": {"groupName": "Launchers"},
-    "il": {"groupName": "Grenade Launchers"},
-    "callins": {"groupName": "Call-ins"},
+    "gad_temp": {"groupName": "All"},
+    "gad_gl": {"groupName": "Grenade Launchers"},
+    "gad_mine": {"groupName": "Explosives"},
+    "gad_grenades": {"groupName": "Grenades"},
+    "gad_rl": {"groupName": "Launchers"},
+    "gad_il": {"groupName": "Grenade Launchers"},
+    "gad_callins": {"groupName": "Call-ins"},
 }
 
 RANK_IMAGES = {

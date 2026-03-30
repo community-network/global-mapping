@@ -30,27 +30,27 @@ def check_unmapped(globalstats: dict[str, str]):
     }
 
     for key in globalstats.keys():
-        if "tp_wp_" in key and key.replace("tp_wp_", "") not in list(
+        if "tp_wp" in key and key.replace("tp_", "") not in list(
             itertools.chain(bf6.WEAPONS, bf6.WEAPON_GROUPS)
         ):
             results["weapons"][key] = globalstats[key]
-        if "tp_melee_" in key and key.replace("tp_melee_", "") not in list(
+        if "tp_melee" in key and key.replace("tp_", "") not in list(
             itertools.chain(bf6.MELEE, bf6.MELEE_GROUPS)
         ):
             results["melee"][key] = globalstats[key]
-        if "tp_gm_" in key and key.replace("tp_gm_", "") not in list(
+        if "tp_gm" in key and key.replace("tp_", "") not in list(
             itertools.chain(bf6.STAT_GAMEMODE_SMALL, bf6.STAT_GAMEMODE_SMALL_CATEGORY)
         ):
             results["gameModes"][key] = globalstats[key]
-        if "tp_lvl" in key and key.replace("tp_lvl", "") not in bf6.STAT_MAPS:
+        if "tp_lvl" in key and key.replace("tp_", "") not in bf6.STAT_MAPS:
             results["maps"][key] = globalstats[key]
-        if "tp_kit_" in key and key.replace("tp_kit_", "") not in bf6.CLASSES:
+        if "tp_kit" in key and key.replace("tp_", "") not in bf6.CLASSES:
             results["classes"][key] = globalstats[key]
-        if "tp_veh_" in key and key.replace("tp_veh_", "") not in list(
+        if "tp_veh" in key and key.replace("tp_", "") not in list(
             itertools.chain(bf6.VEHICLES, bf6.VEHICLE_GROUPS)
         ):
             results["vehicles"][key] = globalstats[key]
-        if "tp_gad_" in key and key.replace("tp_gad_", "") not in list(
+        if "tp_gad" in key and key.replace("tp_", "") not in list(
             itertools.chain(bf6.GADGETS, bf6.GADGET_GROUPS)
         ):
             results["gadgets"][key] = globalstats[key]
