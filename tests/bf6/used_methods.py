@@ -75,7 +75,7 @@ starts_with = [
     "tp_kit",
     "spawns_kit",
     "scoreas_kit",
-    "assists_ki_"
+    "assists_kit",
     # maps
     "wins_lvl",
     "losses_lvl",
@@ -105,6 +105,8 @@ starts_with = [
     "intel_pickup_gm",
     "obj_armed_gm",
     "obj_destroyed_gm",
+    "hlth_gm",
+    "kw_gm",
 ]
 
 normal = [

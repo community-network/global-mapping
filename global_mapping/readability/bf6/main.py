@@ -722,6 +722,8 @@ async def get_gamemodes(stats_dict: dict, constant: dict, format_values: bool = 
                 "sectorsDefended": stats_dict.get(f"sectordef_{_id}", 0),
                 "intelPickups": stats_dict.get(f"intel_pickup_{_id}", 0),
                 "scoreIn": stats_dict.get(f"scorein_{_id}", 0),
+                # "health": stats_dict.get(f"hlth_{_id}", 0),
+                # "killsWithin": stats_dict.get(f"kw_{_id}", 0),
                 "headshotKills": headshots,
                 "headshots": format_percentage_value(
                     headshot_percentage, format_values
