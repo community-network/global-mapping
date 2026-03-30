@@ -26,6 +26,7 @@ def check_unmapped(globalstats: dict[str, str]):
         "classes": {},
         "vehicles": {},
         "gadgets": {},
+        "battlePickups": {},
         "unused": {},
     }
 
@@ -38,6 +39,8 @@ def check_unmapped(globalstats: dict[str, str]):
             itertools.chain(bf6.MELEE, bf6.MELEE_GROUPS)
         ):
             results["melee"][key] = globalstats[key]
+        if "tp_btlp" in key and key.replace("tp_", "") not in bf6.BATTLE_PICKUPS:
+            results["battlePickups"][key] = globalstats[key]
         if "tp_gm" in key and key.replace("tp_", "") not in list(
             itertools.chain(bf6.STAT_GAMEMODE_SMALL, bf6.STAT_GAMEMODE_SMALL_CATEGORY)
         ):

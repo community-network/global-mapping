@@ -620,6 +620,17 @@ MELEE = {
         "image": "",  # wrong image
     },
 }
+BATTLE_PICKUPS = {
+    "btlp": {
+        "battlepickupName": "All"
+    },
+    "btlp_minigun": {
+        "battlepickupName": "Minigun"
+    },
+    "btlp_railgun": {
+        "battlepickupName": "Railgun"
+    }
+}
 WEAPONS = {
     "wp_mg_l110": {
         "type": "Machine Guns",

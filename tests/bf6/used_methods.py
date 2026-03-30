@@ -18,6 +18,14 @@ starts_with = [
     "dmg_melee",
     "tp_melee",
     "tkdw_melee",
+    # Battle pickups
+    "shw_btlp",
+    "dmg_btlp",
+    "adskw_btlp",
+    "bkw_btlp",
+    "sfw_btlp",
+    "tp_btlp",
+    "kw_btlp",
     # vehicles
     "kw_veh",
     "tp_veh",

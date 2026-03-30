@@ -239,6 +239,7 @@ async def fill_fields(
     tasks.append(get_gadgets(stats, BF6.GADGET_GROUPS))
     tasks.append(get_melee(stats, BF6.MELEE))
     tasks.append(get_melee(stats, BF6.MELEE_GROUPS))
+    tasks.append(get_battle_pickups(stats, BF6.BATTLE_PICKUPS))
 
     (
         current_result["weapons"],
@@ -253,6 +254,7 @@ async def fill_fields(
         current_result["gadgetGroups"],
         current_result["melee"],
         current_result["meleeGroups"],
+        current_result["battlePickups"],
     ) = await asyncio.gather(*tasks)
 
     kit_best_kills = 0
@@ -479,6 +481,53 @@ async def get_weapons(stats_dict: dict, constant: dict, format_values: bool = Tr
     return weapons
 
 
+async def get_battle_pickups(stats_dict: dict, constant: dict, format_values: bool = True):
+    weapons = []
+    for _id, extra in constant.items():
+        kills = stats_dict.get(f"kw_{_id}", 0)
+        damage = stats_dict.get(f"dmg_{_id}", 0)
+        shots_hit = stats_dict.get(f"shw_{_id}", 0)
+        shots_fired = stats_dict.get(f"sfw_{_id}", 0)
+        seconds = stats_dict.get(f"tp_{_id}", 0)
+
+        try:
+            accuracy = round((shots_hit / shots_fired) * 100, 2)
+        except ZeroDivisionError:
+            accuracy = 0.0
+
+        try:
+            kills_per_minute = round(kills / (seconds / 60), 2)
+        except (ZeroDivisionError, KeyError):
+            kills_per_minute = 0.0
+
+        try:
+            damage_per_minute = round(damage / (seconds / 60), 2)
+        except (ZeroDivisionError, KeyError):
+            damage_per_minute = 0.0
+
+        try:
+            hits_per_kill = round(shots_hit / kills, 2)
+        except ZeroDivisionError:
+            hits_per_kill = 0.0
+
+        weapons.append(
+            {
+                **extra,
+                "id": _id,
+                "kills": kills,
+                "damage": damage,
+                "scopedKills": stats_dict.get(f"adskw_{_id}", 0),
+                "bodyKills": stats_dict.get(f"bkw_{_id}", 0),
+                "accuracy": format_percentage_value(accuracy, format_values),
+                "killsPerMinute": kills_per_minute,
+                "damagePerMinute": damage_per_minute,
+                "hitVKills": hits_per_kill,
+                "shotsHit": shots_hit,
+                "shotsFired": shots_fired,
+                "timeEquipped": seconds,
+            }
+        )
+    return weapons
 async def get_vehicles(stats_dict: dict, constant: dict):
     vehicles = []
     for _id, extra in constant.items():
