@@ -27,6 +27,7 @@ def check_unmapped(globalstats: dict[str, str]):
         "vehicles": {},
         "gadgets": {},
         "battlePickups": {},
+        "vehicleArchetypes": {},
         "unused": {},
     }
 
@@ -53,6 +54,8 @@ def check_unmapped(globalstats: dict[str, str]):
             itertools.chain(bf6.VEHICLES, bf6.VEHICLE_GROUPS)
         ):
             results["vehicles"][key] = globalstats[key]
+        if "tp_arch" in key and key.replace("tp_", "") not in bf6.VEHICLE_ARCHETYPES:
+            results["vehicleArchetypes"][key] = globalstats[key]
         if "tp_gad" in key and key.replace("tp_", "") not in list(
             itertools.chain(bf6.GADGETS, bf6.GADGET_GROUPS)
         ):

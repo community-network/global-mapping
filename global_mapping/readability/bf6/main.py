@@ -240,6 +240,7 @@ async def fill_fields(
     tasks.append(get_melee(stats, BF6.MELEE))
     tasks.append(get_melee(stats, BF6.MELEE_GROUPS))
     tasks.append(get_battle_pickups(stats, BF6.BATTLE_PICKUPS))
+    tasks.append(get_vehicles(stats, BF6.VEHICLE_ARCHETYPES))
 
     (
         current_result["weapons"],
@@ -255,6 +256,7 @@ async def fill_fields(
         current_result["melee"],
         current_result["meleeGroups"],
         current_result["battlePickups"],
+        current_result["vehicleArchetypes"]
     ) = await asyncio.gather(*tasks)
 
     kit_best_kills = 0

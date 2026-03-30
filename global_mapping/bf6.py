@@ -598,6 +598,19 @@ VEHICLE_GROUPS = {
     "veh_air": {"groupName": "Air Combat"},
     "veh_sur": {"groupName": "Ground Combat"},
 }
+VEHICLE_ARCHETYPES = {
+    "arch_mbt": {"archetypeName": "Main battle tank"},
+    "arch_helitrans": {"archetypeName": "Transport helis"},
+    "arch_ifv": {"archetypeName": "Infantry fighting vehicles"},
+    "arch_heliattack": {"archetypeName": "Attack helis"},
+    "arch_antiair": {"archetypeName": "Anti air tanks"},
+    "arch_heliscout": {"archetypeName": "Scout helis"},
+    "arch_mastery": {"archetypeName": "Mastery"},
+    "arch_fighterplane": {"archetypeName": "Fighter planes"},
+    "arch_jetattack": {"archetypeName": "Attack jets"},
+    # "arch_carapc": {"archetypeName": ""},
+    "arch_lighttrans": {"archetypeName": "Light transport vehicles"},
+}
 MELEE_GROUPS = {
     "melee": {"groupName": "All"},
     "melee_light": {"groupName": "Melee Light"},
@@ -621,15 +634,9 @@ MELEE = {
     },
 }
 BATTLE_PICKUPS = {
-    "btlp": {
-        "battlepickupName": "All"
-    },
-    "btlp_minigun": {
-        "battlepickupName": "Minigun"
-    },
-    "btlp_railgun": {
-        "battlepickupName": "Railgun"
-    }
+    "btlp": {"battlepickupName": "All"},
+    "btlp_minigun": {"battlepickupName": "Minigun"},
+    "btlp_railgun": {"battlepickupName": "Railgun"},
 }
 WEAPONS = {
     "wp_mg_l110": {
