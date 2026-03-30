@@ -608,7 +608,7 @@ VEHICLE_ARCHETYPES = {
     "arch_mastery": {"archetypeName": "Mastery"},
     "arch_fighterplane": {"archetypeName": "Fighter planes"},
     "arch_jetattack": {"archetypeName": "Attack jets"},
-    # "arch_carapc": {"archetypeName": ""},
+    "arch_carapc": {"archetypeName": "Armored personnel carrier"},
     "arch_lighttrans": {"archetypeName": "Light transport vehicles"},
 }
 MELEE_GROUPS = {

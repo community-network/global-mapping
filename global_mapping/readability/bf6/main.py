@@ -556,6 +556,7 @@ async def get_vehicles(stats_dict: dict, constant: dict):
                 "assists": stats_dict.get(f"assists_{_id}", 0),
                 "damageTo": stats_dict.get(f"dmgTo_{_id}", 0),
                 "destroyed": stats_dict.get(f"vd_{_id}", 0),
+                "airtime": stats_dict.get(f"airtime_{_id}", 0),
                 # "idk": stats_dict.get(f"eor_vh_{_id}"),
                 "timeIn": seconds,
             }
@@ -588,6 +589,7 @@ async def get_classes(stats_dict: dict):
                 "spawns": stats_dict.get(f"spawns_{kit_id}", 0),
                 "score": stats_dict.get(f"scoreas_{kit_id}", 0),
                 "assists": stats_dict.get(f"assists_{kit_id}", 0),
+                "revives": stats_dict.get(f"revives_{kit_id}", 0),
                 "secondsPlayed": seconds,
             }
         )
@@ -722,8 +724,8 @@ async def get_gamemodes(stats_dict: dict, constant: dict, format_values: bool = 
                 "sectorsDefended": stats_dict.get(f"sectordef_{_id}", 0),
                 "intelPickups": stats_dict.get(f"intel_pickup_{_id}", 0),
                 "scoreIn": stats_dict.get(f"scorein_{_id}", 0),
-                # "health": stats_dict.get(f"hlth_{_id}", 0),
-                # "killsWithin": stats_dict.get(f"kw_{_id}", 0),
+                "health": stats_dict.get(f"hlth_{_id}", 0),
+                "killsWith": stats_dict.get(f"kw_{_id}", 0),
                 "headshotKills": headshots,
                 "headshots": format_percentage_value(
                     headshot_percentage, format_values
@@ -851,8 +853,11 @@ async def get_main_stats(stats_dict: dict, format_values: bool = True):
                 "SMG": stats_dict.get("kills_smg_total", 0),
                 "LMG": stats_dict.get("kills_lmg_total", 0),
                 "DMR": stats_dict.get("kills_dmr_total", 0),
+                "AR": stats_dict.get("kills_ar_total", 0),
+                "MG": stats_dict.get("kills_mg_total", 0),
+                "Pistols": stats_dict.get("kills_pst_total", 0),
+                "Snipers": stats_dict.get("kills_snp_total", 0),
                 "Shotguns": stats_dict.get("kills_sg_total", 0),
-                "Assault Rifles": stats_dict.get("kills_sg_total", 0),
             },
             "inRound": {
                 "total": stats_dict.get("kills_inround_cb", 0),
@@ -891,6 +896,7 @@ async def get_main_stats(stats_dict: dict, format_values: bool = True):
             "foot": stats_dict.get("distrav_foot_total", 0),
             "passenger": stats_dict.get("distrav_psgr_total", 0),
             "vehicle": stats_dict.get("distrav_veh_total", 0),
+            # "vehicle": stats_dict.get("distrav_pc_total", 0),
         },
         "sector": {
             "captured": stats_dict.get("sect_cap_total", 0),
