@@ -548,18 +548,25 @@ VEHICLES = {
     "veh_sur_travmark2": {
         "type": "Ground Transport",
         "vehicleName": "Traverser Mark 2",
-        "image": "https://cdn.gametools.network/vehicles/bf6/T_UI_Marauder_VSD0001_Icon_25667539-c29e2338.png",
-        "altImage": "https://cdn.gametools.network/vehicles/bf6/white/T_UI_Marauder_VSD0001_Icon_25667539-c29e2338.png",
+        "image": "https://cdn.gametools.network/vehicles/bf6/T_UI_Marauder_VSD0001_Icon_25667539-c29e2338.webp",
+        "altImage": "https://cdn.gametools.network/vehicles/bf6/white/T_UI_Marauder_VSD0001_Icon_25667539-c29e2338.webp",
+    },
+    "veh_sur_quadbike": {
+        "type": "Ground Transport",
+        "vehicleName": "Rugged MV740",
+        "image": "https://cdn.gametools.network/vehicles/bf6/U_VEH_Car_QuadBike-f25eae5e.webp",
+        "altImage": "https://cdn.gametools.network/vehicles/bf6/white/U_VEH_Car_QuadBike-f25eae5e.webp",
+    },
+    "veh_air_f97kes": {
+        "type": "Air Combat",
+        "vehicleName": "F-97 Kestrel",
+        "image": "https://cdn.gametools.network/vehicles/bf6/T_UI_MDV_F22_VSD0001-218f35cb.webp",
+        "altImage": "https://cdn.gametools.network/vehicles/bf6/white/T_UI_MDV_F22_VSD0001-218f35cb.webp",
     },
     "veh_air_uh06": {"type": "Air Transport", "vehicleName": "UH-06", "image": ""},
     "veh_air_mh47": {
         "type": "Air Transport",
         "vehicleName": "MH47 Chinook",
-        "image": "",
-    },
-    "veh_air_f97kes": {
-        "type": "Air Combat",
-        "vehicleName": "F-97 Kestrel",
         "image": "",
     },
     "veh_sur_rhib": {
@@ -571,11 +578,6 @@ VEHICLES = {
         "type": "Ground Transport",
         "vehicleName": "Turfpro PTV Royal",
         "image": "",
-    },
-    "veh_sur_quadbike": {
-        "type": "Ground Transport",
-        "vehicleName": "Rugged MV740",
-        "image": "https://cdn.gametools.network/vehicles/bf6/U_VEH_Car_QuadBike-f25eae5e.webp",
     },
     "veh_air_ah6litbird": {
         "type": "Air Combat",
@@ -640,6 +642,11 @@ MELEE = {
     "melee_light_serratedblade": {
         "type": "Melee Light",
         "meleeName": "KAPOK 14” Machete",
+        "image": "",  # wrong image
+    },
+    "melee_light_icecaxe": {
+        "type": "Melee Light",
+        "meleeName": "NOMAD CX-12 Ice Axe",
         "image": "",  # wrong image
     },
 }
@@ -952,13 +959,28 @@ WEAPONS = {
     "wp_ar_vhsk2": {
         "type": "Assault Rifles",
         "weaponName": "VCR-2",
-        "image": "https://cdn.gametools.network/weapons/bf6/T_UI_HK433_PKG_Factory_MED-39181b6c.webp",
-        "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_HK433_PKG_Factory_MED-39181b6c.webp",
+        "image": "https://cdn.gametools.network/weapons/bf6/T_UI_VHS2_Factory_Icon-a82fc1f9.webp",
+        "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_VHS2_Factory_Icon-a82fc1f9.webp",
     },
-    "wp_dmr_msbsgrotc": {"type": "DMRs", "weaponName": "GRT-CPS", "image": ""},
+    "wp_dmr_msbsgrotc": {
+        "type": "DMRs",
+        "weaponName": "GRT-CPS",
+        "image": "https://cdn.gametools.network/weapons/bf6/T_UI_MSBSGROTCPS_Factory_Icon-096caf67.webp",
+        "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_MSBSGROTCPS_Factory_Icon-096caf67.webp",
+    },
+    "wp_pst_vz61": {
+        "type": "Pistols",
+        "weaponName": "VZ.61",
+        "image": "https://cdn.gametools.network/weapons/bf6/T_UI_Skorpion_Factory_Icon-a6d915ec.webp",
+        "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_Skorpion_Factory_Icon-a6d915ec.webp",
+    },
+    "wp_smg_cz3a1": {
+        "type": "SMG-PDWs",
+        "weaponName": "CZ3A1",
+        "image": "https://cdn.gametools.network/weapons/bf6/T_UI_ScorpionEvo3_Factory_Icon-5391cf9f.webp",
+        "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_ScorpionEvo3_Factory_Icon-5391cf9f.webp",
+    },
     "wp_mg_mg525btk": {"type": "Machine Guns", "weaponName": "M121 A2", "image": ""},
-    "wp_pst_vz61": {"type": "Pistols", "weaponName": "VZ.61", "image": ""},
-    "wp_smg_cz3a1": {"type": "SMG-PDWs", "weaponName": "CZ3A1", "image": ""},
 }
 WEAPON_GROUPS = {
     "wp_temp": {"groupName": "All"},
