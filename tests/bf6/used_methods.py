@@ -40,6 +40,7 @@ starts_with = [
     "assists_arch",
     "dmgTo_arch",
     "vd_arch",
+    "airtime_arch",
     # vehicles
     "kw_veh",
     "tp_veh",
@@ -206,4 +207,6 @@ normal = [
     "Dmg_Dealt_Explosive_Total",
     "Kills_Parachute_Total",
     "shots_hit_human_total",
+    "Assist_Total",
+    "score_total",
 ]

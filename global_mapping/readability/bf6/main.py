@@ -789,10 +789,12 @@ async def get_main_stats(stats_dict: dict, format_values: bool = True):
 
     return {
         "humanPrecentage": format_percentage_value(human_precentage, format_values),
+        "score": stats_dict.get("score_total", 0),
         "kills": kills,
         "deaths": deaths,
         "wins": wins,
         "loses": losses,
+        "assists": stats_dict.get("Assist_Total", 0),
         "killsPerMinute": kills_per_minute,
         "damagePerMinute": damage_per_minute,
         "killsPerMatch": kills_per_match,

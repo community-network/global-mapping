@@ -592,6 +592,11 @@ VEHICLES = {
         "vehicleName": "M1030-M1",
         "image": "",
     },
+    "veh_sur_ltv": {
+        "type": "Ground Transport",
+        "vehicleName": "LTV",
+        "image": "",
+    },
 }
 VEHICLE_GROUPS = {
     "veh": {"groupName": "All"},
@@ -630,6 +635,11 @@ MELEE = {
     "melee_heavy_sledge": {
         "type": "Melee Heavy",
         "meleeName": "Sledgehammer",
+        "image": "",  # wrong image
+    },
+    "melee_light_serratedblade": {
+        "type": "Melee Light",
+        "meleeName": "KAPOK 14” Machete",
         "image": "",  # wrong image
     },
 }
@@ -1124,6 +1134,7 @@ GADGETS = {
     "gad_defib": {"type": "", "gadgetName": "Defibrillator", "image": ""},
     "gad_tdart": {"type": "", "gadgetName": "Tracer Dart", "image": ""},
     "gad_lancet": {"type": "", "gadgetName": "HTI-Mk2", "image": ""},
+    "gad_callin_armor": {"type": "", "gadgetName": "Armor", "image": ""},
 }
 
 GADGET_GROUPS = {
