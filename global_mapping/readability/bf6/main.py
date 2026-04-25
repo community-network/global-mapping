@@ -19,7 +19,7 @@ async def player_profile(data):
         found_rank = None
         player_card = profile.get("playerCard", {})
         rank = player_card.get("rank", 0)
-        while found_rank is None or rank == 0 or rank is None:
+        while not (found_rank is not None or rank == 0 or rank is None):
             found_rank = BF6.RANK_IMAGES.get(rank, None)
             rank -= 1
         player_card["rankImage"] = found_rank
@@ -256,7 +256,7 @@ async def fill_fields(
         current_result["melee"],
         current_result["meleeGroups"],
         current_result["battlePickups"],
-        current_result["vehicleArchetypes"]
+        current_result["vehicleArchetypes"],
     ) = await asyncio.gather(*tasks)
 
     kit_best_kills = 0
@@ -387,7 +387,6 @@ async def get_stats(
     return result[0]
 
 
-
 async def get_melee(stats_dict: dict, constant: dict):
     melee = []
     for _id, extra in constant.items():
@@ -419,6 +418,7 @@ async def get_melee(stats_dict: dict, constant: dict):
             }
         )
     return melee
+
 
 async def get_weapons(stats_dict: dict, constant: dict, format_values: bool = True):
     weapons = []
@@ -483,7 +483,9 @@ async def get_weapons(stats_dict: dict, constant: dict, format_values: bool = Tr
     return weapons
 
 
-async def get_battle_pickups(stats_dict: dict, constant: dict, format_values: bool = True):
+async def get_battle_pickups(
+    stats_dict: dict, constant: dict, format_values: bool = True
+):
     weapons = []
     for _id, extra in constant.items():
         kills = stats_dict.get(f"kw_{_id}", 0)
@@ -530,6 +532,8 @@ async def get_battle_pickups(stats_dict: dict, constant: dict, format_values: bo
             }
         )
     return weapons
+
+
 async def get_vehicles(stats_dict: dict, constant: dict):
     vehicles = []
     for _id, extra in constant.items():
