@@ -15,6 +15,15 @@ DEFAULT_SEASON = "Season2"
 
 
 async def player_profile(data):
+    for other in data.get("other"):
+        for profile in other.get("playerProfiles", []):
+            found_rank = None
+            rank = profile.get("rank", 0)
+            while not (found_rank is not None or rank == 0 or rank is None):
+                found_rank = BF6.RANK_IMAGES.get(rank, None)
+                rank -= 1
+            profile["rankImage"] = found_rank
+
     for profile in data.get("playerProfiles", []):
         found_rank = None
         player_card = profile.get("playerCard", {})
