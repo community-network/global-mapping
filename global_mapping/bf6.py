@@ -48,6 +48,13 @@ STATS_PLATFORM_REVERSE = {
     "psn": 4,
     "steam": 7,
 }
+PLATFORM_EA = {"cem_ea_id": "ea", "xbox": "xboxone", "epic": "epic", "steam": "steam"}
+PLATFORM_EA_REVERSE = {
+    "ea": "cem_ea_id",
+    "xboxone": "xbox",
+    "epic": "epic",
+    "steam": "steam",
+}
 REGIONS = {
     "aws-hkg": "Asia",
     "aws-icn": "Asia",

@@ -947,8 +947,8 @@ async def get_main_stats(stats_dict: dict, format_values: bool = True):
 
 async def players(player_list):
     for player in player_list.get("results", []):
-        player["platformId"] = player.get("platform", 0)
-        player["platform"] = BF6.STATS_PLATFORM.get(player.get("platform", 0), "pc")
+        player["platformId"] = player.get("platform", "pc")
+        player["platform"] = BF6.PLATFORM_EA.get(player.get("platform", "ea"), "ea")
     return player_list
 
 
