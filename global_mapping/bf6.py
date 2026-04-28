@@ -26,6 +26,7 @@ PLATFORM_REVERSE = {
     "ps5": 4,
     "xboxseries": 5,
     "common": 6,
+    "ea": 1,
     "steam": 7,
 }
 PLATFORM_FESL = {
