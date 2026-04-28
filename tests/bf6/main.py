@@ -13,7 +13,7 @@ from tests.bf6 import used_methods
 def find_player(player_name: str):
     return requests.get(
         url="https://api.gametools.network/bf6/stats/",
-        params={"name": player_name, "platform": "pc", "raw": "true"},
+        params={"name": player_name, "platform": "ea", "raw": "true"},
     ).json()
 
 
@@ -99,7 +99,7 @@ async def test_stats(data: dict, category_name: str):
 
 
 async def main():
-    raw_stats = find_player("squiintyy")
+    raw_stats = find_player("SquinteaTTV")
     with open("temp/raw_stats.json", "w", encoding="utf-8") as f:
         json.dump(raw_stats, f, ensure_ascii=False, indent=4)
     data = await get_stats(raw_stats, "glacier_mp", False, True)
