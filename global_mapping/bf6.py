@@ -26,6 +26,7 @@ PLATFORM_REVERSE = {
     "ps5": 4,
     "xboxseries": 5,
     "common": 6,
+    "ea": 1,
     "steam": 7,
 }
 PLATFORM_FESL = {
@@ -46,6 +47,7 @@ STATS_PLATFORM_REVERSE = {
     "ps5": 4,
     "xbox": 5,
     "psn": 4,
+    "ea": 1,
     "steam": 7,
 }
 PLATFORM_EA = {"cem_ea_id": "ea", "xbox": "xboxone", "epic": "epic", "steam": "steam"}
