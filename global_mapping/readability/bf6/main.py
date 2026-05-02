@@ -1,4 +1,5 @@
 import asyncio
+import re
 from typing import Any
 import datetime
 import logging
@@ -14,11 +15,37 @@ logger = logging.getLogger("api")
 DEFAULT_SEASON = "Season2"
 
 
-async def player_profile(data):
+async def get_rank_name(player_rank: int, lang: str):
+    settings_translation = await settingsLanguage(lang)
+    rgx = re.compile(r"ID_ARRIVAL_RANK_(\d+)-?(\d+)?")
+    ranks = sorted(
+        (
+            (
+                [int(i) if i is not None and i.isdigit() else None for i in m.groups()],
+                value,
+            )
+            for m, value in (
+                (rgx.match(key), value) for key, value in settings_translation.items()
+            )
+            if m
+        )
+    )
+
+    for rank in ranks:
+        if player_rank == rank[0][0]:
+            return rank[1]
+        elif any(x is None for x in rank[0]):
+            continue
+        elif player_rank >= rank[0][0] and player_rank <= rank[0][1]:  # type: ignore
+            return rank[1]
+
+
+async def player_profile(data, lang: str):
     for other in data.get("other"):
         for profile in other.get("playerProfiles", []):
             found_rank = None
             rank = profile.get("rank", 0)
+            profile["rankName"] = await get_rank_name(rank, lang)
             while not (found_rank is not None or rank == 0 or rank is None):
                 found_rank = BF6.RANK_IMAGES.get(rank, None)
                 rank -= 1
@@ -28,6 +55,7 @@ async def player_profile(data):
         found_rank = None
         player_card = profile.get("playerCard", {})
         rank = player_card.get("rank", 0)
+        profile["rankName"] = await get_rank_name(rank, lang)
         while not (found_rank is not None or rank == 0 or rank is None):
             found_rank = BF6.RANK_IMAGES.get(rank, None)
             rank -= 1
@@ -232,14 +260,16 @@ async def detailedServer(server, lang: str):
 
 async def fill_fields(
     stats: dict,
-    settings_translation: dict[str,str],
+    settings_translation: dict[str, str],
     format_values: bool = True,
 ):
     current_result = await get_main_stats(stats, format_values)
     tasks = []
     tasks.append(get_weapons(stats, BF6.WEAPONS, settings_translation, format_values))
     tasks.append(get_vehicles(stats, BF6.VEHICLES, settings_translation))
-    tasks.append(get_weapons(stats, BF6.WEAPON_GROUPS, settings_translation, format_values))
+    tasks.append(
+        get_weapons(stats, BF6.WEAPON_GROUPS, settings_translation, format_values)
+    )
     tasks.append(get_vehicles(stats, BF6.VEHICLE_GROUPS, settings_translation))
     tasks.append(get_classes(stats, settings_translation))
     tasks.append(get_maps(stats, settings_translation, format_values))
@@ -280,7 +310,13 @@ async def fill_fields(
     return current_result
 
 
-async def get_stats(data: dict, category_name: str, format_values: bool = True, seperation: bool = False, lang: str = "en-US"):
+async def get_stats(
+    data: dict,
+    category_name: str,
+    format_values: bool = True,
+    seperation: bool = False,
+    lang: str = "en-US",
+):
     settings_translation = await settingsLanguage(lang)
     result = []
     for player in data.get("playerStats", []):
@@ -347,7 +383,9 @@ async def get_stats(data: dict, category_name: str, format_values: bool = True, 
                 if is_global:
                     global_stats[item_name] = item_value
 
-        current_result = await fill_fields(global_stats, settings_translation, format_values)
+        current_result = await fill_fields(
+            global_stats, settings_translation, format_values
+        )
         if seperation:
             current_result["perGamemode"] = {}
             for gamemode, stats in gamemode_stats.items():
@@ -395,7 +433,12 @@ async def get_stats(data: dict, category_name: str, format_values: bool = True, 
         return {"data": result}
     return result[0]
 
-async def get_melee(stats_dict: dict, constant: dict[str, dict[str, str]], settings_translation: dict[str, str]):
+
+async def get_melee(
+    stats_dict: dict,
+    constant: dict[str, dict[str, str]],
+    settings_translation: dict[str, str],
+):
     melee = []
     for _id, extra in constant.items():
         kills = stats_dict.get(f"kw_{_id}", 0)
@@ -416,7 +459,10 @@ async def get_melee(stats_dict: dict, constant: dict[str, dict[str, str]], setti
             {
                 **extra,
                 "id": _id,
-                "name": settings_translation.get(extra.get("translationId", ""), extra.get("gadgetName", extra.get("groupName"))),
+                "name": settings_translation.get(
+                    extra.get("translationId", ""),
+                    extra.get("gadgetName", extra.get("groupName")),
+                ),
                 "kills": kills,
                 "damage": damage,
                 "takedowns": stats_dict.get(f"tkdw_{_id}", 0),
@@ -429,7 +475,12 @@ async def get_melee(stats_dict: dict, constant: dict[str, dict[str, str]], setti
     return melee
 
 
-async def get_weapons(stats_dict: dict, constant: dict[str, dict[str, str]], settings_translation: dict[str, str], format_values: bool = True):
+async def get_weapons(
+    stats_dict: dict,
+    constant: dict[str, dict[str, str]],
+    settings_translation: dict[str, str],
+    format_values: bool = True,
+):
     weapons = []
     for _id, extra in constant.items():
         kills = stats_dict.get(f"kw_{_id}", 0)
@@ -467,7 +518,10 @@ async def get_weapons(stats_dict: dict, constant: dict[str, dict[str, str]], set
         weapons.append(
             {
                 **extra,
-                "name": settings_translation.get(extra.get("translationId", ""), extra.get("weaponName", extra.get("groupName"))),
+                "name": settings_translation.get(
+                    extra.get("translationId", ""),
+                    extra.get("weaponName", extra.get("groupName")),
+                ),
                 "id": _id,
                 "kills": kills,
                 "damage": damage,
@@ -494,7 +548,10 @@ async def get_weapons(stats_dict: dict, constant: dict[str, dict[str, str]], set
 
 
 async def get_battle_pickups(
-    stats_dict: dict, constant: dict[str, dict[str, str]], settings_translation: dict[str, str], format_values: bool = True
+    stats_dict: dict,
+    constant: dict[str, dict[str, str]],
+    settings_translation: dict[str, str],
+    format_values: bool = True,
 ):
     weapons = []
     for _id, extra in constant.items():
@@ -527,7 +584,10 @@ async def get_battle_pickups(
         weapons.append(
             {
                 **extra,
-                "name": settings_translation.get(extra.get("translationId", ""), extra.get("battlepickupName", extra.get("groupName"))),
+                "name": settings_translation.get(
+                    extra.get("translationId", ""),
+                    extra.get("battlepickupName", extra.get("groupName")),
+                ),
                 "id": _id,
                 "kills": kills,
                 "damage": damage,
@@ -545,7 +605,11 @@ async def get_battle_pickups(
     return weapons
 
 
-async def get_vehicles(stats_dict: dict, constant:  dict[str, dict[str, str]], settings_translation: dict[str, str]):
+async def get_vehicles(
+    stats_dict: dict,
+    constant: dict[str, dict[str, str]],
+    settings_translation: dict[str, str],
+):
     vehicles = []
     for _id, extra in constant.items():
         kills = stats_dict.get(f"kw_{_id}", 0)
@@ -557,7 +621,10 @@ async def get_vehicles(stats_dict: dict, constant:  dict[str, dict[str, str]], s
         vehicles.append(
             {
                 **extra,
-                "name": settings_translation.get(extra.get("translationId", ""), extra.get("vehicleName", extra.get("groupName"))),
+                "name": settings_translation.get(
+                    extra.get("translationId", ""),
+                    extra.get("vehicleName", extra.get("groupName")),
+                ),
                 "id": _id,
                 "kills": kills,
                 "killsPerMinute": kills_per_minute,
@@ -580,7 +647,7 @@ async def get_vehicles(stats_dict: dict, constant:  dict[str, dict[str, str]], s
     return vehicles
 
 
-async def get_classes(stats_dict: dict,  settings_translation: dict[str, str]):
+async def get_classes(stats_dict: dict, settings_translation: dict[str, str]):
     kits = []
     for kit_id, extra in BF6.CLASSES.items():
         kills = stats_dict.get(f"kw_{kit_id}", 0)
@@ -597,7 +664,10 @@ async def get_classes(stats_dict: dict,  settings_translation: dict[str, str]):
         kits.append(
             {
                 **extra,
-                "name": settings_translation.get(extra.get("translationId", ""), extra.get("className", extra.get("groupName"))),
+                "name": settings_translation.get(
+                    extra.get("translationId", ""),
+                    extra.get("className", extra.get("groupName")),
+                ),
                 "id": kit_id,
                 "kills": kills,
                 "deaths": deaths,
@@ -613,7 +683,11 @@ async def get_classes(stats_dict: dict,  settings_translation: dict[str, str]):
     return kits
 
 
-async def get_gadgets(stats_dict: dict, constant: dict[str, dict[str, str]], settings_translation: dict[str, str]):
+async def get_gadgets(
+    stats_dict: dict,
+    constant: dict[str, dict[str, str]],
+    settings_translation: dict[str, str],
+):
     gadgets = []
     for _id, extra in constant.items():
         damage = stats_dict.get(f"dmg_{_id}", 0)
@@ -633,7 +707,10 @@ async def get_gadgets(stats_dict: dict, constant: dict[str, dict[str, str]], set
         gadgets.append(
             {
                 **extra,
-                "name": settings_translation.get(extra.get("translationId", ""), extra.get("gadgetName", extra.get("groupName"))),
+                "name": settings_translation.get(
+                    extra.get("translationId", ""),
+                    extra.get("gadgetName", extra.get("groupName")),
+                ),
                 "id": _id,
                 "kills": kills,
                 "assistsDamage": stats_dict.get(f"assdmg_{_id}", 0),
@@ -656,7 +733,9 @@ async def get_gadgets(stats_dict: dict, constant: dict[str, dict[str, str]], set
     return gadgets
 
 
-async def get_maps(stats_dict: dict, settings_translation: dict[str, str], format_values: bool = False):
+async def get_maps(
+    stats_dict: dict, settings_translation: dict[str, str], format_values: bool = False
+):
     maps = []
     for _id, extra in BF6.STAT_MAPS.items():
         wins = stats_dict.get(f"wins_{_id}", 0)
@@ -669,7 +748,10 @@ async def get_maps(stats_dict: dict, settings_translation: dict[str, str], forma
         maps.append(
             {
                 **extra,
-                "name": settings_translation.get(extra.get("translationId", ""), extra.get("mapName", extra.get("groupName"))),
+                "name": settings_translation.get(
+                    extra.get("translationId", ""),
+                    extra.get("mapName", extra.get("groupName")),
+                ),
                 "id": _id,
                 "wins": wins,
                 "losses": losses,
@@ -681,7 +763,9 @@ async def get_maps(stats_dict: dict, settings_translation: dict[str, str], forma
     return maps
 
 
-async def get_gamemodes(stats_dict: dict, constant: dict[str, dict[str, str]], format_values: bool = False):
+async def get_gamemodes(
+    stats_dict: dict, constant: dict[str, dict[str, str]], format_values: bool = False
+):
     gamemodes = []
     for _id, extra in constant.items():
         wins = stats_dict.get(f"wins_{_id}", 0)
