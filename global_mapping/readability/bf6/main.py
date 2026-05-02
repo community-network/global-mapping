@@ -416,7 +416,7 @@ async def get_melee(stats_dict: dict, constant: dict[str, dict[str, str]], setti
             {
                 **extra,
                 "id": _id,
-                "name": settings_translation.get("translationId", extra.get("gadgetName", extra.get("groupName"))),
+                "name": settings_translation.get(extra.get("translationId", ""), extra.get("gadgetName", extra.get("groupName"))),
                 "kills": kills,
                 "damage": damage,
                 "takedowns": stats_dict.get(f"tkdw_{_id}", 0),
@@ -467,7 +467,7 @@ async def get_weapons(stats_dict: dict, constant: dict[str, dict[str, str]], set
         weapons.append(
             {
                 **extra,
-                "name": settings_translation.get("translationId", extra.get("weaponName", extra.get("groupName"))),
+                "name": settings_translation.get(extra.get("translationId", ""), extra.get("weaponName", extra.get("groupName"))),
                 "id": _id,
                 "kills": kills,
                 "damage": damage,
@@ -527,7 +527,7 @@ async def get_battle_pickups(
         weapons.append(
             {
                 **extra,
-                "name": settings_translation.get("translationId", extra.get("battlepickupName", extra.get("groupName"))),
+                "name": settings_translation.get(extra.get("translationId", ""), extra.get("battlepickupName", extra.get("groupName"))),
                 "id": _id,
                 "kills": kills,
                 "damage": damage,
@@ -557,7 +557,7 @@ async def get_vehicles(stats_dict: dict, constant:  dict[str, dict[str, str]], s
         vehicles.append(
             {
                 **extra,
-                "name": settings_translation.get("translationId", extra.get("vehicleName", extra.get("groupName"))),
+                "name": settings_translation.get(extra.get("translationId", ""), extra.get("vehicleName", extra.get("groupName"))),
                 "id": _id,
                 "kills": kills,
                 "killsPerMinute": kills_per_minute,
@@ -597,7 +597,7 @@ async def get_classes(stats_dict: dict,  settings_translation: dict[str, str]):
         kits.append(
             {
                 **extra,
-                "name": settings_translation.get("translationId", extra.get("className", extra.get("groupName"))),
+                "name": settings_translation.get(extra.get("translationId", ""), extra.get("className", extra.get("groupName"))),
                 "id": kit_id,
                 "kills": kills,
                 "deaths": deaths,
@@ -633,7 +633,7 @@ async def get_gadgets(stats_dict: dict, constant: dict[str, dict[str, str]], set
         gadgets.append(
             {
                 **extra,
-                "name": settings_translation.get("translationId", extra.get("gadgetName", extra.get("groupName"))),
+                "name": settings_translation.get(extra.get("translationId", ""), extra.get("gadgetName", extra.get("groupName"))),
                 "id": _id,
                 "kills": kills,
                 "assistsDamage": stats_dict.get(f"assdmg_{_id}", 0),
@@ -669,7 +669,7 @@ async def get_maps(stats_dict: dict, settings_translation: dict[str, str], forma
         maps.append(
             {
                 **extra,
-                "name": settings_translation.get("translationId", extra.get("mapName", extra.get("groupName"))),
+                "name": settings_translation.get(extra.get("translationId", ""), extra.get("mapName", extra.get("groupName"))),
                 "id": _id,
                 "wins": wins,
                 "losses": losses,
