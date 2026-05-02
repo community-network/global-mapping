@@ -1,4 +1,5 @@
 import os
+import re
 
 files = os.listdir("global_mapping")
 modules = []
@@ -17,10 +18,14 @@ for file, variables in modules:
     methods = [(v, getattr(variables, v)) for v in dir(variables) if v[:2] != "__"]
     with open(f"src/generated_ts/{file}.ts", "w") as f:
         f.writelines(
-            [f"export const {key.lower()} = {value};\n" for key, value in methods]
+            [
+                f"export const {key.lower()} = {re.sub(r"(?<!['\"])\bNone\b(?!['\"])", 'null', f'{value}')};\n"
+                for key, value in methods
+            ]
         )
 
-with open(f"src/index.ts", "w") as f:
+
+with open("src/index.ts", "w") as f:
     f.writelines(
         [f'export * as {file} from "./generated_ts/{file}";\n' for file, _ in modules]
     )
