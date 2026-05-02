@@ -40,10 +40,10 @@ class LangSwitch(metaclass=Singleton):
         if current_lang is not None:
             self.__langs[lang] = translation
 
-    async def get(self, lang: str):
+    async def get(self, lang: str) -> dict[str, str]:
         return self.__langs.get(f"{lang}".lower(), self.__langs["en-us"])
 
 
-async def selectLanguage(lang: str):
+async def selectLanguage(lang: str) -> dict[str, str]:
     switcher = LangSwitch()
     return await switcher.get(lang)

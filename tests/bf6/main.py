@@ -102,7 +102,7 @@ async def main():
     raw_stats = find_player("SquinteaTTV")
     with open("temp/raw_stats.json", "w", encoding="utf-8") as f:
         json.dump(raw_stats, f, ensure_ascii=False, indent=4)
-    data = await get_stats(raw_stats, "glacier_mp", False, True)
+    data = await get_stats(raw_stats, "glacier_mp", False, True, "ZH-cn")
     await test_stats(raw_stats, "glacier_mp")
     with open("temp/result.json", "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=4)

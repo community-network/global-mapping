@@ -718,9 +718,18 @@ MELEE = {
     },
 }
 BATTLE_PICKUPS = {
-    "btlp": {"battlepickupName": "All"},
-    "btlp_minigun": {"battlepickupName": "Minigun"},
-    "btlp_railgun": {"battlepickupName": "Railgun"},
+    "btlp": {
+        "battlepickupName": "All",
+        "translationId": "ID_ARRIVAL_MUTATOR_310492599_ENTRY_0",
+    },
+    "btlp_minigun": {
+        "battlepickupName": "MP-RMG",
+        "translationId": "ID_ABILITY_RAILGUN",
+    },
+    "btlp_railgun": {
+        "battlepickupName": "Rorsch Mk-2 SMRW",
+        "translationId": "ID_ABILITY_RAILGUN",
+    },
 }
 WEAPONS = {
     "wp_mg_l110": {
