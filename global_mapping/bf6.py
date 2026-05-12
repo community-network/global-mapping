@@ -307,7 +307,7 @@ STAT_MAPS = {
     },
     "lvlmpsubsurface": {
         "mapName": "Hagental Base",
-        "image": "",
+        "image": "https://cdn.gametools.network/maps/bf6/T_UI_Subsurface-6f909eef.png",
         "translationId": "ID_MP_LVL_SUBSURFACE_NAME",
     },
 }
