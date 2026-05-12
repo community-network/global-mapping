@@ -1113,8 +1113,28 @@ WEAPONS = {
     "wp_mg_mg525btk": {
         "type": "Machine Guns",
         "weaponName": "M121 A2",
-        "image": "",
+        "image": "https://cdn.gametools.network/weapons/bf6/T_UI_MG5_Factory_Icon-7c0e084a.png",
+        "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_MG5_Factory_Icon-7c0e084a.png",
         "translationId": "ID_ABILITY_MG5",
+    },
+    "wp_snp_l115": {
+        "type": "Rifles",
+        "weaponName": "L115",
+        "image": "https://cdn.gametools.network/weapons/T_UI_L115A3_Factory_Icon-0cadd761.png",
+        "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_L115A3_Factory_Icon-0cadd761.png",
+        "translationId": "ID_ABILITY_L155A3",
+    },
+    "wp_ar_m16a3": {
+        "type": "Assault Rifles",
+        "weaponName": "M16A4",
+        "image": "",
+        "translationId": "ID_ABILITY_M16A3",
+    },
+    "wp_mg_rpk74m": {
+        "type": "Machine Guns",
+        "weaponName": "RPK-74M",
+        "image": "",
+        "translationId": "ID_ABILITY_RPK47M",
     },
 }
 WEAPON_GROUPS = {
