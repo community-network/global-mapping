@@ -60,6 +60,11 @@ async def player_profile(data, lang: str):
             found_rank = BF6.RANK_IMAGES.get(rank, None)
             rank -= 1
         player_card["rankImage"] = found_rank
+
+        for competitiveRank in profile.get("competitiveRanks", []):
+            competitiveRank["modeName"] = BF6.MODES.get(
+                competitiveRank.get("mode", ""), ""
+            )
     return data
 
 
