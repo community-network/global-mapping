@@ -65,6 +65,16 @@ async def player_profile(data, lang: str):
             competitiveRank["modeName"] = BF6.MODES.get(
                 competitiveRank.get("mode", ""), ""
             )
+
+            try:
+                division: tuple[str | None, str | None] = list(
+                    BF6.RANKED_BR_DIVISIONS.items()
+                )[competitiveRank.get("rank", 0)]
+            except IndexError:
+                division = (None, None)
+            competitiveRank["translationId"] = division[0]
+            competitiveRank["rankName"] = division[1]
+
     return data
 
 
