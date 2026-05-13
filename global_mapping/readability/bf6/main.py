@@ -69,7 +69,7 @@ async def player_profile(data, lang: str):
             try:
                 division: tuple[str | None, str | None] = list(
                     BF6.RANKED_BR_DIVISIONS.items()
-                )[competitiveRank.get("rank", 0)]
+                )[competitiveRank.get("rank", 0) or 0]
             except IndexError:
                 division = (None, None)
             competitiveRank["translationId"] = division[0]
