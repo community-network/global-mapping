@@ -124,6 +124,7 @@ MAPS = {
     "MP_Granite_MilitaryStorage_Portal": "Redline Storage",
     "MP_Granite_ClubHouse_Portal": "Club House",
     "MP_Granite_TechCampus_Portal": "Tech Center",
+    "MP_GolmudRailway": "Golmud Railway",
 }
 TO_GAME_MAPS = {
     "siege of cairo": "MP_Abbasid",
@@ -144,6 +145,7 @@ TO_GAME_MAPS = {
     "redline storage": "MP_Granite_MilitaryStorage_Portal",
     "club house": "MP_Granite_ClubHouse_Portal",
     "tech center": "MP_Granite_TechCampus_Portal",
+    "golmud railway": "MP_GolmudRailway",
 }
 MAP_TRANSLATION_IDS = {
     "MP_Abbasid": "ID_MP_LVL_ABBASID_NAME",
@@ -166,6 +168,7 @@ MAP_TRANSLATION_IDS = {
     "MP_Granite_Marina_Portal": "ID_ARRIVAL_MAP_GRANITE_MARINA",
     "MP_Granite_ClubHouse_Portal": "ID_ARRIVAL_MAP_GRANITE_CLUB_HOUSE",
     "MP_Granite_TechCampus_Portal": "ID_ARRIVAL_MAP_GRANITE_TECH_CENTER",
+    "MP_GolmudRailway": "ID_ARRIVAL_MAP_GOLMUDRAILWAY",
 }
 MAP_PICTURES = {
     "MP_Abbasid": "https://cdn.gametools.network/maps/bf6/T_UI_Abbasid_Large_OPT-49a3761a.webp",
@@ -188,6 +191,7 @@ MAP_PICTURES = {
     "MP_Granite_MilitaryStorage_Portal": "https://cdn.gametools.network/maps/bf6/T_UI_Granite_Portal_04_Thumb_SML-e8d5744b.jpg",
     "MP_Granite_ClubHouse_Portal": "https://cdn.gametools.network/maps/bf6/T_UI_Granite_Portal_05_Thumb_SML-74ea7be7.webp",
     "MP_Granite_TechCampus_Portal": "https://cdn.gametools.network/maps/bf6/T_UI_Granite_Portal_06_Thumb_SML-80099ba6.webp",
+    "MP_GolmudRailway": "https://cdn.gametools.network/maps/bf6/T_UI_Golmud-ebbfce73.png",
 }
 SMALLMODES = {
     "Breakthrough0": "BT",
@@ -303,7 +307,7 @@ STAT_MAPS = {
     },
     "lvlmpsubsurface": {
         "mapName": "Hagental Base",
-        "image": "",
+        "image": "https://cdn.gametools.network/maps/bf6/T_UI_Subsurface-6f909eef.png",
         "translationId": "ID_MP_LVL_SUBSURFACE_NAME",
     },
 }
@@ -1113,8 +1117,28 @@ WEAPONS = {
     "wp_mg_mg525btk": {
         "type": "Machine Guns",
         "weaponName": "M121 A2",
-        "image": "",
+        "image": "https://cdn.gametools.network/weapons/bf6/T_UI_MG5_Factory_Icon-7c0e084a.png",
+        "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_MG5_Factory_Icon-7c0e084a.png",
         "translationId": "ID_ABILITY_MG5",
+    },
+    "wp_snp_l115": {
+        "type": "Rifles",
+        "weaponName": "L115",
+        "image": "https://cdn.gametools.network/weapons/T_UI_L115A3_Factory_Icon-0cadd761.png",
+        "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_L115A3_Factory_Icon-0cadd761.png",
+        "translationId": "ID_ABILITY_L155A3",
+    },
+    "wp_ar_m16a3": {
+        "type": "Assault Rifles",
+        "weaponName": "M16A4",
+        "image": "",
+        "translationId": "ID_ABILITY_M16A3",
+    },
+    "wp_mg_rpk74m": {
+        "type": "Machine Guns",
+        "weaponName": "RPK-74M",
+        "image": "",
+        "translationId": "ID_ABILITY_RPK47M",
     },
 }
 WEAPON_GROUPS = {
@@ -1950,4 +1974,42 @@ RANK_IMAGES = {
         "small": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_5000_sm.png",
         "large": "https://cdn.gametools.network/ranks/bf6/t_ui_rank_5000_lg.png",
     },
+}
+RANKED_BR_DIVISIONS = {
+    "ID_ARRIVAL_RANKED_BR_DIVISIONS_UNRANKED": "Unranked",
+    "ID_ARRIVAL_RANKED_BR_DIVISIONS_ROOKIE1": "Rookie I",
+    "ID_ARRIVAL_RANKED_BR_DIVISIONS_ROOKIE2": "Rookie II",
+    "ID_ARRIVAL_RANKED_BR_DIVISIONS_ROOKIE3": "Rookie III",
+    "ID_ARRIVAL_RANKED_BR_DIVISIONS_ROOKIE4": "Rookie IV",
+    "ID_ARRIVAL_RANKED_BR_DIVISIONS_ROOKIE5": "Rookie V",
+    "ID_ARRIVAL_RANKED_BR_DIVISIONS_BRONZE1": "Bronze I",
+    "ID_ARRIVAL_RANKED_BR_DIVISIONS_BRONZE2": "Bronze II",
+    "ID_ARRIVAL_RANKED_BR_DIVISIONS_BRONZE3": "Bronze III",
+    "ID_ARRIVAL_RANKED_BR_DIVISIONS_BRONZE4": "Bronze IV",
+    "ID_ARRIVAL_RANKED_BR_DIVISIONS_BRONZE5": "Bronze V",
+    "ID_ARRIVAL_RANKED_BR_DIVISIONS_SILVER1": "Silver I",
+    "ID_ARRIVAL_RANKED_BR_DIVISIONS_SILVER2": "Silver II",
+    "ID_ARRIVAL_RANKED_BR_DIVISIONS_SILVER3": "Silver III",
+    "ID_ARRIVAL_RANKED_BR_DIVISIONS_SILVER4": "Silver IV",
+    "ID_ARRIVAL_RANKED_BR_DIVISIONS_SILVER5": "Silver V",
+    "ID_ARRIVAL_RANKED_BR_DIVISIONS_GOLD1": "Gold I",
+    "ID_ARRIVAL_RANKED_BR_DIVISIONS_GOLD2": "Gold II",
+    "ID_ARRIVAL_RANKED_BR_DIVISIONS_GOLD3": "Gold III",
+    "ID_ARRIVAL_RANKED_BR_DIVISIONS_GOLD4": "Gold IV",
+    "ID_ARRIVAL_RANKED_BR_DIVISIONS_GOLD5": "Gold V",
+    "ID_ARRIVAL_RANKED_BR_DIVISIONS_PLATINUM1": "Platinum I",
+    "ID_ARRIVAL_RANKED_BR_DIVISIONS_PLATINUM2": "Platinum II",
+    "ID_ARRIVAL_RANKED_BR_DIVISIONS_PLATINUM3": "Platinum III",
+    "ID_ARRIVAL_RANKED_BR_DIVISIONS_PLATINUM4": "Platinum IV",
+    "ID_ARRIVAL_RANKED_BR_DIVISIONS_PLATINUM5": "Platinum V",
+    "ID_ARRIVAL_RANKED_BR_DIVISIONS_DIAMOND1": "Diamond I",
+    "ID_ARRIVAL_RANKED_BR_DIVISIONS_DIAMOND2": "Diamond II",
+    "ID_ARRIVAL_RANKED_BR_DIVISIONS_DIAMOND3": "Diamond III",
+    "ID_ARRIVAL_RANKED_BR_DIVISIONS_DIAMOND4": "Diamond IV",
+    "ID_ARRIVAL_RANKED_BR_DIVISIONS_DIAMOND5": "Diamond V",
+    "ID_ARRIVAL_RANKED_BR_DIVISIONS_MASTER1": "Master I",
+    "ID_ARRIVAL_RANKED_BR_DIVISIONS_MASTER2": "Master II",
+    "ID_ARRIVAL_RANKED_BR_DIVISIONS_MASTER3": "Master III",
+    "ID_ARRIVAL_RANKED_BR_DIVISIONS_MASTER4": "Master IV",
+    "ID_ARRIVAL_RANKED_BR_DIVISIONS_MASTER5": "Master V",
 }
