@@ -12,7 +12,7 @@ from global_mapping.readability.bf6.languages.settingValues.main import (
 )
 
 logger = logging.getLogger("api")
-DEFAULT_SEASON = "Season2"
+DEFAULT_SEASON = "Season3"
 
 
 async def get_rank_name(player_rank: int, lang: str):
