@@ -62,6 +62,7 @@ REGIONS = {
     "aws-icn": "Asia",
     "aws-nrt": "Asia",
     "aws-sin": "Asia",
+    "aws-cpt": "Africa",
     "aws-iad": "North America",
     "aws-pdx": "North America",
     "aws-sjc": "North America",
@@ -75,6 +76,7 @@ REGIONSLIST = {
     "nam": ["aws-iad", "aws-pdx", "aws-sjc"],
     "sam": ["aws-brz"],
     "eu": ["aws-fra", "aws-lhr"],
+    "afr": ["aws-cpt"],
     "oc": ["aws-syd"],
     "all": [
         "aws-iad",
@@ -95,6 +97,7 @@ SHORT_REGIONS = {
     "aws-icn": "asia",
     "aws-nrt": "asia",
     "aws-sin": "asia",
+    "aws-cpt": "afr",
     "aws-iad": "nam",
     "aws-pdx": "nam",
     "aws-sjc": "nam",
