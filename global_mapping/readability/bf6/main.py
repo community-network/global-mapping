@@ -41,7 +41,7 @@ async def get_rank_name(player_rank: int, lang: str):
 
 
 async def player_profile(data, lang: str):
-    for other in data.get("other"):
+    for other in data.get("other", []):
         for profile in other.get("playerProfiles", []):
             found_rank = None
             rank = profile.get("rank", 0)
