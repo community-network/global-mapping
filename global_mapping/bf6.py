@@ -124,7 +124,9 @@ MAPS = {
     "MP_Granite_MilitaryStorage_Portal": "Redline Storage",
     "MP_Granite_ClubHouse_Portal": "Club House",
     "MP_Granite_TechCampus_Portal": "Tech Center",
+    "MP_Granite_Underground_Portal": "Complex 3",
     "MP_GolmudRailway": "Golmud Railway",
+    "MP_Subsurface": "Hagental Base",
 }
 TO_GAME_MAPS = {
     "siege of cairo": "MP_Abbasid",
@@ -146,6 +148,8 @@ TO_GAME_MAPS = {
     "club house": "MP_Granite_ClubHouse_Portal",
     "tech center": "MP_Granite_TechCampus_Portal",
     "golmud railway": "MP_GolmudRailway",
+    "complex 3": "MP_Granite_Underground_Portal",
+    "hagental base":"MP_Subsurface",
 }
 MAP_TRANSLATION_IDS = {
     "MP_Abbasid": "ID_MP_LVL_ABBASID_NAME",
@@ -168,7 +172,9 @@ MAP_TRANSLATION_IDS = {
     "MP_Granite_Marina_Portal": "ID_ARRIVAL_MAP_GRANITE_MARINA",
     "MP_Granite_ClubHouse_Portal": "ID_ARRIVAL_MAP_GRANITE_CLUB_HOUSE",
     "MP_Granite_TechCampus_Portal": "ID_ARRIVAL_MAP_GRANITE_TECH_CENTER",
+    "MP_Granite_Underground_Portal": "ID_MP_LVL_GRANITE_UNDERGROUND_NAME",
     "MP_GolmudRailway": "ID_ARRIVAL_MAP_GOLMUDRAILWAY",
+    "MP_Subsurface": "ID_MP_LVL_SUBSURFACE_NAME",
 }
 MAP_PICTURES = {
     "MP_Abbasid": "https://cdn.gametools.network/maps/bf6/T_UI_Abbasid_Large_OPT-49a3761a.webp",
@@ -191,7 +197,9 @@ MAP_PICTURES = {
     "MP_Granite_MilitaryStorage_Portal": "https://cdn.gametools.network/maps/bf6/T_UI_Granite_Portal_04_Thumb_SML-e8d5744b.jpg",
     "MP_Granite_ClubHouse_Portal": "https://cdn.gametools.network/maps/bf6/T_UI_Granite_Portal_05_Thumb_SML-74ea7be7.webp",
     "MP_Granite_TechCampus_Portal": "https://cdn.gametools.network/maps/bf6/T_UI_Granite_Portal_06_Thumb_SML-80099ba6.webp",
+    "MP_Granite_Underground_Portal": "https://cdn.gametools.network/maps/bf6/T_UI_Granite_Portal_08_Large-9805324e.png",
     "MP_GolmudRailway": "https://cdn.gametools.network/maps/bf6/T_UI_Golmud-ebbfce73.png",
+    "MP_Subsurface": "https://cdn.gametools.network/maps/bf6/T_UI_Subsurface-6f909eef.png",
 }
 SMALLMODES = {
     "Breakthrough0": "BT",
@@ -204,6 +212,7 @@ SMALLMODES = {
     "GraniteSquad0": "RQ",
     "GraniteSolo0": "BRS",
     "GraniteGauntlet0": "RG",
+    "MP_Escalation0":  "ES",
 }
 MODES = {
     "Breakthrough0": "Breakthrough Large",
@@ -216,6 +225,7 @@ MODES = {
     "GraniteSquad0": "Redsec Quads",
     "GraniteSolo0": "Redsec Solo",
     "GraniteGauntlet0": "Redsec Gauntlet",
+    "MP_Escalation0":  "Escalation",
 }
 REDSEC_MODES = {
     "GraniteDuo0": "Duos",
@@ -234,6 +244,7 @@ TO_GAME_MODES = {
     "redsec quads": "GraniteSquad0",
     "redsec solo": "GraniteSolo0",
     "redsec gauntlet": "GraniteGauntlet0",
+    "escalation": "MP_Escalation0",
 }
 STAT_MAPS = {
     "lvlmp": {
