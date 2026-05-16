@@ -215,6 +215,19 @@ async def tagTranslation(settings_translation: dict, tags: list[dict]):
 
 async def players(player_list):
     for player in player_list.get("results", []):
+        # move to the same location with the new renderer
+        details = player.get("details", {})
+        try:
+            player["personaId"] = int(details.get("personaId"))
+        except ValueError:
+            player["personaId"] = None
+        try:
+            player["nucleusId"] = int(player.get("nucleusId"))
+        except ValueError:
+            player["nucleusId"] = None
+        player["name"] = details.get("name")
+        del player["details"] 
+
         player["platformId"] = player.get("platform", 0)
         player["platform"] = BF2042.STATS_PLATFORM.get(player.get("platform", 0), "pc")
     return player_list
