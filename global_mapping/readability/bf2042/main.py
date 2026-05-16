@@ -363,14 +363,14 @@ async def scheduled_collections(collections_data, lang: str):
                     )
                 )
                 tasks.append(getBackgroundSubitem(mix["assets"]["item"]["info"]))
-                if mix["mixInfo"] is not None:
+                if mix.get("mixInfo", None) is not None:
                     tasks.append(
                         blueprintTranslation(
                             collection_translations,
                             mix["mixInfo"]["meta"]["item"]["translations"],
                         )
                     )
-            if value["main"] is not None:
+            if value.get("main", None) is not None:
                 tasks.append(
                     blueprintTranslation(
                         collection_translations,
@@ -378,7 +378,7 @@ async def scheduled_collections(collections_data, lang: str):
                     )
                 )
                 tasks.append(getBackground(value["main"]["subEntry"]["resource"]))
-            if value["secondary"] is not None:
+            if value.get("secondary", None) is not None:
                 tasks.append(
                     blueprintTranslation(
                         collection_translations,
