@@ -87,7 +87,7 @@ async def serverList(servers):
 
 
 async def detailedServer(server, server_id, lang: str):
-    server_info = server.get("server_info", {})
+    server_info = server.get("serverInfo", {})
     map_rotation = server_info.get("rotation", {})
 
     try:
