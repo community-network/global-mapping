@@ -443,32 +443,36 @@ async def get_stats(
 
             current_result["perSeason"] = {}
             for season, gamemode in season_stats.items():
-                current_result["perSeason"][season] = {}
+                new_season_stat = {}
                 for gamemode, stats in gamemode.items():
                     res = await fill_fields(stats, settings_translation, format_values)
                     if is_not_empty(res):
-                        current_result["perSeason"][season][gamemode] = {
+                        new_season_stat[gamemode] = {
                             **BF6.STAT_GAMEMODE[gamemode],
                             **res,
                         }
+                if len(new_season_stat) > 0:
+                    current_result["perSeason"][season] = new_season_stat
 
             current_result["perGameType"] = {}
             for game_type, seasons in game_type_stats.items():
                 current_result["perGameType"][game_type] = {}
                 for season, gamemode in seasons.items():
-                    current_result["perGameType"][game_type][season] = {}
+                    new_season_stat = {}
                     for gamemode, stats in gamemode.items():
                         res = await fill_fields(
                             stats, settings_translation, format_values
                         )
                         if is_not_empty(res):
                             print(res)
-                            current_result["perGameType"][game_type][season][
-                                gamemode
-                            ] = {
+                            new_season_stat[gamemode] = {
                                 **BF6.STAT_GAMEMODE[gamemode],
                                 **res,
                             }
+                    if len(new_season_stat) > 0:
+                        current_result["perGameType"][game_type][season] = (
+                            new_season_stat
+                        )
         current_result["hasResults"] = result_count > 0
 
         tasks = []
