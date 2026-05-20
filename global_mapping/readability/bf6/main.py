@@ -325,6 +325,12 @@ async def fill_fields(
     return current_result
 
 
+def is_not_empty(val):
+    return not all(
+        [not x for x in val.values() if isinstance(x, int) or isinstance(x, float)]
+    )
+
+
 async def get_stats(
     data: dict,
     category_name: str,
@@ -429,20 +435,40 @@ async def get_stats(
             current_result["perGamemode"] = {}
             for gamemode, stats in gamemode_stats.items():
                 res = await fill_fields(stats, settings_translation, format_values)
-                current_result["perGamemode"][gamemode] = {
-                    **BF6.STAT_GAMEMODE[gamemode],
-                    **res,
-                }
+                if is_not_empty(res):
+                    current_result["perGamemode"][gamemode] = {
+                        **BF6.STAT_GAMEMODE[gamemode],
+                        **res,
+                    }
 
             current_result["perSeason"] = {}
             for season, gamemode in season_stats.items():
                 current_result["perSeason"][season] = {}
                 for gamemode, stats in gamemode.items():
                     res = await fill_fields(stats, settings_translation, format_values)
-                    current_result["perSeason"][season][gamemode] = {
-                        **BF6.STAT_GAMEMODE[gamemode],
-                        **res,
-                    }
+                    if is_not_empty(res):
+                        current_result["perSeason"][season][gamemode] = {
+                            **BF6.STAT_GAMEMODE[gamemode],
+                            **res,
+                        }
+
+            current_result["perGameType"] = {}
+            for game_type, seasons in game_type_stats.items():
+                current_result["perGameType"][game_type] = {}
+                for season, gamemode in seasons.items():
+                    current_result["perGameType"][game_type][season] = {}
+                    for gamemode, stats in gamemode.items():
+                        res = await fill_fields(
+                            stats, settings_translation, format_values
+                        )
+                        if is_not_empty(res):
+                            print(res)
+                            current_result["perGameType"][game_type][season][
+                                gamemode
+                            ] = {
+                                **BF6.STAT_GAMEMODE[gamemode],
+                                **res,
+                            }
         current_result["hasResults"] = result_count > 0
 
         tasks = []
@@ -511,7 +537,7 @@ async def get_melee(
         }
 
         # skip all 0 values
-        if not all([not x for x in res.values() if not isinstance(x, str)]):
+        if is_not_empty(res):
             melee.append(res)
     return melee
 
@@ -582,7 +608,7 @@ async def get_weapons(
             "timeEquipped": seconds,
         }
         # skip all 0 values
-        if not all([not x for x in res.values() if not isinstance(x, str)]):
+        if is_not_empty(res):
             weapons.append(res)
 
     return weapons
@@ -643,7 +669,7 @@ async def get_battle_pickups(
         }
 
         # skip all 0 values
-        if not all([not x for x in res.values() if not isinstance(x, str)]):
+        if is_not_empty(res):
             weapons.append(res)
 
     return weapons
@@ -688,7 +714,7 @@ async def get_vehicles(
         }
 
         # skip all 0 values
-        if not all([not x for x in res.values() if not isinstance(x, str)]):
+        if is_not_empty(res):
             vehicles.append(res)
 
     return vehicles
@@ -726,7 +752,7 @@ async def get_classes(stats_dict: dict, settings_translation: dict[str, str]):
             "secondsPlayed": seconds,
         }
         # skip all 0 values
-        if not all([not x for x in res.values() if not isinstance(x, str)]):
+        if is_not_empty(res):
             kits.append(res)
     return kits
 
@@ -777,7 +803,7 @@ async def get_gadgets(
             "secondsPlayed": seconds,
         }
         # skip all 0 values
-        if not all([not x for x in res.values() if not isinstance(x, str)]):
+        if is_not_empty(res):
             gadgets.append(res)
     return gadgets
 
@@ -808,7 +834,7 @@ async def get_maps(
             "secondsPlayed": stats_dict.get(f"tp_{_id}", 0),
         }
         # skip all 0 values
-        if not all([not x for x in res.values() if not isinstance(x, str)]):
+        if is_not_empty(res):
             maps.append(res)
     return maps
 
@@ -885,7 +911,7 @@ async def get_gamemodes(
             "secondsPlayed": seconds,
         }
         # skip all 0 values
-        if not all([not x for x in res.values() if not isinstance(x, str)]):
+        if is_not_empty(res):
             gamemodes.append(res)
     return gamemodes
 
@@ -1091,6 +1117,11 @@ async def players(player_list):
     return player_list
 
 
+# async def get_game_types():
+#     game_types = []
+#     for game_type_id, game_type in BF6.GAME_TYPES.items():
+
+
 async def get_seasons(all_fields: list[dict[str, Any]], MODES: dict):
     seasons = []
     for season_id, season in BF6.SEASONS.items():
@@ -1176,7 +1207,7 @@ async def get_seasons(all_fields: list[dict[str, Any]], MODES: dict):
                 "extractions": extractions,
             }
             # skip all 0 values
-            if not all([not x for x in mode.values() if not isinstance(x, str)]):
+            if is_not_empty(mode):
                 modes.append(mode)
 
         seasons.append(
