@@ -338,12 +338,19 @@ async def get_stats(
         current_player = player.get("player", {"personaId": 0})
         valid_modes = set(BF6.STAT_GAMEMODE.keys())
         valid_seasons = set(BF6.SEASONS.keys())
+        valid_game_types = set(BF6.GAME_TYPES.keys())
 
         global_stats: dict[str, Any] = {}
 
         gamemode_stats: dict[str, dict[str, Any]] = {mode: {} for mode in valid_modes}
         season_stats: dict[str, dict[str, dict[str, Any]]] = {
             season: {mode: {} for mode in valid_modes} for season in valid_seasons
+        }
+        game_type_stats: dict[str, dict[str, dict[str, dict[str, Any]]]] = {
+            game_type: {
+                season: {mode: {} for mode in valid_modes} for season in valid_seasons
+            }
+            for game_type in valid_game_types
         }
 
         result_count = 0
@@ -365,6 +372,7 @@ async def get_stats(
                 game_mode = None
                 season = None
                 is_global = False
+                game_type = None
 
                 for f in fields:
                     fname = f.get("name")
@@ -374,6 +382,8 @@ async def get_stats(
                         season = f.get("value")
                     elif fname == "global":
                         is_global = True
+                    elif fname == "GameType":
+                        game_type = f.get("value")
                     if game_mode is not None and season is not None and is_global:
                         break
 
@@ -383,6 +393,7 @@ async def get_stats(
                 if (
                     game_mode is not None
                     and season is None
+                    and game_type is None
                     and game_mode in valid_modes
                 ):
                     gamemode_stats[game_mode][item_name] = item_value
@@ -390,10 +401,23 @@ async def get_stats(
                 if (
                     season is not None
                     and game_mode is not None
+                    and game_type is None
                     and season in valid_seasons
                     and game_mode in valid_modes
                 ):
                     season_stats[season][game_mode][item_name] = item_value
+
+                if (
+                    season is not None
+                    and game_mode is not None
+                    and game_type is not None
+                    and season in valid_seasons
+                    and game_mode in valid_modes
+                    and game_type in valid_game_types
+                ):
+                    game_type_stats[game_type][season][game_mode][item_name] = (
+                        item_value
+                    )
 
                 if is_global:
                     global_stats[item_name] = item_value
@@ -470,23 +494,25 @@ async def get_melee(
         except (ZeroDivisionError, KeyError):
             damage_per_minute = 0.0
 
-        melee.append(
-            {
-                **extra,
-                "id": _id,
-                "name": settings_translation.get(
-                    extra.get("translationId", ""),
-                    extra.get("gadgetName", extra.get("groupName")),
-                ),
-                "kills": kills,
-                "damage": damage,
-                "takedowns": stats_dict.get(f"tkdw_{_id}", 0),
-                "uses": stats_dict.get(f"uses_{_id}", 0),
-                "killsPerMinute": kills_per_minute,
-                "damagePerMinute": damage_per_minute,
-                "timeEquipped": seconds,
-            }
-        )
+        res = {
+            **extra,
+            "id": _id,
+            "name": settings_translation.get(
+                extra.get("translationId", ""),
+                extra.get("gadgetName", extra.get("groupName")),
+            ),
+            "kills": kills,
+            "damage": damage,
+            "takedowns": stats_dict.get(f"tkdw_{_id}", 0),
+            "uses": stats_dict.get(f"uses_{_id}", 0),
+            "killsPerMinute": kills_per_minute,
+            "damagePerMinute": damage_per_minute,
+            "timeEquipped": seconds,
+        }
+
+        # skip all 0 values
+        if not all([not x for x in res.values() if not isinstance(x, str)]):
+            melee.append(res)
     return melee
 
 
@@ -530,35 +556,35 @@ async def get_weapons(
         except ZeroDivisionError:
             hits_per_kill = 0.0
 
-        weapons.append(
-            {
-                **extra,
-                "name": settings_translation.get(
-                    extra.get("translationId", ""),
-                    extra.get("weaponName", extra.get("groupName")),
-                ),
-                "id": _id,
-                "kills": kills,
-                "damage": damage,
-                "assistsDamage": stats_dict.get(f"assdmg_{_id}", 0),
-                "bodyKills": stats_dict.get(f"bkw_{_id}", 0),
-                "headshotKills": headshots,
-                "hipfireKills": stats_dict.get(f"hfkw_{_id}", 0),
-                "multiKills": stats_dict.get(f"mkw_{_id}", 0),
-                "accuracy": format_percentage_value(accuracy, format_values),
-                "killsPerMinute": kills_per_minute,
-                "damagePerMinute": damage_per_minute,
-                "headshots": format_percentage_value(
-                    headshot_percentage, format_values
-                ),
-                "hitVKills": hits_per_kill,
-                "shotsHit": shots_hit,
-                "shotsFired": shots_fired,
-                "scopedKills": stats_dict.get(f"adskw_{_id}", 0),
-                "spawns": stats_dict.get(f"spawns_{_id}", 0),
-                "timeEquipped": seconds,
-            }
-        )
+        res = {
+            **extra,
+            "name": settings_translation.get(
+                extra.get("translationId", ""),
+                extra.get("weaponName", extra.get("groupName")),
+            ),
+            "id": _id,
+            "kills": kills,
+            "damage": damage,
+            "assistsDamage": stats_dict.get(f"assdmg_{_id}", 0),
+            "bodyKills": stats_dict.get(f"bkw_{_id}", 0),
+            "headshotKills": headshots,
+            "hipfireKills": stats_dict.get(f"hfkw_{_id}", 0),
+            "multiKills": stats_dict.get(f"mkw_{_id}", 0),
+            "accuracy": format_percentage_value(accuracy, format_values),
+            "killsPerMinute": kills_per_minute,
+            "damagePerMinute": damage_per_minute,
+            "headshots": format_percentage_value(headshot_percentage, format_values),
+            "hitVKills": hits_per_kill,
+            "shotsHit": shots_hit,
+            "shotsFired": shots_fired,
+            "scopedKills": stats_dict.get(f"adskw_{_id}", 0),
+            "spawns": stats_dict.get(f"spawns_{_id}", 0),
+            "timeEquipped": seconds,
+        }
+        # skip all 0 values
+        if not all([not x for x in res.values() if not isinstance(x, str)]):
+            weapons.append(res)
+
     return weapons
 
 
@@ -596,27 +622,30 @@ async def get_battle_pickups(
         except ZeroDivisionError:
             hits_per_kill = 0.0
 
-        weapons.append(
-            {
-                **extra,
-                "name": settings_translation.get(
-                    extra.get("translationId", ""),
-                    extra.get("battlepickupName", extra.get("groupName")),
-                ),
-                "id": _id,
-                "kills": kills,
-                "damage": damage,
-                "scopedKills": stats_dict.get(f"adskw_{_id}", 0),
-                "bodyKills": stats_dict.get(f"bkw_{_id}", 0),
-                "accuracy": format_percentage_value(accuracy, format_values),
-                "killsPerMinute": kills_per_minute,
-                "damagePerMinute": damage_per_minute,
-                "hitVKills": hits_per_kill,
-                "shotsHit": shots_hit,
-                "shotsFired": shots_fired,
-                "timeEquipped": seconds,
-            }
-        )
+        res = {
+            **extra,
+            "name": settings_translation.get(
+                extra.get("translationId", ""),
+                extra.get("battlepickupName", extra.get("groupName")),
+            ),
+            "id": _id,
+            "kills": kills,
+            "damage": damage,
+            "scopedKills": stats_dict.get(f"adskw_{_id}", 0),
+            "bodyKills": stats_dict.get(f"bkw_{_id}", 0),
+            "accuracy": format_percentage_value(accuracy, format_values),
+            "killsPerMinute": kills_per_minute,
+            "damagePerMinute": damage_per_minute,
+            "hitVKills": hits_per_kill,
+            "shotsHit": shots_hit,
+            "shotsFired": shots_fired,
+            "timeEquipped": seconds,
+        }
+
+        # skip all 0 values
+        if not all([not x for x in res.values() if not isinstance(x, str)]):
+            weapons.append(res)
+
     return weapons
 
 
@@ -633,32 +662,35 @@ async def get_vehicles(
             kills_per_minute = round(kills / (seconds / 60), 2)
         except ZeroDivisionError:
             kills_per_minute = 0
-        vehicles.append(
-            {
-                **extra,
-                "name": settings_translation.get(
-                    extra.get("translationId", ""),
-                    extra.get("vehicleName", extra.get("groupName")),
-                ),
-                "id": _id,
-                "kills": kills,
-                "killsPerMinute": kills_per_minute,
-                "damage": stats_dict.get(f"dmg_{_id}", 0),
-                "spawns": stats_dict.get(f"spawns_{_id}", 0),
-                "roadKills": stats_dict.get(f"roadkills_{_id}", 0),
-                "passengerAssists": stats_dict.get(f"assists_p_{_id}", 0),
-                "multiKills": stats_dict.get(f"mkw_{_id}", 0),
-                "distanceTraveled": stats_dict.get(f"disttrv_{_id}", 0),
-                "driverAssists": stats_dict.get(f"assists_d_{_id}", 0),
-                "vehiclesDestroyedWith": stats_dict.get(f"vdw_{_id}", 0),
-                "assists": stats_dict.get(f"assists_{_id}", 0),
-                "damageTo": stats_dict.get(f"dmgTo_{_id}", 0),
-                "destroyed": stats_dict.get(f"vd_{_id}", 0),
-                "airtime": stats_dict.get(f"airtime_{_id}", 0),
-                # "idk": stats_dict.get(f"eor_vh_{_id}"),
-                "timeIn": seconds,
-            }
-        )
+        res = {
+            **extra,
+            "name": settings_translation.get(
+                extra.get("translationId", ""),
+                extra.get("vehicleName", extra.get("groupName")),
+            ),
+            "id": _id,
+            "kills": kills,
+            "killsPerMinute": kills_per_minute,
+            "damage": stats_dict.get(f"dmg_{_id}", 0),
+            "spawns": stats_dict.get(f"spawns_{_id}", 0),
+            "roadKills": stats_dict.get(f"roadkills_{_id}", 0),
+            "passengerAssists": stats_dict.get(f"assists_p_{_id}", 0),
+            "multiKills": stats_dict.get(f"mkw_{_id}", 0),
+            "distanceTraveled": stats_dict.get(f"disttrv_{_id}", 0),
+            "driverAssists": stats_dict.get(f"assists_d_{_id}", 0),
+            "vehiclesDestroyedWith": stats_dict.get(f"vdw_{_id}", 0),
+            "assists": stats_dict.get(f"assists_{_id}", 0),
+            "damageTo": stats_dict.get(f"dmgTo_{_id}", 0),
+            "destroyed": stats_dict.get(f"vd_{_id}", 0),
+            "airtime": stats_dict.get(f"airtime_{_id}", 0),
+            # "idk": stats_dict.get(f"eor_vh_{_id}"),
+            "timeIn": seconds,
+        }
+
+        # skip all 0 values
+        if not all([not x for x in res.values() if not isinstance(x, str)]):
+            vehicles.append(res)
+
     return vehicles
 
 
@@ -676,25 +708,26 @@ async def get_classes(stats_dict: dict, settings_translation: dict[str, str]):
             kills_per_minute = round(kills / (seconds / 60), 2)
         except (ZeroDivisionError, KeyError):
             kills_per_minute = 0.0
-        kits.append(
-            {
-                **extra,
-                "name": settings_translation.get(
-                    extra.get("translationId", ""),
-                    extra.get("className", extra.get("groupName")),
-                ),
-                "id": kit_id,
-                "kills": kills,
-                "deaths": deaths,
-                "kpm": kills_per_minute,
-                "killDeath": kill_death,
-                "spawns": stats_dict.get(f"spawns_{kit_id}", 0),
-                "score": stats_dict.get(f"scoreas_{kit_id}", 0),
-                "assists": stats_dict.get(f"assists_{kit_id}", 0),
-                "revives": stats_dict.get(f"revives_{kit_id}", 0),
-                "secondsPlayed": seconds,
-            }
-        )
+        res = {
+            **extra,
+            "name": settings_translation.get(
+                extra.get("translationId", ""),
+                extra.get("className", extra.get("groupName")),
+            ),
+            "id": kit_id,
+            "kills": kills,
+            "deaths": deaths,
+            "kpm": kills_per_minute,
+            "killDeath": kill_death,
+            "spawns": stats_dict.get(f"spawns_{kit_id}", 0),
+            "score": stats_dict.get(f"scoreas_{kit_id}", 0),
+            "assists": stats_dict.get(f"assists_{kit_id}", 0),
+            "revives": stats_dict.get(f"revives_{kit_id}", 0),
+            "secondsPlayed": seconds,
+        }
+        # skip all 0 values
+        if not all([not x for x in res.values() if not isinstance(x, str)]):
+            kits.append(res)
     return kits
 
 
@@ -719,32 +752,33 @@ async def get_gadgets(
         except (ZeroDivisionError, KeyError):
             damage_per_minute = 0.0
 
-        gadgets.append(
-            {
-                **extra,
-                "name": settings_translation.get(
-                    extra.get("translationId", ""),
-                    extra.get("gadgetName", extra.get("groupName")),
-                ),
-                "id": _id,
-                "kills": kills,
-                "assistsDamage": stats_dict.get(f"assdmg_{_id}", 0),
-                "assists": stats_dict.get(f"assists_{_id}", 0),
-                "explosiveDamageWith": stats_dict.get(f"edw_{_id}", 0),
-                "spotAssists": stats_dict.get(f"sptass_{_id}", 0),
-                "spots": stats_dict.get(f"spot_{_id}", 0),
-                "spawns": stats_dict.get(f"spawns3_{_id}", 0),
-                # "spawns": stats_dict.get(f"spawns2_{_id}", 0), ????
-                "damage": damage,
-                "repairs": stats_dict.get(f"repair_{_id}", 0),
-                "uses": stats_dict.get(f"uses_{_id}", 0),
-                "multiKills": stats_dict.get(f"mkw_{_id}", 0),
-                "vehiclesDestroyedWith": stats_dict.get(f"vehd_{_id}", 0),
-                "kpm": kills_per_minute,
-                "dpm": damage_per_minute,
-                "secondsPlayed": seconds,
-            }
-        )
+        res = {
+            **extra,
+            "name": settings_translation.get(
+                extra.get("translationId", ""),
+                extra.get("gadgetName", extra.get("groupName")),
+            ),
+            "id": _id,
+            "kills": kills,
+            "assistsDamage": stats_dict.get(f"assdmg_{_id}", 0),
+            "assists": stats_dict.get(f"assists_{_id}", 0),
+            "explosiveDamageWith": stats_dict.get(f"edw_{_id}", 0),
+            "spotAssists": stats_dict.get(f"sptass_{_id}", 0),
+            "spots": stats_dict.get(f"spot_{_id}", 0),
+            "spawns": stats_dict.get(f"spawns3_{_id}", 0),
+            # "spawns": stats_dict.get(f"spawns2_{_id}", 0), ????
+            "damage": damage,
+            "repairs": stats_dict.get(f"repair_{_id}", 0),
+            "uses": stats_dict.get(f"uses_{_id}", 0),
+            "multiKills": stats_dict.get(f"mkw_{_id}", 0),
+            "vehiclesDestroyedWith": stats_dict.get(f"vehd_{_id}", 0),
+            "kpm": kills_per_minute,
+            "dpm": damage_per_minute,
+            "secondsPlayed": seconds,
+        }
+        # skip all 0 values
+        if not all([not x for x in res.values() if not isinstance(x, str)]):
+            gadgets.append(res)
     return gadgets
 
 
@@ -760,21 +794,22 @@ async def get_maps(
         except ZeroDivisionError:
             win_percent = 0.0
 
-        maps.append(
-            {
-                **extra,
-                "name": settings_translation.get(
-                    extra.get("translationId", ""),
-                    extra.get("mapName", extra.get("groupName")),
-                ),
-                "id": _id,
-                "wins": wins,
-                "losses": losses,
-                "matches": stats_dict.get(f"matches_{_id}", 0),
-                "winPercent": format_percentage_value(win_percent, format_values),
-                "secondsPlayed": stats_dict.get(f"tp_{_id}", 0),
-            }
-        )
+        res = {
+            **extra,
+            "name": settings_translation.get(
+                extra.get("translationId", ""),
+                extra.get("mapName", extra.get("groupName")),
+            ),
+            "id": _id,
+            "wins": wins,
+            "losses": losses,
+            "matches": stats_dict.get(f"matches_{_id}", 0),
+            "winPercent": format_percentage_value(win_percent, format_values),
+            "secondsPlayed": stats_dict.get(f"tp_{_id}", 0),
+        }
+        # skip all 0 values
+        if not all([not x for x in res.values() if not isinstance(x, str)]):
+            maps.append(res)
     return maps
 
 
@@ -816,43 +851,42 @@ async def get_gamemodes(
         except ZeroDivisionError:
             headshot_percentage = 0.0
 
-        gamemodes.append(
-            {
-                **extra,
-                "id": _id,
-                "kills": kills,
-                "deaths": deaths,
-                "wins": wins,
-                "losses": losses,
-                "killDeath": kill_death,
-                "winPercent": format_percentage_value(win_percent, format_values),
-                "killAssists": stats_dict.get(f"assists_{_id}", 0),
-                "matches": stats_dict.get(f"matches_{_id}", 0),
-                "repairs": stats_dict.get(f"repair_{_id}", 0),
-                "revives": stats_dict.get(f"revives_{_id}", 0),
-                "spots": stats_dict.get(f"spot_{_id}", 0),
-                "respawns": stats_dict.get(f"resp_{_id}", 0),
-                "objectiveTime": stats_dict.get(f"obj_time_{_id}", 0),
-                "objectivesCaptured": stats_dict.get(f"obj_captured_{_id}", 0),
-                "objectivesDefended": stats_dict.get(f"obj_defended_{_id}", 0),
-                "objectivesDestroyed": stats_dict.get(f"obj_destroyed_{_id}", 0),
-                "objectivesArmed": stats_dict.get(f"obj_armed_{_id}", 0),
-                "objectivesDisarmed": stats_dict.get(f"obj_disarmed_{_id}", 0),
-                "vehiclesDestroyedWith": stats_dict.get(f"vehd_{_id}", 0),
-                "sectorsDefended": stats_dict.get(f"sectordef_{_id}", 0),
-                "intelPickups": stats_dict.get(f"intel_pickup_{_id}", 0),
-                "scoreIn": stats_dict.get(f"scorein_{_id}", 0),
-                "health": stats_dict.get(f"hlth_{_id}", 0),
-                "killsWith": stats_dict.get(f"kw_{_id}", 0),
-                "headshotKills": headshots,
-                "headshots": format_percentage_value(
-                    headshot_percentage, format_values
-                ),
-                "kpm": kills_per_minute,
-                "dpm": damage_per_minute,
-                "secondsPlayed": seconds,
-            }
-        )
+        res = {
+            **extra,
+            "id": _id,
+            "kills": kills,
+            "deaths": deaths,
+            "wins": wins,
+            "losses": losses,
+            "killDeath": kill_death,
+            "winPercent": format_percentage_value(win_percent, format_values),
+            "killAssists": stats_dict.get(f"assists_{_id}", 0),
+            "matches": stats_dict.get(f"matches_{_id}", 0),
+            "repairs": stats_dict.get(f"repair_{_id}", 0),
+            "revives": stats_dict.get(f"revives_{_id}", 0),
+            "spots": stats_dict.get(f"spot_{_id}", 0),
+            "respawns": stats_dict.get(f"resp_{_id}", 0),
+            "objectiveTime": stats_dict.get(f"obj_time_{_id}", 0),
+            "objectivesCaptured": stats_dict.get(f"obj_captured_{_id}", 0),
+            "objectivesDefended": stats_dict.get(f"obj_defended_{_id}", 0),
+            "objectivesDestroyed": stats_dict.get(f"obj_destroyed_{_id}", 0),
+            "objectivesArmed": stats_dict.get(f"obj_armed_{_id}", 0),
+            "objectivesDisarmed": stats_dict.get(f"obj_disarmed_{_id}", 0),
+            "vehiclesDestroyedWith": stats_dict.get(f"vehd_{_id}", 0),
+            "sectorsDefended": stats_dict.get(f"sectordef_{_id}", 0),
+            "intelPickups": stats_dict.get(f"intel_pickup_{_id}", 0),
+            "scoreIn": stats_dict.get(f"scorein_{_id}", 0),
+            "health": stats_dict.get(f"hlth_{_id}", 0),
+            "killsWith": stats_dict.get(f"kw_{_id}", 0),
+            "headshotKills": headshots,
+            "headshots": format_percentage_value(headshot_percentage, format_values),
+            "kpm": kills_per_minute,
+            "dpm": damage_per_minute,
+            "secondsPlayed": seconds,
+        }
+        # skip all 0 values
+        if not all([not x for x in res.values() if not isinstance(x, str)]):
+            gamemodes.append(res)
     return gamemodes
 
 
@@ -1125,24 +1159,25 @@ async def get_seasons(all_fields: list[dict[str, Any]], MODES: dict):
             kd = round(kills / deaths, 2) if deaths else None
             # winrate = round((wins / played) * 100, 2) if played else None
 
-            modes.append(
-                {
-                    "modeId": internal_mode_name,
-                    "mode": mode_name,
-                    "matches": played,
-                    "wins": wins,
-                    "losses": losses,
-                    "kills": kills,
-                    "rivivals": revivals,
-                    "lastPlacement": placement_last,
-                    "deaths": deaths,
-                    "killDeath": kd,
-                    "score": score,
-                    "secondsPlayed": time_played,
-                    "timePlayed": str(datetime.timedelta(seconds=time_played)),
-                    "extractions": extractions,
-                }
-            )
+            mode = {
+                "modeId": internal_mode_name,
+                "mode": mode_name,
+                "matches": played,
+                "wins": wins,
+                "losses": losses,
+                "kills": kills,
+                "rivivals": revivals,
+                "lastPlacement": placement_last,
+                "deaths": deaths,
+                "killDeath": kd,
+                "score": score,
+                "secondsPlayed": time_played,
+                "timePlayed": str(datetime.timedelta(seconds=time_played)),
+                "extractions": extractions,
+            }
+            # skip all 0 values
+            if not all([not x for x in mode.values() if not isinstance(x, str)]):
+                modes.append(mode)
 
         seasons.append(
             {

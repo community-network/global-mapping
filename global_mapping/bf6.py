@@ -1,4 +1,5 @@
 SEASONS = {"Season1": "Season 1", "Season2": "Season 2", "Season3": "Season 3"}
+GAME_TYPES = {"competitive": "Competitive"}
 PLATFORM = {
     0: "unknown",
     1: "pc",
@@ -152,7 +153,7 @@ TO_GAME_MAPS = {
     "tech center": "MP_Granite_TechCampus_Portal",
     "golmud railway": "MP_GolmudRailway",
     "complex 3": "MP_Granite_Underground_Portal",
-    "hagental base":"MP_Subsurface",
+    "hagental base": "MP_Subsurface",
 }
 MAP_TRANSLATION_IDS = {
     "MP_Abbasid": "ID_MP_LVL_ABBASID_NAME",
@@ -215,7 +216,7 @@ SMALLMODES = {
     "GraniteSquad0": "RQ",
     "GraniteSolo0": "BRS",
     "GraniteGauntlet0": "RG",
-    "MP_Escalation0":  "ES",
+    "MP_Escalation0": "ES",
 }
 MODES = {
     "Breakthrough0": "Breakthrough Large",
@@ -228,7 +229,7 @@ MODES = {
     "GraniteSquad0": "Redsec Quads",
     "GraniteSolo0": "Redsec Solo",
     "GraniteGauntlet0": "Redsec Gauntlet",
-    "MP_Escalation0":  "Escalation",
+    "MP_Escalation0": "Escalation",
 }
 REDSEC_MODES = {
     "GraniteDuo0": "Duos",

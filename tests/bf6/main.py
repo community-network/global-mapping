@@ -11,10 +11,18 @@ from tests.bf6 import used_methods
 
 
 def find_player(player_name: str):
-    return requests.get(
+    res = requests.get(
         url="https://api.gametools.network/bf6/stats/",
-        params={"name": player_name, "platform": "ea", "raw": "true"},
-    ).json()
+        params={
+            "name": player_name,
+            "platform": "ea",
+            "raw": "true",
+            "playerid": 1759148713,
+            "nucleus_id": 1003375724342,
+        },
+    )
+    print(res)
+    return res.json()
 
 
 def check_unmapped(globalstats: dict[str, str]):
