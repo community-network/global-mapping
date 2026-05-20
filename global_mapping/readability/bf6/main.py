@@ -464,7 +464,6 @@ async def get_stats(
                             stats, settings_translation, format_values
                         )
                         if is_not_empty(res):
-                            print(res)
                             new_season_stat[gamemode] = {
                                 **BF6.STAT_GAMEMODE[gamemode],
                                 **res,
