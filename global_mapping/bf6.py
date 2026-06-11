@@ -407,6 +407,7 @@ STAT_GAMEMODE_SMALL = {
         "image": "https://cdn.gametools.network/modes/bf6/strikepoint.svg",
         "altImage": "",
     },
+    "gm_oblit": {"gamemodeName": "Obliteration", "altImage": ""},
     "gm_official": {"gamemodeName": "Official", "image": "", "altImage": ""},
     "gm_sabotage": {"gamemodeName": "Sabotage", "image": "", "altImage": ""},
 }
@@ -1410,6 +1411,18 @@ GADGETS = {
         "gadgetName": "9K38 Igla",
         "image": "",
         "translationId": "ID_GADGET_IGLA_NAME",
+    },
+    "gad_callin_jagm": {
+        "type": "",
+        "gadgetName": "Missile Strike",
+        "image": "",
+        "translationId": "ID_GADGET_CALLINJAGMSTRIKE_NAME",
+    },
+    "gad_mobilejammer": {
+        "type": "",
+        "gadgetName": "Mobile Jammer",
+        "image": "",
+        "translationId": "ID_ARRIVAL_CATEGORIZATIONTAG_NAME_MOBILEJAMMER",
     },
     "gad_gren_mfrag": {
         "type": "",
