@@ -131,6 +131,7 @@ MAPS = {
     "MP_Granite_Underground_Portal": "Complex 3",
     "MP_GolmudRailway": "Golmud Railway",
     "MP_Subsurface": "Hagental Base",
+    "MP_Plaza": "Cairo Bazaar",
 }
 TO_GAME_MAPS = {
     "siege of cairo": "MP_Abbasid",
@@ -154,6 +155,7 @@ TO_GAME_MAPS = {
     "golmud railway": "MP_GolmudRailway",
     "complex 3": "MP_Granite_Underground_Portal",
     "hagental base": "MP_Subsurface",
+    "cairo bazaar": "MP_Plaza",
 }
 MAP_TRANSLATION_IDS = {
     "MP_Abbasid": "ID_MP_LVL_ABBASID_NAME",
@@ -179,6 +181,7 @@ MAP_TRANSLATION_IDS = {
     "MP_Granite_Underground_Portal": "ID_MP_LVL_GRANITE_UNDERGROUND_NAME",
     "MP_GolmudRailway": "ID_ARRIVAL_MAP_GOLMUDRAILWAY",
     "MP_Subsurface": "ID_MP_LVL_SUBSURFACE_NAME",
+    "MP_Plaza": "ID_MP_LVL_PLAZA_NAME",
 }
 MAP_PICTURES = {
     "MP_Abbasid": "https://cdn.gametools.network/maps/bf6/T_UI_Abbasid_Large_OPT-49a3761a.webp",
@@ -204,6 +207,7 @@ MAP_PICTURES = {
     "MP_Granite_Underground_Portal": "https://cdn.gametools.network/maps/bf6/T_UI_Granite_Portal_08_Large-9805324e.png",
     "MP_GolmudRailway": "https://cdn.gametools.network/maps/bf6/T_UI_Golmud-ebbfce73.png",
     "MP_Subsurface": "https://cdn.gametools.network/maps/bf6/T_UI_Subsurface-6f909eef.png",
+    "MP_Plaza": "",  # missing image
 }
 SMALLMODES = {
     "Breakthrough0": "BT",
@@ -324,6 +328,11 @@ STAT_MAPS = {
         "mapName": "Hagental Base",
         "image": "https://cdn.gametools.network/maps/bf6/T_UI_Subsurface-6f909eef.png",
         "translationId": "ID_MP_LVL_SUBSURFACE_NAME",
+    },
+    "tp_lvlmpplaza": {
+        "mapName": "Cairo Bazaar",
+        "image": "",  # missing image
+        "translationId": "ID_MP_LVL_PLAZA_NAME",
     },
 }
 
@@ -1139,20 +1148,29 @@ WEAPONS = {
     "wp_snp_l115": {
         "type": "Rifles",
         "weaponName": "L115",
-        "image": "https://cdn.gametools.network/weapons/T_UI_L115A3_Factory_Icon-0cadd761.png",
+        "image": "https://cdn.gametools.network/weapons/bf6/T_UI_L115A3_Factory_Icon-0cadd761.png",
         "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_L115A3_Factory_Icon-0cadd761.png",
         "translationId": "ID_ABILITY_L155A3",
+    },
+    "wp_smg_pp19": {
+        "type": "SMG-PDWs",
+        "weaponName": "PP-19",
+        "image": "https://cdn.gametools.network/weapons/bf6/T_UI_PP19_Factory_Icon-9bcac438.png",
+        "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_PP19_Factory_Icon-9bcac438.png",
+        "translationId": "ID_ABILITY_PP19",
     },
     "wp_ar_m16a3": {
         "type": "Assault Rifles",
         "weaponName": "M16A4",
-        "image": "",
+        "image": "https://cdn.gametools.network/weapons/bf6/T_UI_M16A3_Factory_Icon-f11e947b.png",
+        "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_M16A3_Factory_Icon-f11e947b.png",
         "translationId": "ID_ABILITY_M16A3",
     },
     "wp_mg_rpk74m": {
         "type": "Machine Guns",
         "weaponName": "RPK-74M",
-        "image": "",
+        "image": "https://cdn.gametools.network/weapons/bf6/T_UI_RPK74M_Factory_Icon-ecfa60ce.png",
+        "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_RPK74M_Factory_Icon-ecfa60ce.png",
         "translationId": "ID_ABILITY_RPK47M",
     },
 }

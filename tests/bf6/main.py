@@ -17,11 +17,10 @@ def find_player(player_name: str):
             "name": player_name,
             "platform": "ea",
             "raw": "true",
-            "playerid": 1759148713,
-            "nucleus_id": 1003375724342,
+            "playerid": 1216963556,
+            "nucleus_id": 1001060187651,
         },
     )
-    print(res)
     return res.json()
 
 
