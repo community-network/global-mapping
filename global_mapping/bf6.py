@@ -329,7 +329,7 @@ STAT_MAPS = {
         "image": "https://cdn.gametools.network/maps/bf6/T_UI_Subsurface-6f909eef.png",
         "translationId": "ID_MP_LVL_SUBSURFACE_NAME",
     },
-    "tp_lvlmpplaza": {
+    "lvlmpplaza": {
         "mapName": "Cairo Bazaar",
         "image": "",  # missing image
         "translationId": "ID_MP_LVL_PLAZA_NAME",
