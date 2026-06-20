@@ -410,6 +410,7 @@ STAT_GAMEMODE_SMALL = {
     "gm_oblit": {"gamemodeName": "Obliteration", "altImage": ""},
     "gm_official": {"gamemodeName": "Official", "image": "", "altImage": ""},
     "gm_sabotage": {"gamemodeName": "Sabotage", "image": "", "altImage": ""},
+    "gm_op": {"gamemodeName": "Operations", "image": "", "altImage": ""},
 }
 STAT_GAMEMODE_SMALL_CATEGORY = {
     "gm_all": {"gamemodeName": "All", "image": "", "altImage": ""},
@@ -494,6 +495,16 @@ STAT_GAMEMODE = {
     "ModBuilderCustom0": {
         "gamemodeName": "Portal",
         "image": "https://cdn.gametools.network/modes/bf6/wrench-hammer.svg",
+        "altImage": "",
+    },
+    "MP_Operations0": {
+        "gamemodeName": "Operations",
+        "image": "",
+        "altImage": "",
+    },
+    "MP_Obliteration0": {
+        "gamemodeName": "Obliteration",
+        "image": "",
         "altImage": "",
     },
 }
