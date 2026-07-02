@@ -334,6 +334,11 @@ STAT_MAPS = {
         "image": "",  # missing image
         "translationId": "ID_MP_LVL_PLAZA_NAME",
     },
+    "lvlmpgolmund": {
+        "mapName": "Railway to Golmud",
+        "image": "",  # missing image
+        "translationId": "ID_MP_LVL_GOLMUDRAILWAY_NAME",
+    },
 }
 
 STAT_GAMEMODE_SMALL = {
