@@ -512,6 +512,11 @@ STAT_GAMEMODE = {
         "image": "",
         "altImage": "",
     },
+    "MP_SquadObliteration0": {
+        "gamemodeName": "Tactical Obliteration",
+        "image": "",
+        "altImage": "",
+    },
 }
 CLASSES = {
     "kit": {
