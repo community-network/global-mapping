@@ -662,6 +662,9 @@ async def get_battle_pickups(
             "damage": damage,
             "scopedKills": stats_dict.get(f"adskw_{_id}", 0),
             "bodyKills": stats_dict.get(f"bkw_{_id}", 0),
+            "hipfireKills": stats_dict.get(f"hfkw_{_id}", 0),
+            "multiKills": stats_dict.get(f"mkw_{_id}", 0),
+            "assistsDamage": stats_dict.get(f"assdmg_{_id}", 0),
             "accuracy": format_percentage_value(accuracy, format_values),
             "killsPerMinute": kills_per_minute,
             "damagePerMinute": damage_per_minute,
@@ -912,6 +915,13 @@ async def get_gamemodes(
             "kpm": kills_per_minute,
             "dpm": damage_per_minute,
             "secondsPlayed": seconds,
+            "topOfLeaderboard": {
+                "topTwo": stats_dict.get(f"toptwo_{_id}", 0),
+                "topThree": stats_dict.get(f"topthree_{_id}", 0),
+                "topFour": stats_dict.get(f"topfour_{_id}", 0),
+                "topFive": stats_dict.get(f"topfive_{_id}", 0),
+                "topTen": stats_dict.get(f"topten_{_id}", 0),
+            },
         }
         # skip all 0 values
         if is_not_empty(res):
@@ -1067,6 +1077,7 @@ async def get_main_stats(stats_dict: dict, format_values: bool = True):
             },
         },
         "devidedAssists": {
+            "human": stats_dict.get("Assist_human_Total", 0),
             "driver": stats_dict.get("Assists_Driver_Total", 0),
             "passenger": stats_dict.get("Assists_Psgr_Total", 0),
             "spot": stats_dict.get("Assists_Spot_Total", 0),

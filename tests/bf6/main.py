@@ -17,8 +17,8 @@ def find_player(player_name: str):
             "name": player_name,
             "platform": "ea",
             "raw": "true",
-            "playerid": 1008686865587,
-            "nucleus_id": 1009230165587,
+            # "playerid": 1008686865587,
+            # "nucleus_id": 1009230165587,
         },
     )
     return res.json()
@@ -106,7 +106,7 @@ async def test_stats(data: dict, category_name: str):
 
 
 async def main():
-    raw_stats = find_player("SquinteaTTV")
+    raw_stats = find_player("prebuildt")
     with open("temp/raw_stats.json", "w", encoding="utf-8") as f:
         json.dump(raw_stats, f, ensure_ascii=False, indent=4)
     data = await get_stats(raw_stats, "glacier_mp", False, True, "ZH-cn")

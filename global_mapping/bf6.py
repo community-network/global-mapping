@@ -416,6 +416,16 @@ STAT_GAMEMODE_SMALL = {
     "gm_official": {"gamemodeName": "Official", "image": "", "altImage": ""},
     "gm_sabotage": {"gamemodeName": "Sabotage", "image": "", "altImage": ""},
     "gm_op": {"gamemodeName": "Operations", "image": "", "altImage": ""},
+    "gm_sqdoblit": {
+        "gamemodeName": "Tactical Obliteration",
+        "image": "",
+        "altImage": "",
+    },
+    "gm_oblitall": {
+        "gamemodeName": "Obliteration",
+        "image": "",
+        "altImage": "",
+    },
 }
 STAT_GAMEMODE_SMALL_CATEGORY = {
     "gm_all": {"gamemodeName": "All", "image": "", "altImage": ""},

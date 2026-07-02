@@ -26,6 +26,9 @@ starts_with = [
     "sfw_btlp",
     "tp_btlp",
     "kw_btlp",
+    "assdmg_btlp",
+    "hfkw_btlp",
+    "mkw_btlp",
     # Archetype
     "kw_arch",
     "tp_arch",
@@ -110,6 +113,11 @@ starts_with = [
     "obj_destroyed_gm",
     "hlth_gm",
     "kw_gm",
+    "toptwo_gm",
+    "topthree_gm",
+    "topfour_gm",
+    "topfive_gm",
+    "topten_gm",
 ]
 
 normal = [
@@ -177,6 +185,7 @@ normal = [
     "Assists_Spot_Total",
     "assists_pilot_total",
     "assists_inround_cb",
+    "Assist_human_Total",
     "distrav_foot_total",
     "distrav_psgr_total",
     "distrav_veh_total",
