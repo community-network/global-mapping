@@ -207,7 +207,7 @@ MAP_PICTURES = {
     "MP_Granite_Underground_Portal": "https://cdn.gametools.network/maps/bf6/T_UI_Granite_Portal_08_Large-9805324e.png",
     "MP_GolmudRailway": "https://cdn.gametools.network/maps/bf6/T_UI_Golmud-ebbfce73.png",
     "MP_Subsurface": "https://cdn.gametools.network/maps/bf6/T_UI_Subsurface-6f909eef.png",
-    "MP_Plaza": "",  # missing image
+    "MP_Plaza": "https://cdn.gametools.network/maps/bf6/T_UI_Plaza_Large_OPT-6826467e.webp",
 }
 SMALLMODES = {
     "Breakthrough0": "BT",
@@ -331,12 +331,12 @@ STAT_MAPS = {
     },
     "lvlmpplaza": {
         "mapName": "Cairo Bazaar",
-        "image": "",  # missing image
+        "image": "https://cdn.gametools.network/maps/bf6/T_UI_Plaza_Large_OPT-6826467e.webp",
         "translationId": "ID_MP_LVL_PLAZA_NAME",
     },
     "lvlmpgolmund": {
         "mapName": "Railway to Golmud",
-        "image": "",  # missing image
+        "image": "https://cdn.gametools.network/maps/bf6/T_UI_Golmud-ebbfce73.png",
         "translationId": "ID_MP_LVL_GOLMUDRAILWAY_NAME",
     },
 }
@@ -412,20 +412,24 @@ STAT_GAMEMODE_SMALL = {
         "image": "https://cdn.gametools.network/modes/bf6/strikepoint.svg",
         "altImage": "",
     },
-    "gm_oblit": {"gamemodeName": "Obliteration", "altImage": ""},
-    "gm_official": {"gamemodeName": "Official", "image": "", "altImage": ""},
-    "gm_sabotage": {"gamemodeName": "Sabotage", "image": "", "altImage": ""},
-    "gm_op": {"gamemodeName": "Operations", "image": "", "altImage": ""},
     "gm_sqdoblit": {
         "gamemodeName": "Tactical Obliteration",
-        "image": "",
-        "altImage": "",
+        "image": "https://cdn.gametools.network/modes/bf6/tactical-obliteration.svg",
+        "altImage": "https://cdn.gametools.network/modes/bf6/tactical-obliteration-framed.svg",
     },
     "gm_oblitall": {
         "gamemodeName": "Obliteration",
-        "image": "",
-        "altImage": "",
+        "image": "https://cdn.gametools.network/modes/bf6/obliteration.svg",
+        "altImage": "https://cdn.gametools.network/modes/bf6/obliteration-framed.svg",
     },
+    "gm_oblit": {
+        "gamemodeName": "Obliteration",
+        "image": "https://cdn.gametools.network/modes/bf6/obliteration.svg",
+        "altImage": "https://cdn.gametools.network/modes/bf6/obliteration-framed.svg",
+    },
+    "gm_official": {"gamemodeName": "Official", "image": "", "altImage": ""},
+    "gm_sabotage": {"gamemodeName": "Sabotage", "image": "", "altImage": ""},
+    "gm_op": {"gamemodeName": "Operations", "image": "", "altImage": ""},
 }
 STAT_GAMEMODE_SMALL_CATEGORY = {
     "gm_all": {"gamemodeName": "All", "image": "", "altImage": ""},
