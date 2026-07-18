@@ -450,12 +450,12 @@ STAT_GAMEMODE = {
     "MP_Escalation0": {
         "gamemodeName": "Escalation",
         "image": "https://cdn.gametools.network/modes/bf6/escalation.svg",
-        "altImage": "",
+        "altImage": "https://cdn.gametools.network/modes/bf6/escalation-framed.svg",
     },
     "MP_TeamDM0": {
         "gamemodeName": "Team deathmatch",
         "image": "https://cdn.gametools.network/modes/bf6/team_deathmatch.svg",
-        "altImage": "",
+        "altImage": "https://cdn.gametools.network/modes/bf6/team_deathmatch-framed.svg",
     },
     "GraniteGauntlet0": {
         "gamemodeName": "Gauntlet",
@@ -495,7 +495,7 @@ STAT_GAMEMODE = {
     "MP_SquadDM0": {
         "gamemodeName": "Squad deathmatch",
         "image": "https://cdn.gametools.network/modes/bf6/squad_deathmatch.svg",
-        "altImage": "",
+        "altImage": "https://cdn.gametools.network/modes/bf6/squad_deathmatch-framed.svg",
     },
     "Breakthrough0": {
         "gamemodeName": "Breakthrough",
@@ -519,13 +519,13 @@ STAT_GAMEMODE = {
     },
     "MP_Obliteration0": {
         "gamemodeName": "Obliteration",
-        "image": "",
-        "altImage": "",
+        "image": "https://cdn.gametools.network/modes/bf6/obliteration.svg",
+        "altImage": "https://cdn.gametools.network/modes/bf6/obliteration-framed.svg",
     },
     "MP_SquadObliteration0": {
         "gamemodeName": "Tactical Obliteration",
-        "image": "",
-        "altImage": "",
+        "image": "https://cdn.gametools.network/modes/bf6/tactical-obliteration.svg",
+        "altImage": "https://cdn.gametools.network/modes/bf6/tactical-obliteration-framed.svg",
     },
 }
 CLASSES = {
