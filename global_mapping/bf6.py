@@ -345,17 +345,17 @@ STAT_GAMEMODE_SMALL = {
     "gm_esc": {
         "gamemodeName": "Escalation",
         "image": "https://cdn.gametools.network/modes/bf6/escalation.svg",
-        "altImage": "",
+        "altImage": "https://cdn.gametools.network/modes/bf6/escalation-framed.svg",
     },
     "gm_tdm": {
         "gamemodeName": "Team deathmatch",
         "image": "https://cdn.gametools.network/modes/bf6/team_deathmatch.svg",
-        "altImage": "",
+        "altImage": "https://cdn.gametools.network/modes/bf6/team_deathmatch-framed.svg",
     },
     "gm_sdm": {
         "gamemodeName": "Squad deathmatch",
         "image": "https://cdn.gametools.network/modes/bf6/squad_deathmatch.svg",
-        "altImage": "",
+        "altImage": "https://cdn.gametools.network/modes/bf6/squad_deathmatch-framed.svg",
     },
     "gm_dom": {
         "gamemodeName": "Domination",
