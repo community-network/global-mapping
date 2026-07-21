@@ -1,4 +1,9 @@
-SEASONS = {"Season1": "Season 1", "Season2": "Season 2", "Season3": "Season 3"}
+SEASONS = {
+    "Season1": "Season 1",
+    "Season2": "Season 2",
+    "Season3": "Season 3",
+    "Season4": "Season 4",
+}
 GAME_TYPES = {"competitive": "Competitive"}
 PLATFORM = {
     0: "unknown",
