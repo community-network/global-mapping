@@ -137,6 +137,7 @@ MAPS = {
     "MP_GolmudRailway": "Golmud Railway",
     "MP_Subsurface": "Hagental Base",
     "MP_Plaza": "Cairo Bazaar",
+    "MP_Isolated": "Tsuru Reef",
 }
 TO_GAME_MAPS = {
     "siege of cairo": "MP_Abbasid",
@@ -161,6 +162,7 @@ TO_GAME_MAPS = {
     "complex 3": "MP_Granite_Underground_Portal",
     "hagental base": "MP_Subsurface",
     "cairo bazaar": "MP_Plaza",
+    "tsuru reef": "MP_Isolated",
 }
 MAP_TRANSLATION_IDS = {
     "MP_Abbasid": "ID_MP_LVL_ABBASID_NAME",
@@ -187,6 +189,7 @@ MAP_TRANSLATION_IDS = {
     "MP_GolmudRailway": "ID_ARRIVAL_MAP_GOLMUDRAILWAY",
     "MP_Subsurface": "ID_MP_LVL_SUBSURFACE_NAME",
     "MP_Plaza": "ID_MP_LVL_PLAZA_NAME",
+    "MP_Isolated": "ID_MP_LVL_ISOLATED_NAME",
 }
 MAP_PICTURES = {
     "MP_Abbasid": "https://cdn.gametools.network/maps/bf6/T_UI_Abbasid_Large_OPT-49a3761a.webp",
@@ -213,6 +216,7 @@ MAP_PICTURES = {
     "MP_GolmudRailway": "https://cdn.gametools.network/maps/bf6/T_UI_Golmud-ebbfce73.png",
     "MP_Subsurface": "https://cdn.gametools.network/maps/bf6/T_UI_Subsurface-6f909eef.png",
     "MP_Plaza": "https://cdn.gametools.network/maps/bf6/T_UI_Plaza_Large_OPT-6826467e.webp",
+    "MP_Isolated": "",  # missing image
 }
 SMALLMODES = {
     "Breakthrough0": "BT",
@@ -343,6 +347,11 @@ STAT_MAPS = {
         "mapName": "Railway to Golmud",
         "image": "https://cdn.gametools.network/maps/bf6/T_UI_Golmud-ebbfce73.png",
         "translationId": "ID_MP_LVL_GOLMUDRAILWAY_NAME",
+    },
+    "lvlmpisolated": {
+        "mapName": "Tsuru Reef",
+        "image": "",  # missing image
+        "translationId": "ID_MP_LVL_ISOLATED_NAME",
     },
 }
 
