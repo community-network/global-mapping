@@ -794,6 +794,12 @@ MELEE = {
         "image": "",  # wrong image
         "translationId": "ID_GADGET_ICECLIMBINGAXE_NAME",
     },
+    "melee_light_eod_arm": {
+        "type": "Melee Light",
+        "meleeName": "EOD Bot Arm",
+        "image": "",  # wrong image
+        "translationId": "ID_GADGET_EODBOTARM_NAME",
+    },
 }
 BATTLE_PICKUPS = {
     "btlp": {
@@ -1222,6 +1228,27 @@ WEAPONS = {
         "image": "https://cdn.gametools.network/weapons/bf6/T_UI_RPK74M_Factory_Icon-ecfa60ce.png",
         "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_RPK74M_Factory_Icon-ecfa60ce.png",
         "translationId": "ID_ABILITY_RPK47M",
+    },
+    "wp_dmr_vssm": {
+        "type": "DMRs",
+        "weaponName": "VSSM",
+        "image": "https://cdn.gametools.network/weapons/bf6/T_UI_VSSM_Factory_Icon_MED-c44761f5.webp",
+        "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_VSSM_Factory_Icon_MED-c44761f5.webp",
+        "translationId": "ID_WEAPON_VSSM",
+    },
+    "wp_ar_ef88": {
+        "type": "Assault Rifles",
+        "weaponName": "EF88",
+        "image": "https://cdn.gametools.network/weapons/bf6/T_UI_EF88_Factory_Icon_MED-367724d3.webp",
+        "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_EF88_Factory_Icon_MED-367724d3.webp",
+        "translationId": "ID_WEAPON_EF88",
+    },
+    "wp_crb_bren3": {
+        "type": "Carbines",
+        "weaponName": "BROD 3",
+        "image": "https://cdn.gametools.network/weapons/bf6/T_UI_BREN3_Factory_Icon_MED-fd4ac641.webp",
+        "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_BREN3_Factory_Icon_MED-fd4ac641.webp",
+        "translationId": "ID_WEAPON_BREN3",
     },
 }
 WEAPON_GROUPS = {
