@@ -739,6 +739,12 @@ VEHICLES = {
         "image": "",
         "translationId": None,
     },
+    "veh_sur_CB90": {
+        "type": "Ground Transport",
+        "vehicleName": "RCB-90",
+        "image": "",
+        "translationId": "ID_ARRIVAL_CATEGORIZATIONTAG_NAME_CB90",
+    },
 }
 VEHICLE_GROUPS = {
     "veh": {"groupName": "All"},
