@@ -74,6 +74,12 @@ async def player_profile(data, lang: str):
                 division = (None, None)
             competitiveRank["translationId"] = division[0]
             competitiveRank["rankName"] = division[1]
+            rank_name = competitiveRank["rankName"]
+            if rank_name is not None:
+                main_division = rank_name.split()[0]
+                competitiveRank["rankImage"] = BF6.RANKED_BR_IMAGES_S4.get(
+                    main_division, None
+                )
 
     return data
 

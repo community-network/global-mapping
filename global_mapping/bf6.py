@@ -2146,3 +2146,21 @@ RANKED_BR_DIVISIONS = {
     "ID_ARRIVAL_RANKED_BR_DIVISIONS_MASTER4": "Master IV",
     "ID_ARRIVAL_RANKED_BR_DIVISIONS_MASTER5": "Master V",
 }
+RANKED_BR_IMAGES_S3 = {
+    "Rookie": "https://cdn.gametools.network/ranks/bf6/ranked_br_divisions/season3/rookie.png",
+    "Bronze": "https://cdn.gametools.network/ranks/bf6/ranked_br_divisions/season3/bronze.png",
+    "Silver": "https://cdn.gametools.network/ranks/bf6/ranked_br_divisions/season3/silver.png",
+    "Gold": "https://cdn.gametools.network/ranks/bf6/ranked_br_divisions/season3/gold.png",
+    "Platinum": "https://cdn.gametools.network/ranks/bf6/ranked_br_divisions/season3/platinum.png",
+    "Diamond": "https://cdn.gametools.network/ranks/bf6/ranked_br_divisions/season3/diamond.png",
+    "Master": "https://cdn.gametools.network/ranks/bf6/ranked_br_divisions/season3/master.png",
+}
+RANKED_BR_IMAGES_S4 = {
+    "Rookie": "https://cdn.gametools.network/ranks/bf6/ranked_br_divisions/season4/rookie.png",
+    "Bronze": "https://cdn.gametools.network/ranks/bf6/ranked_br_divisions/season4/bronze.png",
+    "Silver": "https://cdn.gametools.network/ranks/bf6/ranked_br_divisions/season4/silver.png",
+    "Gold": "https://cdn.gametools.network/ranks/bf6/ranked_br_divisions/season4/gold.png",
+    "Platinum": "https://cdn.gametools.network/ranks/bf6/ranked_br_divisions/season4/platinum.png",
+    "Diamond": "https://cdn.gametools.network/ranks/bf6/ranked_br_divisions/season4/diamond.png",
+    "Master": "https://cdn.gametools.network/ranks/bf6/ranked_br_divisions/season4/master.png",
+}
