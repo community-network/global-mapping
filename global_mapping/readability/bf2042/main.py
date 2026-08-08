@@ -90,8 +90,11 @@ async def detailedServer(server, server_id, lang: str):
     server_info = server.get("serverInfo", {})
     map_rotation = server_info.get("rotation", {})
 
+    current_map_id = server_info.get("currentMapId", 0)
+    if current_map_id is None:
+        current_map_id = 0
     try:
-        current_map = map_rotation.get("maps", [])[server_info.get("currentMapId", 0)]
+        current_map = map_rotation.get("maps", [])[current_map_id]
     except IndexError:
         current_map = None
 
@@ -226,7 +229,7 @@ async def players(player_list):
         except ValueError:
             player["nucleusId"] = None
         player["name"] = details.get("name")
-        del player["details"] 
+        del player["details"]
 
         player["platformId"] = player.get("platform", 0)
         player["platform"] = BF2042.STATS_PLATFORM.get(player.get("platform", 0), "pc")
