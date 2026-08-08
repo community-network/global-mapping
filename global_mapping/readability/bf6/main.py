@@ -185,7 +185,7 @@ async def serverList(servers):
 
 
 async def detailedServer(server, lang: str):
-    server_info = server.get("server_info", {})
+    server_info = server.get("serverInfo", {})
 
     # if (
     #     current_map is not None
