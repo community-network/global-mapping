@@ -350,8 +350,13 @@ STAT_MAPS = {
     },
     "lvlmpisolated": {
         "mapName": "Tsuru Reef",
-        "image": "",  # missing image
+        "image": "https://cdn.gametools.network/maps/bf6/T_UI_Isolated_Large_OPT-589b9bf7.webp",
         "translationId": "ID_MP_LVL_ISOLATED_NAME",
+    },
+    "lvlmpatoll": {
+        "mapName": "Wake Island",
+        "image": "",  # missing image
+        "translationId": "ID_MP_LVL_ATOLL_NAME",
     },
 }
 
@@ -1261,6 +1266,12 @@ WEAPONS = {
         "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_BREN3_Factory_Icon_MED-fd4ac641.webp",
         "translationId": "ID_WEAPON_BREN3",
     },
+    "wp_snp_hti": {
+        "type": "Rifles",
+        "weaponName": "Interdictor",
+        "image": "",  # Incorrect image
+        "translationId": "ID_WEAPON_HTI",
+    },
 }
 WEAPON_GROUPS = {
     "wp_temp": {
@@ -2163,4 +2174,5 @@ RANKED_BR_IMAGES_S4 = {
     "Platinum": "https://cdn.gametools.network/ranks/bf6/ranked_br_divisions/season4/platinum.webp",
     "Diamond": "https://cdn.gametools.network/ranks/bf6/ranked_br_divisions/season4/diamond.webp",
     "Master": "https://cdn.gametools.network/ranks/bf6/ranked_br_divisions/season4/master.webp",
+    "Top250": "https://cdn.gametools.network/ranks/bf6/ranked_br_divisions/season3/top250.webp",
 }

@@ -80,6 +80,10 @@ async def player_profile(data, lang: str):
                 competitiveRank["rankImage"] = BF6.RANKED_BR_IMAGES_S4.get(
                     main_division, None
                 )
+            if competitiveRank.get("top250Position", None) is not None:
+                competitiveRank["top250Image"] = BF6.RANKED_BR_IMAGES_S4.get(
+                    "Top250", None
+                )
 
     return data
 
