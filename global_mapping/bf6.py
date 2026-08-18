@@ -446,6 +446,7 @@ STAT_GAMEMODE_SMALL = {
         "image": "https://cdn.gametools.network/modes/bf6/obliteration.svg",
         "altImage": "https://cdn.gametools.network/modes/bf6/obliteration-framed.svg",
     },
+    "gm_carrier": {"gamemodeName": "Carrier Strike", "image": "", "altImage": ""},
     "gm_official": {"gamemodeName": "Official", "image": "", "altImage": ""},
     "gm_sabotage": {"gamemodeName": "Sabotage", "image": "", "altImage": ""},
     "gm_op": {"gamemodeName": "Operations", "image": "", "altImage": ""},
