@@ -732,6 +732,18 @@ VEHICLES = {
         "altImage": "https://cdn.gametools.network/vehicles/bf6/white/Dirtbike_01-7872cd58.webp",
         "translationId": "ID_ARRIVAL_CATEGORIZATIONTAG_NAME_DIRTBIKE_01",
     },
+    "veh_air_f14tomcat": {
+        "type": "Air Combat",
+        "vehicleName": "F-74A Seacat",
+        "image": "",
+        "translationId": "ID_ARRIVAL_CATEGORIZATIONTAG_NAME_F14",
+    },
+    "veh_air_fa18f": {
+        "type": "Air Combat",
+        "vehicleName": "F/A-81F Super Spectre",
+        "image": "",
+        "translationId": "ID_ARRIVAL_CATEGORIZATIONTAG_NAME_FA18F",
+    },
     "veh_air_uh06": {
         "type": "Air Transport",
         "vehicleName": "UH-06",
@@ -761,6 +773,8 @@ VEHICLE_GROUPS = {
     "veh": {"groupName": "All"},
     "veh_air": {"groupName": "Air Combat"},
     "veh_sur": {"groupName": "Ground Combat"},
+    "veh_air_jets": {"groupName": "Fighter Jet"},
+    "veh_air_helis": {"groupName": "Helicopter"},
 }
 VEHICLE_ARCHETYPES = {
     "arch_mbt": {"archetypeName": "Main battle tank"},
