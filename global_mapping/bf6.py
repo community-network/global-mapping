@@ -319,6 +319,11 @@ STAT_MAPS = {
         "translationId": "ID_MP_LVL_BADLANDS_NAME",
     },
     "lvlftpgranite": {
+        "mapName": "Fort Lyndon",
+        "image": "https://cdn.gametools.network/maps/bf6/Battlefield_6_Redsec.webp",
+        "translationId": "ID_MP_LVL_GRANITE_NAME",
+    },
+    "lvlftp": {
         "mapName": "REDSEC",
         "image": "https://cdn.gametools.network/maps/bf6/Battlefield_6_Redsec.webp",
         "translationId": "ID_ARRIVAL_REDSEC",
@@ -450,6 +455,7 @@ STAT_GAMEMODE_SMALL = {
     "gm_official": {"gamemodeName": "Official", "image": "", "altImage": ""},
     "gm_sabotage": {"gamemodeName": "Sabotage", "image": "", "altImage": ""},
     "gm_op": {"gamemodeName": "Operations", "image": "", "altImage": ""},
+    "gm_paylo": {"gamemodeName": "Payload", "image": "", "altImage": ""},
 }
 STAT_GAMEMODE_SMALL_CATEGORY = {
     "gm_all": {"gamemodeName": "All", "image": "", "altImage": ""},
