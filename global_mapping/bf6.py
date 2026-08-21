@@ -788,6 +788,9 @@ VEHICLE_ARCHETYPES = {
     "arch_jetattack": {"archetypeName": "Attack jets"},
     "arch_carapc": {"archetypeName": "Armored personnel carrier"},
     "arch_lighttrans": {"archetypeName": "Light transport vehicles"},
+    "arch_patrolboat": {"archetypeName": "Patrol boats"},
+    "arch_jetmultirole": {"archetypeName": "Multi-role jets"},
+    "arch_jetfleet": {"archetypeName": "Fleet jets"},
 }
 MELEE_GROUPS = {
     "melee": {"groupName": "All"},
