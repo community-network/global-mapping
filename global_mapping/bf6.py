@@ -230,6 +230,14 @@ SMALLMODES = {
     "GraniteSolo0": "BRS",
     "GraniteGauntlet0": "RG",
     "MP_Escalation0": "ES",
+    "MP_SquadDM0": "SD",
+    "MP_TeamDM0": "TDM",
+    "MP_KOTH0": "KH",
+    "MP_Domination0": "DM",
+    "MP_Operations0": "OP",
+    "MP_Obliteration0": "OB",
+    "MP_SquadObliteration0": "TOB",
+    "MP_CarrierStrike0": "CS",
 }
 MODES = {
     "Breakthrough0": "Breakthrough Large",
@@ -243,6 +251,14 @@ MODES = {
     "GraniteSolo0": "Redsec Solo",
     "GraniteGauntlet0": "Redsec Gauntlet",
     "MP_Escalation0": "Escalation",
+    "MP_SquadDM0": "Squad deathmatch",
+    "MP_TeamDM0": "Team deathmatch",
+    "MP_KOTH0": "King of the Hill",
+    "MP_Domination0": "Domination",
+    "MP_Operations0": "Operations",
+    "MP_Obliteration0": "Obliteration",
+    "MP_SquadObliteration0": "Tactical Obliteration",
+    "MP_CarrierStrike0": "Carrier Strike",
 }
 REDSEC_MODES = {
     "GraniteDuo0": "Duos",
@@ -262,6 +278,14 @@ TO_GAME_MODES = {
     "redsec solo": "GraniteSolo0",
     "redsec gauntlet": "GraniteGauntlet0",
     "escalation": "MP_Escalation0",
+    "squad deathmatch": "MP_SquadDM0",
+    "team deathmatch": "MP_TeamDM0",
+    "king of the Hill": "MP_KOTH0",
+    "domination": "MP_Domination0",
+    "operations": "MP_Operations0",
+    "obliteration": "MP_Obliteration0",
+    "tactical obliteration": "MP_SquadObliteration0",
+    "carrier strike": "MP_CarrierStrike0",
 }
 STAT_MAPS = {
     "lvlmp": {
@@ -556,6 +580,11 @@ STAT_GAMEMODE = {
         "gamemodeName": "Tactical Obliteration",
         "image": "https://cdn.gametools.network/modes/bf6/tactical-obliteration.svg",
         "altImage": "https://cdn.gametools.network/modes/bf6/tactical-obliteration-framed.svg",
+    },
+    "MP_CarrierStrike0": {
+        "gamemodeName": "Carrier Strike",
+        "image": "",
+        "altImage": "",
     },
 }
 CLASSES = {
