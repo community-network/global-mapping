@@ -138,6 +138,7 @@ MAPS = {
     "MP_Subsurface": "Hagental Base",
     "MP_Plaza": "Cairo Bazaar",
     "MP_Isolated": "Tsuru Reef",
+    "MP_Atoll": "Wake Island",
 }
 TO_GAME_MAPS = {
     "siege of cairo": "MP_Abbasid",
@@ -163,6 +164,7 @@ TO_GAME_MAPS = {
     "hagental base": "MP_Subsurface",
     "cairo bazaar": "MP_Plaza",
     "tsuru reef": "MP_Isolated",
+    "wake island": "MP_Atoll",
 }
 MAP_TRANSLATION_IDS = {
     "MP_Abbasid": "ID_MP_LVL_ABBASID_NAME",
@@ -190,6 +192,7 @@ MAP_TRANSLATION_IDS = {
     "MP_Subsurface": "ID_MP_LVL_SUBSURFACE_NAME",
     "MP_Plaza": "ID_MP_LVL_PLAZA_NAME",
     "MP_Isolated": "ID_MP_LVL_ISOLATED_NAME",
+    "MP_Atoll": "ID_MP_LVL_ATOLL_NAME",
 }
 MAP_PICTURES = {
     "MP_Abbasid": "https://cdn.gametools.network/maps/bf6/T_UI_Abbasid_Large_OPT-49a3761a.webp",
@@ -217,6 +220,7 @@ MAP_PICTURES = {
     "MP_Subsurface": "https://cdn.gametools.network/maps/bf6/T_UI_Subsurface-6f909eef.png",
     "MP_Plaza": "https://cdn.gametools.network/maps/bf6/T_UI_Plaza_Large_OPT-6826467e.webp",
     "MP_Isolated": "",  # missing image
+    "MP_Atoll": "",
 }
 SMALLMODES = {
     "Breakthrough0": "BT",
