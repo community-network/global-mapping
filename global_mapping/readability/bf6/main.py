@@ -188,6 +188,40 @@ async def serverList(servers):
     return servers
 
 
+async def pastSeasons(pastSeason, lang: str):
+    settings_translation = await settingsLanguage(lang)
+    for season in pastSeason.get("seasons", {}):
+        battlePassContent = season.get("battlePass", {}).get("content", {})
+        battlePassContent["titleTranslation"] = settings_translation.get(
+            battlePassContent.get("title", {}).get("value")
+        )
+        battlePassContent["descriptionTranslation"] = settings_translation.get(
+            battlePassContent.get("description", {}).get("value")
+        )
+        if battlePassContent.get("background", None) is not None:
+            battlePassContent["background"]["url"] = (
+                battlePassContent.get("background", {})
+                .get("url", "")
+                .replace(
+                    "[BB_PREFIX]",
+                    "https://eaassets-a.akamaihd.net/battlelog/battlebinary",
+                )
+            )
+
+        for resource in battlePassContent.get("resources", []):
+            if resource.get("value", {}).get("image", None) is not None:
+                resource["value"]["image"]["url"] = (
+                    resource.get("value", {})
+                    .get("image", {})
+                    .get("url", "")
+                    .replace(
+                        "[BB_PREFIX]",
+                        "https://eaassets-a.akamaihd.net/battlelog/battlebinary",
+                    )
+                )
+    return pastSeason
+
+
 async def detailedServer(server, lang: str):
     server_info = server.get("serverInfo", {})
 
