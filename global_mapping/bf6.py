@@ -125,6 +125,7 @@ MAPS = {
     "MP_Outskirts": "New Sobek City",
     "MP_Tungsten": "Mirak Valley",
     "MP_Portal_Sand": "Portal Sandbox",
+    "MP_Portal_Lobby": "Custom Lobby",
     "MP_Contaminated": "Contaminated",
     "MP_Granite": "Fort Lyndon",
     "MP_Granite_MainStreet_Portal": "Downtown",
@@ -148,6 +149,7 @@ TO_GAME_MAPS = {
     "liberation peak": "MP_Capstone",
     "manhattan bridge": "MP_Dumbo",
     "eastwood": "MP_Eastwood",
+    "custom lobby": "MP_Portal_Lobby",
     "operation firestorm": "MP_FireStorm",
     "saints quarter": "MP_Limestone",
     "new sobek city": "MP_Outskirts",
@@ -180,6 +182,7 @@ MAP_TRANSLATION_IDS = {
     "MP_Tungsten": "ID_MP_LVL_TUNGSTEN_NAME",
     "MP_Contaminated": "ID_ARRIVAL_MAP_CONTAMINATED",
     "MP_Portal_Sand": "ID_ARRIVAL_MAP_PORTALSANDBOX",
+    "MP_Portal_Lobby": "ID_MP_LVL_CUSTOM_LOBBY_NAME",
     "MP_Granite": "ID_ARRIVAL_MAP_GRANITE",
     "MP_Granite_MainStreet_Portal": "ID_ARRIVAL_MAP_GRANITE_DOWNTOWN",
     "MP_Granite_MilitaryRnD_Portal": "ID_ARRIVAL_MAP_GRANITE_MILITARY_RND_N",
@@ -221,6 +224,7 @@ MAP_PICTURES = {
     "MP_Plaza": "https://cdn.gametools.network/maps/bf6/T_UI_Plaza_Large_OPT-6826467e.webp",
     "MP_Isolated": "",  # missing image
     "MP_Atoll": "",
+    "MP_Portal_Lobby": "",
 }
 SMALLMODES = {
     "Breakthrough0": "BT",

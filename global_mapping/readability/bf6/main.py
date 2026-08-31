@@ -518,13 +518,6 @@ async def get_stats(
                         )
         current_result["hasResults"] = result_count > 0
 
-        tasks = []
-        filtered_modes = {
-            k: v for k, v in BF6.MODES.items() if k not in BF6.REDSEC_MODES.keys()
-        }
-        tasks.append(get_seasons(all_fields, filtered_modes))
-        tasks.append(get_seasons(all_fields, BF6.REDSEC_MODES))
-
         platform_id = current_player.get("platformId", 0)
         current_result["id"] = current_player.get("personaId", 0)
         current_result["userId"] = current_player.get("nucleusId", 0)
@@ -532,11 +525,6 @@ async def get_stats(
             current_player.get("platformId", 0), "pc"
         )
         current_result["platformId"] = 0 if platform_id is None else platform_id
-
-        (
-            current_result["seasons"],
-            current_result["redsec"],
-        ) = await asyncio.gather(*tasks)
 
         result.append(current_result)
     if len(result) < 1:
