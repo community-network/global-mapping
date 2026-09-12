@@ -222,9 +222,9 @@ MAP_PICTURES = {
     "MP_GolmudRailway": "https://cdn.gametools.network/maps/bf6/T_UI_Golmud-ebbfce73.png",
     "MP_Subsurface": "https://cdn.gametools.network/maps/bf6/T_UI_Subsurface-6f909eef.png",
     "MP_Plaza": "https://cdn.gametools.network/maps/bf6/T_UI_Plaza_Large_OPT-6826467e.webp",
-    "MP_Isolated": "",  # missing image
+    "MP_Isolated": "https://cdn.gametools.network/maps/bf6/T_UI_Isolated_Large_OPT-589b9bf7.webp",
     "MP_Atoll": "",
-    "MP_Portal_Lobby": "",
+    "MP_Portal_Lobby": "https://cdn.gametools.network/maps/bf6/T_UI_Granite_Portal_07_Thumb_SML-b141ec28.jpg",
 }
 SMALLMODES = {
     "Breakthrough0": "BT",
