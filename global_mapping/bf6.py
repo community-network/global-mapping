@@ -885,7 +885,7 @@ BATTLE_PICKUPS = {
     },
     "btlp_minigun": {
         "battlepickupName": "MP-RMG",
-        "translationId": "ID_ABILITY_RAILGUN",
+        "translationId": "ID_ABILITY_MINIGUN",
     },
     "btlp_railgun": {
         "battlepickupName": "Rorsch Mk-2 SMRW",
