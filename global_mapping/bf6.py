@@ -877,6 +877,12 @@ MELEE = {
         "image": "",  # wrong image
         "translationId": "ID_GADGET_EODBOTARM_NAME",
     },
+    "melee_light_diveknife": {
+        "type": "Melee Light",
+        "meleeName": "Hadal NV-08",
+        "image": "",  # wrong image
+        "translationId": "ID_GADGET_DIVEKNIFE_NAME",
+    },
 }
 BATTLE_PICKUPS = {
     "btlp": {
