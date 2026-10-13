@@ -140,6 +140,8 @@ MAPS = {
     "MP_Plaza": "Cairo Bazaar",
     "MP_Isolated": "Tsuru Reef",
     "MP_Atoll": "Wake Island",
+    "MP_DryLake": "Area 51",
+    "MP_Paradise": "Vegas Strip",
 }
 TO_GAME_MAPS = {
     "siege of cairo": "MP_Abbasid",
@@ -167,6 +169,8 @@ TO_GAME_MAPS = {
     "cairo bazaar": "MP_Plaza",
     "tsuru reef": "MP_Isolated",
     "wake island": "MP_Atoll",
+    "area 51": "MP_DryLake",
+    "vegas strip": "MP_Paradise",
 }
 MAP_TRANSLATION_IDS = {
     "MP_Abbasid": "ID_MP_LVL_ABBASID_NAME",
@@ -196,6 +200,8 @@ MAP_TRANSLATION_IDS = {
     "MP_Plaza": "ID_MP_LVL_PLAZA_NAME",
     "MP_Isolated": "ID_MP_LVL_ISOLATED_NAME",
     "MP_Atoll": "ID_MP_LVL_ATOLL_NAME",
+    "MP_DryLake": "ID_MP_LVL_DRYLAKE_NAME",
+    "MP_Paradise": "ID_MP_LVL_PARADISE_NAME",
 }
 MAP_PICTURES = {
     "MP_Abbasid": "https://cdn.gametools.network/maps/bf6/T_UI_Abbasid_Large_OPT-49a3761a.webp",
@@ -224,6 +230,8 @@ MAP_PICTURES = {
     "MP_Plaza": "https://cdn.gametools.network/maps/bf6/T_UI_Plaza_Large_OPT-6826467e.webp",
     "MP_Isolated": "https://cdn.gametools.network/maps/bf6/T_UI_Isolated_Large_OPT-589b9bf7.webp",
     "MP_Portal_Lobby": "https://cdn.gametools.network/maps/bf6/T_UI_Granite_Portal_07_Thumb_SML-b141ec28.jpg",
+    "MP_DryLake": "https://cdn.gametools.network/maps/bf6/t_ui_drylake.webp",
+    "MP_Paradise": "https://cdn.gametools.network/maps/bf6/t_ui_paradise.webp",
     "MP_Atoll": "",
 }
 SMALLMODES = {
@@ -246,6 +254,10 @@ SMALLMODES = {
     "MP_Obliteration0": "OB",
     "MP_SquadObliteration0": "TOB",
     "MP_CarrierStrike0": "CS",
+    "GraniteRapidTrio0": "RRS",
+    "GraniteRapidDuo0": "RRD",
+    "GraniteRapidSolo0": "RRT",
+    "GraniteRapidSquad0": "RRSQ",
 }
 MODES = {
     "Breakthrough0": "Breakthrough Large",
@@ -267,6 +279,10 @@ MODES = {
     "MP_Obliteration0": "Obliteration",
     "MP_SquadObliteration0": "Tactical Obliteration",
     "MP_CarrierStrike0": "Carrier Strike",
+    "GraniteRapidTrio0": "Rapid Royale Solo",
+    "GraniteRapidDuo0": "Rapid Royale Duo",
+    "GraniteRapidSolo0": "Rapid Royale Trio",
+    "GraniteRapidSquad0": "Rapid Royale Squad",
 }
 REDSEC_MODES = {
     "GraniteDuo0": "Duos",
@@ -294,6 +310,10 @@ TO_GAME_MODES = {
     "obliteration": "MP_Obliteration0",
     "tactical obliteration": "MP_SquadObliteration0",
     "carrier strike": "MP_CarrierStrike0",
+    "rapid royale solo": "GraniteRapidTrio0",
+    "rapid royale duo": "GraniteRapidDuo0",
+    "rapid royale trio": "GraniteRapidSolo0",
+    "rapid royale squad": "GraniteRapidSquad0",
 }
 STAT_MAPS = {
     "lvlmp": {
