@@ -223,8 +223,8 @@ MAP_PICTURES = {
     "MP_Subsurface": "https://cdn.gametools.network/maps/bf6/T_UI_Subsurface-6f909eef.png",
     "MP_Plaza": "https://cdn.gametools.network/maps/bf6/T_UI_Plaza_Large_OPT-6826467e.webp",
     "MP_Isolated": "https://cdn.gametools.network/maps/bf6/T_UI_Isolated_Large_OPT-589b9bf7.webp",
-    "MP_Atoll": "",
     "MP_Portal_Lobby": "https://cdn.gametools.network/maps/bf6/T_UI_Granite_Portal_07_Thumb_SML-b141ec28.jpg",
+    "MP_Atoll": "",
 }
 SMALLMODES = {
     "Breakthrough0": "BT",
@@ -390,6 +390,16 @@ STAT_MAPS = {
         "image": "https://cdn.gametools.network/maps/bf6/T_UI_Isolated_Large_OPT-589b9bf7.webp",
         "translationId": "ID_MP_LVL_ISOLATED_NAME",
     },
+    "lvlmpparadise": {
+        "mapName": "Vegas Strip",
+        "image": "https://cdn.gametools.network/maps/bf6/t_ui_paradise.webp",
+        "translationId": "ID_MP_LVL_PARADISE_NAME",
+    },
+    "lvlmpdrylake": {
+        "mapName": "Area 51",
+        "image": "https://cdn.gametools.network/maps/bf6/t_ui_drylake.webp",
+        "translationId": "ID_MP_LVL_DRYLAKE_NAME",
+    },
     "lvlmpatoll": {
         "mapName": "Wake Island",
         "image": "",  # missing image
@@ -488,10 +498,40 @@ STAT_GAMEMODE_SMALL = {
     "gm_sabotage": {"gamemodeName": "Sabotage", "image": "", "altImage": ""},
     "gm_op": {"gamemodeName": "Operations", "image": "", "altImage": ""},
     "gm_paylo": {"gamemodeName": "Payload", "image": "", "altImage": ""},
+    "gm_rr_solo": {
+        "gamemodeName": "Rapid Royale Solo",
+        "image": "https://cdn.gametools.network/modes/bf6/rapidroyale.svg",
+        "altImage": "",
+    },
+    "gm_rr_duo": {
+        "gamemodeName": "Rapid Royale Duo",
+        "image": "https://cdn.gametools.network/modes/bf6/rapidroyale.svg",
+        "altImage": "",
+    },
+    "gm_rr_trio": {
+        "gamemodeName": "Rapid Royale Trio",
+        "image": "https://cdn.gametools.network/modes/bf6/rapidroyale.svg",
+        "altImage": "",
+    },
+    "gm_rr_squad": {
+        "gamemodeName": "Rapid Royale Squad",
+        "image": "https://cdn.gametools.network/modes/bf6/rapidroyale.svg",
+        "altImage": "",
+    },
+    "gm_spookyrush": {
+        "gamemodeName": "Spooky rush",
+        "image": "https://cdn.gametools.network/modes/bf6/spookyrush.svg",
+        "altImage": "",
+    },
 }
 STAT_GAMEMODE_SMALL_CATEGORY = {
     "gm_all": {"gamemodeName": "All", "image": "", "altImage": ""},
     "gm_mp": {"gamemodeName": "Multiplayer", "image": "", "altImage": ""},
+    "gm_rr_all": {
+        "gamemodeName": "Rapid Royale",
+        "image": "https://cdn.gametools.network/modes/bf6/rapidroyale.svg",
+        "altImage": "",
+    },
     "gm_modbuilder": {
         "gamemodeName": "Portal",
         "image": "https://cdn.gametools.network/modes/bf6/wrench-hammer.svg",
@@ -1332,6 +1372,41 @@ WEAPONS = {
         "image": "https://cdn.gametools.network/weapons/bf6/T_UI_BREN3_Factory_Icon_MED-fd4ac641.webp",
         "altImage": "https://cdn.gametools.network/weapons/bf6/white/T_UI_BREN3_Factory_Icon_MED-fd4ac641.webp",
         "translationId": "ID_WEAPON_BREN3",
+    },
+    "wp_snp_cdx40": {
+        "type": "Rifles",
+        "weaponName": "ELR-40",
+        "image": "https://cdn.gametools.network/weapons/bf6/t_ui_cdx40_factory_icon.webp",
+        "altImage": "https://cdn.gametools.network/weapons/bf6/white/t_ui_cdx40_factory_icon.webp",
+        "translationId": "ID_WEAPON_CDX40",
+    },
+    "wp_ar_mrgga": {
+        "type": "Assault Rifles",
+        "weaponName": "Mk 24",
+        "image": "https://cdn.gametools.network/weapons/bf6/t_ui_mrgga_factory_icon.webp",
+        "altImage": "https://cdn.gametools.network/weapons/bf6/white/t_ui_mrgga_factory_icon.webp",
+        "translationId": "ID_WEAPON_MRGGA",
+    },
+    "wp_ar_mrggs": {
+        "type": "Assault Rifles",
+        "weaponName": "Mk 1 Mod 0",
+        "image": "https://cdn.gametools.network/weapons/bf6/t_ui_mrggs_factory_icon.webp",
+        "altImage": "https://cdn.gametools.network/weapons/bf6/white/t_ui_mrggs_factory_icon.webp",
+        "translationId": "ID_WEAPON_MRGGS",
+    },
+    "wp_smg_rsar999": {
+        "type": "SMG-PDWs",
+        "weaponName": "RSPR",
+        "image": "https://cdn.gametools.network/weapons/bf6/t_ui_rsar999_factory_icon.webp",
+        "altImage": "https://cdn.gametools.network/weapons/bf6/white/t_ui_rsar999_factory_icon.webp",
+        "translationId": "ID_WEAPON_RSAR999",
+    },
+    "wp_mg_pkm": {
+        "type": "Machine Guns",
+        "weaponName": "Z84M",
+        "image": "https://cdn.gametools.network/weapons/bf6/t_ui_pkm_factory_icon.webp",
+        "altImage": "https://cdn.gametools.network/weapons/bf6/white/t_ui_pkm_factory_icon.webp",
+        "translationId": "ID_WEAPON_PKM",
     },
     "wp_snp_hti": {
         "type": "Rifles",
