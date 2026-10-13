@@ -3,6 +3,7 @@ SEASONS = {
     "Season2": "Season 2",
     "Season3": "Season 3",
     "Season4": "Season 4",
+    "Season5": "Season 5",
 }
 GAME_TYPES = {"competitive": "Competitive"}
 PLATFORM = {
