@@ -772,8 +772,8 @@ async def get_classes(stats_dict: dict, settings_translation: dict[str, str]):
         kills = stats_dict.get(f"kw_{kit_id}", 0)
         deaths = stats_dict.get(f"deaths_{kit_id}", 0)
         seconds = stats_dict.get(f"tp_{kit_id}", 0)
-        human_kills = stats_dict.get(f"deathshum_{kit_id}", 0)
-        human_deaths = stats_dict.get(f"kwhum_{kit_id}", 0)
+        human_kills = stats_dict.get(f"kwhum_{kit_id}", 0)
+        human_deaths = stats_dict.get(f"deathshum_{kit_id}", 0)
         try:
             kill_death = round(kills / deaths, 2)
         except ZeroDivisionError:
