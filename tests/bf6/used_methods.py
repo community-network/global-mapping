@@ -20,6 +20,7 @@ starts_with = [
     "tkdw_melee",
     # Battle pickups
     "shw_btlp",
+    "hsw_btlp",
     "dmg_btlp",
     "adskw_btlp",
     "bkw_btlp",
@@ -75,6 +76,11 @@ starts_with = [
     "repair_gad",
     "edw_gad",
     # classes
+    "deathshum_kit",
+    "kwhum_kit",
+    "dmg_kit",
+    "dmghum_kit",
+    "reviveshum_",
     "kw_kit",
     "deaths_kit",
     "tp_kit",
@@ -130,6 +136,7 @@ normal = [
     "tp_gm_all",
     "Dmg_Dealt_Total",
     "human_kills_total",
+    "deaths_human_total",
     "kills_Headshots_Total",
     "played_match_total",
     "Revives_Teammates_Total",

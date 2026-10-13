@@ -662,6 +662,7 @@ async def get_battle_pickups(
         shots_hit = stats_dict.get(f"shw_{_id}", 0)
         shots_fired = stats_dict.get(f"sfw_{_id}", 0)
         seconds = stats_dict.get(f"tp_{_id}", 0)
+        headshots = stats_dict.get(f"hsw_{_id}", 0)
 
         try:
             accuracy = round((shots_hit / shots_fired) * 100, 2)
@@ -683,6 +684,11 @@ async def get_battle_pickups(
         except ZeroDivisionError:
             hits_per_kill = 0.0
 
+        try:
+            headshot_percentage = round(headshots / kills * 100, 2)
+        except ZeroDivisionError:
+            headshot_percentage = 0.0
+
         res = {
             **extra,
             "name": settings_translation.get(
@@ -693,6 +699,8 @@ async def get_battle_pickups(
             "kills": kills,
             "damage": damage,
             "scopedKills": stats_dict.get(f"adskw_{_id}", 0),
+            "headshotKills": headshots,
+            "headshots": format_percentage_value(headshot_percentage, format_values),
             "bodyKills": stats_dict.get(f"bkw_{_id}", 0),
             "hipfireKills": stats_dict.get(f"hfkw_{_id}", 0),
             "multiKills": stats_dict.get(f"mkw_{_id}", 0),
@@ -764,10 +772,16 @@ async def get_classes(stats_dict: dict, settings_translation: dict[str, str]):
         kills = stats_dict.get(f"kw_{kit_id}", 0)
         deaths = stats_dict.get(f"deaths_{kit_id}", 0)
         seconds = stats_dict.get(f"tp_{kit_id}", 0)
+        human_kills = stats_dict.get(f"deathshum_{kit_id}", 0)
+        human_deaths = stats_dict.get(f"kwhum_{kit_id}", 0)
         try:
             kill_death = round(kills / deaths, 2)
         except ZeroDivisionError:
             kill_death = 0.0
+        try:
+            human_kill_death = round(human_kills / human_deaths, 2)
+        except ZeroDivisionError:
+            human_kill_death = 0.0
         try:
             kills_per_minute = round(kills / (seconds / 60), 2)
         except (ZeroDivisionError, KeyError):
@@ -783,10 +797,16 @@ async def get_classes(stats_dict: dict, settings_translation: dict[str, str]):
             "deaths": deaths,
             "kpm": kills_per_minute,
             "killDeath": kill_death,
+            "humanKillDeath": human_kill_death,
+            "humanKills": human_kills,
+            "humanDeaths": human_deaths,
             "spawns": stats_dict.get(f"spawns_{kit_id}", 0),
             "score": stats_dict.get(f"scoreas_{kit_id}", 0),
             "assists": stats_dict.get(f"assists_{kit_id}", 0),
             "revives": stats_dict.get(f"revives_{kit_id}", 0),
+            "damage": stats_dict.get(f"dmg_{kit_id}", 0),
+            "humanDamage": stats_dict.get(f"dmghum_{kit_id}", 0),
+            "humanRevives": stats_dict.get(f"reviveshum_{kit_id}", 0),
             "secondsPlayed": seconds,
         }
         # skip all 0 values
@@ -971,6 +991,7 @@ async def get_main_stats(stats_dict: dict, format_values: bool = True):
     seconds = stats_dict.get("tp_gm_all", 0)
     damage = stats_dict.get("Dmg_Dealt_Total", 0)
     human_kills = stats_dict.get("human_kills_total", 0)
+    human_deaths = stats_dict.get("deaths_human_total", 0)
     headshot_amount = stats_dict.get("kills_Headshots_Total", 0)
     matches_played = stats_dict.get("played_match_total", 0)
     try:
@@ -987,7 +1008,7 @@ async def get_main_stats(stats_dict: dict, format_values: bool = True):
         headshots = 0.0
     try:
         kill_death = round(kills / deaths, 2)
-        infantry_kill_death = round(human_kills / deaths, 2)
+        infantry_kill_death = round(human_kills / human_deaths, 2)
     except ZeroDivisionError:
         kill_death = 0.0
         infantry_kill_death = 0.0
