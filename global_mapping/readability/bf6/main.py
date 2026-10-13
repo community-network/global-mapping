@@ -1008,7 +1008,7 @@ async def get_main_stats(stats_dict: dict, format_values: bool = True):
         headshots = 0.0
     try:
         kill_death = round(kills / deaths, 2)
-        infantry_kill_death = round(human_kills / human_deaths, 2)
+        infantry_kill_death = round(human_kills / deaths, 2)
     except ZeroDivisionError:
         kill_death = 0.0
         infantry_kill_death = 0.0
