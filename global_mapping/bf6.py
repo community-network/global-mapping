@@ -254,9 +254,9 @@ SMALLMODES = {
     "MP_Obliteration0": "OB",
     "MP_SquadObliteration0": "TOB",
     "MP_CarrierStrike0": "CS",
-    "GraniteRapidTrio0": "RRS",
+    "GraniteRapidTrio0": "RRT",
     "GraniteRapidDuo0": "RRD",
-    "GraniteRapidSolo0": "RRT",
+    "GraniteRapidSolo0": "RRS",
     "GraniteRapidSquad0": "RRSQ",
 }
 MODES = {
@@ -279,15 +279,19 @@ MODES = {
     "MP_Obliteration0": "Obliteration",
     "MP_SquadObliteration0": "Tactical Obliteration",
     "MP_CarrierStrike0": "Carrier Strike",
-    "GraniteRapidTrio0": "Rapid Royale Solo",
+    "GraniteRapidTrio0": "Rapid Royale Trio",
     "GraniteRapidDuo0": "Rapid Royale Duo",
-    "GraniteRapidSolo0": "Rapid Royale Trio",
+    "GraniteRapidSolo0": "Rapid Royale Solo",
     "GraniteRapidSquad0": "Rapid Royale Squad",
 }
 REDSEC_MODES = {
     "GraniteDuo0": "Duos",
     "GraniteSquad0": "Quads",
     "GraniteSolo0": "Solo",
+    "GraniteRapidTrio0": "Rapid Royale Trio",
+    "GraniteRapidDuo0": "Rapid Royale Duo",
+    "GraniteRapidSolo0": "Rapid Royale Solo",
+    "GraniteRapidSquad0": "Rapid Royale Squad",
     "GraniteGauntlet0": "Gauntlet",
 }
 TO_GAME_MODES = {
@@ -310,9 +314,9 @@ TO_GAME_MODES = {
     "obliteration": "MP_Obliteration0",
     "tactical obliteration": "MP_SquadObliteration0",
     "carrier strike": "MP_CarrierStrike0",
-    "rapid royale solo": "GraniteRapidTrio0",
+    "rapid royale trio": "GraniteRapidTrio0",
     "rapid royale duo": "GraniteRapidDuo0",
-    "rapid royale trio": "GraniteRapidSolo0",
+    "rapid royale solo": "GraniteRapidSolo0",
     "rapid royale squad": "GraniteRapidSquad0",
 }
 STAT_MAPS = {
