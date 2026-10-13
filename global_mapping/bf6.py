@@ -2342,3 +2342,13 @@ RANKED_BR_IMAGES_S4 = {
     "Master": "https://cdn.gametools.network/ranks/bf6/ranked_br_divisions/season4/master.webp",
     "Top250": "https://cdn.gametools.network/ranks/bf6/ranked_br_divisions/season3/top250.webp",
 }
+RANKED_BR_IMAGES_S5 = {
+    "Rookie": "https://cdn.gametools.network/ranks/bf6/ranked_br_divisions/season5/rookie.webp",
+    "Bronze": "https://cdn.gametools.network/ranks/bf6/ranked_br_divisions/season5/bronze.webp",
+    "Silver": "https://cdn.gametools.network/ranks/bf6/ranked_br_divisions/season5/silver.webp",
+    "Gold": "https://cdn.gametools.network/ranks/bf6/ranked_br_divisions/season5/gold.webp",
+    "Platinum": "https://cdn.gametools.network/ranks/bf6/ranked_br_divisions/season5/platinum.webp",
+    "Diamond": "https://cdn.gametools.network/ranks/bf6/ranked_br_divisions/season5/diamond.webp",
+    "Master": "https://cdn.gametools.network/ranks/bf6/ranked_br_divisions/season5/master.webp",
+    "Top250": "https://cdn.gametools.network/ranks/bf6/ranked_br_divisions/season5/top250.webp",
+}
