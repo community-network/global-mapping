@@ -1,15 +1,15 @@
 import asyncio
-import re
-from typing import Any
 import datetime
 import logging
+import re
+from typing import Any
 
 from global_mapping import bf6 as BF6
-from global_mapping.readability.exceptions import NotFoundException
-from global_mapping.readability.shared import format_percentage_value
 from global_mapping.readability.bf6.languages.settingValues.main import (
     selectLanguage as settingsLanguage,
 )
+from global_mapping.readability.exceptions import NotFoundException
+from global_mapping.readability.shared import format_percentage_value
 
 logger = logging.getLogger("api")
 DEFAULT_SEASON = "Season5"
@@ -1285,3 +1285,15 @@ async def get_seasons(all_fields: list[dict[str, Any]], MODES: dict):
             }
         )
     return seasons
+
+
+async def get_badges(badges: dict) -> dict:
+    for badge in badges.get("badges", []):
+        badge["name"] = BF6.BADGES.get(badge.get("badgeId", ""))
+    return badges
+
+
+async def get_dogtags(dogtags: dict) -> dict:
+    for dogtag in dogtags.get("unlockedDogtags", []):
+        dogtag["name"] = BF6.DOGTAGS.get(dogtag.get("dogtagId", ""))
+    return dogtags
