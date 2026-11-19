@@ -2593,6 +2593,10 @@ DOGTAGS = {
     "8b3728b6-0479-418f-9bae-68453d453e77": "Submerged Suffering",
     "f20e9e0c-46e8-4ce8-9d5d-002b28d1e4c8": "Take It In",
     "9a4911ba-f15d-4733-b6ce-6a174e047ed9": "Tank-Ful",
+    "2690b863-9222-4366-821e-3cdc7e452000": "Screeching Dive",
+    "32934516-4c10-436a-bf48-87666ad48d71": "Victor's Spoils",
+    "d534fd9c-d497-406f-9ca3-7d6644d103f1": "Glory Close",
+    "92e53803-b8a1-4696-b47b-b8b2dbe27f0d": "Bullet Stopper",
 }
 BADGES = {
     "951f5fc4-8311-409c-8666-fc123f305f41": "18.5KS-K",
@@ -2684,4 +2688,6 @@ BADGES = {
     "7b151ca2-66fd-4a6c-88ce-894d75a0e150": "VSSM",
     "2a4fc64f-dfbe-4c09-a2d7-4e00ce9aa783": "vz. 61",
     "3477a30f-69e1-46f0-a5cb-e8acebecf640": "Z84M",
+    "5bd1f2a1-cc88-4fca-9c2b-657f9d89a7e5": "NSW4",
+    "4f27cff7-99bb-4215-b0b7-64e2d443600e": "Rocket Artillery",
 }
